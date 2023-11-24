@@ -1,4 +1,4 @@
-![Logo](https://ibb.co/MSMQRgN.png)
+![Logo](https://i.ibb.co/2hgHjFK/logo.png)
 
 ## Members
 AUSTERO, MARK GREGORY
