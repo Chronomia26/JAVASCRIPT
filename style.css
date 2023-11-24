@@ -59,7 +59,7 @@ header image {
 #side_list li {
   padding-left: 25px;
   margin-bottom: 20px;
-  background: url('bullet.gif') left center no-repeat;
+  background: url('/IMAGES/bullet.gif') left center no-repeat;
   background-size: 20px;
   transition: transform 0.3s ease-in-out;
   
