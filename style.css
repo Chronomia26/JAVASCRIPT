@@ -1,120 +1,187 @@
-body {
-  margin: 0;
-  padding: 0;
 
+
+
+body {
+margin: 0;
+padding: 0;
+
+}
+
+#content {
+top: 0;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+background-image: url('IMAGES/background.png');
+background-size: 12%;
+background-attachment: fixed;
 }
 
 a {
-  color: black;
-  text-decoration: none;
+color: black;
+text-decoration: none;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #FFC0CB;
-  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #FFC0CB;
+box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
 }
 
-header image {
-  padding-top: 15px;
-  img-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+#header_img {
+background-color: none;
+padding-top: 5px;
+padding-left: 5px;
+padding-right: 5px;
+width: 9.5%;
+transition: background-color 0.3s ease, transform 0.3s;
+}
+
+#header_img:hover {
+background-color: rgba(1, 1, 1, 0.5);
+transform: scale(1.1)
 }
 
 #side {
-  position: fixed;
-  width: 24%;
-  top: 70px;
-  bottom: 0;
-  border-right: 2px dashed black;
-  border-spacing: 5px;
+position: fixed;
+width: 24%;
+top: 70px;
+bottom: 0;
+border-right: 2px dashed black;
+border-spacing: 5px;
 }
 
 #side_title {
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-  font-family: courier new;
-  text-align: center;
-  font-size: 35px;
-  position: fixed;
-  margin-top: 50px;
-  width: 24%;
+text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+font-family: courier new;
+text-align: center;
+font-size: 35px;
+position: fixed;
+margin-top: 50px;
+width: 24%;
 }
 
 #side_list {
-  font-size: 22px;
-  margin-left: 2%;
-  font-family: century gothic;
-  position: fixed;
-  margin-top: 9%;
-  width: 24%;
-  list-style-type: none;
+font-size: 22px;
+margin-left: 2%;
+font-family: century gothic;
+position: fixed;
+margin-top: 8%;
+width: 20%;
+list-style-type: none;
+border-radius: 20px;
+border: 2px dashed;
+background-color: rgba(255, 255, 255, 1)
 }
 
 #side_list ul {
-  list-style-type: none;
+list-style-type: none;
+
 }
 
 #side_list li {
-  padding-left: 25px;
-  margin-bottom: 20px;
-  background: url('/IMAGES/bullet.gif') left center no-repeat;
-  background-size: 20px;
-  transition: transform 0.3s ease-in-out;
-  
+padding-left: 25px;
+margin-bottom: 15px;
+background: url('IMAGES/bullet.png') left center no-repeat;
+background-size: 20px;
+transition: transform 0.3s ease-in-out;
+
 }
 
 #side_list li:hover {
-  transform: scale(1.1)
+transform: scale(1.07)
 }
 
 #main {
-  bottom: 0;
-  margin-top: 60px;
-  margin-left: 24%;
-  padding: 10px;
-  height: 180vh;
-  overflow-y: auto;
+bottom: 0;
+margin-top: 60px;
+margin-left: 24%;
+padding: 10px;
+overflow-y: auto;
 }
 
 #main_title {
-  font-family: courier;
-  margin-top: 5%;
-  margin-left: 2%;
-  font-size: 35px;
+font-family: courier;
+margin-top: 5%;
+margin-left: 2%;
+font-size: 35px;
 
 }
 
 #main_content {
-  font-family: century gothic;
-  margin-top: 5%;
-  margin-left: 8%;
-  margin-right: 5%;
-  font-size: 25px;
+font-family: century gothic;
+margin-top: 5%;
+margin-left: 8%;
+margin-right: 5%;
+font-size: 25px;
 }
 
 #main_content ul {
-  font-family: century gothic;
-  margin-top: 5%;
-  margin-left: 8%;
-  margin-right: 5%;
-  font-size: 25px;
+font-family: century gothic;
+margin-top: 5%;
+margin-left: 8%;
+margin-right: 5%;
+font-size: 25px;
+}
+
+#main_content table, td {
+margin-left: 8%;
+font-family: courier;
+font-weight: bold;
+border: 2px solid;
+border-collapse: collapse;
+text-align: center;
+padding-left: 50px;
+padding-right: 50px;
 }
 
 #script {
-  font-family: courier;
-  border: 2px solid gray;
-  background-color: rgba(217, 217, 217, 0.5);
+font-family: courier;
+border: 2px solid gray;
+background-color: rgba(217, 217, 217, 1);
 
 }
 
+#controls {
+font-size: 50px;
+font-family: arial;
+position: fixed;
+width: 100%;
+left: 24.1%;
+bottom: 6.5%;
+color: white;
+border-top: 1px solid black;
+}
+
+#back {
+display: inline;
+padding-left: 25px;
+padding-right: 25px;
+margin-left: 0;
+transition: transition 0.3s;
+}
+
+#next {
+display: inline;
+margin-left: 67%;
+padding-left: 25px;
+padding-right: 25px;
+}
+
+#back:hover {
+transform: scale(1.1);
+}
+
 footer {
-  text-align: center;
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-  background-color: #FFC0CB;
-  padding: 5px;
-  font-family: century gothic;
+text-align: center;
+bottom: 0;
+position: fixed;
+width: 100%;
+background-color: #FFC0CB;
+padding: 5px;
+font-family: century gothic;
 }
