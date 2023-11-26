@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JavaScript Introduction</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    #main {
+      height: 180vh;
+    }
+	.drop {
+		display: none;
+	}
+  </style>
+</head>
+
+<body>
+  <div id="content">
+    <header>
+      <div id="header_img">
+        <a href="MAIN.html">
+          <img src="IMAGES/logo.png" alt="NEKODE">
+        </a>
+      </div>
+    </header>
+
+    <div id="side">
+      <div id="side_title">
+        <b>INTRODUCTION TO JAVASCRIPT</b>
+      </div>
+      <div id="side_list">
+        <ul>
+          <li><a href = "#" onclick= "changeContent('div1')">What is JavaScript?</a></li>
+          <li><a href = "#" onclick="changeContent('div2')">Datatypes and Variables</a></li>
+          <li><a href = "#" onclick="changeContent()">Reserved Words</a></li>
+          <li><a href = "#" onclick="changeContent()">What is an Operator?</a ></li>
+          <li><a href = "#" onclick="changeContent()">Decision Making Statements</a></li>
+          <li><a href = "#" onclick="changeContent()">Loops</a></li>
+          <li><a href = "#" onclick="changeContent()">Functions</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="main">
+      <div id="div1" class = "drop">
+        <div id="main_title">
+          <b>JavaScript Introduction</b>
+        </div>
+      </div>  
+	  <div id="div2" class = "drop">
+			<div id="main_title">
+				<b>JavaScript Datatypes</b>
+			</div>
+			<div id="main_content" style="padding-bottom: 150px">
+				<p>One of the most fundamental characteristics of a programming
+				language is the set of data types it supports. These are the type
+				of values that can be represented and manipulated in a
+				programming language. JavaScript allows you to work with three primitive data types −</p>
+				<ul style="margin-left: 5%;">
+					<li style="margin-bottom: 0; background: none"><b>Numbers</b>, eg. <i>123, 120.50 etc.</i></li>
+					<li style="margin-bottom: 0; background: none"><b>Strings</b> of text e.g. <i>"This text string" etc.</i></li>
+					<li style="margin-bottom: 0; background: none"><b>Boolean</b> e.g. <i>true or false.</i></li>
+				</ul>
+				<p style="font-size: 18px"><i><b>Note</b></i> − JavaScript does not make a distinction between integer
+				values and floating-point values. All numbers in JavaScript are
+				represented as floating-point values. JavaScript represents
+				numbers using the 64-bit floating-point format defined by the IEEE
+				754 standard.</p>
+			</div>
+			<hr>
+			<div id="main_title">
+				<b>JavaScript Variables</b>
+			</div>
+			<div id="main_content">
+				<p>Before you use a variable in a JavaScript program, you must
+				declare it. Variables are declared with the <b>var</b> keyword as follows.</p>
+				<div id="script">
+					&lt;script type&gt; = "text/javascript"> <br>
+					<blockquote>&lt;!--<br></blockquote>
+					<blockquote><blockquote>var money;<br></blockquote></blockquote>
+					<blockquote><blockquote>var name;<br></blockquote></blockquote>
+					<blockquote>//--&gt;<br></blockquote>
+					&lt;/script&gt;<br>
+				</div>
+			<br><br>
+				<div id="script">
+					&lt;script type&gt; = "text/javascript"<br>
+					<blockquote>&lt;!--<br></blockquote>
+					<blockquote><blockquote>var name = "Ali";<br></blockquote></blockquote>
+					<blockquote><blockquote>var money;<br></blockquote></blockquote>
+					<blockquote><blockquote>money = 2000.50;<br></blockquote></blockquote>
+					<blockquote>//--&gt;<br></blockquote>
+					&lt;/script&gt;<br>
+				</div>
+			</div>
+			
+			<div id = "controls">
+				<div id = "back">
+					<a href = "INTRO.html">&lt;</a>
+				</div>
+				<div id = "next">
+					<a href = "RESERVED.html">&gt;</a>
+				</div>
+			</div>
+      </div>
+    </div>
+
+    <script>
+      function changeContent(divId) {
+		var show = document.getElementById(divId);
+        if (show.style.display == "block") {
+          show.style.display = "none";
+        } else {
+			show.style.display = "block";
+        } 
+      }
+    </script>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Your Website. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
