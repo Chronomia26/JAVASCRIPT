@@ -103,7 +103,20 @@ margin-top: 60px;
 margin-left: 24%;
 padding: 10px;
 overflow-y: auto;
+animation: fade-in 0.5s ease-in-out;
 }
+
+@keyframes fade-in{
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
 
 .drop {
     display: none;
@@ -116,14 +129,18 @@ overflow-y: auto;
 
 #intro {
     height: 180vh;
+    animation: fade-in 0.5s ease-in-out;
 }
+
 
 #datatypes {
     height: 200vh;
+    animation: fade-in 0.5s ease-in-out;
 }
 
 #reserved {
     height: 100vh;
+    animation: fade-in 0.5s ease-in-out;
 }
 
 #main_title {
@@ -138,7 +155,7 @@ font-size: 35px;
 font-family: century gothic;
 margin-top: 5%;
 margin-left: 8%;
-margin-right: 5%;
+margin-right: 6%;
 font-size: 25px;
 }
 
@@ -146,7 +163,7 @@ font-size: 25px;
 font-family: century gothic;
 margin-top: 5%;
 margin-left: 8%;
-margin-right: 5%;
+margin-right: 6%;
 font-size: 25px;
 }
 
