@@ -105,6 +105,23 @@ padding: 10px;
 overflow-y: auto;
 }
 
+.drop {
+    display: none;
+}
+
+
+#intro {
+    height: 180vh;
+}
+
+#datatypes {
+    height: 200vh;
+}
+
+#reserved {
+    height: 100vh;
+}
+
 #main_title {
 font-family: courier;
 margin-top: 5%;
@@ -137,6 +154,10 @@ border-collapse: collapse;
 text-align: center;
 padding-left: 50px;
 padding-right: 50px;
+}
+
+.show {
+display: none;
 }
 
 #script {

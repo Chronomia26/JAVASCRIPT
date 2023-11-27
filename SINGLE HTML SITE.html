@@ -4,14 +4,6 @@
 <head>
   <title>JavaScript Introduction</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <style>
-    #main {
-      height: 180vh;
-    }
-	.show {
-		display: none;
-	}
-  </style>
 </head>
 
 <body>
@@ -30,13 +22,13 @@
       </div>
       <div id="side_list">
         <ul>
-          <li><a href = "#" onclick="changeContent(this)">What is JavaScript?</a></li>
-          <li><a href = "#" onclick="changeContent(this)">Datatypes and Variables</a></li>
-          <li><a href = "#" onclick="changeContent(this)">Reserved Words</a></li>
-          <li><a href = "#" onclick="changeContent(this)">What is an Operator?</a ></li>
-          <li><a href = "#" onclick="changeContent(this)">Decision Making Statements</a></li>
-          <li><a href = "#" onclick="changeContent(this)">Loops</a></li>
-          <li><a href = "#" onclick="changeContent(this)">Functions</a></li>
+          <li><a href = "#" id = "link1" class="font" onclick="changeContent(this)">What is JavaScript?</a></li>
+          <li><a href = "#" id = "link2"  onclick="changeContent(this)">Datatypes and Variables</a></li>
+          <li><a href = "#" id = "link3"  onclick="changeContent(this)">Reserved Words</a></li>
+          <li><a href = "#" id = "link4"  onclick="changeContent(this)">What is an Operator?</a ></li>
+          <li><a href = "#" id = "link5"  onclick="changeContent(this)">Decision Making Statements</a></li>
+          <li><a href = "#" id = "link6"  onclick="changeContent(this)">Loops</a></li>
+          <li><a href = "#" id = "link7"  onclick="changeContent(this)">Functions</a></li>
         </ul>
       </div>
     </div>
@@ -147,28 +139,37 @@
     </div>
 
     <script>
-      function changeContent(link) {
+    function changeContent(link) {
 		var intro = document.getElementById('intro');
 		var datatypes = document.getElementById('datatypes');
 		var reserved = document.getElementById('reserved');
-
+		var link1 = document.getElementById('link1')
+		var link2 = document.getElementById('link2')
+		var link3 = document.getElementById('link3')
+		var link4 = document.getElementById('link4')
+		var link5 = document.getElementById('link5')
+		var link6 = document.getElementById('link6')
+		var link7 = document.getElementById('link7')
         if (link.textContent == "Datatypes and Variables") {
 			intro.style.display = "none";
 			datatypes.style.display = "block";
 			reserved.style.display = "none"
 
+			link1.classList.remove("font");
+			link2.classList.add("font");
+			link3.classList.remove("font");
+
 		} else if (link.textContent == "Reserved Words") {
 			intro.style.display = "none";
 			datatypes.style.display = "none";
 			reserved.style.display = "block"
-		
-		} else  {
-			intro.style.display = "block";
-			datatypes.style.display = "none";
-			reserved.style.display = "none"
+			
+			link1.classList.remove("font");
+			link2.classList.remove("font");
+			link3.classList.add("font");
 
         } 
-      }
+	}
     </script>
   </div>
 
