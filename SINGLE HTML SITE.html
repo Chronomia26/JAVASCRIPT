@@ -8,7 +8,7 @@
     #main {
       height: 180vh;
     }
-	.drop {
+	.show {
 		display: none;
 	}
   </style>
@@ -30,24 +30,24 @@
       </div>
       <div id="side_list">
         <ul>
-          <li><a href = "#" onclick= "changeContent('div1')">What is JavaScript?</a></li>
-          <li><a href = "#" onclick="changeContent('div2')">Datatypes and Variables</a></li>
-          <li><a href = "#" onclick="changeContent()">Reserved Words</a></li>
-          <li><a href = "#" onclick="changeContent()">What is an Operator?</a ></li>
-          <li><a href = "#" onclick="changeContent()">Decision Making Statements</a></li>
-          <li><a href = "#" onclick="changeContent()">Loops</a></li>
-          <li><a href = "#" onclick="changeContent()">Functions</a></li>
+          <li><a href = "#" onclick="changeContent(this)">What is JavaScript?</a></li>
+          <li><a href = "#" onclick="changeContent(this)">Datatypes and Variables</a></li>
+          <li><a href = "#" onclick="changeContent(this)">Reserved Words</a></li>
+          <li><a href = "#" onclick="changeContent(this)">What is an Operator?</a ></li>
+          <li><a href = "#" onclick="changeContent(this)">Decision Making Statements</a></li>
+          <li><a href = "#" onclick="changeContent(this)">Loops</a></li>
+          <li><a href = "#" onclick="changeContent(this)">Functions</a></li>
         </ul>
       </div>
     </div>
 
     <div id="main">
-      <div id="div1" class = "drop">
+      <div id="intro" class = "show" style="display: block;">
         <div id="main_title">
           <b>JavaScript Introduction</b>
         </div>
       </div>  
-	  <div id="div2" class = "drop">
+	  <div id="datatypes" class = "show">
 			<div id="main_title">
 				<b>JavaScript Datatypes</b>
 			</div>
@@ -94,24 +94,79 @@
 				</div>
 			</div>
 			
-			<div id = "controls">
-				<div id = "back">
-					<a href = "INTRO.html">&lt;</a>
-				</div>
-				<div id = "next">
-					<a href = "RESERVED.html">&gt;</a>
-				</div>
-			</div>
+			
       </div>
+	  <div id = "reserved" class = "show">
+		<div id="main_title">
+			<b>JavaScript Reserved Words</b>
+		</div>
+		<div id="main_content" style="padding-bottom: 150px">
+			<p>A list of all the reserved words in JavaScript are given in the
+			following table. They cannot be used as JavaScript variables,
+			functions, methods, loop labels, or any object names.</p>
+			<table>
+				<tr>
+					<td>abstract</td>
+					<td>else</td> 
+					<td>instanceof</td>
+					<td>switch</td>
+				</tr>
+				<tr>
+					<td>boolean</td>
+					<td>enum</td> 
+					<td>int</td>
+					<td>synchronized</td>
+				</tr>
+				<tr>
+					<td>abstract</td>
+					<td>else</td> 
+					<td>instanceof</td>
+					<td>switch</td>
+				</tr>
+				<tr>
+					<td>abstract</td>
+					<td>else</td> 
+					<td>instanceof</td>
+					<td>switch</td>
+				</tr>
+				<tr>
+					<td>abstract</td>
+					<td>else</td> 
+					<td>instanceof</td>
+					<td>switch</td>
+				</tr>
+				<tr>
+					<td>abstract</td>
+					<td>else</td> 
+					<td>instanceof</td>
+					<td>switch</td>
+				</tr>
+			</table>
+		</div>
+	  </div>
     </div>
 
     <script>
-      function changeContent(divId) {
-		var show = document.getElementById(divId);
-        if (show.style.display == "block") {
-          show.style.display = "none";
-        } else {
-			show.style.display = "block";
+      function changeContent(link) {
+		var intro = document.getElementById('intro');
+		var datatypes = document.getElementById('datatypes');
+		var reserved = document.getElementById('reserved');
+
+        if (link.textContent == "Datatypes and Variables") {
+			intro.style.display = "none";
+			datatypes.style.display = "block";
+			reserved.style.display = "none"
+
+		} else if (link.textContent == "Reserved Words") {
+			intro.style.display = "none";
+			datatypes.style.display = "none";
+			reserved.style.display = "block"
+		
+		} else  {
+			intro.style.display = "block";
+			datatypes.style.display = "none";
+			reserved.style.display = "none"
+
         } 
       }
     </script>
