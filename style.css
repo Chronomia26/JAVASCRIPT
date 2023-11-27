@@ -4,8 +4,8 @@
 body {
 margin: 0;
 padding: 0;
-overflow: hidden;
 background-image: url('IMAGES/background.png');
+background-attachment: fixed;
 background-size: 250px;
 animation: animatedBackground 3s linear infinite;
 }
