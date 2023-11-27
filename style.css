@@ -109,6 +109,10 @@ overflow-y: auto;
     display: none;
 }
 
+.font {
+    color: red;
+    font-weight: bold;
+}
 
 #intro {
     height: 180vh;
