@@ -45,26 +45,60 @@
 		}
 
 		.logo {
-			margin-top: 12%;
-			margin-left: 8%;
-			
+			margin-top: 30%;
+			margin-left: 20%;
+			width: 100%;
 		}
 		.logo img {
 			opacity: 0;
 			transform: translate(-30px);
 			animation: right-fade-in 1s ease-in-out forwards;
 			animation-delay: 0.5s;
-			width: 850px;
+			width: 650px;
 		}
 		.logo p{
+			width: 100%;
 			opacity: 0;
 			animation: fade-in 1s ease-in-out forwards;
 			animation-delay: 1s;
 			font-family: monospace;
 			text-align: center;
 			margin-top: 0;
-			margin-left: 1%;
-			font-size: 50px;
+			font-size: 35px;
+		}
+		.learn {
+			width: 100%;
+			margin-top: 10%;
+			margin-left: 20%;
+			transition: transform 0.3s ease-in-out;
+			font-family: 'Courier New';
+			text-align: center;
+			opacity: 0;
+			animation: fade-in 1s ease-in-out forwards;
+			animation-delay: 1.5s;
+		}
+		.learn a {
+			color: white;
+			padding: 2%;
+			padding-left: 30%;
+			padding-right: 30%;
+			font-size: 30px;
+			border-radius: 50px;
+			text-decoration: none; 
+			background-color: red;
+		}
+		.learn:hover {
+			transform: scale(1.1);
+		}
+
+		footer {
+			text-align: center;
+			bottom: 0;
+			position: fixed;
+			width: 100%;
+			color: white;
+			padding: 5px;
+			font-family: century gothic;
 		}
 	</style>
 </head>
@@ -75,8 +109,14 @@
 		</header>
 		<div class="logo">
 			<img src="IMAGES/logo.png">
-			<p>a code learning site</p>
+			<p>an <i>HTML</i> tuturial site</p>
 		</div>
+		<div class="learn">
+			<a href="INTRO.html">LEARN NOW!</a>
+		</div>
+		<footer>
+			<p>&copy; 2023 Your Website. All rights reserved.</p>
+		  </footer>
 	</div>
 </body>
 </html>
