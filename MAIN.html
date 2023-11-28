@@ -17,7 +17,6 @@
 			position: fixed;
 			image-rendering: pixelated;
 			animation: fade-in 1s ease-in-out forwards;
-			//animation-delay: 1s;//
 			opacity: 0;
 		}
 		@keyframes fade-in {
@@ -28,21 +27,43 @@
 				opacity: 1;
 			}
 		}
+		@keyframes right-fade-in {
+			from {
+				opacity: 0;
+				transform: translateX(-30px);
+			}
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
 		header {
 			position: fixed;
 			padding-bottom: 60px;
 			padding-right: 100%;
 			box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
 		}
+
 		.logo {
 			margin-top: 12%;
-			margin-left: 6%;
+			margin-left: 8%;
+			
 		}
 		.logo img {
+			opacity: 0;
+			transform: translate(-30px);
+			animation: right-fade-in 1s ease-in-out forwards;
+			animation-delay: 0.5s;
 			width: 850px;
 		}
 		.logo p{
-			margin-left: 10%;
+			opacity: 0;
+			animation: fade-in 1s ease-in-out forwards;
+			animation-delay: 1s;
+			font-family: monospace;
+			text-align: center;
+			margin-top: 0;
+			margin-left: 1%;
 			font-size: 50px;
 		}
 	</style>
