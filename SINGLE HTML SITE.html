@@ -61,12 +61,7 @@
         </div>
 
         <div id="main">
-            <div id="intro" class="show" style="display: block;">
-                <div id="main_title">
-                    <b>JavaScript Introduction</b>
-                </div>
-            </div>
-            <div id="whatisjavascript" class="show">
+            <div id="whatisjavascript" class="show" style="display: block;">
                 <div id="main_title">
                     <b>What is JavaScript?</b>
                 </div>
@@ -248,8 +243,11 @@
             <div id="arithmetic" class="show">
                 <div id="main_title">
                     <b>The Cat's Clever Calculations 🐾
-                        <br>What is an Operator?
+                    <br>What is an Operator?
                     </b>
+                </div>
+                <div id="main_title">
+                    <b>Arithmetic Operators</b>
                 </div>
                 <div id="main_content">
                     <p>Let's dive into the world of arithmetic with our clever cat friends. Just like cats gracefully navigate
@@ -275,9 +273,16 @@
                             <br>Example: <code>let leftoverTreats = totalTreats % numberOfCats;</code></li>
                             <br>
                     </ul>
-                    
+                    <div id="script">
+                        &lt;html&gt;
+                        &lt;body&gt;
+                        <br>
+                    </div>
                 </div>
                 <hr>
+                <div id="main_title">
+                    <b>Arithmetic Operators</b>
+                </div>
                 <div id="main_content">
 
                 </div>
@@ -287,44 +292,33 @@
 
         <script>
             function changeContent(link) {
-            var intro = document.getElementById('intro');
             var datatypes = document.getElementById('datatypes');
             var reserved = document.getElementById('reserved');
             var whatisjavascript = document.getElementById('whatisjavascript');
             var arithmetic = document.getElementById('arithmetic'); // Add this line
 
-            if (link.textContent == "What is JavaScript?") {
-                intro.style.display = "none";
-                datatypes.style.display = "none";
-                reserved.style.display = "none";
-                whatisjavascript.style.display = "block";
-                arithmetic.style.display = "none"; // Hide the arithmetic content
-            } else if (link.textContent == "Datatypes and Variables") {
-                intro.style.display = "none";
+            if (link.textContent == "Datatypes and Variables") {
+                whatisjavascript.style.display = "none";
                 datatypes.style.display = "block";
                 reserved.style.display = "none";
-                whatisjavascript.style.display = "none";
                 arithmetic.style.display = "none"; // Hide the arithmetic content
             } else if (link.textContent == "Reserved Words") {
-                intro.style.display = "none";
+                whatisjavascript.style.display = "none";
                 datatypes.style.display = "none";
                 reserved.style.display = "block";
-                whatisjavascript.style.display = "none";
                 arithmetic.style.display = "none"; // Hide the arithmetic content
             } else if (link.textContent == "What is an Operator?") {
-            intro.style.display = "none";
-            datatypes.style.display = "none";
-            reserved.style.display = "none";
-            whatisjavascript.style.display = "none";
-            arithmetic.style.display = "block"; // Show the arithmetic content
-            } else {
-                intro.style.display = "block";
+                whatisjavascript.style.display = "none";
                 datatypes.style.display = "none";
                 reserved.style.display = "none";
-                whatisjavascript.style.display = "none";
+                arithmetic.style.display = "block"; // Show the arithmetic content
+            } else {
+                whatisjavascript.style.display = "block";
+                datatypes.style.display = "none";
+                reserved.style.display = "none";
                 arithmetic.style.display = "none"; // Hide the arithmetic content
             }
-            }
+        }
 
 
             function toggleMode() {
