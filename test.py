@@ -1,1 +1,1 @@
-ysuw
+print("Hello World")
