@@ -250,7 +250,6 @@ transform: scale(1.1);
     border-radius: 8px;
     transition: background 3s ease;
     background: linear-gradient(to right, #FBACCC, #F1D1D0); 
-    /* color: #fff;  */
     border: 2px solid #FBACCC; 
     align-self: center;
 }
