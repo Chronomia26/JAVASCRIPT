@@ -151,6 +151,12 @@ animation: fade-in 0.5s ease-in-out;
     animation: fade-in 0.5s ease-in-out;
 }
 
+
+#decisionmaking {
+    height: 800vh;
+    animation: fade-in 0.5s ease-in-out;
+}
+
 #main_title {
 font-family: courier;
 margin-top: 5%;
