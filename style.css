@@ -142,6 +142,11 @@ animation: fade-in 0.5s ease-in-out;
     animation: fade-in 0.5s ease-in-out;
 }
 
+#arithmetic {
+    height: 300vh;
+    animation: fade-in 0.5s ease-in-out;
+}
+
 #main_title {
 font-family: courier;
 margin-top: 5%;
