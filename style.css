@@ -108,11 +108,11 @@ animation: fade-in 0.5s ease-in-out;
 @keyframes fade-in{
     from {
         opacity: 0;
-        transform: translateY(40px);
+        transform: translate(40px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translate(0);
     }
 } 
 
@@ -126,7 +126,7 @@ animation: fade-in 0.5s ease-in-out;
     font-weight: bold;
 }
 
-#intro {
+#whatisjavascript {
     height: 180vh;
     animation: fade-in 0.5s ease-in-out;
 }
@@ -143,7 +143,7 @@ animation: fade-in 0.5s ease-in-out;
 }
 
 #arithmetic {
-    height: 300vh;
+    height: 600vh;
     animation: fade-in 0.5s ease-in-out;
 }
 
