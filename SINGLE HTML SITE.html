@@ -43,7 +43,7 @@
             <div id="side_title">
                 <b>INTRODUCTION TO JAVASCRIPT</b>
             </div>
-            <div id="side_list">
+            <div id="side_list">    
                 <ul>
                     <li><a href="#" onclick="changeContent(this)">What is JavaScript?</a></li>
                     <li><a href="#" onclick="changeContent(this)">Datatypes and Variables</a></li>
@@ -247,17 +247,6 @@
                     </table>
 
                 </div>
-            </div>
-
-            <div id="decisionmaking" class="show">
-              <div id="main_title">
-                <b>Decision Making Statements 🐾</b>
-              </div>
-              <div id="main_content">
-                <p>In JavaScript, decision-making statements allow you to control the flow of your code based on conditions. The most common ones are if, else if, and else. They let you execute different blocks of code depending on whether a condition is true or false.</p>
-                
-                <p></p>
-              </div>              
             </div>
             
             <div id="arithmetic" class="show">
@@ -514,6 +503,127 @@
                 </div>
         </div>
 
+        <div id="decisionmaking" class="show">
+            <div id="main_title">
+              <b>Decision Making Statements 🐾</b>
+            </div>
+            <div id="main_content">
+              <p>In JavaScript, decision-making statements allow you to control the flow of your code based on conditions.
+              The most common ones are if, else if, and else. They let you execute different blocks of code depending
+              on whether a condition is true or false.<br><br>
+              While writing a program, there may be a situation when you need
+              to adopt one out of a given set of paths. In such cases, you need
+              to use conditional statements that allow your program to make
+              correct decisions and perform right actions.<br><br>
+              JavaScript supports conditional statements which are used to
+              perform different actions based on different conditions. Here we
+              will explain the if..else statement.</p>
+              <br>
+              <h3><b>Flow Chart of if-else</b></h3>
+              <img src="IMAGES/flowchart.png" alt="WIf-else Flow chart">
+              <p>JavaScript supports the following forms of if..else statement −</p>
+              <ul>
+                <li>if statement</li>
+                <li>if...else statement</li>
+                <li>if...else if... statement</li>
+              </ul>
+              <div id="script">
+                    &lt;html&gt;
+                    <blockquote>
+                        &lt;body&gt;
+                        <blockquote>
+                            &lt;script type = "text/javascript"&gt;
+                            <blockquote>
+                                &lt;!--
+                                <blockquote>
+                                    var age = 20;<br>
+                                    <br>
+                                    if(age > 18); { <br>
+                                    <blockquote>
+                                        document.write("&lt;b&gt;Qualifies for driving&lt;/b&gt;";)
+                                    </blockquote>
+                                    }
+                                </blockquote>
+                                //--&gt;
+                            </blockquote>
+                            &lt;/script&gt;<br>
+                            Set the variables to different values and then try...
+                        </blockquote>
+                        &lt;/body&gt;
+                    </blockquote>
+                    &lt;/html&gt;
+                </div>
+                <br><br>
+                <div id="script">
+                    &lt;html&gt;
+                    <blockquote>
+                        &lt;body&gt;
+                        <blockquote>
+                            &lt;script type = "text/javascript"&gt;
+                            <blockquote>
+                                &lt;!--
+                                <blockquote>
+                                    var age = 15;<br>
+                                    <br>
+                                    if(age > 18); { <br>
+                                    <blockquote>
+                                        document.write("&lt;b&gt;Qualifies for driving&lt;/b&gt;";)
+                                    </blockquote>
+                                    } else {<br>
+                                    <blockquote>
+                                        document.write("&lt;b&gt;Does not qualify for driving&lt;/b&gt;";)
+                                    </blockquote>
+                                    }
+                                </blockquote>
+                                //--&gt;
+                            </blockquote>
+                            &lt;/script&gt;<br>
+                            Set the variables to different values and then try...
+                        </blockquote>
+                        &lt;/body&gt;
+                    </blockquote>
+                    &lt;/html&gt;<br>
+                    &lt;html&gt;
+                    <blockquote>
+                        &lt;body&gt;
+                        <blockquote>
+                            &lt;script type = "text/javascript"&gt;
+                            <blockquote>
+                                &lt;!--
+                                <blockquote>
+                                    var book = "maths";<br>
+                                    <br>
+                                    if(book == "history"); { <br>
+                                    <blockquote>
+                                        document.write("&lt;b&gt;History Book&lt;/b&gt;";)
+                                    </blockquote>
+                                    } else if (book == "maths"); {<br>
+                                    <blockquote>
+                                        document.write("&lt;b&gt;Maths Book&lt;/b&gt;";)
+                                    </blockquote>
+                                    } else if (book == "economics"); {<br>
+                                        <blockquote>
+                                            document.write("&lt;b&gt;Economics Book&lt;/b&gt;";)
+                                        </blockquote>
+                                    } else {<br>
+                                        <blockquote>
+                                            document.write("&lt;b&gt;>Unknown Book&lt;/b&gt;";)
+                                        </blockquote>
+                                    }
+                                </blockquote>
+                                //--&gt;
+                            </blockquote>
+                            &lt;/script&gt;<br>
+                            Set the variables to different values and then try...
+                        </blockquote>
+                        &lt;/body&gt;
+                    </blockquote>
+                    &lt;/html&gt;
+                </div>
+            
+            </div>              
+          </div>
+
         <div id="loops" class="show">
 
             <div id="main_title">
@@ -688,7 +798,8 @@
                                         <blockquote>
                                         document.write("Current Count : " + count +);<br> 
                                         document.write("&lt;br /&gt;");
-                                        </blockquote>   
+                                        </blockquote>
+                                        }   
                                     document.write("Loop stopped!"); <br>
                                 </blockquote>
                                 //--&gt;
@@ -702,7 +813,129 @@
                 </div>
             </div>
         </div>
-
+        <div id="functions" class="show">
+            <div id="main_title">
+                <b>JavaScript - Functions 🐾</b>
+            </div>
+            <div id="main_content">
+                <p>
+                    A function is a group of reusable code which can be called
+                    anywhere in your program. This eliminates the need of writing the
+                    same code again and again. It helps programmers in writing
+                    modular codes. Functions allow a programmer to divide a big
+                    program into a number of small and manageable functions.
+                </p>
+                <h3><b>Function Definition</b></h3>
+                <p>Before we use a function, we need to define it. The most common
+                    way to define a function in JavaScript is by using
+                    the function keyword, followed by a unique function name, a list
+                    of parameters (that might be empty), and a statement block
+                    surrounded by curly braces.
+                </p>
+                <h3><b>Syntax</b></h3>
+                <p>The basic syntax is shown here.</p>
+                <code><i>
+                    &lt;script type = "text/javascript"&gt;
+                    <blockquote>
+                        &lt;!--
+                        <blockquote>
+                            function functionname(parameter-list) {
+                                <blockquote>
+                                    statements
+                                </blockquote>
+                            }
+                        </blockquote>
+                        //--&gt;
+                    </blockquote>
+                    &lt;/script&gt;<br>
+                    <br><br><br>
+                </i></code>
+                <h3><b>Example</b></h3>
+                <p>Try the following example. It defines a function called sayHello
+                    that takes no parameters −
+                </p>
+                <div id="script">
+                    &lt;script type = "text/javascript"&gt;
+                    <blockquote>
+                        &lt;!--
+                        <blockquote>
+                            function sayHello(){
+                                <blockquote>
+                                alert("Hello there");
+                                </blockquote>
+                            }   
+                        </blockquote>
+                        //--&gt;
+                    </blockquote>
+                    &lt;/script&gt;<br>
+                </div>
+                <p>Calling a Function</p>
+                <p>To invoke a function somewhere later in the script, you would
+                    simply need to write the name of that function as shown in the
+                    following code.</p>
+                <div id="script">
+                    &lt;html&gt;
+                    <blockquote>
+                        &lt;head&gt;
+                        <blockquote>
+                            &lt;script type = "text/javascript"&gt;
+                            <blockquote>
+                                function sayHello(){
+                                    <blockquote>
+                                        document.write("Hello there!");
+                                    </blockquote>
+                                }
+                            </blockquote>
+                            &lt;/script&gt;<br>
+                        </blockquote>
+                        &lt;body&gt;
+                        <blockquote>
+                            &lt;p&gt;Click the following button to call the function&lt;/p&gt;<br>
+                            &lt;form&gt;
+                            <blockquote>
+                                &lt;input type = "button" onclick = "sayHello()" value = "Say Hello"&gt;
+                            </blockquote>
+                            &lt;/form&gt;<br>
+                            &lt;p&gt;Use different text in write method and then try...&lt;/p&gt;
+                        </blockquote>
+                        &lt;/body&gt;
+                    </blockquote>
+                    &lt;/html&gt;
+                </div>
+                <br><br>
+                <p>Function Parameters</p>
+                <div id="script">
+                    &lt;html&gt;
+                    <blockquote>
+                        &lt;head&gt;
+                        <blockquote>
+                            &lt;script type = "text/javascript"&gt;
+                            <blockquote>
+                                function sayHello(name,age){
+                                    <blockquote>
+                                        document.write(name + "is" + age + "years old.");
+                                    </blockquote>
+                                }
+                            </blockquote>
+                            &lt;/script&gt;<br>
+                        </blockquote>
+                        &lt;body&gt;
+                        <blockquote>
+                            &lt;p&gt;Click the following button to call the function&lt;/p&gt;<br>
+                            &lt;form&gt;
+                            <blockquote>
+                                &lt;input type = "button" onclick = "sayHello('Zara',7)" value = "Say Hello"&gt;
+                            </blockquote>
+                            &lt;/form&gt;<br>
+                            &lt;p&gt;Use different text in write method and then try...&lt;/p&gt;
+                        </blockquote>
+                        &lt;/body&gt;
+                    </blockquote>
+                    &lt;/html&gt;
+                </div>
+                <br><br>
+            </div>
+        </div>
           <div id = "controls" >
 			<div id = "back">
 				<a href = "#" onclick="arrow(this)">&lt;</a>
@@ -722,6 +955,7 @@
             var arithmetic = document.getElementById('arithmetic');
             var loops = document.getElementById('loops');
             var decisionmaking = document.getElementById('decisionmaking');
+            var functions = document.getElementById('functions');
 
             function changeContent(link) {
 
@@ -732,6 +966,8 @@
                     arithmetic.style.display = "none";
                     decisionmaking.style.display = "none";
                     loops.style.display = "none";
+                    functions.style.display = "none";
+
                 } else if (link.textContent == "Reserved Words") {
                     whatisjavascript.style.display = "none";
                     datatypes.style.display = "none";
@@ -739,6 +975,8 @@
                     arithmetic.style.display = "none";
                     decisionmaking.style.display = "none";
                     loops.style.display = "none";
+                    functions.style.display = "none";
+
                 } else if (link.textContent == "What is an Operator?") {
                     whatisjavascript.style.display = "none";
                     datatypes.style.display = "none";
@@ -746,6 +984,7 @@
                     arithmetic.style.display = "block";
                     decisionmaking.style.display = "none";
                     loops.style.display = "none";
+                    functions.style.display = "none";
 
                 } else if (link.textContent == "Decision Making Statements") {
                     whatisjavascript.style.display = "none";
@@ -754,6 +993,7 @@
                     arithmetic.style.display = "none";
                     decisionmaking.style.display = "block";
                     loops.style.display = "none";
+                    functions.style.display = "none";
                 
                 } else if (link.textContent == "Loops") {
                     whatisjavascript.style.display = "none";
@@ -762,6 +1002,16 @@
                     arithmetic.style.display = "none";
                     loops.style.display = "block";
                     decisionmaking.style.display ="none";
+                    functions.style.display = "none";
+                
+                } else if (link.textContent == "Functions") {
+                    whatisjavascript.style.display = "none";
+                    datatypes.style.display = "none";
+                    reserved.style.display = "none";
+                    arithmetic.style.display = "none";
+                    loops.style.display = "none";
+                    decisionmaking.style.display ="none";
+                    functions.style.display ="block";
 
                 } else {
                     whatisjavascript.style.display = "block";
@@ -770,6 +1020,7 @@
                     arithmetic.style.display = "none";
                     loops.style.display = "none";
                     decisionmaking.style.display = "none";
+                    functions.style.display = "none";
                 }
             }
 
@@ -781,7 +1032,16 @@
                         reserved.style.display = "none";
                         arithmetic.style.display = "none";
                         decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                        functions.style.display = "block";
+                    } else if (functions.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        arithmetic.style.display = "none";
+                        decisionmaking.style.display = "none";
                         loops.style.display = "block";
+                        functions.style.display = "none";
                     } else if (loops.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
@@ -789,6 +1049,7 @@
                         arithmetic.style.display = "none";
                         decisionmaking.style.display = "block";
                         loops.style.display = "none";
+                        functions.style.display = "none";
                     }else if (decisionmaking.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
@@ -796,6 +1057,7 @@
                         arithmetic.style.display = "block";
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
+                        functions.style.display = "none";
                     } else if (arithmetic.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
@@ -803,6 +1065,7 @@
                         arithmetic.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
+                        functions.style.display = "none";
                     } else if (reserved.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "block";
@@ -810,6 +1073,7 @@
                         arithmetic.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
+                        functions.style.display = "none";
                     } else {
                         whatisjavascript.style.display = "block";
                         datatypes.style.display = "none";
@@ -817,6 +1081,7 @@
                         arithmetic.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
+                        functions.style.display = "none";
                     }
                 } else {
                     if (whatisjavascript.style.display == "block"){
@@ -826,6 +1091,7 @@
                         arithmetic.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
+                        functions.style.display = "none";
                     } else if (datatypes.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
@@ -833,6 +1099,7 @@
                         arithmetic.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
+                        functions.style.display = "none";
                     } else if (reserved.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
@@ -840,6 +1107,7 @@
                         arithmetic.style.display = "block";
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
+                        functions.style.display = "none";
                     } else if (arithmetic.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
@@ -847,6 +1115,7 @@
                         arithmetic.style.display = "none";
                         decisionmaking.style.display = "block";
                         loops.style.display = "none";
+                        functions.style.display = "none";
                     } else if (decisionmaking.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
@@ -854,6 +1123,15 @@
                         arithmetic.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "block";
+                        functions.style.display = "none";
+                    } else if (loops.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        arithmetic.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                        functions.style.display = "block";
                     } else {
                         whatisjavascript.style.display = "block";
                         datatypes.style.display = "none";
