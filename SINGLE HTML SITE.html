@@ -1,189 +1,346 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>JavaScript Introduction</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Introduction</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="IMAGES/icon.png">
+    <style>
+        .show {
+            display: none;
+        }
+
+        .light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .dark-mode {
+            background-color: #333333;
+            color: #ffffff;
+        }
+		#toggle-button {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
 </head>
 
-<body>
-  <div id="content">
-    <header>
-      <div id="header_img">
-        <a href="MAIN.html">
-          <img src="IMAGES/logo.png" alt="NEKODE">
-        </a>
-      </div>
-    </header>
-
-    <div id="side">
-      <div id="side_title">
-        <b>INTRODUCTION TO JAVASCRIPT</b>
-      </div>
-      <div id="side_list">
-        <ul>
-          <li><a href = "#" id = "link1" class="font" onclick="changeContent(this)">What is JavaScript?</a></li>
-          <li><a href = "#" id = "link2"  onclick="changeContent(this)">Datatypes and Variables</a></li>
-          <li><a href = "#" id = "link3"  onclick="changeContent(this)">Reserved Words</a></li>
-          <li><a href = "#" id = "link4"  onclick="changeContent(this)">What is an Operator?</a ></li>
-          <li><a href = "#" id = "link5"  onclick="changeContent(this)">Decision Making Statements</a></li>
-          <li><a href = "#" id = "link6"  onclick="changeContent(this)">Loops</a></li>
-          <li><a href = "#" id = "link7"  onclick="changeContent(this)">Functions</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div id="main">
-      <div id="intro" class = "show" style="display: block;">
-        <div id="main_title">
-          <b>JavaScript Introduction</b>
+<body class="light-mode">
+    <div id="content">
+        <header>
+            <div id="header_img">
+                <a href="MAIN.html">
+                    <img src="IMAGES/logo.png" alt="NEKODE">
+                </a>
+            </div>
+            
+        </header>
+		
+        <div id="side">
+            <div id="side_title">
+                <b>INTRODUCTION TO JAVASCRIPT</b>
+            </div>
+            <div id="side_list">
+                <ul>
+                    <li><a href="#" onclick="changeContent(this)">What is JavaScript?</a></li>
+                    <li><a href="#" onclick="changeContent(this)">Datatypes and Variables</a></li>
+                    <li><a href="#" onclick="changeContent(this)">Reserved Words</a></li>
+                    <li><a href="#" onclick="changeContent(this)">What is an Operator?</a></li>
+                    <li><a href="#" onclick="changeContent(this)">Decision Making Statements</a></li>
+                    <li><a href="#" onclick="changeContent(this)">Loops</a></li>
+                    <li><a href="#" onclick="changeContent(this)">Functions</a></li>
+                </ul>
+            </div>
         </div>
-      </div>  
-	  <div id="datatypes" class = "show">
-			<div id="main_title">
-				<b>JavaScript Datatypes</b>
-			</div>
-			<div id="main_content" style="padding-bottom: 150px">
-				<p>One of the most fundamental characteristics of a programming
-				language is the set of data types it supports. These are the type
-				of values that can be represented and manipulated in a
-				programming language. JavaScript allows you to work with three primitive data types −</p>
-				<ul style="margin-left: 5%;">
-					<li style="margin-bottom: 0; background: none"><b>Numbers</b>, eg. <i>123, 120.50 etc.</i></li>
-					<li style="margin-bottom: 0; background: none"><b>Strings</b> of text e.g. <i>"This text string" etc.</i></li>
-					<li style="margin-bottom: 0; background: none"><b>Boolean</b> e.g. <i>true or false.</i></li>
-				</ul>
-				<p style="font-size: 18px"><i><b>Note</b></i> − JavaScript does not make a distinction between integer
-				values and floating-point values. All numbers in JavaScript are
-				represented as floating-point values. JavaScript represents
-				numbers using the 64-bit floating-point format defined by the IEEE
-				754 standard.</p>
-			</div>
-			<hr>
-			<div id="main_title">
-				<b>JavaScript Variables</b>
-			</div>
-			<div id="main_content">
-				<p>Before you use a variable in a JavaScript program, you must
-				declare it. Variables are declared with the <b>var</b> keyword as follows.</p>
-				<div id="script">
-					&lt;script type&gt; = "text/javascript"> <br>
-					<blockquote>&lt;!--<br></blockquote>
-					<blockquote><blockquote>var money;<br></blockquote></blockquote>
-					<blockquote><blockquote>var name;<br></blockquote></blockquote>
-					<blockquote>//--&gt;<br></blockquote>
-					&lt;/script&gt;<br>
-				</div>
-			<br><br>
-				<div id="script">
-					&lt;script type&gt; = "text/javascript"<br>
-					<blockquote>&lt;!--<br></blockquote>
-					<blockquote><blockquote>var name = "Ali";<br></blockquote></blockquote>
-					<blockquote><blockquote>var money;<br></blockquote></blockquote>
-					<blockquote><blockquote>money = 2000.50;<br></blockquote></blockquote>
-					<blockquote>//--&gt;<br></blockquote>
-					&lt;/script&gt;<br>
-				</div>
-			</div>
-			
-			
-      </div>
-	  <div id = "reserved" class = "show">
-		<div id="main_title">
-			<b>JavaScript Reserved Words</b>
-		</div>
-		<div id="main_content" style="padding-bottom: 150px">
-			<p>A list of all the reserved words in JavaScript are given in the
-			following table. They cannot be used as JavaScript variables,
-			functions, methods, loop labels, or any object names.</p>
-			<table>
-				<tr>
-					<td>abstract</td>
-					<td>else</td> 
-					<td>instanceof</td>
-					<td>switch</td>
-				</tr>
-				<tr>
-					<td>boolean</td>
-					<td>enum</td> 
-					<td>int</td>
-					<td>synchronized</td>
-				</tr>
-				<tr>
-					<td>abstract</td>
-					<td>else</td> 
-					<td>instanceof</td>
-					<td>switch</td>
-				</tr>
-				<tr>
-					<td>abstract</td>
-					<td>else</td> 
-					<td>instanceof</td>
-					<td>switch</td>
-				</tr>
-				<tr>
-					<td>abstract</td>
-					<td>else</td> 
-					<td>instanceof</td>
-					<td>switch</td>
-				</tr>
-				<tr>
-					<td>abstract</td>
-					<td>else</td> 
-					<td>instanceof</td>
-					<td>switch</td>
-				</tr>
-			</table>
-		</div>
-	  </div>
+
+        <div id="main">
+            <div id="intro" class="show" style="display: block;">
+                <div id="main_title">
+                    <b>JavaScript Introduction</b>
+                </div>
+            </div>
+            <div id="whatisjavascript" class="show">
+                <div id="main_title">
+                    <b>What is JavaScript?</b>
+                </div>
+                <div id="main_content">
+                    <p>Imagine web pages are like clothing that you wear. You can only do so much with the clothes - they
+                        cover you and provide protection, but are mostly static. JavaScript is like adding buttons and
+                        zippers to the clothes. Instead of just passively wearing them, you can now interact with them.
+                        You can open, zip, and button your clothing to dynamically change how you're protected and uncover
+                        different parts as needed.</p>
+                    <p>Similarly, web pages originally were mostly static content, like HTML and CSS that structured and
+                        styled the page. But just like adding interactive elements like buttons and zippers to clothes,
+                        JavaScript enables you to add dynamic functionality and effects to web pages. You can respond to
+                        user actions, detect clicks, change content, validate input, animate objects, load new
+                        data—things that make web pages feel engaging and responsive.</p>
+                    <p>Zippers and buttons are cheap and lightweight versus extremely fancy and complex mechanisms yet
+                        enable so much extra functionality. Similarly, JavaScript code is relatively simple,
+                        lightweight and easy to learn, but unlocks tremendous interactivity. Adding a bit of JavaScript
+                        code, even to static HTML/CSS sites, brings pages to life just like adding zippers and buttons
+                        give plain clothes customizable functionality.</p>
+                </div>
+            </div>
+
+            <div id="datatypes" class="show">
+                <div id="main_title">
+                    <b>JavaScript Datatypes</b>
+                </div>
+                <div id="main_content" style="padding-bottom: 150px">
+                    <p>One of the most fundamental characteristics of a programming language is the set of data types it
+                        supports. These are the type of values that can be represented and manipulated in a programming
+                        language. JavaScript allows you to work with three primitive data types −</p>
+                    <ul style="margin-left: 5%;">
+                        <li style="margin-bottom: 0; background: none"><b>Numbers</b>, eg. <i>123, 120.50 etc.</i></li>
+                        <li style="margin-bottom: 0; background: none"><b>Strings</b> of text e.g.
+                            <i>"This text is a string" etc.</i></li>
+                        <li style="margin-bottom: 0; background: none"><b>Boolean</b> e.g. <i>true or false.</i></li>
+                    </ul>
+                    <p style="font-size: 18px"><i><b>Note</b></i> − JavaScript does not make a distinction between
+                        integer values and floating-point values. All numbers in JavaScript are represented as
+                        floating-point values. JavaScript represents numbers using the 64-bit floating-point format
+                        defined by the IEEE 754 standard.</p>
+                </div>
+                <hr>
+                <div id="main_title">
+                    <b>JavaScript Variables</b>
+                </div>
+                <div id="main_content">
+                    <p>Before you use a variable in a JavaScript program, you must declare it. Variables are declared
+                        with the <b>var</b> keyword as follows.</p>
+                    <div id="script">
+                        &lt;script type&gt; = "text/javascript"> <br>
+                        <blockquote>&lt;!--<br></blockquote>
+                        <blockquote><blockquote>var money;<br></blockquote></blockquote>
+                        <blockquote><blockquote>var name;<br></blockquote></blockquote>
+                        <blockquote>//--&gt;<br></blockquote>
+                        &lt;/script&gt ;<br>
+                    </div>
+                    <br><br>
+                    <div id="script">
+                        &lt;script type&gt; = "text/javascript"<br>
+                        <blockquote>&lt;!--<br></blockquote>
+                        <blockquote><blockquote>var name = "Ali";<br></blockquote></blockquote>
+                        <blockquote><blockquote>var money;<br></blockquote></blockquote>
+                        <blockquote><blockquote>money = 2000.50;<br></blockquote></blockquote>
+                        <blockquote>//--&gt;<br></blockquote>
+                        &lt;/script&gt;<br>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reserved" class="show">
+                <div id="main_title">
+                    <b>JavaScript Reserved Words</b>
+                </div>
+                <div id="main_content" style="padding-bottom: 150px">
+                    <p>A list of all the reserved words in JavaScript are given in the following table. They <b>CANNOT</b> be
+                        used as JavaScript variables, functions, methods, loop labels, or any object names.</p>
+                    <table id="main_content" style="margin-left: 5px;">
+                        <tr>
+                            <td>abstract</td>
+                            <td>arguments</td>
+                            <td>await*</td>
+                            <td>boolean</td>
+                        </tr>
+                        <tr>
+                            <td>break</td>
+                            <td>byte</td>
+                            <td>case</td>
+                            <td>catch</td>
+                        </tr>
+                        <tr>
+                            <td>char</td>
+                            <td>class*</td>
+                            <td>const</td>
+                            <td>continue</td>
+                        </tr>
+                        <tr>
+                            <td>debugger</td>
+                            <td>default</td>
+                            <td>delete</td>
+                            <td>do</td>
+                        </tr>
+                        <tr>
+                            <td>double</td>
+                            <td>else</td>
+                            <td>enum*</td>
+                            <td>eval</td>
+                        </tr>
+                        <tr>
+                            <td>export*</td>
+                            <td>extends*</td>
+                            <td>false</td>
+                            <td>final</td>
+                        </tr>
+                        <tr>
+                            <td>finally</td>
+                            <td>float</td>
+                            <td>for</td>
+                            <td>function</td>
+                        </tr>
+                        <tr>
+                            <td>goto</td>
+                            <td>if</td>
+                            <td>implements</td>
+                            <td>import*</td>
+                        </tr>
+                        <tr>
+                            <td>in</td>
+                            <td>instanceof</td>
+                            <td>int</td>
+                            <td>interface</td>
+                        </tr>
+                        <tr>
+                            <td>let*</td>
+                            <td>long</td>
+                            <td>native</td>
+                            <td>new</td>
+                        </tr>
+                        <tr>
+                            <td>null</td>
+                            <td>package</td>
+                            <td>private</td>
+                            <td>protected</td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>return</td>
+                            <td>short</td>
+                            <td>static</td>
+                        </tr>
+                        <tr>
+                            <td>super*</td>
+                            <td>switch</td>
+                            <td>synchronized</td>
+                            <td>this</td>
+                        </tr>
+                        <tr>
+                            <td>throw</td>
+                            <td>throws</td>
+                            <td>transient</td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
+                            <td>try</td>
+                            <td>typeof</td>
+                            <td>var</td>
+                            <td>void</td>
+                        </tr>
+                        <tr>
+                            <td>volatile</td>
+                            <td>while</td>
+                            <td>with</td>
+                            <td>yield</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+            <div id="arithmetic" class="show">
+                <div id="main_title" style="padding-bottom: 50px">
+                    <b>The Cat's Clever Calculations 🐾
+                        <br>What is an Operator?
+                    </b>
+                </div>
+                <div id="main_content">
+                    <p>Let's dive into the world of arithmetic with our clever cat friends. Just like cats gracefully navigate
+                        different surfaces, JavaScript arithmetic operators perform various calculations on numbers.</p>
+                    <p>Imagine our cat, Whiskers, calculating her treats with the following operators:</p>
+                    <ul>
+                        <li><b>Addition (+):</b> Whiskers loves treats, and if we add more treats, she gets even happier.
+                            <br>Example: <code>let totalTreats = treatsInBowl + treatsFromYou;</code></li>
+                            <br>
+                        <li><b>Subtraction (-):</b> Sometimes Whiskers shares treats with her friends. Subtraction helps us know
+                            how many treats are left.
+                            <br>Example: <code>let treatsLeft = totalTreats - treatsGiven;</code></li>
+                            <br>
+                        <li><b>Multiplication (*):</b> Whiskers is a clever cat, and multiplication helps us calculate the total
+                            happiness when treats are shared with multiple cats.
+                            <br>Example: <code>let totalHappiness = happinessPerCat * numberOfCats;</code></li>
+                            <br>
+                        <li><b>Division (/):</b> Dividing treats ensures each cat gets a fair share. Whiskers loves equality.
+                            <br>Example: <code>let treatsPerCat = totalTreats / numberOfCats;</code></li>
+                            <br>
+                        <li><b>Modulus (%):</b> Sometimes we have treats left, and Whiskers wants to know the remainder after
+                            sharing. Modulus helps with that.
+                            <br>Example: <code>let leftoverTreats = totalTreats % numberOfCats;</code></li>
+                            <br>
+                    </ul>
+                </div>
+                <hr>
+                <div id="main_content">
+
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            function changeContent(link) {
+            var intro = document.getElementById('intro');
+            var datatypes = document.getElementById('datatypes');
+            var reserved = document.getElementById('reserved');
+            var whatisjavascript = document.getElementById('whatisjavascript');
+            var arithmetic = document.getElementById('arithmetic'); // Add this line
+
+            if (link.textContent == "What is JavaScript?") {
+                intro.style.display = "none";
+                datatypes.style.display = "none";
+                reserved.style.display = "none";
+                whatisjavascript.style.display = "block";
+                arithmetic.style.display = "none"; // Hide the arithmetic content
+            } else if (link.textContent == "Datatypes and Variables") {
+                intro.style.display = "none";
+                datatypes.style.display = "block";
+                reserved.style.display = "none";
+                whatisjavascript.style.display = "none";
+                arithmetic.style.display = "none"; // Hide the arithmetic content
+            } else if (link.textContent == "Reserved Words") {
+                intro.style.display = "none";
+                datatypes.style.display = "none";
+                reserved.style.display = "block";
+                whatisjavascript.style.display = "none";
+                arithmetic.style.display = "none"; // Hide the arithmetic content
+            } else if (link.textContent == "What is an Operator?") {
+            intro.style.display = "none";
+            datatypes.style.display = "none";
+            reserved.style.display = "none";
+            whatisjavascript.style.display = "none";
+            arithmetic.style.display = "block"; // Show the arithmetic content
+            } else {
+                intro.style.display = "block";
+                datatypes.style.display = "none";
+                reserved.style.display = "none";
+                whatisjavascript.style.display = "none";
+                arithmetic.style.display = "none"; // Hide the arithmetic content
+            }
+            }
+
+
+            function toggleMode() {
+                var body = document.body;
+
+                // Toggle between light and dark mode
+                if (body.classList.contains('light-mode')) {
+                    body.classList.remove('light-mode');
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                    body.classList.add('light-mode');
+                }
+            }
+        </script>
     </div>
 
-    <script>
-    function changeContent(link) {
-		var intro = document.getElementById('intro');
-		var datatypes = document.getElementById('datatypes');
-		var reserved = document.getElementById('reserved');
-		var link1 = document.getElementById('link1')
-		var link2 = document.getElementById('link2')
-		var link3 = document.getElementById('link3')
-		var link4 = document.getElementById('link4')
-		var link5 = document.getElementById('link5')
-		var link6 = document.getElementById('link6')
-		var link7 = document.getElementById('link7')
-        if (link.textContent == "Datatypes and Variables") {
-			intro.style.display = "none";
-			datatypes.style.display = "block";
-			reserved.style.display = "none"
-
-			link1.classList.remove("font");
-			link2.classList.add("font");
-			link3.classList.remove("font");
-
-		} else if (link.textContent == "Reserved Words") {
-			intro.style.display = "none";
-			datatypes.style.display = "none";
-			reserved.style.display = "block"
-			
-			link1.classList.remove("font");
-			link2.classList.remove("font");
-			link3.classList.add("font");
-
-        } else {
-			intro.style.display = "block";
-			datatypes.style.display = "none";
-			reserved.style.display = "none";
-			
-			link1.classList.add("font");
-			link2.classList.remove("font");
-			link3.classList.remove("font");
-		}
-	}
-    </script>
-  </div>
-
-  <footer>
-    <p>&copy; 2023 Your Website. All rights reserved.</p>
-  </footer>
+    <footer>
+		<button id="toggle-button" onclick="toggleMode()">Toggle Mode</button>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
