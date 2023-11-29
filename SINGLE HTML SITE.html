@@ -236,6 +236,12 @@
                 </div>
             </div>
 
+            <div id="decisionmaking" class="show">
+              <div id="main_title">
+                <b>Testing</b>
+              </div>
+            </div>
+            
             <div id="arithmetic" class="show">
                 <div id="main_title">
                     <b>The Cat's Clever Calculations 🐾: What is an Operator?</b>
@@ -365,27 +371,38 @@
             var reserved = document.getElementById('reserved');
             var whatisjavascript = document.getElementById('whatisjavascript');
             var arithmetic = document.getElementById('arithmetic'); // Add this line
+            var decisionmaking = document.getElementById('decisionmaking');
 
             if (link.textContent == "Datatypes and Variables") {
                 whatisjavascript.style.display = "none";
                 datatypes.style.display = "block";
                 reserved.style.display = "none";
-                arithmetic.style.display = "none"; // Hide the arithmetic content
+                arithmetic.style.display = "none";
+                decisionmaking.style.display = "none" // Hide the arithmetic content
             } else if (link.textContent == "Reserved Words") {
                 whatisjavascript.style.display = "none";
                 datatypes.style.display = "none";
                 reserved.style.display = "block";
-                arithmetic.style.display = "none"; // Hide the arithmetic content
+                arithmetic.style.display = "none";
+                decisionmaking.style.display = "none" // Hide the arithmetic content
             } else if (link.textContent == "What is an Operator?") {
                 whatisjavascript.style.display = "none";
                 datatypes.style.display = "none";
                 reserved.style.display = "none";
-                arithmetic.style.display = "block"; // Show the arithmetic content
+                arithmetic.style.display = "block";
+                decisionmaking.style.display = "none" // Show the arithmetic content
+            } else if (link.textContent == "Decision Making Statements") {
+                whatisjavascript.style.display = "none";
+                datatypes.style.display = "none";
+                reserved.style.display = "none";
+                arithmetic.style.display = "none";
+                decisionmaking.style.display = "block"// Show the arithmetic content                
             } else {
                 whatisjavascript.style.display = "block";
                 datatypes.style.display = "none";
                 reserved.style.display = "none";
-                arithmetic.style.display = "none"; // Hide the arithmetic content
+                arithmetic.style.display = "none";
+                decisionmaking.style.display = "none"// Hide the arithmetic content
             }
         }
 
