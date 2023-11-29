@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Introduction</title>
+    <title>INTRODUCTION TO JAVASCRIPT</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="IMAGES/icon.png">
     <style>
@@ -13,17 +13,19 @@
         }
 
         .light-mode {
-            background-color: #ffffff;
             color: #000000;
         }
 
         .dark-mode {
-            background-color: #333333;
+            background-color: rgba(0,0,0,0.5);
             color: #ffffff;
         }
 		#toggle-button {
             position: relative;
             z-index: 1;
+        }
+        #controls {
+            bottom: 8.5%;
         }
     </style>
 </head>
@@ -698,18 +700,19 @@
             </div>
         </div>
 
-        <div id="decisionmaking" class="show">
-            <div id="main_title">
-              <b>Testing</b>
-            </div>
-          </div>
-
+          <div id = "controls" >
+			<div id = "back">
+				<a href = "#" onclick="arrow(this)">&lt;</a>
+			</div>
+			<div id = "next">
+				<a href = "#" onclick="arrow(this)">&gt;</a>
+			</div>
+		</div>	
         
     </div>
 
 
         <script>
-            function changeContent(link) {
             var datatypes = document.getElementById('datatypes');
             var reserved = document.getElementById('reserved');
             var whatisjavascript = document.getElementById('whatisjavascript');
@@ -717,60 +720,151 @@
             var loops = document.getElementById('loops');
             var decisionmaking = document.getElementById('decisionmaking');
 
-            if (link.textContent == "Datatypes and Variables") {
-                whatisjavascript.style.display = "none";
-                datatypes.style.display = "block";
-                reserved.style.display = "none";
-                arithmetic.style.display = "none";
-                decisionmaking.style.display = "none";
-                loops.style.display = "none";
-            } else if (link.textContent == "Reserved Words") {
-                whatisjavascript.style.display = "none";
-                datatypes.style.display = "none";
-                reserved.style.display = "block";
-                arithmetic.style.display = "none";
-                decisionmaking.style.display = "none";
-                loops.style.display = "none";
-            } else if (link.textContent == "What is an Operator?") {
-                whatisjavascript.style.display = "none";
-                datatypes.style.display = "none";
-                reserved.style.display = "none";
-                arithmetic.style.display = "block";
-                decisionmaking.style.display = "none";
-                loops.style.display = "none";
+            function changeContent(link) {
 
-            } else if (link.textContent == "Loops") {
-                whatisjavascript.style.display = "none";
-                datatypes.style.display = "none";
-                reserved.style.display = "none";
-                arithmetic.style.display = "none";
-                loops.style.display = "block";
-                decisionmaking.style.display ="none";
+                if (link.textContent == "Datatypes and Variables") {
+                    whatisjavascript.style.display = "none";
+                    datatypes.style.display = "block";
+                    reserved.style.display = "none";
+                    arithmetic.style.display = "none";
+                    decisionmaking.style.display = "none";
+                    loops.style.display = "none";
+                } else if (link.textContent == "Reserved Words") {
+                    whatisjavascript.style.display = "none";
+                    datatypes.style.display = "none";
+                    reserved.style.display = "block";
+                    arithmetic.style.display = "none";
+                    decisionmaking.style.display = "none";
+                    loops.style.display = "none";
+                } else if (link.textContent == "What is an Operator?") {
+                    whatisjavascript.style.display = "none";
+                    datatypes.style.display = "none";
+                    reserved.style.display = "none";
+                    arithmetic.style.display = "block";
+                    decisionmaking.style.display = "none";
+                    loops.style.display = "none";
 
-            } else if (link.textContent == "Decision Making Statements") {
-                whatisjavascript.style.display = "none";
-                datatypes.style.display = "none";
-                reserved.style.display = "none";
-                arithmetic.style.display = "none";
-                decisionmaking.style.display = "block";
-                loops.style.display = "none";
-            } else {
-                whatisjavascript.style.display = "block";
-                datatypes.style.display = "none";
-                reserved.style.display = "none";
-                arithmetic.style.display = "none";
-                decisionmaking.style.display = "none"// Hide the arithmetic content
-                arithmetic.style.display = "none";
-                loops.style.display = "none";
-                decisionmaking.style.display = "none";
+                } else if (link.textContent == "Decision Making Statements") {
+                    whatisjavascript.style.display = "none";
+                    datatypes.style.display = "none";
+                    reserved.style.display = "none";
+                    arithmetic.style.display = "none";
+                    decisionmaking.style.display = "block";
+                    loops.style.display = "none";
+                
+                } else if (link.textContent == "Loops") {
+                    whatisjavascript.style.display = "none";
+                    datatypes.style.display = "none";
+                    reserved.style.display = "none";
+                    arithmetic.style.display = "none";
+                    loops.style.display = "block";
+                    decisionmaking.style.display ="none";
+
+                } else {
+                    whatisjavascript.style.display = "block";
+                    datatypes.style.display = "none";
+                    reserved.style.display = "none";
+                    arithmetic.style.display = "none";
+                    loops.style.display = "none";
+                    decisionmaking.style.display = "none";
+                }
             }
-        }
 
+            function arrow(link) {
+                if (link.textContent == '<') {
+                    if (whatisjavascript.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        arithmetic.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "block";
+                    } else if (loops.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        arithmetic.style.display = "none";
+                        decisionmaking.style.display = "block";
+                        loops.style.display = "none";
+                    }else if (decisionmaking.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        arithmetic.style.display = "block";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                    } else if (arithmetic.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "block";
+                        arithmetic.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                    } else if (reserved.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "block";
+                        reserved.style.display = "none";
+                        arithmetic.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                    } else {
+                        whatisjavascript.style.display = "block";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        arithmetic.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                    }
+                } else {
+                    if (whatisjavascript.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "block";
+                        reserved.style.display = "none";
+                        arithmetic.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                    } else if (datatypes.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "block";
+                        arithmetic.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                    } else if (reserved.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        arithmetic.style.display = "block";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                    } else if (arithmetic.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        arithmetic.style.display = "none";
+                        decisionmaking.style.display = "block";
+                        loops.style.display = "none";
+                    } else if (decisionmaking.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        arithmetic.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "block";
+                    } else {
+                        whatisjavascript.style.display = "block";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        arithmetic.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                    }
+                }
+            }
 
             function toggleMode() {
-                var body = document.body;
+                var body = document.getElementById('content');
 
-                // Toggle between light and dark mode
                 if (body.classList.contains('light-mode')) {
                     body.classList.remove('light-mode');
                     body.classList.add('dark-mode');
