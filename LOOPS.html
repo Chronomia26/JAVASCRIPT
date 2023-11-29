@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JavaScript Datatypes and Variables</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		#main {
+			height: 780vh
+		}
+	</style>
+</head>
+
+<body>
+	<div id = "content">
+		<header>
+			<div id = "header_img">
+				<a href = "MAIN.html">
+					<img src = "IMAGES/logo.png" alt = "NEKODE" >
+				</a>
+			</div> 
+		</header>
+
+		<div id="side">
+			<div id="side_title">
+				<b>INTRODUCTION TO JAVASCRIPT</b>
+			</div>
+			<div id="side_list">
+				<ul>
+					<li><a href="INTRO.html">What is JavaScript?</a></li>
+					<li><a href="DATATYPES.html">Datatypes and Variables</a></li>
+					<li><a href="RESERVED.html">Reserved Words</a></li>
+					<li><a href="OPERATORS.html">What is an Operator?</a></li>
+					<li><a href="DECISION.html">Desicion Making Statements</a></li>
+					<li><a href="LOOPS.html" style="font-weight: bold; color: crimson;">Loops</a></li>
+					<li><a href="wip.html">Functions</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="main">
+			<div id="main_title">
+                <b>The Cat's Creative Circuits 🐾: JavaScript Loops</b>
+            </div>
+
+            <div id="main_content">
+                <p>While writing a program, you may encounter a situation where you need to perform an action over and over again. 
+                    In such situations, you would need to write loop statements toreduce the number of lines.<br><br>
+                    JavaScript supports all the necessary loops to ease down thepressure of programming.</p>
+            </div>
+
+            <div id="main_title">
+                <b>The "while" Loop</b>
+            </div>
+
+            <div id="main_content">
+                <p>The most basic loop in JavaScript is the <b>while</b> loop which would
+                    be discussed in this chapter. The purpose of a <b>while</b> loop is to
+                    execute a statement or code block repeatedly as long as
+                    an <b>expression</b> is true. Once the expression becomes <b>false</b>, the
+                    loop terminates.</p>
+                <br>
+                <h3><b>Flow Chart</b></h3>
+                <p>The flow chart of <b>while loop</b> looks as follows −</p>
+                <img src="IMAGES/flowchart1.png" alt="While Loop Flow chart">
+                <h3><b>Syntax</b></h3>
+                <p>The syntax of while loop in JavaScript is as follows −</p>
+                <br>
+                <code><i>
+                while (expression) {
+                <blockquote> Statement(s) to be executed if expression is true</blockquote>
+                }</i>
+                <br><br><br>
+                </code>
+                <div id="script">
+                    &lt;html&gt;
+                    <blockquote>
+                        &lt;body&gt;
+                        <blockquote>
+                            &lt;script type = "text/javascript"&gt;
+                            <blockquote>
+                                &lt;!--
+                                <blockquote>
+                                    var count = 0;<br>
+                                    document.write("Starting Loop "); <br>
+                                    <br>
+                                    <blockquote>
+                                        while (count &lt; 10) {
+                                            <blockquote>
+                                            document.write("Current Count : " + count + "&lt;br /&gt;");<br> 
+                                            count++;
+                                            </blockquote>
+                                        }
+                                    </blockquote>
+                                    document.write("Loop stopped!"); <br>
+                                </blockquote>
+                                //--&gt;
+                            </blockquote>
+                            &lt;/script&gt;<br>
+                            Set the variables to different values and then try...
+                        </blockquote>
+                        &lt;/body&gt;
+                    </blockquote>
+                    &lt;/html&gt;
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="main_title">
+                <b>The "do... while" Loop</b>
+            </div>
+
+            <div id="main_content">
+                <p>The <b>do...while</b> loop is similar to the <b>while</b> loop except that the
+                    condition check happens at the end of the loop. This means that
+                    the loop will always be executed at least once, even if the
+                    condition is <b>false</b>.
+                    </p>
+                <br>
+                <h3><b>Flow Chart</b></h3>
+                <p>The flow chart of a <b>do-while</b> loop would be as follows −</p>
+                <img src="IMAGES/flowchart2.png" alt="Do While Loop Flow chart">
+                <h3><b>Syntax</b></h3>
+                <p>The syntax for <b>do-while</b> loop in JavaScript is as follows −</p>
+                <br>
+                <code><i>
+                do {
+                <blockquote> Statement(s) to be executed;</blockquote>
+                } while (expression);</i>
+                <br><br><br>
+                </code>
+                <div id="script">
+                    &lt;html&gt;
+                    <blockquote>
+                        &lt;body&gt;
+                        <blockquote>
+                            &lt;script type = "text/javascript"&gt;
+                            <blockquote>
+                                &lt;!--
+                                <blockquote>
+                                    var count = 0;<br>
+                                    document.write("Starting Loop "); <br>
+                                    do {
+                                        <blockquote>
+                                        document.write("Current Count : " + count + "&lt;br /&gt;");<br> 
+                                        count++;
+                                        </blockquote>
+                                    } while (count &lt; 5)<br>
+                                    document.write("Loop stopped!"); <br>
+                                </blockquote>
+                                //--&gt;
+                            </blockquote>
+                            &lt;/script&gt;<br>
+                            Set the variables to different values and then try...
+                        </blockquote>
+                        &lt;/body&gt;
+                    </blockquote>
+                    &lt;/html&gt;
+                </div>
+            </div>
+
+            <hr> 
+
+            <div id="main_title">
+                <b>The "for" Loop</b>
+            </div>
+
+            <div id="main_content">
+                <p>The <b>'for'</b> loop is the most compact form of looping. It includes the
+                    following three important parts −</p>
+                <ul>
+                    <li>The <b>loop initialization</b> where we initialize our counter to a
+                        starting value. The initialization statement is executed before
+                        the loop begins.</li>
+                    <li>The <b>test statement</b> which will test if a given condition is true
+                        or not. If the condition is true, then the code given inside the
+                        loop will be executed, otherwise the control will come out of
+                        the loop.</li>
+                    <li>The <b>iteration statement</b> where you can increase or
+                        decrease your counter.</li>
+                <p>You can put all the three parts in a single line separated by semicolons.</p>
+                </ul>
+                <br>
+                <h3><b>Flow Chart</b></h3>
+                <p>The flow chart of a <b>for</b> loop in JavaScript would be as follows −</p>
+                <img src="IMAGES/flowchart3.png" alt="Do While Loop Flow chart">
+                <h3><b>Syntax</b></h3>
+                <p>The syntax for <b>for</b> loop in JavaScript is as follows −</p>
+                <br>
+                <code><i>
+                for (initialization; test condition; iteration statement) {
+                <blockquote>Statement(s) to be executed if test condition is true
+                </blockquote>
+                }</i>
+                <br><br><br>
+                </code>
+                <div id="script">
+                    &lt;html&gt;
+                    <blockquote>
+                        &lt;body&gt;
+                        <blockquote>
+                            &lt;script type = "text/javascript"&gt;
+                            <blockquote>
+                                &lt;!--
+                                <blockquote>
+                                    var count = 0;<br>
+                                    document.write("Starting Loop "); <br>
+                                    <br>
+                                    for (count = 0; count &lt; 10; count++) {
+                                        <blockquote>
+                                        document.write("Current Count : " + count +);<br> 
+                                        document.write("&lt;br /&gt;");
+                                        </blockquote>   
+                                    document.write("Loop stopped!"); <br>
+                                </blockquote>
+                                //--&gt;
+                            </blockquote>
+                            &lt;/script&gt;<br>
+                            Set the variables to different values and then try...
+                        </blockquote>
+                        &lt;/body&gt;
+                    </blockquote>
+                    &lt;/html&gt;
+                </div>
+            </div>
+        </div>
+		</div>
+	</div>
+		</div>
+		<div id = "controls">
+			<div id = "back">
+				<a href = "DATATYPES.html">&lt;</a>
+			</div>
+			<div id = "next">
+				<a href = "wip.html">&gt;</a>
+			</div>
+		</div>		
+		<footer>
+			<p>&copy; 2023 Your Website. All rights reserved.</p>
+		</footer>
+	</div>
+</body>
+
+</html>
