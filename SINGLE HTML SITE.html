@@ -25,6 +25,11 @@
         #controls {
             bottom: 8.5%;
         }
+
+        .linkcolor {
+            font-weight: bold; 
+            color: crimson;
+        }
     </style>
 </head>
 
@@ -45,13 +50,13 @@
             </div>
             <div id="side_list">    
                 <ul>
-                    <li><a href="#" onclick="changeContent(this)">What is JavaScript?</a></li>
-                    <li><a href="#" onclick="changeContent(this)">Datatypes and Variables</a></li>
-                    <li><a href="#" onclick="changeContent(this)">Reserved Words</a></li>
-                    <li><a href="#" onclick="changeContent(this)">What is an Operator?</a></li>
-                    <li><a href="#" onclick="changeContent(this)">Decision Making Statements</a></li>
-                    <li><a href="#" onclick="changeContent(this)">Loops</a></li>
-                    <li><a href="#" onclick="changeContent(this)">Functions</a></li>
+                    <li><a href="#" id = "link1" onclick="changeContent(this)" class = "linkcolor">What is JavaScript?</a></li>
+                    <li><a href="#" id = "link2" onclick="changeContent(this)">Datatypes and Variables</a></li>
+                    <li><a href="#" id = "link3" onclick="changeContent(this)">Reserved Words</a></li>
+                    <li><a href="#" id = "link4" onclick="changeContent(this)">What is an Operator?</a></li>
+                    <li><a href="#" id = "link5" onclick="changeContent(this)">Decision Making Statements</a></li>
+                    <li><a href="#" id = "link6" onclick="changeContent(this)">Loops</a></li>
+                    <li><a href="#" id = "link7" onclick="changeContent(this)">Functions</a></li>
                 </ul>
             </div>
         </div>
@@ -956,7 +961,13 @@
             var loops = document.getElementById('loops');
             var decisionmaking = document.getElementById('decisionmaking');
             var functions = document.getElementById('functions');
-
+            var link1 = document.getElementById('link1')
+            var link2 = document.getElementById('link2')
+            var link3 = document.getElementById('link3')
+            var link4 = document.getElementById('link4')
+            var link5 = document.getElementById('link5')
+            var link6 = document.getElementById('link6')
+            var link7 = document.getElementById('link7')
             function changeContent(link) {
 
                 if (link.textContent == "Datatypes and Variables") {
@@ -967,6 +978,13 @@
                     decisionmaking.style.display = "none";
                     loops.style.display = "none";
                     functions.style.display = "none";
+                    link1.classList.remove('linkcolor')
+                    link2.classList.add('linkcolor')
+                    link3.classList.remove('linkcolor')
+                    link4.classList.remove('linkcolor')
+                    link5.classList.remove('linkcolor')
+                    link6.classList.remove('linkcolor')
+                    link7.classList.remove('linkcolor')
 
                 } else if (link.textContent == "Reserved Words") {
                     whatisjavascript.style.display = "none";
@@ -976,6 +994,13 @@
                     decisionmaking.style.display = "none";
                     loops.style.display = "none";
                     functions.style.display = "none";
+                    link1.classList.remove('linkcolor')
+                    link2.classList.remove('linkcolor')
+                    link3.classList.add('linkcolor')
+                    link4.classList.remove('linkcolor')
+                    link5.classList.remove('linkcolor')
+                    link6.classList.remove('linkcolor')
+                    link7.classList.remove('linkcolor')
 
                 } else if (link.textContent == "What is an Operator?") {
                     whatisjavascript.style.display = "none";
@@ -985,6 +1010,13 @@
                     decisionmaking.style.display = "none";
                     loops.style.display = "none";
                     functions.style.display = "none";
+                    link1.classList.remove('linkcolor')
+                    link2.classList.remove('linkcolor')
+                    link3.classList.remove('linkcolor')
+                    link4.classList.add('linkcolor')
+                    link5.classList.remove('linkcolor')
+                    link6.classList.remove('linkcolor')
+                    link7.classList.remove('linkcolor')
 
                 } else if (link.textContent == "Decision Making Statements") {
                     whatisjavascript.style.display = "none";
@@ -994,6 +1026,13 @@
                     decisionmaking.style.display = "block";
                     loops.style.display = "none";
                     functions.style.display = "none";
+                    link1.classList.remove('linkcolor')
+                    link2.classList.remove('linkcolor')
+                    link3.classList.remove('linkcolor')
+                    link4.classList.remove('linkcolor')
+                    link5.classList.add('linkcolor')
+                    link6.classList.remove('linkcolor')
+                    link7.classList.remove('linkcolor')
                 
                 } else if (link.textContent == "Loops") {
                     whatisjavascript.style.display = "none";
@@ -1003,6 +1042,13 @@
                     loops.style.display = "block";
                     decisionmaking.style.display ="none";
                     functions.style.display = "none";
+                    link1.classList.remove('linkcolor')
+                    link2.classList.remove('linkcolor')
+                    link3.classList.remove('linkcolor')
+                    link4.classList.remove('linkcolor')
+                    link5.classList.remove('linkcolor')
+                    link6.classList.add('linkcolor')
+                    link7.classList.remove('linkcolor')
                 
                 } else if (link.textContent == "Functions") {
                     whatisjavascript.style.display = "none";
@@ -1012,6 +1058,13 @@
                     loops.style.display = "none";
                     decisionmaking.style.display ="none";
                     functions.style.display ="block";
+                    link1.classList.remove('linkcolor')
+                    link2.classList.remove('linkcolor')
+                    link3.classList.remove('linkcolor')
+                    link4.classList.remove('linkcolor')
+                    link5.classList.remove('linkcolor')
+                    link6.classList.remove('linkcolor')
+                    link7.classList.add('linkcolor')
 
                 } else {
                     whatisjavascript.style.display = "block";
@@ -1021,6 +1074,13 @@
                     loops.style.display = "none";
                     decisionmaking.style.display = "none";
                     functions.style.display = "none";
+                    link1.classList.add('linkcolor')
+                    link2.classList.remove('linkcolor')
+                    link3.classList.remove('linkcolor')
+                    link4.classList.remove('linkcolor')
+                    link5.classList.remove('linkcolor')
+                    link6.classList.remove('linkcolor')
+                    link7.classList.remove('linkcolor')
                 }
             }
 
@@ -1034,6 +1094,13 @@
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "block";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.add('linkcolor')
                     } else if (functions.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
@@ -1042,6 +1109,13 @@
                         decisionmaking.style.display = "none";
                         loops.style.display = "block";
                         functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.add('linkcolor')
+                        link7.classList.remove('linkcolor')
                     } else if (loops.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
@@ -1050,6 +1124,13 @@
                         decisionmaking.style.display = "block";
                         loops.style.display = "none";
                         functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.add('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
                     }else if (decisionmaking.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
@@ -1058,6 +1139,13 @@
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.add('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
                     } else if (arithmetic.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
@@ -1066,6 +1154,13 @@
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.add('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
                     } else if (reserved.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "block";
@@ -1074,6 +1169,13 @@
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.add('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
                     } else {
                         whatisjavascript.style.display = "block";
                         datatypes.style.display = "none";
@@ -1082,6 +1184,13 @@
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "none";
+                        link1.classList.add('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
                     }
                 } else {
                     if (whatisjavascript.style.display == "block"){
@@ -1092,6 +1201,13 @@
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.add('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
                     } else if (datatypes.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
@@ -1100,6 +1216,13 @@
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.add('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
                     } else if (reserved.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
@@ -1108,6 +1231,13 @@
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.add('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
                     } else if (arithmetic.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
@@ -1116,6 +1246,13 @@
                         decisionmaking.style.display = "block";
                         loops.style.display = "none";
                         functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.add('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
                     } else if (decisionmaking.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
@@ -1124,6 +1261,13 @@
                         decisionmaking.style.display = "none";
                         loops.style.display = "block";
                         functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.add('linkcolor')
+                        link7.classList.remove('linkcolor')
                     } else if (loops.style.display == "block"){
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
@@ -1132,6 +1276,13 @@
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "block";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.add('linkcolor')
                     } else {
                         whatisjavascript.style.display = "block";
                         datatypes.style.display = "none";
@@ -1139,6 +1290,14 @@
                         arithmetic.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
+                        functions.style.display = "none";
+                        link1.classList.add('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
                     }
                 }
             }
