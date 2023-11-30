@@ -30,6 +30,30 @@
             font-weight: bold; 
             color: crimson;
         }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .askForFood-btn {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background 3s ease;
+            background: linear-gradient(to right, #FBACCC, #F1D1D0); 
+            border: 2px solid #FBACCC; 
+            align-self: center;
+        }
+
+.askForFood-btn:hover {
+    background: linear-gradient(to right, #F1D1D0, #FBACCC); 
+}
     </style>
 </head>
 
@@ -820,134 +844,97 @@
         </div>
         <div id="functions" class="show">
             <div id="main_title">
-                <b>JavaScript - Functions 🐾</b>
-            </div>
-            <div id="main_content">
-                <p>
-                    A function is a group of reusable code which can be called
-                    anywhere in your program. This eliminates the need of writing the
-                    same code again and again. It helps programmers in writing
-                    modular codes. Functions allow a programmer to divide a big
-                    program into a number of small and manageable functions.
-                </p>
-                <h3><b>Function Definition</b></h3>
-                <p>Before we use a function, we need to define it. The most common
-                    way to define a function in JavaScript is by using
-                    the function keyword, followed by a unique function name, a list
-                    of parameters (that might be empty), and a statement block
-                    surrounded by curly braces.
-                </p>
-                <h3><b>Syntax</b></h3>
-                <p>The basic syntax is shown here.</p>
-                <code><i>
-                    &lt;script type = "text/javascript"&gt;
-                    <blockquote>
-                        &lt;!--
-                        <blockquote>
-                            function functionname(parameter-list) {
+                    <b>Javascript Functions
+                    <br><br>"Paw-some Tricks Unleashed" 🐾🎩
+                    </b>
+                </div>
+                <div id="main_content" style="padding-bottom: 150px">
+                  <div></div>
+                    <p>
+                      A function in JavaScript is like a set of instructions or 
+                      a block of code that you can name and reuse whenever you need it. 
+                      It helps in organizing code and making it more manageable.
+                      <br><br>
+                      In Cat Terms.. Think of functions as your very own talented cats. 
+                      You can give them names (function names) and teach them tricks (code).
+                      Whenever you call their names, they perform those tricks. 
+                      Let's dive into the fun world of JavaScript functions with our cat friend, Mittens!
+                    </p>
+                    <br><hr>
+                    <p><b>Defining a Function - Naming Mittens 🐾</b></p>
+                    <p>Let us start by creating a function and giving it a cat-related name, say, Mittens:</p>
+                    <div id="script">
+                    <p>
+                      <code>
+                        <blockquote>function mittens() {<br></blockquote></blockquote>
+                        <blockquote><blockquote>//This is where you put tricks to teach mittens <br></blockquote></blockquote>
+                        <blockquote>}<br></blockquote></blockquote>
+                      </code>
+                    </p>
+                    </div>
+                    <p>In Cat Terms... You're basically naming a trick for Mittens to learn.</p>
+                    <br>
+                    <hr>
+                    <p><b>Teaching Mittens a Trick - Asking for Food 🍲</b></p>
+                    <p>Now, let's teach Mittens a trick - asking for food politely:</p>
+                    <div id="script">
+                      <p>
+                        <code>
+                          <blockquote>function askForFood() {<br></blockquote></blockquote>
+                          <blockquote><blockquote>alert("Meow meow, may I plz haz food?");<br></blockquote></blockquote>
+                          <blockquote>}<br></blockquote></blockquote>
+                          <br>
+                          <blockquote>askForFood(); // Mittens performs her trick: "Meow meow, may I plz haz food?"</blockquote>
+                        </code>
+                        <script>
+                          function askForFood() {
+                            alert("Meow meow, may I plz haz food?");
+                          }
+                        </script>
+                        <div class="button-container">
+                        <button class="askForFood-btn" type="button" onclick="askForFood()">
+                          askForFood
+                        </button>
+                        </div>
+                      </p>
+                      </div>
+                      <p>In Cat Terms... Every time you say "askForFood," Mittens performs her adorable trick, asking for food.</p>
+                      <br>
+                      <hr>
+
+                      <p><b>Javascript Parameters - Purr-sonalized Tags 🐾</b></p>
+                      <p>In JavaScript, a function parameter is like a placeholder or 
+                        variable that you define when creating a function. These placeholders
+                         allow you to pass values into the function when you call it, 
+                         making the function more versatile and adaptable. Parameters 
+                         act as inputs that the function can use to perform different 
+                         actions based on the provided values.</p>
+                         <br>
+                         <div id="script">
+                          <p>
+                             <code>
                                 <blockquote>
-                                    statements
+                                  function greetCat(name) {<br>
+                                    <blockquote>alert("Meow there! I'm " + name + "!");<br></blockquote>
+                                  }<br>
+                                 <br>
+                                 greetCat("Whiskers"); // Output: Meow there! I'm Whiskers!
                                 </blockquote>
-                            }
-                        </blockquote>
-                        //--&gt;
-                    </blockquote>
-                    &lt;/script&gt;<br>
-                    <br><br><br>
-                </i></code>
-                <h3><b>Example</b></h3>
-                <p>Try the following example. It defines a function called sayHello
-                    that takes no parameters −
-                </p>
-                <div id="script">
-                    &lt;script type = "text/javascript"&gt;
-                    <blockquote>
-                        &lt;!--
-                        <blockquote>
-                            function sayHello(){
-                                <blockquote>
-                                alert("Hello there");
-                                </blockquote>
-                            }   
-                        </blockquote>
-                        //--&gt;
-                    </blockquote>
-                    &lt;/script&gt;<br>
+                             </code>
+                             <script>
+                              function greetCat() {
+                                alert("Meow there! I'm Whiskers!!");
+                              }
+                             </script>
+                             <div class="button-container">
+                              <button class="askForFood-btn" type="button" onclick="greetCat()">
+                                greetCat
+                              </button>
+                             </div>
+                          </p>
+                       </div>
                 </div>
-                <p>Calling a Function</p>
-                <p>To invoke a function somewhere later in the script, you would
-                    simply need to write the name of that function as shown in the
-                    following code.</p>
-                <div id="script">
-                    &lt;html&gt;
-                    <blockquote>
-                        &lt;head&gt;
-                        <blockquote>
-                            &lt;script type = "text/javascript"&gt;
-                            <blockquote>
-                                function sayHello(){
-                                    <blockquote>
-                                        document.write("Hello there!");
-                                    </blockquote>
-                                }
-                            </blockquote>
-                            &lt;/script&gt;<br>
-                        </blockquote>
-                        &lt;body&gt;
-                        <blockquote>
-                            &lt;p&gt;Click the following button to call the function&lt;/p&gt;<br>
-                            &lt;form&gt;
-                            <blockquote>
-                                &lt;input type = "button" onclick = "sayHello()" value = "Say Hello"&gt;
-                            </blockquote>
-                            &lt;/form&gt;<br>
-                            &lt;p&gt;Use different text in write method and then try...&lt;/p&gt;
-                        </blockquote>
-                        &lt;/body&gt;
-                    </blockquote>
-                    &lt;/html&gt;
-                </div>
-                <br><br>
-                <p>Function Parameters</p>
-                <div id="script">
-                    &lt;html&gt;
-                    <blockquote>
-                        &lt;head&gt;
-                        <blockquote>
-                            &lt;script type = "text/javascript"&gt;
-                            <blockquote>
-                                function sayHello(name,age){
-                                    <blockquote>
-                                        document.write(name + "is" + age + "years old.");
-                                    </blockquote>
-                                }
-                            </blockquote>
-                            &lt;/script&gt;<br>
-                        </blockquote>
-                        &lt;body&gt;
-                        <blockquote>
-                            &lt;p&gt;Click the following button to call the function&lt;/p&gt;<br>
-                            &lt;form&gt;
-                            <blockquote>
-                                &lt;input type = "button" onclick = "sayHello('Zara',7)" value = "Say Hello"&gt;
-                            </blockquote>
-                            &lt;/form&gt;<br>
-                            &lt;p&gt;Use different text in write method and then try...&lt;/p&gt;
-                        </blockquote>
-                        &lt;/body&gt;
-                    </blockquote>
-                    &lt;/html&gt;
-                </div>
-                <br><br>
-            </div>
-        </div>
-          <div id = "controls" >
-			<div id = "back">
-				<a href = "#" onclick="arrow(this)">&lt;</a>
-			</div>
-			<div id = "next">
-				<a href = "#" onclick="arrow(this)">&gt;</a>
-			</div>
+                
 		</div>	
         
     </div>
