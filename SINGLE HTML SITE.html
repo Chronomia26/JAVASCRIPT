@@ -34,6 +34,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 2%;
         }
 
         .askForFood-btn {
@@ -51,9 +52,9 @@
             align-self: center;
         }
 
-.askForFood-btn:hover {
-    background: linear-gradient(to right, #F1D1D0, #FBACCC); 
-}
+        .askForFood-btn:hover {
+            background: linear-gradient(to right, #F1D1D0, #FBACCC); 
+        }
     </style>
 </head>
 
@@ -843,7 +844,7 @@
             </div>
         </div>
         <div id="functions" class="show">
-            <div id="main_title">
+                <div id="main_title">
                     <b>Javascript Functions
                     <br><br>"Paw-some Tricks Unleashed" 🐾🎩
                     </b>
@@ -864,13 +865,11 @@
                     <p><b>Defining a Function - Naming Mittens 🐾</b></p>
                     <p>Let us start by creating a function and giving it a cat-related name, say, Mittens:</p>
                     <div id="script">
-                    <p>
-                      <code>
-                        <blockquote>function mittens() {<br></blockquote></blockquote>
-                        <blockquote><blockquote>//This is where you put tricks to teach mittens <br></blockquote></blockquote>
-                        <blockquote>}<br></blockquote></blockquote>
-                      </code>
-                    </p>
+                        function mittens() {<br>
+                        <blockquote>
+                            //This is where you put tricks to teach mittens
+                        </blockquote>
+                        }
                     </div>
                     <p>In Cat Terms... You're basically naming a trick for Mittens to learn.</p>
                     <br>
@@ -878,26 +877,26 @@
                     <p><b>Teaching Mittens a Trick - Asking for Food 🍲</b></p>
                     <p>Now, let's teach Mittens a trick - asking for food politely:</p>
                     <div id="script">
-                      <p>
-                        <code>
-                          <blockquote>function askForFood() {<br></blockquote></blockquote>
-                          <blockquote><blockquote>alert("Meow meow, may I plz haz food?");<br></blockquote></blockquote>
-                          <blockquote>}<br></blockquote></blockquote>
-                          <br>
-                          <blockquote>askForFood(); // Mittens performs her trick: "Meow meow, may I plz haz food?"</blockquote>
-                        </code>
+
+                        function askForFood() {<br>
+                        <blockquote>
+                            alert("Meow meow, may I plz haz food?")
+                        </blockquote>
+                        }<br>
+                        <br>
+                        askForFood(); // Mittens performs her trick: "Meow meow, may I plz haz food?"
+
                         <script>
                           function askForFood() {
                             alert("Meow meow, may I plz haz food?");
                           }
                         </script>
-                        <div class="button-container">
+                    </div>
+                    <div class="button-container">
                         <button class="askForFood-btn" type="button" onclick="askForFood()">
                           askForFood
                         </button>
-                        </div>
-                      </p>
-                      </div>
+                    </div>
                       <p>In Cat Terms... Every time you say "askForFood," Mittens performs her adorable trick, asking for food.</p>
                       <br>
                       <hr>
@@ -911,30 +910,37 @@
                          actions based on the provided values.</p>
                          <br>
                          <div id="script">
-                          <p>
-                             <code>
-                                <blockquote>
-                                  function greetCat(name) {<br>
-                                    <blockquote>alert("Meow there! I'm " + name + "!");<br></blockquote>
-                                  }<br>
-                                 <br>
-                                 greetCat("Whiskers"); // Output: Meow there! I'm Whiskers!
-                                </blockquote>
-                             </code>
+                            function greetCat(name) {<br>
+                            <blockquote>a
+                                lert("Meow there! I'm " + name + "!");<br>
+                            </blockquote>
+                            }<br>
+                            <br>
+                            greetCat("Whiskers"); // Output: Meow there! I'm Whiskers!
+
                              <script>
                               function greetCat() {
                                 alert("Meow there! I'm Whiskers!!");
                               }
                              </script>
-                             <div class="button-container">
-                              <button class="askForFood-btn" type="button" onclick="greetCat()">
-                                greetCat
-                              </button>
-                             </div>
-                          </p>
+                       </div>
+                       <div class="button-container">
+                        <button class="askForFood-btn" type="button" onclick="greetCat()">
+                          greetCat
+                        </button>
                        </div>
                 </div>
-                
+
+            </div>
+        </div>
+
+          <div id = "controls" >
+			<div id = "back">
+				<a href = "#" onclick="arrow(this)">&lt;</a>
+			</div>
+			<div id = "next">
+				<a href = "#" onclick="arrow(this)">&gt;</a>
+			</div>
 		</div>	
         
     </div>
