@@ -58,8 +58,8 @@
     </style>
 </head>
 
-<body>
-    <div id="content" class="light-mode">
+<body class="light-mode">
+    <div id="content">
         <header>
             <div id="header_img">
                 <a href="MAIN.html">
@@ -140,32 +140,40 @@
                         with the <b>var</b> keyword as follows.</p>
 
                     <div id="script">
-                        &lt;script type&gt; = "text/javascript"> <br>
-                        <blockquote>
-                            &lt;!--<br>
+                        <code>
                             <blockquote>
-                                var money;<br>
-                                var name;<br>
+                                &lt;script type&gt; = "text/javascript"> <br>
+                                <blockquote>
+                                    &lt;!--<br>
+                                    <blockquote>
+                                        var money;<br>
+                                        var name;<br>
+                                    </blockquote>
+                                    //--&gt;
+                                </blockquote>
+                                &lt;/script&gt;
                             </blockquote>
-                            //--&gt;
-                        </blockquote>
-                        &lt;/script&gt;
+                        </code>
                     </div>
 
                     <br><br>
 
                     <div id="script">
-                        &lt;script type&gt; = "text/javascript"<br>
-                        <blockquote>
-                            &lt;!--<br>
+                        <code>
                             <blockquote>
-                                var name = "Ali";<br>
-                                var money;<br>
-                                money = 2000.50;<br>
+                                &lt;script type&gt; = "text/javascript"<br>
+                                <blockquote>
+                                    &lt;!--<br>
+                                    <blockquote>
+                                        var name = "Ali";<br>
+                                        var money;<br>
+                                        money = 2000.50;<br>
+                                    </blockquote>
+                                    //--&gt;
+                                </blockquote>
+                                &lt;/script&gt;
                             </blockquote>
-                            //--&gt;
-                        </blockquote>
-                        &lt;/script&gt;
+                        </code>
                     </div>
                 </div>
             </div>
@@ -1317,7 +1325,7 @@
             }
 
             function toggleMode() {
-                var body = document.getElementById('content');
+                var body = document.body;
 
                 if (body.classList.contains('light-mode')) {
                     body.classList.remove('light-mode');
