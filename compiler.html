@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Code Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    
+    <style>
+      body {
+        text-align: center;
+      }
+      
+      textarea {
+        width: 32%;
+        float: top;
+        min-height: 250px;
+        overflow: scroll;
+        margin: auto;
+        display: inline-block;
+        background: #f4f4f9;
+        outline: none;
+        font-family: Courier, sans-serif;
+        font-size: 14px;
+      }
+      
+      iframe {
+        bottom: 0;
+        position: relative;
+        width: 100%;
+        height: 35em;
+      }
+      
+      
+      
+    </style>
+    <textarea id="html" placeholder="HTML"></textarea>
+    <textarea id="css" placeholder="CSS"></textarea>
+    <textarea id="js" placeholder="JavaScript"></textarea>
+    <iframe id="code"></iframe>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
