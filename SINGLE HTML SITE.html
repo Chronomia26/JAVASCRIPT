@@ -15,13 +15,11 @@
         }
         
         .dark-mode {
-            background-color: rgba(0,0,0,0.5);
+            background-color: rgba(0,0,0,0.9);
             color: #ffffff;
+            background-image: url(IMAGES/background1.png);
         }
-		#toggle-button {
-            position: relative;
-            z-index: 1;
-        }
+		
         #controls {
             bottom: 8.5%;
         }
@@ -66,7 +64,7 @@
                     <img src="IMAGES/logo.png" alt="NEKODE">
                 </a>
             </div>
-            
+            <button id="toggle-button" onclick="toggleMode()"><img src="IMAGES/night.png" alt="dark mode"></button>
         </header>
 		
         <div id="side">
@@ -756,32 +754,36 @@
                 <br><br><br>
                 </code>
                 <div id="script">
-                    &lt;html&gt;
-                    <blockquote>
-                        &lt;body&gt;
+                    <code>
                         <blockquote>
-                            &lt;script type = "text/javascript"&gt;
+                            &lt;html&gt;
                             <blockquote>
-                                &lt;!--
+                                &lt;body&gt;
                                 <blockquote>
-                                    var count = 0;<br>
-                                    document.write("Starting Loop "); <br>
-                                    do {
+                                    &lt;script type = "text/javascript"&gt;
+                                    <blockquote>
+                                        &lt;!--
                                         <blockquote>
-                                        document.write("Current Count : " + count + "&lt;br /&gt;");<br> 
-                                        count++;
+                                            var count = 0;<br>
+                                            document.write("Starting Loop "); <br>
+                                            do {
+                                                <blockquote>
+                                                document.write("Current Count : " + count + "&lt;br /&gt;");<br> 
+                                                count++;
+                                                </blockquote>
+                                            } while (count &lt; 5)<br>
+                                            document.write("Loop stopped!"); <br>
                                         </blockquote>
-                                    } while (count &lt; 5)<br>
-                                    document.write("Loop stopped!"); <br>
+                                        //--&gt;
+                                    </blockquote>
+                                    &lt;/script&gt;<br>
+                                    Set the variables to different values and then try...
                                 </blockquote>
-                                //--&gt;
+                                &lt;/body&gt;
                             </blockquote>
-                            &lt;/script&gt;<br>
-                            Set the variables to different values and then try...
-                        </blockquote>
-                        &lt;/body&gt;
+                            &lt;/html&gt;
                     </blockquote>
-                    &lt;/html&gt;
+                </code>
                 </div>
             </div>
 
@@ -821,33 +823,37 @@
                 <br><br><br>
                 </code>
                 <div id="script">
-                    &lt;html&gt;
-                    <blockquote>
-                        &lt;body&gt;
+                    <code>
                         <blockquote>
-                            &lt;script type = "text/javascript"&gt;
+                            &lt;html&gt;
                             <blockquote>
-                                &lt;!--
+                                &lt;body&gt;
                                 <blockquote>
-                                    var count = 0;<br>
-                                    document.write("Starting Loop "); <br>
-                                    <br>
-                                    for (count = 0; count &lt; 10; count++) {
+                                    &lt;script type = "text/javascript"&gt;
+                                    <blockquote>
+                                        &lt;!--
                                         <blockquote>
-                                        document.write("Current Count : " + count +);<br> 
-                                        document.write("&lt;br /&gt;");
+                                            var count = 0;<br>
+                                            document.write("Starting Loop "); <br>
+                                            <br>
+                                            for (count = 0; count &lt; 10; count++) {
+                                                <blockquote>
+                                                document.write("Current Count : " + count +);<br> 
+                                                document.write("&lt;br /&gt;");
+                                                </blockquote>
+                                                }   
+                                            document.write("Loop stopped!"); <br>
                                         </blockquote>
-                                        }   
-                                    document.write("Loop stopped!"); <br>
+                                        //--&gt;
+                                    </blockquote>
+                                    &lt;/script&gt;<br>
+                                    Set the variables to different values and then try...
                                 </blockquote>
-                                //--&gt;
+                                &lt;/body&gt;
                             </blockquote>
-                            &lt;/script&gt;<br>
-                            Set the variables to different values and then try...
+                            &lt;/html&gt;
                         </blockquote>
-                        &lt;/body&gt;
-                    </blockquote>
-                    &lt;/html&gt;
+                    </code>
                 </div>
             </div>
         </div>
@@ -907,7 +913,7 @@
                     </div>
                       <p>In Cat Terms... Every time you say "askForFood," Mittens performs her adorable trick, asking for food.</p>
                       <br>
-                      <hr>
+                    <hr>
 
                       <p><b>Javascript Parameters - Purr-sonalized Tags 🐾</b></p>
                       <p>In JavaScript, a function parameter is like a placeholder or 
@@ -918,13 +924,17 @@
                          actions based on the provided values.</p>
                          <br>
                          <div id="script">
-                            function greetCat(name) {<br>
-                            <blockquote>a
-                                lert("Meow there! I'm " + name + "!");<br>
-                            </blockquote>
-                            }<br>
-                            <br>
-                            greetCat("Whiskers"); // Output: Meow there! I'm Whiskers!
+                            <code>
+                                <blockquote>
+                                    function greetCat(name) {<br>
+                                    <blockquote>
+                                        alert("Meow there! I'm " + name + "!");<br>
+                                    </blockquote>
+                                    }<br>
+                                    <br>
+                                    greetCat("Whiskers"); // Output: Meow there! I'm Whiskers!
+                                </blockquote>
+                            </code>
 
                              <script>
                               function greetCat() {
@@ -1326,7 +1336,6 @@
 
             function toggleMode() {
                 var body = document.body;
-
                 if (body.classList.contains('light-mode')) {
                     body.classList.remove('light-mode');
                     body.classList.add('dark-mode');
@@ -1339,7 +1348,6 @@
     </div>
 
     <footer>
-		<button id="toggle-button" onclick="toggleMode()">Toggle Mode</button>
         <p>&copy; 2023 Your Website. All rights reserved.</p>
     </footer>
 </body>

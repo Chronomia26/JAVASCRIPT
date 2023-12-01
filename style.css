@@ -1,20 +1,22 @@
 body {
 margin: 0;
 padding: 0;
-background-color: black;
+background-color: rgba(255,204,204,1);
 background-image: url('IMAGES/background.png');
 background-attachment: fixed;
 background-size: 250px;
-animation: animatedBackground 3s linear infinite, fade 0.5s ease-in-out;
+animation: animatedBackground 5s linear infinite, fade 0.5s ease-in-out;
 overflow-x: hidden;
 }
 
 @keyframes fade{
     from {
         opacity: 0; 
+        background-color: black;
     }
     to {
         opacity: 1;
+        background-color: rgba(255,204,204,1);
     }
 } 
 
@@ -42,6 +44,11 @@ width: 100%;
 background-color: rgba(255, 153, 153, 1);
 box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
 padding: 10px;
+}
+
+#toggle-button {
+    position: fixed;
+    z-index: 1;
 }
 
 #header_img {
@@ -116,7 +123,7 @@ animation: fade-in 0.5s ease-in-out;
 @keyframes fade-in{
     from {
         opacity: 0;
-        transform: translate(40px);
+        transform: translate(80px);
     }
     to {
         opacity: 1;

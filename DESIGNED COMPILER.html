@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Code Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="IMAGES/icon.png">
+  </head>
+
+  <body>
+    
+    <style>
+      textarea {
+        position: fixed;
+        border: 2px dashed black;
+        border-radius: 10px;
+        padding: 10px;
+        width: 32%;
+        top: 25%;
+        left: 5%;
+        min-height: 250px;
+        overflow: scroll;
+        margin: auto;
+        display: inline-block;
+        outline: none;
+        font-family: Courier, sans-serif;
+        font-size: 14px;
+      }
+      
+      iframe {
+        right: 0;
+        position: fixed;
+        width: 32%;
+        height: 250px;
+      }
+      
+      
+      
+    </style>
+    <header>
+      <div id="header_img">
+          <a href="MAIN.html">
+              <img src="IMAGES/logo.png" alt="NEKODE">
+          </a>
+      </div>
+      <button id="toggle-button" onclick="toggleMode()"><img src="IMAGES/night.png" alt="dark mode"></button>
+  </header>
+    <textarea id="js" placeholder="JavaScript"></textarea>
+    <iframe id="code"></iframe>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
