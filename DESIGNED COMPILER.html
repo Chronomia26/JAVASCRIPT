@@ -17,39 +17,45 @@
         position: fixed;
       }
 
-      textarea {
+      textarea {  
+        position:fixed;
         left: 2%;
         border: 2px dashed black;
-        border-radius: 10px;
+        border-radius: 20px;
         padding: 10px;
-        width: 40%;
-        overflow: scroll;
+        width: 46%;
+        overflow-y: scroll;
         font-family: Courier, sans-serif;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 18px;
+        color: white;
       }
 
       #html {
-        top: 10%;
-        min-height: 220px;
+        top: 8%;
+        min-height: 250px;
         
         
       }
 
       #css {
-        top: 30%;
-        min-height: 220px;
+        top: 36%;
+        min-height: 250px;
       }
 
       #js {
-        top: 68%;
-        min-height: 220px;
+        top: 64%;
+        min-height: 250px;
       }
       
       iframe {
-        top: 25%;
-        right: 5%;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-size: 50px;
         position: fixed;
-        width: 32%;
-        height: 250px;
+        top: 8%;
+        right: 2%;
+        width: 45.5%;
+        height: 750px;
       }
       
       
@@ -61,7 +67,7 @@
               <img src="IMAGES/logo.png" alt="NEKODE">
           </a>
       </div>
-      <button id="toggle-button" onclick="toggleMode()"><img src="IMAGES/night.png" alt="dark mode"></button>
+      <button id="toggle-button" onclick="toggleMode()">DARK</button>
     </header>
     <div id = "codearea">
       <textarea id="html" placeholder="HTML"></textarea>
