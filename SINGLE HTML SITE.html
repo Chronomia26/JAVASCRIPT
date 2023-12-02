@@ -19,10 +19,6 @@
             color: #ffffff;
             background-image: url(IMAGES/background1.png);
         }
-		
-        #controls {
-            bottom: 8.5%;
-        }
 
         .linkcolor {
             font-weight: bold; 
@@ -57,7 +53,6 @@
 </head>
 
 <body class="light-mode">
-    <div id="content">
         <header>
             <div id="header_img">
                 <a href="MAIN.html">
@@ -951,18 +946,10 @@
 
             </div>
         </div>
-
-          <div id = "controls" >
-			<div id = "back">
-				<a href = "#" onclick="arrow(this)">&lt;</a>
-			</div>
-			<div id = "next">
-				<a href = "#" onclick="arrow(this)">&gt;</a>
-			</div>
-		</div>	
-        
-    </div>
-
+        <div id = "controls" >
+                <a href = "#" id = "back" onclick="arrow(this)">&lt;</a>
+                <a href = "#" id = "next" onclick="arrow(this)">&gt;</a>
+        </div>	
 
         <script>
             var datatypes = document.getElementById('datatypes');

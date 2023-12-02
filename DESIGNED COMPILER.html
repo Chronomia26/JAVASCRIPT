@@ -9,25 +9,44 @@
   <body>
     
     <style>
-      textarea {
+      #codearea {
+        border-right: 2px dashed black;
+        width: 50%;
+        top: 6.8%;
+        bottom: 0;
         position: fixed;
+      }
+
+      textarea {
+        left: 2%;
         border: 2px dashed black;
         border-radius: 10px;
         padding: 10px;
-        width: 32%;
-        top: 25%;
-        left: 5%;
-        min-height: 250px;
+        width: 40%;
         overflow: scroll;
-        margin: auto;
-        display: inline-block;
-        outline: none;
         font-family: Courier, sans-serif;
-        font-size: 14px;
+      }
+
+      #html {
+        top: 10%;
+        min-height: 220px;
+        
+        
+      }
+
+      #css {
+        top: 30%;
+        min-height: 220px;
+      }
+
+      #js {
+        top: 68%;
+        min-height: 220px;
       }
       
       iframe {
-        right: 0;
+        top: 25%;
+        right: 5%;
         position: fixed;
         width: 32%;
         height: 250px;
@@ -43,10 +62,19 @@
           </a>
       </div>
       <button id="toggle-button" onclick="toggleMode()"><img src="IMAGES/night.png" alt="dark mode"></button>
-  </header>
-    <textarea id="js" placeholder="JavaScript"></textarea>
+    </header>
+    <div id = "codearea">
+      <textarea id="html" placeholder="HTML"></textarea>
+      <textarea id="css" placeholder="CSS"></textarea>
+      <textarea id="js" placeholder="JavaScript"></textarea>
+    </div>
+    
     <iframe id="code"></iframe>
 
     <script type="text/javascript" src="app.js"></script>
+
+    <footer>
+      <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
   </body>
 </html>

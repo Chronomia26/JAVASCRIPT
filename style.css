@@ -5,11 +5,11 @@ background-color: rgba(255,204,204,1);
 background-image: url('IMAGES/background.png');
 background-attachment: fixed;
 background-size: 250px;
-animation: animatedBackground 5s linear infinite, fade 0.5s ease-in-out;
+animation: animatedBackground 5s linear infinite, fade-in 0.5s ease-in-out;
 overflow-x: hidden;
 }
 
-@keyframes fade{
+@keyframes fade-in{
     from {
         opacity: 0; 
         background-color: black;
@@ -64,7 +64,7 @@ transform: scale(1.1)
 
 #side {
 position: fixed;
-width: 24%;
+width: 25%;
 top: 70px;
 bottom: 65px;
 border-right: 2px dashed black;
@@ -76,27 +76,24 @@ text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 font-family: courier new;
 text-align: center;
 font-size: 35px;
-position: fixed;
 margin-top: 50px;
-width: 24%;
+width: 100%;
 }
 
 #side_list {
 font-size: 21px;
-margin-left: 2%;
 font-family: century gothic;
-position: fixed;
-margin-top: 10%;
-width: 20%;
+margin-top: 50px;
+margin-left: 12.5%;
+width: 75%;
 list-style-type: none;
 border-radius: 20px;
 border: 2px dashed;
-background-color: rgba(255, 255, 255, 0.5)
+background-color: rgba(255, 255, 255, 0.5);
 }
 
 #side_list ul {
 list-style-type: none;
-
 }
 
 #side_list li {
@@ -113,14 +110,14 @@ transform: scale(1.07)
 }
 
 #main {
+background-color: yellow;
 bottom: 0;
 margin-top: 60px;
-margin-left: 24%;
+margin-left: 25%;
 padding: 10px; 
-animation: fade-in 0.5s ease-in-out;
 }
 
-@keyframes fade-in{
+@keyframes right-fade-in{
     from {
         opacity: 0;
         transform: translate(80px);
@@ -130,52 +127,41 @@ animation: fade-in 0.5s ease-in-out;
         transform: translate(0px);
     }
 } 
-
-
-.drop {
-    display: none;
-}
-
-.font {
-    color: red;
-    font-weight: bold;
-}
-
 #whatisjavascript {
     height: 100vh;
-    animation: fade-in 0.5s ease-in-out;
+    animation: right-fade-in 0.5s ease-in-out;
 }
 
 
 #datatypes {
     height: 200vh;
-    animation: fade-in 0.5s ease-in-out;
+    animation: right-fade-in 0.5s ease-in-out;
 }
 
 #reserved {
     height: 100vh;
-    animation: fade-in 0.5s ease-in-out;
+    animation: right-fade-in 0.5s ease-in-out;
 }
 
 #arithmetic {
     height: 780vh;
-    animation: fade-in 0.5s ease-in-out;
+    animation: right-fade-in 0.5s ease-in-out;
 }
 
 #loops {
     height: 800vh;
-    animation: fade-in 0.5s ease-in-out;
+    animation: right-fade-in 0.5s ease-in-out;
 }
 
 
 #decisionmaking {
     height: 450vh;
-    animation: fade-in 0.5s ease-in-out;
+    animation: right-fade-in 0.5s ease-in-out;
 }
 
 #functions {
     height: 250vh;
-    animation: fade-in 0.5s ease-in-out;
+    animation: right-fade-in 0.5s ease-in-out;
 }
 
 #main_title {
@@ -226,26 +212,14 @@ background-color: rgba(217, 217, 217, 1);
 font-size: 50px;
 font-family: arial;
 position: fixed;
-width: 100%;
-left: 24.1%;
+width: 75%;
 bottom: 6.5%;
-color: white;
-border-top: 1px solid black;
+margin-left: 25%;
+text-align: center;
 }
 
-#back {
-display: inline;
-padding-left: 25px;
-padding-right: 25px;
-margin-left: 0;
-transition: transition 0.3s;
-}
-
-#next {
-display: inline;
-margin-left: 67%;
-padding-left: 25px;
-padding-right: 25px;
+#controls a{
+    text-align: center;
 }
 
 #back:hover {
