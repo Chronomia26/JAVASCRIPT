@@ -6,6 +6,10 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="IMAGES/icon.png">
     <style>
+        .show {
+            display: none;
+        }
+
         .light-mode {
             color: #000000;
         }
@@ -14,6 +18,10 @@
             background-color: rgba(0,0,0,0.9);
             color: #ffffff;
             background-image: url(IMAGES/background1.png);
+        }
+		
+        #controls {
+            bottom: 8.5%;
         }
 
         .linkcolor {
@@ -101,7 +109,7 @@
                 </div>
             </div>
 
-            <div id="datatypes" >
+            <div id="datatypes" style="display: none;">
                 <div id="main_title">
                     <b>JavaScript Datatypes 🐾</b>
                 </div>
@@ -167,7 +175,7 @@
                 </div>
             </div>
 
-            <div id="reserved" >
+            <div id="reserved" style="display: none;">
                 <div id="main_title">
                     <b>JavaScript Reserved Words 🐾</b>
                 </div>
@@ -276,7 +284,7 @@
                 </div>
             </div>
             
-            <div id="arithmetic" >
+            <div id="operators" style="display: none;">
                 <div id="main_title">
                     <b>The Cat's Clever Calculations 🐾: What is an Operator?</b>
                 </div>
@@ -530,7 +538,7 @@
                 </div>
         </div>
 
-        <div id="decisionmaking" >
+        <div id="decisionmaking" style="display: none;">
             <div id="main_title">
               <b>Decision Making Statements 🐾</b>
             </div>
@@ -651,7 +659,7 @@
             </div>              
           </div>
 
-        <div id="loops" >
+        <div id="loops" style="display: none;">
 
             <div id="main_title">
                 <b>The Cat's Creative Circuits 🐾: JavaScript Loops</b>
@@ -848,7 +856,7 @@
                 </div>
             </div>
         </div>
-        <div id="functions" >
+        <div id="functions" style="display: none;">
                 <div id="main_title">
                     <b>Javascript Functions
                     <br><br>"Paw-some Tricks Unleashed" 🐾🎩
@@ -942,10 +950,12 @@
 
             </div>
         </div>
+
         <div id = "controls" >
-                <a href = "#" id = "back" onclick="arrow(this)">&lt;</a>
-                <a href = "#" id = "next"onclick="arrow(this)">&gt;</a>
-        </div>	
+				<a href = "#" onclick="arrow(this)">&lt;</a>
+				<a href = "#" onclick="arrow(this)">&gt;</a>
+		</div>
+
 
         <script>
             var datatypes = document.getElementById('datatypes');
@@ -968,7 +978,7 @@
                     whatisjavascript.style.display = "none";
                     datatypes.style.display = "block";
                     reserved.style.display = "none";
-                    arithmetic.style.display = "none";
+                    operators.style.display = "none";
                     decisionmaking.style.display = "none";
                     loops.style.display = "none";
                     functions.style.display = "none";
@@ -985,7 +995,7 @@
                     whatisjavascript.style.display = "none";
                     datatypes.style.display = "none";
                     reserved.style.display = "block";
-                    arithmetic.style.display = "none";
+                    operators.style.display = "none";
                     decisionmaking.style.display = "none";
                     loops.style.display = "none";
                     functions.style.display = "none";
@@ -1002,7 +1012,7 @@
                     whatisjavascript.style.display = "none";
                     datatypes.style.display = "none";
                     reserved.style.display = "none";
-                    arithmetic.style.display = "block";
+                    operators.style.display = "block";
                     decisionmaking.style.display = "none";
                     loops.style.display = "none";
                     functions.style.display = "none";
@@ -1019,7 +1029,7 @@
                     whatisjavascript.style.display = "none";
                     datatypes.style.display = "none";
                     reserved.style.display = "none";
-                    arithmetic.style.display = "none";
+                    operators.style.display = "none";
                     decisionmaking.style.display = "block";
                     loops.style.display = "none";
                     functions.style.display = "none";
@@ -1036,7 +1046,7 @@
                     whatisjavascript.style.display = "none";
                     datatypes.style.display = "none";
                     reserved.style.display = "none";
-                    arithmetic.style.display = "none";
+                    operators.style.display = "none";
                     loops.style.display = "block";
                     decisionmaking.style.display ="none";
                     functions.style.display = "none";
@@ -1053,7 +1063,7 @@
                     whatisjavascript.style.display = "none";
                     datatypes.style.display = "none";
                     reserved.style.display = "none";
-                    arithmetic.style.display = "none";
+                    operators.style.display = "none";
                     loops.style.display = "none";
                     decisionmaking.style.display ="none";
                     functions.style.display ="block";
@@ -1070,7 +1080,7 @@
                     whatisjavascript.style.display = "block";
                     datatypes.style.display = "none";
                     reserved.style.display = "none";
-                    arithmetic.style.display = "none";
+                    operators.style.display = "none";
                     loops.style.display = "none";
                     decisionmaking.style.display = "none";
                     functions.style.display = "none";
@@ -1091,7 +1101,7 @@
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
                         reserved.style.display = "none";
-                        arithmetic.style.display = "none";
+                        operators.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "block";
@@ -1107,7 +1117,7 @@
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
                         reserved.style.display = "none";
-                        arithmetic.style.display = "none";
+                        operators.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "block";
                         functions.style.display = "none";
@@ -1123,7 +1133,7 @@
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
                         reserved.style.display = "none";
-                        arithmetic.style.display = "none";
+                        operators.style.display = "none";
                         decisionmaking.style.display = "block";
                         loops.style.display = "none";
                         functions.style.display = "none";
@@ -1155,7 +1165,7 @@
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
                         reserved.style.display = "block";
-                        arithmetic.style.display = "none";
+                        operators.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "none";
@@ -1171,7 +1181,7 @@
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "block";
                         reserved.style.display = "none";
-                        arithmetic.style.display = "none";
+                        operators.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "none";
@@ -1187,7 +1197,7 @@
                         whatisjavascript.style.display = "block";
                         datatypes.style.display = "none";
                         reserved.style.display = "none";
-                        arithmetic.style.display = "none";
+                        operators.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "none";
@@ -1205,7 +1215,7 @@
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "block";
                         reserved.style.display = "none";
-                        arithmetic.style.display = "none";
+                        operators.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "none";
@@ -1221,7 +1231,7 @@
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
                         reserved.style.display = "block";
-                        arithmetic.style.display = "none";
+                        operators.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "none";
@@ -1253,7 +1263,7 @@
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
                         reserved.style.display = "none";
-                        arithmetic.style.display = "none";
+                        operators.style.display = "none";
                         decisionmaking.style.display = "block";
                         loops.style.display = "none";
                         functions.style.display = "none";
@@ -1269,7 +1279,7 @@
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
                         reserved.style.display = "none";
-                        arithmetic.style.display = "none";
+                        operators.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "block";
                         functions.style.display = "none";
@@ -1285,7 +1295,7 @@
                         whatisjavascript.style.display = "none";
                         datatypes.style.display = "none";
                         reserved.style.display = "none";
-                        arithmetic.style.display = "none";
+                        operators.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "block";
@@ -1301,7 +1311,7 @@
                         whatisjavascript.style.display = "block";
                         datatypes.style.display = "none";
                         reserved.style.display = "none";
-                        arithmetic.style.display = "none";
+                        operators.style.display = "none";
                         decisionmaking.style.display = "none";
                         loops.style.display = "none";
                         functions.style.display = "none";

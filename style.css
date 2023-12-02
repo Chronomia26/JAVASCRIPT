@@ -142,7 +142,7 @@ padding: 10px;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
-#arithmetic {
+#operators {
     height: 780vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
@@ -195,10 +195,6 @@ border-collapse: collapse;
 text-align: center;
 padding-left: 50px;
 padding-right: 50px;
-}
-
-.
-display: none;
 }
 
 #script {

@@ -60,7 +60,7 @@
                 </div>
             </div>
 
-            <div id="datatypes" >
+            <div id="datatypes" style="display: none;">
                 <div id="main_title">
                     <b>JavaScript Datatypes</b>
                 </div>
@@ -107,7 +107,7 @@
                 </div>
             </div>
 
-            <div id="reserved" >
+            <div id="reserved" style="display: none;">
                 <div id="main_title">
                     <b>JavaScript Reserved Words</b>
                 </div>
@@ -216,7 +216,7 @@
                 </div>
             </div>
 
-            <div id="arithmetic" >
+            <div id="operators" style="display: none;">
                 <div id="main_title">
                     <b>What is an Operator?
                     <br>The Cat's Clever Calculations 🐾
@@ -268,7 +268,7 @@
                 </div>
             </div>
 
-            <div id="func" >
+            <div id="func" style = "display: none;">
                 <div id="main_title">
                     <b>Javascript Functions
                     <br><br>"Paw-some Tricks Unleashed" 🐾🎩
@@ -378,19 +378,19 @@
                     intro.style.display = "block";  // Corrected variable name
                     datatypes.style.display = "none";
                     reserved.style.display = "none";
-                    arithmetic.style.display = "none";
+                    operators.style.display = "none";
                     func.style.display = "none";
                 } else if (link.textContent == "Datatypes and Variables") {
                     intro.style.display = "none";
                     datatypes.style.display = "block";
                     reserved.style.display = "none";
-                    arithmetic.style.display = "none";
+                    operators.style.display = "none";
                     func.style.display = "none";
                 } else if (link.textContent == "Reserved Words") {
                     intro.style.display = "none";
                     datatypes.style.display = "none";
                     reserved.style.display = "block";
-                    arithmetic.style.display = "none";
+                    operators.style.display = "none";
                     func.style.display = "none";
                 } else if (link.textContent == "What is an Operator?") {
                     intro.style.display = "none";
@@ -402,13 +402,13 @@
                     intro.style.display = "none";
                     datatypes.style.display = "none";
                     reserved.style.display = "none";
-                    arithmetic.style.display = "none";
+                    operators.style.display = "none";
                     func.style.display = "block";
                 } else {
                     intro.style.display = "block";
                     datatypes.style.display = "none";
                     reserved.style.display = "none";
-                    arithmetic.style.display = "none";
+                    operators.style.display = "none";
                     func.style.display = "none";
                 }
             }
