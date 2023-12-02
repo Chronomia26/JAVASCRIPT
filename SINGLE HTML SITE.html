@@ -6,6 +6,15 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="IMAGES/icon.png">
     <style>
+        #toggle-button {
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            padding: 20px 25px;
+            font-family: arial;
+            font-size: 20px;
+        }
+
         .show {
             display: none;
         }
@@ -18,10 +27,6 @@
             background-color: rgba(0,0,0,0.9);
             color: #ffffff;
             background-image: url(IMAGES/background1.png);
-        }
-		
-        #controls {
-            bottom: 8.5%;
         }
 
         .linkcolor {
@@ -44,13 +49,14 @@
             text-decoration: none;
             cursor: pointer;
             border-radius: 8px;
-            transition: background 3s ease;
+            transition: background 3s ease, transform 0.1s ease-in-out;
             background: linear-gradient(to right, #FBACCC, #F1D1D0); 
             border: 2px solid #FBACCC; 
             align-self: center;
         }
 
         .askForFood-btn:hover {
+            transform: scale(1.1);
             background: linear-gradient(to right, #F1D1D0, #FBACCC); 
         }
     </style>
@@ -63,7 +69,7 @@
                     <img src="IMAGES/logo.png" alt="NEKODE">
                 </a>
             </div>
-            <button id="toggle-button" onclick="toggleMode()"><img src="IMAGES/night.png" alt="dark mode"></button>
+            <button id="toggle-button" onclick="toggleMode()">DARK</button>
         </header>
 		
         <div id="side">

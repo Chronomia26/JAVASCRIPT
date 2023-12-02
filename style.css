@@ -106,7 +106,8 @@ transition: transform 0.3s ease-in-out;
 }
 
 #side_list li:hover {
-transform: scale(1.07)
+transform: scale(1.07);
+font-weight: bold;
 }
 
 #main {
