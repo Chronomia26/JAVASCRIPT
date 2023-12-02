@@ -110,7 +110,6 @@ transform: scale(1.07)
 }
 
 #main {
-background-color: yellow;
 bottom: 0;
 margin-top: 60px;
 margin-left: 25%;
@@ -198,7 +197,7 @@ padding-left: 50px;
 padding-right: 50px;
 }
 
-.show {
+.
 display: none;
 }
 
@@ -216,6 +215,7 @@ width: 75%;
 bottom: 6.5%;
 margin-left: 25%;
 text-align: center;
+border-top: 1px solid black;
 }
 
 #controls a{
@@ -234,4 +234,51 @@ width: 100%;
 background-color: rgba(255, 153, 153, 1);
 padding: 5px;
 font-family: century gothic;
+}
+
+
+
+
+
+
+
+.
+    display: none;
+}
+
+.light-mode {
+    color: #000000;
+}
+
+.dark-mode {
+    background-color: rgba(0,0,0,0.9);
+    color: #ffffff;
+    background-image: url(IMAGES/background1.png);
+}
+
+.linkcolor {
+    font-weight: bold; 
+    color: crimson;
+}
+.button-container {
+    margin-top: 2%;
+}
+
+.askForFood-btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 3s ease;
+    background: linear-gradient(to right, #FBACCC, #F1D1D0); 
+    border: 2px solid #FBACCC; 
+    align-self: center;
+}
+
+.askForFood-btn:hover {
+    background: linear-gradient(to right, #F1D1D0, #FBACCC); 
 }
