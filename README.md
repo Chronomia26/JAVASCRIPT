@@ -1,4 +1,4 @@
-![Logo](https://i.ibb.co/2hgHjFK/logo.png)
+![Logo](IMAGES/logo.png)
 
 A Javascript tutorial project to be submitted 
 

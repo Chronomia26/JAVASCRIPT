@@ -1,180 +1,1345 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>JavaScript Introduction</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <style>
-    #main {
-      height: 180vh;
-    }
-	.show {
-		display: none;
-	}
-  </style>
+    <title>What is JavaScript?</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="IMAGES/icon.png">
+    <style>
+        .show {
+            display: none;
+        }
+
+        .light-mode {
+            color: #000000;
+        }
+        
+        .dark-mode {
+            background-color: rgba(0,0,0,0.9);
+            color: #ffffff;
+            background-image: url(IMAGES/background1.png);
+        }
+
+        .linkcolor {
+            font-weight: bold; 
+            color: crimson;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+        }
+
+        .askForFood-btn {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background 3s ease, transform 0.1s ease-in-out;
+            background: linear-gradient(to right, #FBACCC, #F1D1D0); 
+            border: 2px solid #FBACCC; 
+            align-self: center;
+        }
+
+        .askForFood-btn:hover {
+            transform: scale(1.1);
+            background: linear-gradient(to right, #F1D1D0, #FBACCC); 
+        }
+    </style>
 </head>
 
-<body>
-  <div id="content">
-    <header>
-      <div id="header_img">
-        <a href="MAIN.html">
-          <img src="IMAGES/logo.png" alt="NEKODE">
-        </a>
-      </div>
-    </header>
-
-    <div id="side">
-      <div id="side_title">
-        <b>INTRODUCTION TO JAVASCRIPT</b>
-      </div>
-      <div id="side_list">
-        <ul>
-          <li><a href = "#" onclick="changeContent(this)">What is JavaScript?</a></li>
-          <li><a href = "#" onclick="changeContent(this)">Datatypes and Variables</a></li>
-          <li><a href = "#" onclick="changeContent(this)">Reserved Words</a></li>
-          <li><a href = "#" onclick="changeContent(this)">What is an Operator?</a ></li>
-          <li><a href = "#" onclick="changeContent(this)">Decision Making Statements</a></li>
-          <li><a href = "#" onclick="changeContent(this)">Loops</a></li>
-          <li><a href = "#" onclick="changeContent(this)">Functions</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div id="main">
-      <div id="intro" class = "show" style="display: block;">
-        <div id="main_title">
-          <b>JavaScript Introduction</b>
-        </div>
-      </div>  
-	  <div id="datatypes" class = "show">
-			<div id="main_title">
-				<b>JavaScript Datatypes</b>
-			</div>
-			<div id="main_content" style="padding-bottom: 150px">
-				<p>One of the most fundamental characteristics of a programming
-				language is the set of data types it supports. These are the type
-				of values that can be represented and manipulated in a
-				programming language. JavaScript allows you to work with three primitive data types −</p>
-				<ul style="margin-left: 5%;">
-					<li style="margin-bottom: 0; background: none"><b>Numbers</b>, eg. <i>123, 120.50 etc.</i></li>
-					<li style="margin-bottom: 0; background: none"><b>Strings</b> of text e.g. <i>"This text string" etc.</i></li>
-					<li style="margin-bottom: 0; background: none"><b>Boolean</b> e.g. <i>true or false.</i></li>
-				</ul>
-				<p style="font-size: 18px"><i><b>Note</b></i> − JavaScript does not make a distinction between integer
-				values and floating-point values. All numbers in JavaScript are
-				represented as floating-point values. JavaScript represents
-				numbers using the 64-bit floating-point format defined by the IEEE
-				754 standard.</p>
-			</div>
-			<hr>
-			<div id="main_title">
-				<b>JavaScript Variables</b>
-			</div>
-			<div id="main_content">
-				<p>Before you use a variable in a JavaScript program, you must
-				declare it. Variables are declared with the <b>var</b> keyword as follows.</p>
-				<div id="script">
-					&lt;script type&gt; = "text/javascript"> <br>
-					<blockquote>&lt;!--<br></blockquote>
-					<blockquote><blockquote>var money;<br></blockquote></blockquote>
-					<blockquote><blockquote>var name;<br></blockquote></blockquote>
-					<blockquote>//--&gt;<br></blockquote>
-					&lt;/script&gt;<br>
-				</div>
-			<br><br>
-				<div id="script">
-					&lt;script type&gt; = "text/javascript"<br>
-					<blockquote>&lt;!--<br></blockquote>
-					<blockquote><blockquote>var name = "Ali";<br></blockquote></blockquote>
-					<blockquote><blockquote>var money;<br></blockquote></blockquote>
-					<blockquote><blockquote>money = 2000.50;<br></blockquote></blockquote>
-					<blockquote>//--&gt;<br></blockquote>
-					&lt;/script&gt;<br>
-				</div>
-			</div>
-			
-			
-      </div>
-	  <div id = "reserved" class = "show">
-		<div id="main_title">
-			<b>JavaScript Reserved Words</b>
-		</div>
-		<div id="main_content" style="padding-bottom: 150px">
-			<p>A list of all the reserved words in JavaScript are given in the
-			following table. They cannot be used as JavaScript variables,
-			functions, methods, loop labels, or any object names.</p>
-			<table>
-				<tr>
-					<td>abstract</td>
-					<td>else</td> 
-					<td>instanceof</td>
-					<td>switch</td>
-				</tr>
-				<tr>
-					<td>boolean</td>
-					<td>enum</td> 
-					<td>int</td>
-					<td>synchronized</td>
-				</tr>
-				<tr>
-					<td>abstract</td>
-					<td>else</td> 
-					<td>instanceof</td>
-					<td>switch</td>
-				</tr>
-				<tr>
-					<td>abstract</td>
-					<td>else</td> 
-					<td>instanceof</td>
-					<td>switch</td>
-				</tr>
-				<tr>
-					<td>abstract</td>
-					<td>else</td> 
-					<td>instanceof</td>
-					<td>switch</td>
-				</tr>
-				<tr>
-					<td>abstract</td>
-					<td>else</td> 
-					<td>instanceof</td>
-					<td>switch</td>
-				</tr>
-			</table>
-		</div>
-	  </div>
-    </div>
-
-    <script>
-      function changeContent(link) {
-		var intro = document.getElementById('intro');
-		var datatypes = document.getElementById('datatypes');
-		var reserved = document.getElementById('reserved');
-
-        if (link.textContent == "Datatypes and Variables") {
-			intro.style.display = "none";
-			datatypes.style.display = "block";
-			reserved.style.display = "none"
-
-		} else if (link.textContent == "Reserved Words") {
-			intro.style.display = "none";
-			datatypes.style.display = "none";
-			reserved.style.display = "block"
+<body class="light-mode">
+        <header>
+            <div id="header_img">
+                <a href="MAIN.html">
+                    <img src="IMAGES/logo.png" alt="NEKODE">
+                </a>
+            </div>
+            <button id="toggle-button" onclick="toggleMode()">DARK</button>
+        </header>
 		
-		} else  {
-			intro.style.display = "block";
-			datatypes.style.display = "none";
-			reserved.style.display = "none"
+        <div id="side">
+            <div id="side_title">
+                <b>INTRODUCTION TO JAVASCRIPT</b>
+            </div>
+            <div id="side_list">    
+                <ul>
+                    <li><a href="#" id = "link1" onclick="changeContent(this)" class = "linkcolor">What is JavaScript?</a></li>
+                    <li><a href="#" id = "link2" onclick="changeContent(this)">Datatypes and Variables</a></li>
+                    <li><a href="#" id = "link3" onclick="changeContent(this)">Reserved Words</a></li>
+                    <li><a href="#" id = "link4" onclick="changeContent(this)">What is an Operator?</a></li>
+                    <li><a href="#" id = "link5" onclick="changeContent(this)">Decision Making Statements</a></li>
+                    <li><a href="#" id = "link6" onclick="changeContent(this)">Loops</a></li>
+                    <li><a href="#" id = "link7" onclick="changeContent(this)">Functions</a></li>
+                </ul>
+            </div>
+        </div>
 
-        } 
-      }
-    </script>
-  </div>
+        <div id="main">
+            <div id="whatisjavascript"  style="display: block;">
+                <div id="main_title">
+                    <b>What is JavaScript? 🐾</b>
+                </div>
+                <div id="main_content">
+                    <p>Imagine web pages are like clothing that you wear. You can only do so much with the clothes - they
+                        cover you and provide protection, but are mostly static. JavaScript is like adding buttons and
+                        zippers to the clothes. Instead of just passively wearing them, you can now interact with them.
+                        You can open, zip, and button your clothing to dynamically change how you're protected and uncover
+                        different parts as needed.</p>
+                    <br>
+                    <p>Similarly, web pages originally were mostly static content, like HTML and CSS that structured and
+                        styled the page. But just like adding interactive elements like buttons and zippers to clothes,
+                        JavaScript enables you to add dynamic functionality and effects to web pages. You can respond to
+                        user actions, detect clicks, change content, validate input, animate objects, load new
+                        data—things that make web pages feel engaging and responsive.</p>
+                    <br>
+                    <p>Zippers and buttons are cheap and lightweight versus extremely fancy and complex mechanisms yet
+                        enable so much extra functionality. Similarly, JavaScript code is relatively simple,
+                        lightweight and easy to learn, but unlocks tremendous interactivity. Adding a bit of JavaScript
+                        code, even to static HTML/CSS sites, brings pages to life just like adding zippers and buttons
+                        give plain clothes customizable functionality.</p>
+                </div>
+            </div>
 
-  <footer>
-    <p>&copy; 2023 Your Website. All rights reserved.</p>
-  </footer>
+            <div id="datatypes" style="display: none;">
+                <div id="main_title">
+                    <b>JavaScript Datatypes 🐾</b>
+                </div>
+                <div id="main_content" style="padding-bottom: 150px">
+                    <p>One of the most fundamental characteristics of a programming language is the set of data types it
+                        supports. These are the type of values that can be represented and manipulated in a programming
+                        language. JavaScript allows you to work with three primitive data types −</p>
+                    <ul style="margin-left: 5%;">
+                        <li style="margin-bottom: 0; background: none"><b>Numbers</b>, eg. <i>123, 120.50 etc.</i></li>
+                        <li style="margin-bottom: 0; background: none"><b>Strings</b> of text e.g.
+                            <i>"This text is a string" etc.</i></li>
+                        <li style="margin-bottom: 0; background: none"><b>Boolean</b> e.g. <i>true or false.</i></li>
+                    </ul>
+                    <p style="font-size: 18px"><i><b>Note</b></i> − JavaScript does not make a distinction between
+                        integer values and floating-point values. All numbers in JavaScript are represented as
+                        floating-point values. JavaScript represents numbers using the 64-bit floating-point format
+                        defined by the IEEE 754 standard.</p>
+                </div>
+                <hr>
+                <div id="main_title">
+                    <b>JavaScript Variables 🐾</b>
+                </div>
+                <div id="main_content">
+                    <p>Before you use a variable in a JavaScript program, you must declare it. Variables are declared
+                        with the <b>var</b> keyword as follows.</p>
+
+                    <div id="script">
+                        <code>
+                            <blockquote>
+                                &lt;script type&gt; = "text/javascript"> <br>
+                                <blockquote>
+                                    &lt;!--<br>
+                                    <blockquote>
+                                        var money;<br>
+                                        var name;<br>
+                                    </blockquote>
+                                    //--&gt;
+                                </blockquote>
+                                &lt;/script&gt;
+                            </blockquote>
+                        </code>
+                    </div>
+
+                    <br><br>
+
+                    <div id="script">
+                        <code>
+                            <blockquote>
+                                &lt;script type&gt; = "text/javascript"<br>
+                                <blockquote>
+                                    &lt;!--<br>
+                                    <blockquote>
+                                        var name = "Ali";<br>
+                                        var money;<br>
+                                        money = 2000.50;<br>
+                                    </blockquote>
+                                    //--&gt;
+                                </blockquote>
+                                &lt;/script&gt;
+                            </blockquote>
+                        </code>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reserved" style="display: none;">
+                <div id="main_title">
+                    <b>JavaScript Reserved Words 🐾</b>
+                </div>
+                <div id="main_content" style="padding-bottom: 150px">
+                    <p>A list of all the reserved words in JavaScript are given in the following table. They <b>CANNOT</b> be
+                        used as JavaScript variables, functions, methods, loop labels, or any object names.</p>
+                    <table id="main_content" style="margin-left: 5px;">
+                        <tr>
+                            <td>abstract</td>
+                            <td>arguments</td>
+                            <td>await*</td>
+                            <td>boolean</td>
+                        </tr>
+                        <tr>
+                            <td>break</td>
+                            <td>byte</td>
+                            <td>case</td>
+                            <td>catch</td>
+                        </tr>
+                        <tr>
+                            <td>char</td>
+                            <td>class*</td>
+                            <td>const</td>
+                            <td>continue</td>
+                        </tr>
+                        <tr>
+                            <td>debugger</td>
+                            <td>default</td>
+                            <td>delete</td>
+                            <td>do</td>
+                        </tr>
+                        <tr>
+                            <td>double</td>
+                            <td>else</td>
+                            <td>enum*</td>
+                            <td>eval</td>
+                        </tr>
+                        <tr>
+                            <td>export*</td>
+                            <td>extends*</td>
+                            <td>false</td>
+                            <td>final</td>
+                        </tr>
+                        <tr>
+                            <td>finally</td>
+                            <td>float</td>
+                            <td>for</td>
+                            <td>function</td>
+                        </tr>
+                        <tr>
+                            <td>goto</td>
+                            <td>if</td>
+                            <td>implements</td>
+                            <td>import*</td>
+                        </tr>
+                        <tr>
+                            <td>in</td>
+                            <td>instanceof</td>
+                            <td>int</td>
+                            <td>interface</td>
+                        </tr>
+                        <tr>
+                            <td>let*</td>
+                            <td>long</td>
+                            <td>native</td>
+                            <td>new</td>
+                        </tr>
+                        <tr>
+                            <td>null</td>
+                            <td>package</td>
+                            <td>private</td>
+                            <td>protected</td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>return</td>
+                            <td>short</td>
+                            <td>static</td>
+                        </tr>
+                        <tr>
+                            <td>super*</td>
+                            <td>switch</td>
+                            <td>synchronized</td>
+                            <td>this</td>
+                        </tr>
+                        <tr>
+                            <td>throw</td>
+                            <td>throws</td>
+                            <td>transient</td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
+                            <td>try</td>
+                            <td>typeof</td>
+                            <td>var</td>
+                            <td>void</td>
+                        </tr>
+                        <tr>
+                            <td>volatile</td>
+                            <td>while</td>
+                            <td>with</td>
+                            <td>yield</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+            
+            <div id="operators" style="display: none;">
+                <div id="main_title">
+                    <b>The Cat's Clever Calculations 🐾: What is an Operator?</b>
+                </div>
+                <div id="main_title">
+                    <b>Arithmetic Operators</b>
+                </div>
+                <div id="main_content">
+                    <p>Let's dive into the world of arithmetic with our clever cat friends. Just like cats gracefully navigate
+                        different surfaces, JavaScript arithmetic operators perform various calculations on numbers.</p>
+                    <p>Imagine our cat, Whiskers, calculating her treats with the following operators:</p>
+                    <ul>
+                        <li><b>Addition (+):</b> Whiskers loves treats, and if we add more treats, she gets even happier.
+                            <br>Example: <code>let totalTreats = treatsInBowl + treatsFromYou;</code></li>
+                            <br>
+                        <li><b>Subtraction (-):</b> Sometimes Whiskers shares treats with her friends. Subtraction helps us know
+                            how many treats are left.
+                            <br>Example: <code>let treatsLeft = totalTreats - treatsGiven;</code></li>
+                            <br>
+                        <li><b>Multiplication (*):</b> Whiskers is a clever cat, and multiplication helps us calculate the total
+                            happiness when treats are shared with multiple cats.
+                            <br>Example: <code>let totalHappiness = happinessPerCat * numberOfCats;</code></li>
+                            <br>
+                        <li><b>Division (/):</b> Dividing treats ensures each cat gets a fair share. Whiskers loves equality.
+                            <br>Example: <code>let treatsPerCat = totalTreats / numberOfCats;</code></li>
+                            <br>
+                        <li><b>Modulus (%):</b> Sometimes we have treats left, and Whiskers wants to know the remainder after
+                            sharing. Modulus helps with that.
+                            <br>Example: <code>let leftoverTreats = totalTreats % numberOfCats;</code></li>
+                            <br>
+                    </ul>
+                    <div id="script">
+                        &lt;html&gt;
+                        <blockquote>&lt;
+                            body&gt;<br>
+                            <blockquote>
+                                &lt;script type = "text/javascript"&gt;
+                                <blockquote>
+                                    &lt;!--
+                                    <blockquote>
+                                        var treatsFromYou = 5;<br>
+                                        var treatsInBowl = 20;<br>
+                                        var linebreak = "&lt;br/ &gt;";<br>
+                                        <br>
+                                        >document.write("Treats in the bowl + Treats from you: ");<br>
+                                        totalTreats = treatsFromYou + treatsInBowl;<br> 
+                                        document.write(totalTreats);<br>
+                                        document.write(linebreak);<br>
+                                        <br>
+                                        document.write("Treats in the bowl - Treats from you: "); <br>
+                                        totalTreats = treatsFromYou - treatsInBowl; <br>
+                                        document.write(totalTreats); <br>
+                                        document.write(linebreak); <br>
+                                        <br>
+                                        document.write("Treats in the bowl * Treats from you: "); <br>
+                                        totalTreats = treatsFromYou * treatsInBowl; <br>
+                                        document.write(totalTreats); <br>
+                                        document.write(linebreak); <br>
+                                        <br>
+                                        document.write("Treats in the bowl / Treats from you: "); <br>
+                                        totalTreats = treatsFromYou / treatsInBowl; <br>
+                                        document.write(totalTreats); <br>
+                                        document.write(linebreak); <br>
+                                        <br>
+                                        document.write("Treats in the bowl % Treats from you: "); <br>
+                                        totalTreats = treatsFromYou % treatsInBowl; <br>
+                                        document.write(totalTreats); <br>
+                                        document.write(linebreak); <br>
+                                        <br>
+                                        treatsFromYou = ++treatsFromYou; <br>
+                                        document.write("Increment from the treats from you: "); <br>
+                                        totalTreats = ++treatsFromYou <br>
+                                        document.write(totalTreats); <br>
+                                        document.write(linebreak); <br>
+                                        <br>
+                                        treatsInBowl = --treatsInBowl; <br>
+                                        document.write("Decrement from the treats from the bowl: "); <br>
+                                        totalTreats = --treatsInBowl <br>
+                                        document.write(totalTreats); <br>
+                                        document.write(linebreak); <br>
+                                    </blockquote>
+                                    >//--&gt;
+                                </blockquote>
+                                &lt;/script&gt;<br>
+                                Set the variables to different values and then try...
+                            </blockquote>
+                            &lt;/body&gt;
+                        </blockquote>
+                        &lt;/html&gt;
+                    </div>
+                </div>
+                <hr>
+                <div id="main_title">
+                    <b>Comparison Operators</b>
+                </div>
+                <div id="main_content">
+                    <p>JavaScript supports the following comparison operators −
+                    <br>Assume a cat named Kitty has 10 toys (represented by <i>"A"</i>), and another cat named Whiskers has 20 toys (represented by <i>"B"</i>).</li>
+                    </p>
+                    <ul>
+                        <li><b>Equal Operator (==):</b> Checks if the number of toys Kitty has is equal to the number of toys Whiskers has.
+                        if yes, then the condition becomes true.
+                        <br>Example: <code>(A == B) is not true.</code>
+                        </li>
+                        <br>
+
+                        <li><b>Not Equal Operator (!=):</b> Checks if the number of toys Kitty has is not equal to the number of toys Whiskers has.
+                        if the values are not equal, then the condition becomes true.
+                        <br>Example: <code>(A == B) is true.</code>
+                        </li>
+                        <br>
+
+                        <li><b>Greater Than Operator (&gt;):</b> Checks if the number of toys Kitty has is greater than the number of toys Whiskers has.
+                        if yes, then the condition becomes true.
+                        <br>Example: <code>(A &gt; B) not is true.</code>
+                        </li>
+                        <br>
+
+                        <li><b>Less than Operator (&lt;):</b> Checks if the number of toys Kitty has is less than the number of toys Whiskers has.
+                        if yes, then the condition becomes true.
+                        <br>Example: <code>(A &lt; B) is true.</code>
+                        </li>
+                        <br>
+
+                        <li><b>Greater Than Operator (&gt;=):</b> Checks if the number of toys Kitty has is greater than or equal to the number of toys Whiskers has.
+                        if yes, then the condition becomes true.
+                        <br>Example: <code>(A &gt;= B) not is true.</code>
+                        </li>
+                        <br>
+    
+                        <li><b>Less than Operator (&lt;=):</b> Checks if the number of toys Kitty has is less than or equal to the number of toys Whiskers has.
+                        if yes, then the condition becomes true.
+                        <br>Example: <code>(A &lt;= B) is true.</code>
+                        </li>
+                        <br>
+                    </ul>
+                    <div id="script">
+                        &lt;html&gt;
+                        <blockquote>
+                            &lt;body&gt;
+                            <blockquote>
+                                &lt;script type = "text/javascript"&gt;
+                                <blockquote>
+                                    &lt;!--
+                                    <blockquote>
+                                        var a = 10;<br>
+                                        var b = 20;<br>
+                                        var linebreak = "&lt;br/ &gt;";<br>
+                                        <br>
+                                        document.write("(a == b) =&gt; ");<br>
+                                        result = (a == b);<br>
+                                        document.write(result);<br>
+                                        document.write(linebreak);<br>
+                                        <br>
+                                        document.write("(a &lt; b) =&gt; ");<br>
+                                        result = (a &lt; b);<br>
+                                        document.write(result);<br>
+                                        document.write(linebreak);<br>
+                                        <br>
+                                        document.write("(a &gt; b) =&gt; ");<br>
+                                        result = (a &gt; b);<br>
+                                        document.write(result);<br>
+                                        document.write(linebreak);<br>
+                                        <br>
+                                        document.write("(a != b) =&gt; ");<br>
+                                        result = (a != b);<br>
+                                        document.write(result);<br>
+                                        document.write(linebreak);<br>
+                                        <br>
+                                        document.write("(a &gt; b) =&gt; ");<br>
+                                        result = (a &gt; b);<br>
+                                        document.write(result);<br>
+                                        document.write(linebreak);<br>
+                                        <br>
+                                        document.write("(a &lt;= b) =&gt; ");<br>
+                                        result = (a &lt;= b);<br>
+                                        document.write(result);<br>
+                                        document.write(linebreak);<br>
+                                        <br>
+                                    </blockquote>
+                                    //--&gt;
+                                </blockquote>
+                                &lt;/script&gt; <br>
+                                Set the variables to different values and then try...
+                            </blockquote>
+                            &lt;/body&gt;
+                        </blockquote>
+                        &lt;/html&gt;                        
+                    </div>
+                </div>
+                <hr>
+                <div id="main_title">
+                    <b>Logical Operators</b>
+                </div>
+                <div id="main_content">
+                    <br>Assume that a row (represented by <i>"A"</i>) has 10 cats, and another row (represented by <i>"B"</i>) has 20 cats.</li>
+                    </p>
+                    <ul>
+                        <li><b>Logical AND (&&) (==):</b> If both rows have cats, the condition is true.
+                        <br>Example: <code>(A && B) is true.</code>
+                        </li>
+                        <br>
+
+                        <li><b>Logical OR (||):</b> If either of the rows have cats, the condition is true.
+                        <br>Example: <code>(A || B) is true.</code>
+                        </li>
+                        <br>
+
+                        <li><b>Logical NOT (!):</b> Reverses the logical state of its operand. If a condition is true, then the Logical NOT operator will make it false.
+                        <br>Example: <code>!(A && B) is false.</code>
+                        </li>
+                        <br>
+                    </ul>
+                    <div id="script">
+                        &lt;html&gt;
+                        <blockquote>
+                            &lt;body&gt;
+                            <blockquote>
+                                &lt;script type = "text/javascript"&gt;
+                                <blockquote>
+                                    &lt;!--
+                                    <blockquote>
+                                        var a = true;<br>
+                                        var b = false;<br>
+                                        var linebreak = "&lt;br/ &gt;";<br>
+                                        <br>
+                                        document.write("(a && b) =&gt; ");<br>
+                                        result = (a && b);<br>
+                                        document.write(result);<br>
+                                        document.write(linebreak);<br>
+                                        <br>
+                                        document.write("(a || b) =&gt; ");<br>
+                                        result = (a || b);<br>
+                                        document.write(result);<br>
+                                        document.write(linebreak); <br>
+                                        <br>
+                                        document.write("!(a && b) =&gt; ");<br>
+                                        result = !(a && b);<br>
+                                        document.write(result);<br>
+                                        document.write(linebreak); 
+                                        <br>
+                                    </blockquote>
+                                    //--&gt;
+                                </blockquote>
+                                &lt;/script&gt;<br>
+                                Set the variables to different values and then try...
+                            </blockquote>
+                            &lt;/body&gt;
+                        </blockquote>
+                        &lt;/html&gt;
+                    </div>
+                </div>
+        </div>
+
+        <div id="decisionmaking" style="display: none;">
+            <div id="main_title">
+              <b>Decision Making Statements 🐾</b>
+            </div>
+            <div id="main_content">
+              <p>In JavaScript, decision-making statements allow you to control the flow of your code based on conditions.
+              The most common ones are if, else if, and else. They let you execute different blocks of code depending
+              on whether a condition is true or false.<br><br>
+              While writing a program, there may be a situation when you need
+              to adopt one out of a given set of paths. In such cases, you need
+              to use conditional statements that allow your program to make
+              correct decisions and perform right actions.<br><br>
+              JavaScript supports conditional statements which are used to
+              perform different actions based on different conditions. Here we
+              will explain the if..else statement.</p>
+              <br>
+              <h3><b>Flow Chart of if-else</b></h3>
+              <img src="IMAGES/flowchart.png" alt="WIf-else Flow chart">
+              <p>JavaScript supports the following forms of if..else statement −</p>
+              <ul>
+                <li>if statement</li>
+                <li>if...else statement</li>
+                <li>if...else if... statement</li>
+              </ul>
+              <div id="script">
+                    &lt;html&gt;
+                    <blockquote>
+                        &lt;body&gt;
+                        <blockquote>
+                            &lt;script type = "text/javascript"&gt;
+                            <blockquote>
+                                &lt;!--
+                                <blockquote>
+                                    var age = 20;<br>
+                                    <br>
+                                    if(age > 18); { <br>
+                                    <blockquote>
+                                        document.write("&lt;b&gt;Qualifies for driving&lt;/b&gt;";)
+                                    </blockquote>
+                                    }
+                                </blockquote>
+                                //--&gt;
+                            </blockquote>
+                            &lt;/script&gt;<br>
+                            Set the variables to different values and then try...
+                        </blockquote>
+                        &lt;/body&gt;
+                    </blockquote>
+                    &lt;/html&gt;
+                </div>
+                <br><br>
+                <div id="script">
+                    &lt;html&gt;
+                    <blockquote>
+                        &lt;body&gt;
+                        <blockquote>
+                            &lt;script type = "text/javascript"&gt;
+                            <blockquote>
+                                &lt;!--
+                                <blockquote>
+                                    var age = 15;<br>
+                                    <br>
+                                    if(age > 18); { <br>
+                                    <blockquote>
+                                        document.write("&lt;b&gt;Qualifies for driving&lt;/b&gt;";)
+                                    </blockquote>
+                                    } else {<br>
+                                    <blockquote>
+                                        document.write("&lt;b&gt;Does not qualify for driving&lt;/b&gt;";)
+                                    </blockquote>
+                                    }
+                                </blockquote>
+                                //--&gt;
+                            </blockquote>
+                            &lt;/script&gt;<br>
+                            Set the variables to different values and then try...
+                        </blockquote>
+                        &lt;/body&gt;
+                    </blockquote>
+                    &lt;/html&gt;<br>
+                    &lt;html&gt;
+                    <blockquote>
+                        &lt;body&gt;
+                        <blockquote>
+                            &lt;script type = "text/javascript"&gt;
+                            <blockquote>
+                                &lt;!--
+                                <blockquote>
+                                    var book = "maths";<br>
+                                    <br>
+                                    if(book == "history"); { <br>
+                                    <blockquote>
+                                        document.write("&lt;b&gt;History Book&lt;/b&gt;";)
+                                    </blockquote>
+                                    } else if (book == "maths"); {<br>
+                                    <blockquote>
+                                        document.write("&lt;b&gt;Maths Book&lt;/b&gt;";)
+                                    </blockquote>
+                                    } else if (book == "economics"); {<br>
+                                        <blockquote>
+                                            document.write("&lt;b&gt;Economics Book&lt;/b&gt;";)
+                                        </blockquote>
+                                    } else {<br>
+                                        <blockquote>
+                                            document.write("&lt;b&gt;>Unknown Book&lt;/b&gt;";)
+                                        </blockquote>
+                                    }
+                                </blockquote>
+                                //--&gt;
+                            </blockquote>
+                            &lt;/script&gt;<br>
+                            Set the variables to different values and then try...
+                        </blockquote>
+                        &lt;/body&gt;
+                    </blockquote>
+                    &lt;/html&gt;
+                </div>
+            
+            </div>              
+          </div>
+
+        <div id="loops" style="display: none;">
+
+            <div id="main_title">
+                <b>The Cat's Creative Circuits 🐾: JavaScript Loops</b>
+            </div>
+
+            <div id="main_content">
+                <p>While writing a program, you may encounter a situation where you need to perform an action over and over again. 
+                    In such situations, you would need to write loop statements toreduce the number of lines.<br><br>
+                    JavaScript supports all the necessary loops to ease down thepressure of programming.</p>
+            </div>
+
+            <div id="main_title">
+                <b>The "while" Loop</b>
+            </div>
+
+            <div id="main_content">
+                <p>The most basic loop in JavaScript is the <b>while</b> loop which would
+                    be discussed in this chapter. The purpose of a <b>while</b> loop is to
+                    execute a statement or code block repeatedly as long as
+                    an <b>expression</b> is true. Once the expression becomes <b>false</b>, the
+                    loop terminates.</p>
+                <br>
+                <h3><b>Flow Chart</b></h3>
+                <p>The flow chart of <b>while loop</b> looks as follows −</p>
+                <img src="IMAGES/flowchart1.png" alt="While Loop Flow chart">
+                <h3><b>Syntax</b></h3>
+                <p>The syntax of while loop in JavaScript is as follows −</p>
+                <br>
+                <code><i>
+                while (expression) {
+                <blockquote> Statement(s) to be executed if expression is true</blockquote>
+                }</i>
+                <br><br><br>
+                </code>
+                <div id="script">
+                    &lt;html&gt;
+                    <blockquote>
+                        &lt;body&gt;
+                        <blockquote>
+                            &lt;script type = "text/javascript"&gt;
+                            <blockquote>
+                                &lt;!--
+                                <blockquote>
+                                    var count = 0;<br>
+                                    document.write("Starting Loop "); <br>
+                                    <br>
+                                    <blockquote>
+                                        while (count &lt; 10) {
+                                            <blockquote>
+                                            document.write("Current Count : " + count + "&lt;br /&gt;");<br> 
+                                            count++;
+                                            </blockquote>
+                                        }
+                                    </blockquote>
+                                    document.write("Loop stopped!"); <br>
+                                </blockquote>
+                                //--&gt;
+                            </blockquote>
+                            &lt;/script&gt;<br>
+                            Set the variables to different values and then try...
+                        </blockquote>
+                        &lt;/body&gt;
+                    </blockquote>
+                    &lt;/html&gt;
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="main_title">
+                <b>The "do... while" Loop</b>
+            </div>
+
+            <div id="main_content">
+                <p>The <b>do...while</b> loop is similar to the <b>while</b> loop except that the
+                    condition check happens at the end of the loop. This means that
+                    the loop will always be executed at least once, even if the
+                    condition is <b>false</b>.
+                    </p>
+                <br>
+                <h3><b>Flow Chart</b></h3>
+                <p>The flow chart of a <b>do-while</b> loop would be as follows −</p>
+                <img src="IMAGES/flowchart2.png" alt="Do While Loop Flow chart">
+                <h3><b>Syntax</b></h3>
+                <p>The syntax for <b>do-while</b> loop in JavaScript is as follows −</p>
+                <br>
+                <code><i>
+                do {
+                <blockquote> Statement(s) to be executed;</blockquote>
+                } while (expression);</i>
+                <br><br><br>
+                </code>
+                <div id="script">
+                    <code>
+                        <blockquote>
+                            &lt;html&gt;
+                            <blockquote>
+                                &lt;body&gt;
+                                <blockquote>
+                                    &lt;script type = "text/javascript"&gt;
+                                    <blockquote>
+                                        &lt;!--
+                                        <blockquote>
+                                            var count = 0;<br>
+                                            document.write("Starting Loop "); <br>
+                                            do {
+                                                <blockquote>
+                                                document.write("Current Count : " + count + "&lt;br /&gt;");<br> 
+                                                count++;
+                                                </blockquote>
+                                            } while (count &lt; 5)<br>
+                                            document.write("Loop stopped!"); <br>
+                                        </blockquote>
+                                        //--&gt;
+                                    </blockquote>
+                                    &lt;/script&gt;<br>
+                                    Set the variables to different values and then try...
+                                </blockquote>
+                                &lt;/body&gt;
+                            </blockquote>
+                            &lt;/html&gt;
+                    </blockquote>
+                </code>
+                </div>
+            </div>
+
+            <hr> 
+
+            <div id="main_title">
+                <b>The "for" Loop</b>
+            </div>
+
+            <div id="main_content">
+                <p>The <b>'for'</b> loop is the most compact form of looping. It includes the
+                    following three important parts −</p>
+                <ul>
+                    <li>The <b>loop initialization</b> where we initialize our counter to a
+                        starting value. The initialization statement is executed before
+                        the loop begins.</li>
+                    <li>The <b>test statement</b> which will test if a given condition is true
+                        or not. If the condition is true, then the code given inside the
+                        loop will be executed, otherwise the control will come out of
+                        the loop.</li>
+                    <li>The <b>iteration statement</b> where you can increase or
+                        decrease your counter.</li>
+                <p>You can put all the three parts in a single line separated by semicolons.</p>
+                </ul>
+                <br>
+                <h3><b>Flow Chart</b></h3>
+                <p>The flow chart of a <b>for</b> loop in JavaScript would be as follows −</p>
+                <img src="IMAGES/flowchart3.png" alt="Do While Loop Flow chart">
+                <h3><b>Syntax</b></h3>
+                <p>The syntax for <b>for</b> loop in JavaScript is as follows −</p>
+                <br>
+                <code><i>
+                for (initialization; test condition; iteration statement) {
+                <blockquote>Statement(s) to be executed if test condition is true
+                </blockquote>
+                }</i>
+                <br><br><br>
+                </code>
+                <div id="script">
+                    <code>
+                        <blockquote>
+                            &lt;html&gt;
+                            <blockquote>
+                                &lt;body&gt;
+                                <blockquote>
+                                    &lt;script type = "text/javascript"&gt;
+                                    <blockquote>
+                                        &lt;!--
+                                        <blockquote>
+                                            var count = 0;<br>
+                                            document.write("Starting Loop "); <br>
+                                            <br>
+                                            for (count = 0; count &lt; 10; count++) {
+                                                <blockquote>
+                                                document.write("Current Count : " + count +);<br> 
+                                                document.write("&lt;br /&gt;");
+                                                </blockquote>
+                                                }   
+                                            document.write("Loop stopped!"); <br>
+                                        </blockquote>
+                                        //--&gt;
+                                    </blockquote>
+                                    &lt;/script&gt;<br>
+                                    Set the variables to different values and then try...
+                                </blockquote>
+                                &lt;/body&gt;
+                            </blockquote>
+                            &lt;/html&gt;
+                        </blockquote>
+                    </code>
+                </div>
+            </div>
+        </div>
+        <div id="functions" style="display: none;">
+                <div id="main_title">
+                    <b>Javascript Functions
+                    <br><br>"Paw-some Tricks Unleashed" 🐾🎩
+                    </b>
+                </div>
+                <div id="main_content" style="padding-bottom: 150px">
+                  <div></div>
+                    <p>
+                      A function in JavaScript is like a set of instructions or 
+                      a block of code that you can name and reuse whenever you need it. 
+                      It helps in organizing code and making it more manageable.
+                      <br><br>
+                      In Cat Terms.. Think of functions as your very own talented cats. 
+                      You can give them names (function names) and teach them tricks (code).
+                      Whenever you call their names, they perform those tricks. 
+                      Let's dive into the fun world of JavaScript functions with our cat friend, Mittens!
+                    </p>
+                    <br><hr>
+                    <p><b>Defining a Function - Naming Mittens 🐾</b></p>
+                    <p>Let us start by creating a function and giving it a cat-related name, say, Mittens:</p>
+                    <div id="script">
+                        function mittens() {<br>
+                        <blockquote>
+                            //This is where you put tricks to teach mittens
+                        </blockquote>
+                        }
+                    </div>
+                    <p>In Cat Terms... You're basically naming a trick for Mittens to learn.</p>
+                    <br>
+                    <hr>
+                    <p><b>Teaching Mittens a Trick - Asking for Food 🍲</b></p>
+                    <p>Now, let's teach Mittens a trick - asking for food politely:</p>
+                    <div id="script">
+
+                        function askForFood() {<br>
+                        <blockquote>
+                            alert("Meow meow, may I plz haz food?")
+                        </blockquote>
+                        }<br>
+                        <br>
+                        askForFood(); // Mittens performs her trick: "Meow meow, may I plz haz food?"
+
+                        <script>
+                          function askForFood() {
+                            alert("Meow meow, may I plz haz food?");
+                          }
+                        </script>
+                    </div>
+                    <div class="button-container">
+                        <button class="askForFood-btn" type="button" onclick="askForFood()">
+                          askForFood
+                        </button>
+                    </div>
+                      <p>In Cat Terms... Every time you say "askForFood," Mittens performs her adorable trick, asking for food.</p>
+                      <br>
+                    <hr>
+
+                      <p><b>Javascript Parameters - Purr-sonalized Tags 🐾</b></p>
+                      <p>In JavaScript, a function parameter is like a placeholder or 
+                        variable that you define when creating a function. These placeholders
+                         allow you to pass values into the function when you call it, 
+                         making the function more versatile and adaptable. Parameters 
+                         act as inputs that the function can use to perform different 
+                         actions based on the provided values.</p>
+                         <br>
+                         <div id="script">
+                            <code>
+                                <blockquote>
+                                    function greetCat(name) {<br>
+                                    <blockquote>
+                                        alert("Meow there! I'm " + name + "!");<br>
+                                    </blockquote>
+                                    }<br>
+                                    <br>
+                                    greetCat("Whiskers"); // Output: Meow there! I'm Whiskers!
+                                </blockquote>
+                            </code>
+
+                             <script>
+                              function greetCat() {
+                                alert("Meow there! I'm Whiskers!!");
+                              }
+                             </script>
+                       </div>
+                       <div class="button-container">
+                        <button class="askForFood-btn" type="button" onclick="greetCat()">
+                          greetCat
+                        </button>
+                       </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id = "controls" >
+				<a href = "#" onclick="arrow(this)">&lt;</a>
+				<a href = "#" onclick="arrow(this)">&gt;</a>
+		</div>
+
+
+        <script>
+            var datatypes = document.getElementById('datatypes');
+            var reserved = document.getElementById('reserved');
+            var whatisjavascript = document.getElementById('whatisjavascript');
+            var arithmetic = document.getElementById('arithmetic');
+            var loops = document.getElementById('loops');
+            var decisionmaking = document.getElementById('decisionmaking');
+            var functions = document.getElementById('functions');
+            var link1 = document.getElementById('link1')
+            var link2 = document.getElementById('link2')
+            var link3 = document.getElementById('link3')
+            var link4 = document.getElementById('link4')
+            var link5 = document.getElementById('link5')
+            var link6 = document.getElementById('link6')
+            var link7 = document.getElementById('link7')
+            function changeContent(link) {
+
+                if (link.textContent == "Datatypes and Variables") {
+                    whatisjavascript.style.display = "none";
+                    datatypes.style.display = "block";
+                    reserved.style.display = "none";
+                    operators.style.display = "none";
+                    decisionmaking.style.display = "none";
+                    loops.style.display = "none";
+                    functions.style.display = "none";
+                    link1.classList.remove('linkcolor')
+                    link2.classList.add('linkcolor')
+                    link3.classList.remove('linkcolor')
+                    link4.classList.remove('linkcolor')
+                    link5.classList.remove('linkcolor')
+                    link6.classList.remove('linkcolor')
+                    link7.classList.remove('linkcolor')
+                    document.title = "Datatypes and Variables"
+
+                } else if (link.textContent == "Reserved Words") {
+                    whatisjavascript.style.display = "none";
+                    datatypes.style.display = "none";
+                    reserved.style.display = "block";
+                    operators.style.display = "none";
+                    decisionmaking.style.display = "none";
+                    loops.style.display = "none";
+                    functions.style.display = "none";
+                    link1.classList.remove('linkcolor')
+                    link2.classList.remove('linkcolor')
+                    link3.classList.add('linkcolor')
+                    link4.classList.remove('linkcolor')
+                    link5.classList.remove('linkcolor')
+                    link6.classList.remove('linkcolor')
+                    link7.classList.remove('linkcolor')
+                    document.title = "Reserved Words"
+
+                } else if (link.textContent == "What is an Operator?") {
+                    whatisjavascript.style.display = "none";
+                    datatypes.style.display = "none";
+                    reserved.style.display = "none";
+                    operators.style.display = "block";
+                    decisionmaking.style.display = "none";
+                    loops.style.display = "none";
+                    functions.style.display = "none";
+                    link1.classList.remove('linkcolor')
+                    link2.classList.remove('linkcolor')
+                    link3.classList.remove('linkcolor')
+                    link4.classList.add('linkcolor')
+                    link5.classList.remove('linkcolor')
+                    link6.classList.remove('linkcolor')
+                    link7.classList.remove('linkcolor')
+                    document.title = "What is an Operator?"
+
+                } else if (link.textContent == "Decision Making Statements") {
+                    whatisjavascript.style.display = "none";
+                    datatypes.style.display = "none";
+                    reserved.style.display = "none";
+                    operators.style.display = "none";
+                    decisionmaking.style.display = "block";
+                    loops.style.display = "none";
+                    functions.style.display = "none";
+                    link1.classList.remove('linkcolor')
+                    link2.classList.remove('linkcolor')
+                    link3.classList.remove('linkcolor')
+                    link4.classList.remove('linkcolor')
+                    link5.classList.add('linkcolor')
+                    link6.classList.remove('linkcolor')
+                    link7.classList.remove('linkcolor')
+                    document.title = "Decision Making Statements"
+                
+                } else if (link.textContent == "Loops") {
+                    whatisjavascript.style.display = "none";
+                    datatypes.style.display = "none";
+                    reserved.style.display = "none";
+                    operators.style.display = "none";
+                    loops.style.display = "block";
+                    decisionmaking.style.display ="none";
+                    functions.style.display = "none";
+                    link1.classList.remove('linkcolor')
+                    link2.classList.remove('linkcolor')
+                    link3.classList.remove('linkcolor')
+                    link4.classList.remove('linkcolor')
+                    link5.classList.remove('linkcolor')
+                    link6.classList.add('linkcolor')
+                    link7.classList.remove('linkcolor')
+                    document.title = "Loops"
+                
+                } else if (link.textContent == "Functions") {
+                    whatisjavascript.style.display = "none";
+                    datatypes.style.display = "none";
+                    reserved.style.display = "none";
+                    operators.style.display = "none";
+                    loops.style.display = "none";
+                    decisionmaking.style.display ="none";
+                    functions.style.display ="block";
+                    link1.classList.remove('linkcolor')
+                    link2.classList.remove('linkcolor')
+                    link3.classList.remove('linkcolor')
+                    link4.classList.remove('linkcolor')
+                    link5.classList.remove('linkcolor')
+                    link6.classList.remove('linkcolor')
+                    link7.classList.add('linkcolor')
+                    document.title = "Functions"
+
+                } else {
+                    whatisjavascript.style.display = "block";
+                    datatypes.style.display = "none";
+                    reserved.style.display = "none";
+                    operators.style.display = "none";
+                    loops.style.display = "none";
+                    decisionmaking.style.display = "none";
+                    functions.style.display = "none";
+                    link1.classList.add('linkcolor')
+                    link2.classList.remove('linkcolor')
+                    link3.classList.remove('linkcolor')
+                    link4.classList.remove('linkcolor')
+                    link5.classList.remove('linkcolor')
+                    link6.classList.remove('linkcolor')
+                    link7.classList.remove('linkcolor')
+                    document.title = "What is Javascript?"
+                }
+            }
+
+            function arrow(link) {
+                if (link.textContent == '<') {
+                    if (whatisjavascript.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        operators.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                        functions.style.display = "block";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.add('linkcolor')
+                        document.title = "Functions"
+                    } else if (functions.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        operators.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "block";
+                        functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.add('linkcolor')
+                        link7.classList.remove('linkcolor')
+                        document.title = "Loops"
+                    } else if (loops.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        operators.style.display = "none";
+                        decisionmaking.style.display = "block";
+                        loops.style.display = "none";
+                        functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.add('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
+                        document.title = "Decision Making Statements"
+                    }else if (decisionmaking.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        arithmetic.style.display = "block";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                        functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.add('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
+                        document.title = "What is an Operator?"
+                    } else if (arithmetic.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "block";
+                        operators.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                        functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.add('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
+                        document.title = "Reserved Words"
+                    } else if (reserved.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "block";
+                        reserved.style.display = "none";
+                        operators.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                        functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.add('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
+                        document.title = "Datatypes and Variables"
+                    } else {
+                        whatisjavascript.style.display = "block";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        operators.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                        functions.style.display = "none";
+                        link1.classList.add('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
+                        document.title = "What is JavaScript?"
+                    }
+                } else {
+                    if (whatisjavascript.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "block";
+                        reserved.style.display = "none";
+                        operators.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                        functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.add('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
+                        document.title = "Datatypes and Variables"
+                    } else if (datatypes.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "block";
+                        operators.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                        functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.add('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
+                        document.title = "Reserved Words"
+                    } else if (reserved.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        arithmetic.style.display = "block";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                        functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.add('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
+                        document.title = "What is an Operator?"
+                    } else if (arithmetic.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        operators.style.display = "none";
+                        decisionmaking.style.display = "block";
+                        loops.style.display = "none";
+                        functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.add('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
+                        document.title = "Decision Making Statements"
+                    } else if (decisionmaking.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        operators.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "block";
+                        functions.style.display = "none";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.add('linkcolor')
+                        link7.classList.remove('linkcolor')
+                        document.title = "Loops"
+                    } else if (loops.style.display == "block"){
+                        whatisjavascript.style.display = "none";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        operators.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                        functions.style.display = "block";
+                        link1.classList.remove('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.add('linkcolor')
+                        document.title = "Functions"
+                    } else {
+                        whatisjavascript.style.display = "block";
+                        datatypes.style.display = "none";
+                        reserved.style.display = "none";
+                        operators.style.display = "none";
+                        decisionmaking.style.display = "none";
+                        loops.style.display = "none";
+                        functions.style.display = "none";
+                        link1.classList.add('linkcolor')
+                        link2.classList.remove('linkcolor')
+                        link3.classList.remove('linkcolor')
+                        link4.classList.remove('linkcolor')
+                        link5.classList.remove('linkcolor')
+                        link6.classList.remove('linkcolor')
+                        link7.classList.remove('linkcolor')
+                        document.title = "What is JavaScript?"
+                    }
+                }
+            }
+
+            function toggleMode() {
+                var body = document.body;
+                if (body.classList.contains('light-mode')) {
+                    body.classList.remove('light-mode');
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                    body.classList.add('light-mode');
+                }
+            }
+        </script>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
