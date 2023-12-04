@@ -5,7 +5,7 @@ background-color: rgba(255,204,204,1);
 background-image: url('IMAGES/background.png');
 background-attachment: fixed;
 background-size: 250px;
-animation: animatedBackground 5s linear infinite, fade-in 0.5s ease-in-out;
+animation: animatedBackground 0s linear infinite, fade-in 0.5s ease-in-out;
 overflow-x: hidden;
 }
 
@@ -70,14 +70,29 @@ transform: scale(1.1)
 #side {
 position: fixed;
 width: 25%;
+height: calc(100vh - 70px - 65px);
+overflow-y: scroll;  
 top: 70px;
 bottom: 65px;
 border-right: 2px dashed black;
 border-spacing: 5px;
 }
 
+#side::-webkit-scrollbar {
+    width: 12px;
+}
+
+#side::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+#side::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
 #side_title {
-text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+text-shadow: 3px 3px 3px rgba(241, 62, 62, 0.5);
 font-family: courier new;
 text-align: center;
 font-size: 35px;
@@ -86,6 +101,8 @@ width: 100%;
 }
 
 #side_list {
+height: 100%;
+/* overflow-y: scroll; */
 font-size: 21px;
 font-family: century gothic;
 margin-top: 50px;
@@ -170,15 +187,16 @@ padding: 10px;
 }
 
 #main_title {
+text-align: center;
 font-family: courier;
 margin-top: 5%;
 margin-left: 2%;
 font-size: 35px;
-
 }
 
 #main_content {
 font-family: "comic sans ms", cursive;
+text-align: justify;
 margin-top: 5%;
 margin-left: 8%;
 margin-right: 6%;
@@ -204,8 +222,9 @@ padding-right: 50px;
 }
 
 #script {
-border: 2px solid gray;
-background-color: rgba(217, 217, 217, 1);
+border: 2px dashed rgb(0, 0, 0);
+border-radius: 10px;
+background-color: #808080;
 
 }
 

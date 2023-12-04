@@ -3,7 +3,7 @@
 
 <head>
     <title>What is JavaScript?</title>
-    <link rel="stylesheet" type="text/css" href="dec2.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="IMAGES/icon.png">
     <script src="JS.js" defer></script>
     <style>
@@ -41,7 +41,7 @@
             text-decoration: none;
             cursor: pointer;
             border-radius: 8px;
-            transition: background 3s ease, transform 0.1s ease-in-out;
+            transition: background 3s ease, transform 0.5s ease-in-out;
             background: linear-gradient(to right, #FBACCC, #F1D1D0); 
             border: 2px solid #FBACCC; 
             align-self: center;
@@ -77,6 +77,9 @@
                     <li><a href="#" id = "link5" onclick="changeContent(this)">Decision Making Statements</a></li>
                     <li><a href="#" id = "link6" onclick="changeContent(this)">Loops</a></li>
                     <li><a href="#" id = "link7" onclick="changeContent(this)">Functions</a></li>
+                    <li><a href="#" id = "link7" onclick="changeContent(this)">Arrays</a></li>
+                    <li><a href="#" id = "link7" onclick="changeContent(this)">Functions</a></li>
+                    <li><a href="#" id = "link7" onclick="changeContent(this)">Functions</a></li>
                 </ul>
             </div>
         </div>
@@ -92,18 +95,37 @@
                         zippers to the clothes. Instead of just passively wearing them, you can now interact with them.
                         You can open, zip, and button your clothing to dynamically change how you're protected and uncover
                         different parts as needed.</p>
-                    <br>
+
                     <p>Similarly, web pages originally were mostly static content, like HTML and CSS that structured and
                         styled the page. But just like adding interactive elements like buttons and zippers to clothes,
                         JavaScript enables you to add dynamic functionality and effects to web pages. You can respond to
                         user actions, detect clicks, change content, validate input, animate objects, load new
                         data—things that make web pages feel engaging and responsive.</p>
-                    <br>
+
                     <p>Zippers and buttons are cheap and lightweight versus extremely fancy and complex mechanisms yet
                         enable so much extra functionality. Similarly, JavaScript code is relatively simple,
                         lightweight and easy to learn, but unlocks tremendous interactivity. Adding a bit of JavaScript
                         code, even to static HTML/CSS sites, brings pages to life just like adding zippers and buttons
                         give plain clothes customizable functionality.</p>
+                    <hr>
+                        <p id="main_title"><b>The History of JavaScript</b></p>
+
+                    JavaScript is everywhere, and for the seventh year in a row, it has been ranked the most 
+                    commonly used programming language, with 67.8% of developers employing it in 2019. Its ascent 
+                    to the world’s most popular programming language is synonymous with the rise of the internet itself.
+                    </p>
+                    <!-- <br> -->
+                    <p>
+                    Created out of necessity, it is used to build 95.2% (1.52 billion) of websites today, including some 
+                    of the world’s largest, like Facebook and YouTube. Without it, we would not have popular and useful
+                     web apps such as Google Maps and eBay. 
+                    </p>
+                     <!-- <br> -->
+                    <p>
+                    So, without further ado, let’s take a look at what JavaScript is,  how and why it was created, 
+                    and what’s next for the language.
+                    </p>
+                    <br><br><br>
                 </div>
             </div>
 
@@ -180,7 +202,7 @@
                 <div id="main_content" style="padding-bottom: 150px">
                     <p>A list of all the reserved words in JavaScript are given in the following table. They <b>CANNOT</b> be
                         used as JavaScript variables, functions, methods, loop labels, or any object names.</p>
-                    <table id="main_content" style="margin-left: 5px;">
+                    <table id="main_content" style="margin-left: 5px; font-weight: bold;">
                         <tr>
                             <td>abstract</td>
                             <td>arguments</td>

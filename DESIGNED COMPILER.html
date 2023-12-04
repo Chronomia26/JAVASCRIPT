@@ -1,29 +1,43 @@
 <html>
   <head>
     <title>Code Editor</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="IMAGES/icon.png">
-  </head>
-
-  <body>
-    
     <style>
+      header {
+        padding-bottom: 15px;
+      }
       #codearea {
         border-right: 2px dashed black;
+        display: flex;
+        justify-content: center;
         width: 50%;
-        top: 6.8%;
+        top: 7.5%;
         bottom: 0;
         position: fixed;
       }
 
-      textarea {  
-        position:fixed;
-        left: 2%;
+      #input, #output {
+        font-weight: bold; 
+        color: white;
+        border-radius: 50px;
+        background-color: crimson;
+        position: relative;
+        padding-top: 8px;
+        text-align: center;
+        width: 80%;
+        top: 20px;
+        height: 45px;
+        font-family: 'comic sans ms', cursive; 
+        font-size: 25px;
+      }
+
+      textarea {
+        position: absolute;
         border: 2px dashed black;
         border-radius: 20px;
         padding: 10px;
-        width: 46%;
+        width: 80%;
         overflow-y: scroll;
         font-family: Courier, sans-serif;
         background-color: rgba(0, 0, 0, 0.8);
@@ -32,50 +46,64 @@
       }
 
       #html {
-        top: 8%;
-        min-height: 250px;
-        
+        top: 10%;
+        min-height: 200px;
         
       }
 
       #css {
-        top: 36%;
-        min-height: 250px;
+        top: 38%;
+        min-height: 200px;
       }
 
       #js {
-        top: 64%;
-        min-height: 250px;
+        top: 66%;
+        min-height: 200px;
       }
       
+      #outputarea {
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        top: 7.5%;
+        right: 0;
+        width: 50%;
+
+        height: 100vh;
+      }
       iframe {
         background-color: rgba(255, 255, 255, 0.8);
-        font-size: 50px;
-        position: fixed;
-        top: 8%;
-        right: 2%;
-        width: 45.5%;
-        height: 750px;
+        position: absolute;
+        top: 9.5%;
+        width: 80%;
+        height: 675px;
       }
       
       
       
     </style>
+  </head>
+
+  <body>
     <header>
       <div id="header_img">
           <a href="MAIN.html">
               <img src="IMAGES/logo.png" alt="NEKODE">
           </a>
       </div>
-      <button id="toggle-button" onclick="toggleMode()">DARK</button>
+      <button id="toggle-dark-button" onclick="toggleDarkMode()">DARK</button>
     </header>
     <div id = "codearea">
-      <textarea id="html" placeholder="HTML"></textarea>
-      <textarea id="css" placeholder="CSS"></textarea>
-      <textarea id="js" placeholder="JavaScript"></textarea>
+     <div id = "input">INPUT</div> 
+      <textarea id="html" placeholder="Type (HTML) here..."></textarea>
+      <textarea id="css" placeholder="Type (CSS) here..."></textarea>
+      <textarea id="js" placeholder="Type (JavaScript) here..."></textarea>
     </div>
-    
-    <iframe id="code"></iframe>
+    <div id = "outputarea">
+      <div id = "output">OUTPUT</div> 
+      <iframe id="code"></iframe>
+    </div>
+      
 
     <script type="text/javascript" src="app.js"></script>
 
