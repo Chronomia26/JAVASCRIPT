@@ -1,7 +1,7 @@
   var datatypes = document.getElementById('datatypes');
   var reserved = document.getElementById('reserved');
   var whatisjavascript = document.getElementById('whatisjavascript');
-  var arithmetic = document.getElementById('arithmetic');
+  var operators = document.getElementById('operators');
   var loops = document.getElementById('loops');
   var decisionmaking = document.getElementById('decisionmaking');
   var functions = document.getElementById('functions');
@@ -189,7 +189,7 @@
               whatisjavascript.style.display = "none";
               datatypes.style.display = "none";
               reserved.style.display = "none";
-              arithmetic.style.display = "block";
+              operators.style.display = "block";
               decisionmaking.style.display = "none";
               loops.style.display = "none";
               functions.style.display = "none";
@@ -201,7 +201,7 @@
               link6.classList.remove('linkcolor')
               link7.classList.remove('linkcolor')
               document.title = "What is an Operator?"
-          } else if (arithmetic.style.display == "block"){
+          } else if (operators.style.display == "block"){
               whatisjavascript.style.display = "none";
               datatypes.style.display = "none";
               reserved.style.display = "block";
@@ -287,7 +287,7 @@
               whatisjavascript.style.display = "none";
               datatypes.style.display = "none";
               reserved.style.display = "none";
-              arithmetic.style.display = "block";
+              operators.style.display = "block";
               decisionmaking.style.display = "none";
               loops.style.display = "none";
               functions.style.display = "none";
@@ -299,7 +299,7 @@
               link6.classList.remove('linkcolor')
               link7.classList.remove('linkcolor')
               document.title = "What is an Operator?"
-          } else if (arithmetic.style.display == "block"){
+          } else if (operators.style.display == "block"){
               whatisjavascript.style.display = "none";
               datatypes.style.display = "none";
               reserved.style.display = "none";
@@ -367,13 +367,23 @@
       }
   }
 
-  function toggleMode() {
+  function toggleDarkMode() {
       var body = document.body;
+      var header = document.querySelector('header');
+      var footer = document.querySelector('footer');
       if (body.classList.contains('light-mode')) {
           body.classList.remove('light-mode');
           body.classList.add('dark-mode');
+          header.classList.remove('lightmode');
+          header.classList.add('darkmode');
+          footer.classList.remove('lightmode');
+          footer.classList.add('darkmode');
       } else {
           body.classList.remove('dark-mode');
           body.classList.add('light-mode');
+          header.classList.remove('darkmode');
+          header.classList.add('lightmode');
+          footer.classList.remove('darkmode');
+          footer.classList.add('lightmode');
       }
   }

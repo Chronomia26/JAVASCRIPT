@@ -46,19 +46,22 @@ box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
 padding: 10px;
 }
 
-#toggle-button {
-    position: fixed;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    padding: 20px 25px;
-    font-family: arial;
-    font-size: 20px;
+footer {
+text-align: center;
+bottom: 0;
+position: fixed;
+width: 100%;
+background-color: rgba(255, 153, 153, 1);
+padding: 5px;
+font-family: century gothic;
 }
+
+
+
+
 
 #header_img {
 margin: 0;
-background-color: none;
 width: 8%;
 transition: transform 0.3s ease-in-out;
 }
@@ -66,6 +69,20 @@ transition: transform 0.3s ease-in-out;
 #header_img:hover {
 transform: scale(1.1)
 }
+
+#toggle-dark-button {
+position: fixed;
+top: 0;
+right: 0;
+cursor: pointer;
+padding: 20px 25px;
+font-family: arial;
+font-size: 20px;
+}
+
+
+
+
 
 #side {
 position: fixed;
@@ -76,6 +93,7 @@ top: 70px;
 bottom: 65px;
 border-right: 2px dashed black;
 border-spacing: 5px;
+overflow-y: scroll;
 }
 
 #side::-webkit-scrollbar {
@@ -132,52 +150,39 @@ transform: scale(1.07);
 font-weight: bold;
 }
 
-#main {
-bottom: 0;
-margin-top: 60px;
-margin-left: 25%;
-padding: 10px; 
-}
 
-@keyframes right-fade-in{
-    from {
-        opacity: 0;
-        transform: translate(80px);
-    }
-    to {
-        opacity: 1;
-        transform: translate(0px);
-    }
-} 
+
+
+
+
 #whatisjavascript {
-    height: 100vh;
+    height: 150vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 
 #datatypes {
-    height: 200vh;
+    height: 230vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #reserved {
-    height: 100vh;
+    height: 120vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #operators {
-    height: 780vh;
+    height: 880vh;
+    animation: right-fade-in 0.5s ease-in-out;
+}
+
+#decisionmaking {
+    height: 500vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #loops {
-    height: 800vh;
-    animation: right-fade-in 0.5s ease-in-out;
-}
-
-
-#decisionmaking {
-    height: 450vh;
+    height: 850vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
@@ -185,6 +190,24 @@ padding: 10px;
     height: 250vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
+
+#main {
+    bottom: 0;
+    margin-top: 60px;
+    margin-left: 25%;
+    padding: 10px; 
+    }
+    
+    @keyframes right-fade-in{
+        from {
+            opacity: 0;
+            transform: translate(80px);
+        }
+        to {
+            opacity: 1;
+            transform: translate(0px);
+        }
+    } 
 
 #main_title {
 text-align: center;
@@ -228,6 +251,11 @@ background-color: #808080;
 
 }
 
+
+
+
+
+
 #controls {
 font-size: 50px;
 font-family: arial;
@@ -247,12 +275,3 @@ border-top: 1px solid black;
 transform: scale(1.1);
 }
 
-footer {
-text-align: center;
-bottom: 0;
-position: fixed;
-width: 100%;
-background-color: rgba(255, 153, 153, 1);
-padding: 5px;
-font-family: century gothic;
-}
