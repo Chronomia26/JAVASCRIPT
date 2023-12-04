@@ -62,7 +62,6 @@ font-family: century gothic;
 
 #header_img {
 margin: 0;
-background-color: none;
 width: 8%;
 transition: transform 0.3s ease-in-out;
 }
@@ -92,6 +91,7 @@ top: 70px;
 bottom: 65px;
 border-right: 2px dashed black;
 border-spacing: 5px;
+overflow-y: scroll;
 }
 
 #side_title {
