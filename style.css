@@ -139,34 +139,33 @@ font-weight: bold;
 
 
 #whatisjavascript {
-    height: 100vh;
+    height: 150vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 
 #datatypes {
-    height: 200vh;
+    height: 230vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #reserved {
-    height: 100vh;
+    height: 120vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #operators {
-    height: 780vh;
+    height: 880vh;
+    animation: right-fade-in 0.5s ease-in-out;
+}
+
+#decisionmaking {
+    height: 500vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #loops {
-    height: 800vh;
-    animation: right-fade-in 0.5s ease-in-out;
-}
-
-
-#decisionmaking {
-    height: 450vh;
+    height: 850vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
