@@ -1,7 +1,7 @@
   var datatypes = document.getElementById('datatypes');
   var reserved = document.getElementById('reserved');
   var whatisjavascript = document.getElementById('whatisjavascript');
-  var arithmetic = document.getElementById('arithmetic');
+  var operators = document.getElementById('operators');
   var loops = document.getElementById('loops');
   var decisionmaking = document.getElementById('decisionmaking');
   var functions = document.getElementById('functions');
@@ -189,7 +189,7 @@
               whatisjavascript.style.display = "none";
               datatypes.style.display = "none";
               reserved.style.display = "none";
-              arithmetic.style.display = "block";
+              operators.style.display = "block";
               decisionmaking.style.display = "none";
               loops.style.display = "none";
               functions.style.display = "none";
@@ -201,7 +201,7 @@
               link6.classList.remove('linkcolor')
               link7.classList.remove('linkcolor')
               document.title = "What is an Operator?"
-          } else if (arithmetic.style.display == "block"){
+          } else if (operators.style.display == "block"){
               whatisjavascript.style.display = "none";
               datatypes.style.display = "none";
               reserved.style.display = "block";
@@ -287,7 +287,7 @@
               whatisjavascript.style.display = "none";
               datatypes.style.display = "none";
               reserved.style.display = "none";
-              arithmetic.style.display = "block";
+              operators.style.display = "block";
               decisionmaking.style.display = "none";
               loops.style.display = "none";
               functions.style.display = "none";
@@ -299,7 +299,7 @@
               link6.classList.remove('linkcolor')
               link7.classList.remove('linkcolor')
               document.title = "What is an Operator?"
-          } else if (arithmetic.style.display == "block"){
+          } else if (operators.style.display == "block"){
               whatisjavascript.style.display = "none";
               datatypes.style.display = "none";
               reserved.style.display = "none";
@@ -367,7 +367,7 @@
       }
   }
 
-  function toggleMode() {
+  function toggleDarkMode() {
       var body = document.body;
       if (body.classList.contains('light-mode')) {
           body.classList.remove('light-mode');

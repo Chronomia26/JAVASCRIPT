@@ -60,7 +60,7 @@
                     <img src="IMAGES/logo.png" alt="NEKODE">
                 </a>
             </div>
-            <button id="toggle-button" onclick="toggleMode()">DARK</button>
+            <button id="toggle-dark-button" onclick="toggleDarkMode()">DARK</button>
         </header>
 		
         <div id="side">
@@ -854,97 +854,97 @@
             </div>
         </div>
         <div id="functions" style="display: none;">
-                <div id="main_title">
-                    <b>Javascript Functions
-                    <br><br>"Paw-some Tricks Unleashed" 🐾🎩
-                    </b>
+            <div id="main_title">
+                <b>Javascript Functions
+                <br><br>"Paw-some Tricks Unleashed" 🐾🎩
+                </b>
+            </div>
+            <div id="main_content" style="padding-bottom: 150px">
+              <div></div>
+                <p>
+                  A function in JavaScript is like a set of instructions or 
+                  a block of code that you can name and reuse whenever you need it. 
+                  It helps in organizing code and making it more manageable.
+                  <br><br>
+                  In Cat Terms.. Think of functions as your very own talented cats. 
+                  You can give them names (function names) and teach them tricks (code).
+                  Whenever you call their names, they perform those tricks. 
+                  Let's dive into the fun world of JavaScript functions with our cat friend, Mittens!
+                </p>
+                <br><hr>
+                <p><b>Defining a Function - Naming Mittens 🐾</b></p>
+                <p>Let us start by creating a function and giving it a cat-related name, say, Mittens:</p>
+                <div id="script">
+                <p>
+                  <code>
+                    <blockquote>function mittens() {<br></blockquote></blockquote>
+                    <blockquote><blockquote>//This is where you put tricks to teach mittens <br></blockquote></blockquote>
+                    <blockquote>}<br></blockquote></blockquote>
+                  </code>
+                </p>
                 </div>
-                <div id="main_content" style="padding-bottom: 150px">
-                  <div></div>
-                    <p>
-                      A function in JavaScript is like a set of instructions or 
-                      a block of code that you can name and reuse whenever you need it. 
-                      It helps in organizing code and making it more manageable.
-                      <br><br>
-                      In Cat Terms.. Think of functions as your very own talented cats. 
-                      You can give them names (function names) and teach them tricks (code).
-                      Whenever you call their names, they perform those tricks. 
-                      Let's dive into the fun world of JavaScript functions with our cat friend, Mittens!
-                    </p>
-                    <br><hr>
-                    <p><b>Defining a Function - Naming Mittens 🐾</b></p>
-                    <p>Let us start by creating a function and giving it a cat-related name, say, Mittens:</p>
-                    <div id="script">
-                        function mittens() {<br>
-                        <blockquote>
-                            //This is where you put tricks to teach mittens
-                        </blockquote>
-                        }
-                    </div>
-                    <p>In Cat Terms... You're basically naming a trick for Mittens to learn.</p>
-                    <br>
-                    <hr>
-                    <p><b>Teaching Mittens a Trick - Asking for Food 🍲</b></p>
-                    <p>Now, let's teach Mittens a trick - asking for food politely:</p>
-                    <div id="script">
-
-                        function askForFood() {<br>
-                        <blockquote>
-                            alert("Meow meow, may I plz haz food?")
-                        </blockquote>
-                        }<br>
-                        <br>
-                        askForFood(); // Mittens performs her trick: "Meow meow, may I plz haz food?"
-
-                        <script>
-                          function askForFood() {
-                            alert("Meow meow, may I plz haz food?");
-                          }
-                        </script>
-                    </div>
-                    <div class="button-container">
-                        <button class="askForFood-btn" type="button" onclick="askForFood()">
-                          askForFood
-                        </button>
-                    </div>
-                      <p>In Cat Terms... Every time you say "askForFood," Mittens performs her adorable trick, asking for food.</p>
+                <p>In Cat Terms... You're basically naming a trick for Mittens to learn.</p>
+                <br>
+                <hr>
+                <p><b>Teaching Mittens a Trick - Asking for Food 🍲</b></p>
+                <p>Now, let's teach Mittens a trick - asking for food politely:</p>
+                <div id="script">
+                  <p>
+                    <code>
+                      <blockquote>function askForFood() {<br></blockquote></blockquote>
+                      <blockquote><blockquote>alert("Meow meow, may I plz haz food?");<br></blockquote></blockquote>
+                      <blockquote>}<br></blockquote></blockquote>
                       <br>
-                    <hr>
-
-                      <p><b>Javascript Parameters - Purr-sonalized Tags 🐾</b></p>
-                      <p>In JavaScript, a function parameter is like a placeholder or 
-                        variable that you define when creating a function. These placeholders
-                         allow you to pass values into the function when you call it, 
-                         making the function more versatile and adaptable. Parameters 
-                         act as inputs that the function can use to perform different 
-                         actions based on the provided values.</p>
-                         <br>
-                         <div id="script">
-                            <code>
-                                <blockquote>
-                                    function greetCat(name) {<br>
-                                    <blockquote>
-                                        alert("Meow there! I'm " + name + "!");<br>
-                                    </blockquote>
-                                    }<br>
-                                    <br>
-                                    greetCat("Whiskers"); // Output: Meow there! I'm Whiskers!
-                                </blockquote>
-                            </code>
-
-                             <script>
-                              function greetCat() {
-                                alert("Meow there! I'm Whiskers!!");
-                              }
-                             </script>
-                       </div>
-                       <div class="button-container">
-                        <button class="askForFood-btn" type="button" onclick="greetCat()">
-                          greetCat
-                        </button>
-                       </div>
-                </div>
-
+                      <blockquote>askForFood(); // Mittens performs her trick: "Meow meow, may I plz haz food?"</blockquote>
+                    </code>
+                    <script>
+                      function askForFood() {
+                        alert("Meow meow, may I plz haz food?");
+                      }
+                    </script>
+                    <div class="button-container">
+                    <button class="askForFood-btn" type="button" onclick="askForFood()">
+                      askForFood
+                    </button>
+                    </div>
+                  </p>
+                  </div>
+                  <p>In Cat Terms... Every time you say "askForFood," Mittens performs her adorable trick, asking for food.</p>
+                  <br>
+                  <hr>
+        
+                  <p><b>Javascript Parameters - Purr-sonalized Tags 🐾</b></p>
+                  <p>In JavaScript, a function parameter is like a placeholder or 
+                    variable that you define when creating a function. These placeholders
+                     allow you to pass values into the function when you call it, 
+                     making the function more versatile and adaptable. Parameters 
+                     act as inputs that the function can use to perform different 
+                     actions based on the provided values.</p>
+                     <br>
+                     <div id="script">
+                      <p>
+                         <code>
+                            <blockquote>
+                              function greetCat(name) {<br>
+                                <blockquote>alert("Meow there! I'm " + name + "!");<br></blockquote>
+                              }<br>
+                             <br>
+                             greetCat("Whiskers"); // Output: Meow there! I'm Whiskers!
+                            </blockquote>
+                         </code>
+                         <script>
+                          function greetCat() {
+                            alert("Meow there! I'm Whiskers!!");
+                          }
+                         </script>
+                         <div class="button-container">
+                          <button class="askForFood-btn" type="button" onclick="greetCat()">
+                            greetCat
+                          </button>
+                         </div>
+                      </p>
+                   </div>
+            </div>
             </div>
         </div>
 
@@ -954,387 +954,7 @@
 		</div>
 
 
-        <script>
-            var datatypes = document.getElementById('datatypes');
-            var reserved = document.getElementById('reserved');
-            var whatisjavascript = document.getElementById('whatisjavascript');
-            var arithmetic = document.getElementById('arithmetic');
-            var loops = document.getElementById('loops');
-            var decisionmaking = document.getElementById('decisionmaking');
-            var functions = document.getElementById('functions');
-            var link1 = document.getElementById('link1')
-            var link2 = document.getElementById('link2')
-            var link3 = document.getElementById('link3')
-            var link4 = document.getElementById('link4')
-            var link5 = document.getElementById('link5')
-            var link6 = document.getElementById('link6')
-            var link7 = document.getElementById('link7')
-            function changeContent(link) {
-
-                if (link.textContent == "Datatypes and Variables") {
-                    whatisjavascript.style.display = "none";
-                    datatypes.style.display = "block";
-                    reserved.style.display = "none";
-                    operators.style.display = "none";
-                    decisionmaking.style.display = "none";
-                    loops.style.display = "none";
-                    functions.style.display = "none";
-                    link1.classList.remove('linkcolor')
-                    link2.classList.add('linkcolor')
-                    link3.classList.remove('linkcolor')
-                    link4.classList.remove('linkcolor')
-                    link5.classList.remove('linkcolor')
-                    link6.classList.remove('linkcolor')
-                    link7.classList.remove('linkcolor')
-                    document.title = "Datatypes and Variables"
-
-                } else if (link.textContent == "Reserved Words") {
-                    whatisjavascript.style.display = "none";
-                    datatypes.style.display = "none";
-                    reserved.style.display = "block";
-                    operators.style.display = "none";
-                    decisionmaking.style.display = "none";
-                    loops.style.display = "none";
-                    functions.style.display = "none";
-                    link1.classList.remove('linkcolor')
-                    link2.classList.remove('linkcolor')
-                    link3.classList.add('linkcolor')
-                    link4.classList.remove('linkcolor')
-                    link5.classList.remove('linkcolor')
-                    link6.classList.remove('linkcolor')
-                    link7.classList.remove('linkcolor')
-                    document.title = "Reserved Words"
-
-                } else if (link.textContent == "What is an Operator?") {
-                    whatisjavascript.style.display = "none";
-                    datatypes.style.display = "none";
-                    reserved.style.display = "none";
-                    operators.style.display = "block";
-                    decisionmaking.style.display = "none";
-                    loops.style.display = "none";
-                    functions.style.display = "none";
-                    link1.classList.remove('linkcolor')
-                    link2.classList.remove('linkcolor')
-                    link3.classList.remove('linkcolor')
-                    link4.classList.add('linkcolor')
-                    link5.classList.remove('linkcolor')
-                    link6.classList.remove('linkcolor')
-                    link7.classList.remove('linkcolor')
-                    document.title = "What is an Operator?"
-
-                } else if (link.textContent == "Decision Making Statements") {
-                    whatisjavascript.style.display = "none";
-                    datatypes.style.display = "none";
-                    reserved.style.display = "none";
-                    operators.style.display = "none";
-                    decisionmaking.style.display = "block";
-                    loops.style.display = "none";
-                    functions.style.display = "none";
-                    link1.classList.remove('linkcolor')
-                    link2.classList.remove('linkcolor')
-                    link3.classList.remove('linkcolor')
-                    link4.classList.remove('linkcolor')
-                    link5.classList.add('linkcolor')
-                    link6.classList.remove('linkcolor')
-                    link7.classList.remove('linkcolor')
-                    document.title = "Decision Making Statements"
-                
-                } else if (link.textContent == "Loops") {
-                    whatisjavascript.style.display = "none";
-                    datatypes.style.display = "none";
-                    reserved.style.display = "none";
-                    operators.style.display = "none";
-                    loops.style.display = "block";
-                    decisionmaking.style.display ="none";
-                    functions.style.display = "none";
-                    link1.classList.remove('linkcolor')
-                    link2.classList.remove('linkcolor')
-                    link3.classList.remove('linkcolor')
-                    link4.classList.remove('linkcolor')
-                    link5.classList.remove('linkcolor')
-                    link6.classList.add('linkcolor')
-                    link7.classList.remove('linkcolor')
-                    document.title = "Loops"
-                
-                } else if (link.textContent == "Functions") {
-                    whatisjavascript.style.display = "none";
-                    datatypes.style.display = "none";
-                    reserved.style.display = "none";
-                    operators.style.display = "none";
-                    loops.style.display = "none";
-                    decisionmaking.style.display ="none";
-                    functions.style.display ="block";
-                    link1.classList.remove('linkcolor')
-                    link2.classList.remove('linkcolor')
-                    link3.classList.remove('linkcolor')
-                    link4.classList.remove('linkcolor')
-                    link5.classList.remove('linkcolor')
-                    link6.classList.remove('linkcolor')
-                    link7.classList.add('linkcolor')
-                    document.title = "Functions"
-
-                } else {
-                    whatisjavascript.style.display = "block";
-                    datatypes.style.display = "none";
-                    reserved.style.display = "none";
-                    operators.style.display = "none";
-                    loops.style.display = "none";
-                    decisionmaking.style.display = "none";
-                    functions.style.display = "none";
-                    link1.classList.add('linkcolor')
-                    link2.classList.remove('linkcolor')
-                    link3.classList.remove('linkcolor')
-                    link4.classList.remove('linkcolor')
-                    link5.classList.remove('linkcolor')
-                    link6.classList.remove('linkcolor')
-                    link7.classList.remove('linkcolor')
-                    document.title = "What is Javascript?"
-                }
-            }
-
-            function arrow(link) {
-                if (link.textContent == '<') {
-                    if (whatisjavascript.style.display == "block"){
-                        whatisjavascript.style.display = "none";
-                        datatypes.style.display = "none";
-                        reserved.style.display = "none";
-                        operators.style.display = "none";
-                        decisionmaking.style.display = "none";
-                        loops.style.display = "none";
-                        functions.style.display = "block";
-                        link1.classList.remove('linkcolor')
-                        link2.classList.remove('linkcolor')
-                        link3.classList.remove('linkcolor')
-                        link4.classList.remove('linkcolor')
-                        link5.classList.remove('linkcolor')
-                        link6.classList.remove('linkcolor')
-                        link7.classList.add('linkcolor')
-                        document.title = "Functions"
-                    } else if (functions.style.display == "block"){
-                        whatisjavascript.style.display = "none";
-                        datatypes.style.display = "none";
-                        reserved.style.display = "none";
-                        operators.style.display = "none";
-                        decisionmaking.style.display = "none";
-                        loops.style.display = "block";
-                        functions.style.display = "none";
-                        link1.classList.remove('linkcolor')
-                        link2.classList.remove('linkcolor')
-                        link3.classList.remove('linkcolor')
-                        link4.classList.remove('linkcolor')
-                        link5.classList.remove('linkcolor')
-                        link6.classList.add('linkcolor')
-                        link7.classList.remove('linkcolor')
-                        document.title = "Loops"
-                    } else if (loops.style.display == "block"){
-                        whatisjavascript.style.display = "none";
-                        datatypes.style.display = "none";
-                        reserved.style.display = "none";
-                        operators.style.display = "none";
-                        decisionmaking.style.display = "block";
-                        loops.style.display = "none";
-                        functions.style.display = "none";
-                        link1.classList.remove('linkcolor')
-                        link2.classList.remove('linkcolor')
-                        link3.classList.remove('linkcolor')
-                        link4.classList.remove('linkcolor')
-                        link5.classList.add('linkcolor')
-                        link6.classList.remove('linkcolor')
-                        link7.classList.remove('linkcolor')
-                        document.title = "Decision Making Statements"
-                    }else if (decisionmaking.style.display == "block"){
-                        whatisjavascript.style.display = "none";
-                        datatypes.style.display = "none";
-                        reserved.style.display = "none";
-                        arithmetic.style.display = "block";
-                        decisionmaking.style.display = "none";
-                        loops.style.display = "none";
-                        functions.style.display = "none";
-                        link1.classList.remove('linkcolor')
-                        link2.classList.remove('linkcolor')
-                        link3.classList.remove('linkcolor')
-                        link4.classList.add('linkcolor')
-                        link5.classList.remove('linkcolor')
-                        link6.classList.remove('linkcolor')
-                        link7.classList.remove('linkcolor')
-                        document.title = "What is an Operator?"
-                    } else if (arithmetic.style.display == "block"){
-                        whatisjavascript.style.display = "none";
-                        datatypes.style.display = "none";
-                        reserved.style.display = "block";
-                        operators.style.display = "none";
-                        decisionmaking.style.display = "none";
-                        loops.style.display = "none";
-                        functions.style.display = "none";
-                        link1.classList.remove('linkcolor')
-                        link2.classList.remove('linkcolor')
-                        link3.classList.add('linkcolor')
-                        link4.classList.remove('linkcolor')
-                        link5.classList.remove('linkcolor')
-                        link6.classList.remove('linkcolor')
-                        link7.classList.remove('linkcolor')
-                        document.title = "Reserved Words"
-                    } else if (reserved.style.display == "block"){
-                        whatisjavascript.style.display = "none";
-                        datatypes.style.display = "block";
-                        reserved.style.display = "none";
-                        operators.style.display = "none";
-                        decisionmaking.style.display = "none";
-                        loops.style.display = "none";
-                        functions.style.display = "none";
-                        link1.classList.remove('linkcolor')
-                        link2.classList.add('linkcolor')
-                        link3.classList.remove('linkcolor')
-                        link4.classList.remove('linkcolor')
-                        link5.classList.remove('linkcolor')
-                        link6.classList.remove('linkcolor')
-                        link7.classList.remove('linkcolor')
-                        document.title = "Datatypes and Variables"
-                    } else {
-                        whatisjavascript.style.display = "block";
-                        datatypes.style.display = "none";
-                        reserved.style.display = "none";
-                        operators.style.display = "none";
-                        decisionmaking.style.display = "none";
-                        loops.style.display = "none";
-                        functions.style.display = "none";
-                        link1.classList.add('linkcolor')
-                        link2.classList.remove('linkcolor')
-                        link3.classList.remove('linkcolor')
-                        link4.classList.remove('linkcolor')
-                        link5.classList.remove('linkcolor')
-                        link6.classList.remove('linkcolor')
-                        link7.classList.remove('linkcolor')
-                        document.title = "What is JavaScript?"
-                    }
-                } else {
-                    if (whatisjavascript.style.display == "block"){
-                        whatisjavascript.style.display = "none";
-                        datatypes.style.display = "block";
-                        reserved.style.display = "none";
-                        operators.style.display = "none";
-                        decisionmaking.style.display = "none";
-                        loops.style.display = "none";
-                        functions.style.display = "none";
-                        link1.classList.remove('linkcolor')
-                        link2.classList.add('linkcolor')
-                        link3.classList.remove('linkcolor')
-                        link4.classList.remove('linkcolor')
-                        link5.classList.remove('linkcolor')
-                        link6.classList.remove('linkcolor')
-                        link7.classList.remove('linkcolor')
-                        document.title = "Datatypes and Variables"
-                    } else if (datatypes.style.display == "block"){
-                        whatisjavascript.style.display = "none";
-                        datatypes.style.display = "none";
-                        reserved.style.display = "block";
-                        operators.style.display = "none";
-                        decisionmaking.style.display = "none";
-                        loops.style.display = "none";
-                        functions.style.display = "none";
-                        link1.classList.remove('linkcolor')
-                        link2.classList.remove('linkcolor')
-                        link3.classList.add('linkcolor')
-                        link4.classList.remove('linkcolor')
-                        link5.classList.remove('linkcolor')
-                        link6.classList.remove('linkcolor')
-                        link7.classList.remove('linkcolor')
-                        document.title = "Reserved Words"
-                    } else if (reserved.style.display == "block"){
-                        whatisjavascript.style.display = "none";
-                        datatypes.style.display = "none";
-                        reserved.style.display = "none";
-                        arithmetic.style.display = "block";
-                        decisionmaking.style.display = "none";
-                        loops.style.display = "none";
-                        functions.style.display = "none";
-                        link1.classList.remove('linkcolor')
-                        link2.classList.remove('linkcolor')
-                        link3.classList.remove('linkcolor')
-                        link4.classList.add('linkcolor')
-                        link5.classList.remove('linkcolor')
-                        link6.classList.remove('linkcolor')
-                        link7.classList.remove('linkcolor')
-                        document.title = "What is an Operator?"
-                    } else if (arithmetic.style.display == "block"){
-                        whatisjavascript.style.display = "none";
-                        datatypes.style.display = "none";
-                        reserved.style.display = "none";
-                        operators.style.display = "none";
-                        decisionmaking.style.display = "block";
-                        loops.style.display = "none";
-                        functions.style.display = "none";
-                        link1.classList.remove('linkcolor')
-                        link2.classList.remove('linkcolor')
-                        link3.classList.remove('linkcolor')
-                        link4.classList.remove('linkcolor')
-                        link5.classList.add('linkcolor')
-                        link6.classList.remove('linkcolor')
-                        link7.classList.remove('linkcolor')
-                        document.title = "Decision Making Statements"
-                    } else if (decisionmaking.style.display == "block"){
-                        whatisjavascript.style.display = "none";
-                        datatypes.style.display = "none";
-                        reserved.style.display = "none";
-                        operators.style.display = "none";
-                        decisionmaking.style.display = "none";
-                        loops.style.display = "block";
-                        functions.style.display = "none";
-                        link1.classList.remove('linkcolor')
-                        link2.classList.remove('linkcolor')
-                        link3.classList.remove('linkcolor')
-                        link4.classList.remove('linkcolor')
-                        link5.classList.remove('linkcolor')
-                        link6.classList.add('linkcolor')
-                        link7.classList.remove('linkcolor')
-                        document.title = "Loops"
-                    } else if (loops.style.display == "block"){
-                        whatisjavascript.style.display = "none";
-                        datatypes.style.display = "none";
-                        reserved.style.display = "none";
-                        operators.style.display = "none";
-                        decisionmaking.style.display = "none";
-                        loops.style.display = "none";
-                        functions.style.display = "block";
-                        link1.classList.remove('linkcolor')
-                        link2.classList.remove('linkcolor')
-                        link3.classList.remove('linkcolor')
-                        link4.classList.remove('linkcolor')
-                        link5.classList.remove('linkcolor')
-                        link6.classList.remove('linkcolor')
-                        link7.classList.add('linkcolor')
-                        document.title = "Functions"
-                    } else {
-                        whatisjavascript.style.display = "block";
-                        datatypes.style.display = "none";
-                        reserved.style.display = "none";
-                        operators.style.display = "none";
-                        decisionmaking.style.display = "none";
-                        loops.style.display = "none";
-                        functions.style.display = "none";
-                        link1.classList.add('linkcolor')
-                        link2.classList.remove('linkcolor')
-                        link3.classList.remove('linkcolor')
-                        link4.classList.remove('linkcolor')
-                        link5.classList.remove('linkcolor')
-                        link6.classList.remove('linkcolor')
-                        link7.classList.remove('linkcolor')
-                        document.title = "What is JavaScript?"
-                    }
-                }
-            }
-
-            function toggleMode() {
-                var body = document.body;
-                if (body.classList.contains('light-mode')) {
-                    body.classList.remove('light-mode');
-                    body.classList.add('dark-mode');
-                } else {
-                    body.classList.remove('dark-mode');
-                    body.classList.add('light-mode');
-                }
-            }
-        </script>
+        <script src = "JS.js"></script>
     </div>
 
     <footer>
