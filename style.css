@@ -150,10 +150,9 @@ transform: scale(1.07);
 font-weight: bold;
 }
 
-
-
-
-
+#statement {
+    animation: right-fade-in 0.5s ease-in-out;
+}
 
 #whatisjavascript {
     height: 150vh;
@@ -213,8 +212,13 @@ font-weight: bold;
 text-align: center;
 font-family: courier;
 margin-top: 5%;
-margin-left: 2%;
+/* margin-left: 2%; */
 font-size: 35px;
+}
+
+#semi_title {
+    text-align: center;
+    font-weight: bold;
 }
 
 #main_content {
@@ -250,11 +254,6 @@ border-radius: 10px;
 background-color: #808080;
 
 }
-
-
-
-
-
 
 #controls {
 font-size: 50px;
