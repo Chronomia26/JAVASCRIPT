@@ -1,82 +1,57 @@
 <html>
   <head>
-    <title>Code Editor</title>
+    <title>NEKOCOMPILER</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="IMAGES/icon.png">
     <style>
+      body{
+        display: flex;
+        justify-content: center;
+      }
       header {
         padding-bottom: 15px;
       }
       #codearea {
-        border-right: 2px dashed black;
-        display: flex;
-        justify-content: center;
-        width: 50%;
-        top: 7.5%;
-        bottom: 0;
+        border: 15px solid rgb(41, 133, 47);
+        width: 75%;
+        top: 24%;
+        height: 60%;
         position: fixed;
-      }
-
-      #input, #output {
-        font-weight: bold; 
-        color: white;
-        border-radius: 50px;
-        background-color: crimson;
-        position: relative;
-        padding-top: 8px;
-        text-align: center;
-        width: 80%;
-        top: 20px;
-        height: 45px;
-        font-family: 'comic sans ms', cursive; 
-        font-size: 25px;
+        background-color: white;
+        box-shadow: 25px 25px 0px rgba(0, 0, 0, 0.4);
       }
 
       textarea {
         position: absolute;
-        border: 2px dashed black;
-        border-radius: 20px;
-        padding: 10px;
-        width: 80%;
-        overflow-y: scroll;
+        left: 0;
+        width: 50%;
         font-family: Courier, sans-serif;
-        background-color: rgba(0, 0, 0, 0.8);
-        font-size: 18px;
+        background-color: rgba(0, 0, 0, 0.9);
+        font-size: 15px;
         color: white;
       }
 
-      #html {
-        top: 10%;
-        min-height: 200px;
-        
+      #html{
+        top: 0;
+        height: 33%;
+        border-bottom: 3px dashed white;
       }
-
-      #css {
-        top: 38%;
-        min-height: 200px;
+      #css{
+        top: 33%;
+        height: 33%;
       }
-
-      #js {
+      #js{
         top: 66%;
-        min-height: 200px;
-      }
-      
-      #outputarea {
-        display: flex;
-        position: fixed;
-        justify-content: center;
-        top: 7.5%;
-        right: 0;
-        width: 50%;
-
-        height: 100vh;
+        bottom: 0;
+        border-top: 3px dashed white;
       }
       iframe {
         background-color: rgba(255, 255, 255, 0.8);
         position: absolute;
-        top: 9.5%;
-        width: 80%;
-        height: 675px;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 99%;
       }
       
       
@@ -94,18 +69,16 @@
       <button id="toggle-dark-button" onclick="toggleDarkMode()">DARK</button>
     </header>
     <div id = "codearea">
-     <div id = "input">INPUT</div> 
       <textarea id="html" placeholder="Type (HTML) here..."></textarea>
       <textarea id="css" placeholder="Type (CSS) here..."></textarea>
       <textarea id="js" placeholder="Type (JavaScript) here..."></textarea>
-    </div>
-    <div id = "outputarea">
-      <div id = "output">OUTPUT</div> 
       <iframe id="code"></iframe>
     </div>
-      
 
+
+    
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="JS.js"></script>
 
     <footer>
       <p>&copy; 2023 Your Website. All rights reserved.</p>

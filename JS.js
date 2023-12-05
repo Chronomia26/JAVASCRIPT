@@ -451,6 +451,8 @@
       var body = document.body;
       var header = document.querySelector('header');
       var footer = document.querySelector('footer');
+      var darkmode = document.getElementById('toggle-dark-button')
+
       if (body.classList.contains('light-mode')) {
           body.classList.remove('light-mode');
           body.classList.add('dark-mode');
@@ -458,6 +460,7 @@
           header.classList.add('darkmode');
           footer.classList.remove('lightmode');
           footer.classList.add('darkmode');
+          darkmode.textContent = "LIGHT"
       } else {
           body.classList.remove('dark-mode');
           body.classList.add('light-mode');
@@ -465,5 +468,6 @@
           header.classList.add('lightmode');
           footer.classList.remove('darkmode');
           footer.classList.add('lightmode');
-      }
+          darkmode.textContent = "DARK"
+        }
   }

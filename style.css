@@ -56,6 +56,16 @@ padding: 5px;
 font-family: century gothic;
 }
 
+.dark-mode {
+    background-color: rgba(0,42,42,1);
+    color: #ffffff;
+    background-image: url(IMAGES/background1.png);
+}
+
+.darkmode {
+    background-color: rgba(0,11,11,1);
+}
+
 
 
 

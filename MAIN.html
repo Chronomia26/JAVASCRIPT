@@ -12,7 +12,6 @@
 		#content {
 			padding-bottom: 100%;
 			padding-right: 100%;
-			background-image: url(IMAGES/main.gif);
 			background-size: 1870px;
 			background-repeat: no-repeat;
 			position: fixed;
@@ -70,7 +69,7 @@
 		}
 		.learn {
 			width: 100%;
-			margin-top: 10%;
+			margin-top: 4%;
 			margin-left: 20%;
 			transition: transform 0.3s ease-in-out;
 			font-family: 'Courier New';
@@ -93,6 +92,32 @@
 			transform: scale(1.1);
 		}
 
+		.comp {
+			width: 100%;
+			margin-top: 6%;
+			margin-left: 20%;
+			transition: transform 0.3s ease-in-out;
+			font-family: 'Courier New';
+			text-align: center;
+			opacity: 0;
+			animation: fade-in 1s ease-in-out forwards;
+			animation-delay: 1.5s;
+		}
+
+		.comp a {
+			color: white;
+			padding: 2%;
+			padding-left: 20%;
+			padding-right: 20%;
+			font-size: 30px;
+			border-radius: 50px;
+			text-decoration: none; 
+			background-color: rgb(89,13,13);
+		}
+		.comp:hover {
+			transform: scale(1.1);
+		}
+
 		footer {
 			text-align: center;
 			bottom: 0;
@@ -102,10 +127,31 @@
 			padding: 5px;
 			font-family: century gothic;
 		}
+
+
+		#toggle-dark-button {
+			position: fixed;
+			top: 0;
+			right: 0;
+			cursor: pointer;
+			padding: 20px 25px;
+			font-family: arial;
+			font-size: 20px;
+		}
+
+		.lightmode {
+			background-image: url(IMAGES/main.gif);
+		}
+
+		.darkmode {
+			background-image: url(IMAGES/main_dark.gif);
+		}
+
 	</style>
 </head>
 <body>
-	<div id = "content">
+	<div id = "content" class="lightmode">
+		<button id="toggle-dark-button" onclick="toggleDarkMode()">DARK</button>
 		<div class="logo">
 			<img src="IMAGES/logo.png">
 			<p>an introductory <i>JavaScript</i> learning site</p>
@@ -113,9 +159,25 @@
 		<div class="learn">
 			<a href="SINGLE HTML SITE.html">LEARN HTML TODAY!</a>
 		</div>
+		<div class="comp">
+			<a href="DESIGNED COMPILER.html">USE NEKOCOMPILER</a>
+		</div>
 		<footer>
 			<p>&copy; 2023 Your Website. All rights reserved.</p>
 		  </footer>
 	</div>
+	<script>
+		function toggleDarkMode() {
+			var content = document.getElementById('content')
+
+			if (content.classList.contains('lightmode')) {
+				content.classList.remove('lightmode');
+				content.classList.add('darkmode');
+			} else {
+				content.classList.remove('darkmode');
+				content.classList.add('lightmode');
+			}
+		}
+	</script>
 </body>
 </html>
