@@ -35,6 +35,17 @@ color: black;
 text-decoration: none;
 }
 
+@keyframes example {
+    0%   {background-color: #fe9e9e;}
+    50%  {background-color: #F1D1D0;}
+    100% {background-color: #fe9e9e;}
+    }
+
+@keyframes darkk {
+    0%   {background-color: #0A2647;}
+    50%  {background-color: #144272;}
+    100% {background-color: #0A2647;}
+    }
 
 header {
 position: fixed;
@@ -44,6 +55,12 @@ width: 100%;
 background-color: rgba(255, 153, 153, 1);
 box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
 padding: 10px;
+}
+
+.lightmode {
+animation-name: example;
+animation-duration: 10s;
+animation-iteration-count: infinite;
 }
 
 footer {
@@ -57,13 +74,16 @@ font-family: century gothic;
 }
 
 .dark-mode {
-    background-color: rgba(0,42,42,1);
+    background-color: #001f3f;
     color: #ffffff;
     background-image: url(IMAGES/background1.png);
 }
 
 .darkmode {
-    background-color: rgba(0,11,11,1);
+    animation-name: darkk;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+    background-color: #001020;
 }
 
 
@@ -80,14 +100,32 @@ transition: transform 0.3s ease-in-out;
 transform: scale(1.1)
 }
 
-#toggle-dark-button {
+.toggle-dark-button {
 position: fixed;
-top: 0;
-right: 0;
+top: 6px;
+right: 6px;
 cursor: pointer;
 padding: 20px 25px;
 font-family: arial;
 font-size: 20px;
+}
+
+.toggle-dark-button {
+    color: #03001C !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 10px;
+    border: 4px solid #001f3f !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.toggle-dark-button:hover {
+    color: #2d2d2d !important;
+    border-radius: 50px;
+    border-color: #fe9e9e!important;
+    transition: all 0.3s ease 0s;
 }
 
 
