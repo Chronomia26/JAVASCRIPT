@@ -378,43 +378,120 @@ Without data types, a computer cannot safely solve this:
                 <div id="main_content">
                     <p>Before you use a variable in a JavaScript program, you must declare it. Variables are declared
                         with the <b>var</b> keyword as follows.</p>
-
-                    <div id="script">
-                        <code>
+                        <br>
+                        <p id="semi_title">Automatically Declared Variables</p>
+                        <p>
+                          Automatically declared variables are created when you assign a value to an undeclared variable. 
+                          JavaScript automatically understands the variable and assigns the value to it.
+                        </p>
+                        <div id="script">
+                          <code>
+                              <blockquote>
+                                // Variable x is automatically declared<br>
+                                x = 5;<br>
+                                <br>
+                                // Now x holds the value 5<br>
+                                console.log(x);<br>
+                                <br><br>
+                                // Variable message is automatically declared<br>
+                                message = "Hello, World!";<br>
+                                <br>
+                                // Now message holds the string "Hello, World!"<br>
+                                console.log(message);<br>
+                                <br><br>
+                                // Variable count is automatically declared<br>
+                                count = 10;<br>
+                                <br>
+                                // Now count holds the value 10<br>
+                                console.log(count);<br>
+                              </blockquote>
+                          </code>
+                        </div>
+                        <br><br>
+                        <p id="semi_title">Variables Declared Using var</p>
+                        <p>
+                        In JavaScript, var was traditionally used to declare variables. 
+                        Variables declared with var are function-scoped.
+                        </p>
+                        <div id="script">
+                            <code>
                             <blockquote>
-                                &lt;script type&gt; = "text/javascript"> <br>
-                                <blockquote>
-                                    &lt;!--<br>
-                                    <blockquote>
-                                        var money;<br>
-                                        var name;<br>
-                                    </blockquote>
-                                    //--&gt;
-                                </blockquote>
-                                &lt;/script&gt;
+                                // Using var to declare a variable<br>
+                                var a = 2;<br>
+                                <br>
+                                // Now a holds the value 2<br>
+                                console.log(a);<br>
+                                <br>
+                                // Variables declared using var are hoisted<br>
+                                console.log(b); // Outputs: undefined<br>
+                                var b = 7;<br>
+                                <br>
+                                // var allows redeclaration of variables<br>
+                                var name = "John";<br>
+                                var name = "Doe"; // No error, but the variable is overwritten<br>
+                                console.log(name); // Outputs: Doe<br>
+                                <br>
                             </blockquote>
-                        </code>
-                    </div>
+                            </code>
+                        </div>
+                        <br><br>
+                        <p id="semi_title">Variables Declared Using let</p>
+                        <p>
+                            let was introduced in ECMAScript 6 (ES6) and provides block-scoping, 
+                            which can be more predictable than var.
+                        </p>
 
-                    <br><br>
-
-                    <div id="script">
-                        <code>
+                        <div id="script">
+                            <code>
                             <blockquote>
-                                &lt;script type&gt; = "text/javascript"<br>
-                                <blockquote>
-                                    &lt;!--<br>
-                                    <blockquote>
-                                        var name = "Ali";<br>
-                                        var money;<br>
-                                        money = 2000.50;<br>
-                                    </blockquote>
-                                    //--&gt;
-                                </blockquote>
-                                &lt;/script&gt;
+                                // Using let to declare a variable<br>
+                                let age = 25;<br>
+                                <br>
+                                // Now age holds the value 25<br>
+                                console.log(age);<br>
+                                <br>
+                                // Variables declared using let have block scope<br>
+                                if (true) {<br>
+                                let localVar = "I am inside a block";<br>
+                                }<br>
+                                <br>
+                                console.log(localVar); // Error: localVar is not defined<br>
+                                <br>
+                                // let does not allow redeclaration of the same variable in the same scope<br>
+                                let color = "red";<br>
+                                // let color = "blue"; // Error: Identifier 'color' has already been declared<br>
+                                <br>
                             </blockquote>
-                        </code>
-                    </div>
+                            </code>
+                        </div>
+                        <br><br>
+                        <p id="semi_title">Variables Declared Using const:</p>
+                        <p>
+                        const is used to declare variables that should not be reassigned. 
+                        It also has block-scoping.
+                        </p>
+
+                        <div id="script">
+                            <code>
+                            <blockquote>
+                                // Using const to declare a constant variable<br>
+                                const PI = 3.14;<br>
+                                <br>
+                                // Now PI holds the value 3.14<br>
+                                console.log(PI);<br>
+                                <br>
+                                // Variables declared using const must be assigned a value 
+                                during declaration<br>
+                                const gravity; // Error: Missing initializer in const declaration<br>
+                                <br>
+                                // const variables cannot be reassigned<br>
+                                const daysInWeek = 7;<br>
+                                // daysInWeek = 8; // Error: Assignment to constant variable.<br>
+                                
+                            </blockquote>
+                            </code>
+                        </div>
+                        <br><br><br><br>
                 </div>
             </div>
 
@@ -791,6 +868,7 @@ Without data types, a computer cannot safely solve this:
                         </code>
                     </div>
                 </div>
+                <br><br><br><br><br><br><br><br>
             </div>
 
             <div id="assignment" style="display: none;">
@@ -961,7 +1039,7 @@ Without data types, a computer cannot safely solve this:
                         </blockquote>
                     </code>
                 </div>
-            
+                <br><br><br><br><br>
             </div>              
             </div>
 
@@ -1164,6 +1242,7 @@ Without data types, a computer cannot safely solve this:
                         </code>
                     </div>
                 </div>
+                <br><br><br><br><br><br><br><br>
             </div>
 
             <div id="functions" style="display: none;">

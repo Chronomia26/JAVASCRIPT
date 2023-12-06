@@ -248,6 +248,10 @@ font-weight: bold;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
+#comment {
+    animation: right-fade-in 0.5s ease-in-out;
+}
+
 #whatisjavascript {
     height: 150vh;
     animation: right-fade-in 0.5s ease-in-out;
