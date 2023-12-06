@@ -100,7 +100,7 @@ transition: transform 0.3s ease-in-out;
 transform: scale(1.1)
 }
 
-.toggle-dark-button {
+#toggle-dark-button {
 position: fixed;
 top: 6px;
 right: 6px;
@@ -110,7 +110,7 @@ font-family: arial;
 font-size: 20px;
 }
 
-.toggle-dark-button {
+#toggle-dark-button {
     color: #03001C !important;
     text-transform: uppercase;
     background: #ffffff;
@@ -121,7 +121,7 @@ font-size: 20px;
     transition: all 0.3s ease 0s;
 }
 
-.toggle-dark-button:hover {
+#toggle-dark-button:hover {
     color: #2d2d2d !important;
     border-radius: 50px;
     border-color: #fe9e9e!important;

@@ -592,7 +592,7 @@
           header.classList.add('darkmode');
           footer.classList.remove('lightmode');
           footer.classList.add('darkmode');
-          darkmode.textContent = "LIGHT"
+          darkmode.textContent = "DAY"
       } else {
           body.classList.remove('dark-mode');
           body.classList.add('light-mode');
@@ -600,6 +600,6 @@
           header.classList.add('lightmode');
           footer.classList.remove('darkmode');
           footer.classList.add('lightmode');
-          darkmode.textContent = "DARK"
+          darkmode.textContent = "NIGHT"
         }
   }
