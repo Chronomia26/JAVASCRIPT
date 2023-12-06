@@ -223,6 +223,11 @@ font-weight: bold;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
+#assignment {
+    height: 200vh;
+    animation: right-fade-in 0.5s ease-in-out;
+}
+
 #decisionmaking {
     height: 500vh;
     animation: right-fade-in 0.5s ease-in-out;

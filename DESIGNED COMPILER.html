@@ -9,7 +9,7 @@
         justify-content: center;
       }
       header {
-        padding-bottom: 15px;
+        padding-bottom: 14px;
       }
       #codearea {
         border: 15px solid rgb(41, 133, 47);
@@ -60,13 +60,15 @@
   </head>
 
   <body>
-    <header>
+    <header class="lightmode">
       <div id="header_img">
           <a href="MAIN.html">
               <img src="IMAGES/logo.png" alt="NEKODE">
           </a>
       </div>
-      <button id="toggle-dark-button" onclick="toggleDarkMode()">DARK</button>
+      <div class="button_cont">
+        <a class="toggle-dark-button" onclick="toggleDarkMode()">NIGHT</a>
+    </div>
     </header>
     <div id = "codearea">
       <textarea id="html" placeholder="Type (HTML) here..."></textarea>
@@ -80,7 +82,7 @@
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="JS.js"></script>
 
-    <footer>
+    <footer class="lightmode">
       <p>&copy; 2023 Your Website. All rights reserved.</p>
     </footer>
   </body>
