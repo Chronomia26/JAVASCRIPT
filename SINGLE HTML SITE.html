@@ -5,7 +5,6 @@
     <title>What is JavaScript?</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="IMAGES/icon.png">
-    <script src="JS.js"></script>
     <style>
 
         .linkcolor {
@@ -72,6 +71,7 @@
         </div>
 
         <div id="main">
+
             <div id="whatisjavascript"  style="display: block;">
                 <div id="main_title">
                     <b>What is JavaScript? 🐾</b>
@@ -186,21 +186,103 @@
                     <b>JavaScript Datatypes 🐾</b>
                 </div>
                 <div id="main_content" style="padding-bottom: 150px">
-                    <p>One of the most fundamental characteristics of a programming language is the set of data types it
-                        supports. These are the type of values that can be represented and manipulated in a programming
-                        language. JavaScript allows you to work with three primitive data types −</p>
-                    <ul style="margin-left: 5%;">
-                        <li style="margin-bottom: 0; background: none"><b>Numbers</b>, eg. <i>123, 120.50 etc.</i></li>
-                        <li style="margin-bottom: 0; background: none"><b>Strings</b> of text e.g.
-                            <i>"This text is a string" etc.</i></li>
-                        <li style="margin-bottom: 0; background: none"><b>Boolean</b> e.g. <i>true or false.</i></li>
-                    </ul>
+                    <p>In JavaScript, think of data types like different breeds of cats. Strings are like fluffy
+                         Persian cats – they’re collections of
+                        characters, while numbers are sleek Siamese cats – precise and numerical. Objects are 
+                        like a playful tabby, a mix of
+                        different properties, and arrays are like a litter of kittens, a sequence of elements.
+                         Each “cat” (data type) has its own
+                        characteristics and purpose in the JavaScript “pet shelter” (code).
+                        </p>
+                        <br>
+                        <p id="semi_title">JavaScript has 8 Datatypes</p>
+                    <ol style="margin-left: 5%;">
+                        <li style="margin-left: 10%;">String</li>
+                        <li style="margin-left: 10%;">Number</li>
+                        <li style="margin-left: 10%;">Bigint</li>
+                        <li style="margin-left: 10%;">Boolean</li>
+                        <li style="margin-left: 10%;">Undefined</li>
+                        <li style="margin-left: 10%;">Null</li>
+                        <li style="margin-left: 10%;">Symbol</li> 
+                        <li style="margin-left: 10%;">Object</li> 
+                    </ol>
                     <p style="font-size: 18px"><i><b>Note</b></i> − JavaScript does not make a distinction between
                         integer values and floating-point values. All numbers in JavaScript are represented as
                         floating-point values. JavaScript represents numbers using the 64-bit floating-point format
                         defined by the IEEE 754 standard.</p>
+
+                    <p><b>Here are some examples:</b></p>
+                    <div id="script">
+                        <code>
+                            <blockquote>
+                                // Numbers:<br>
+                                Let age = 3;<br>
+                                Let weight = 10.5;<br><br>
+                                // Strings:<br>
+                                Let color = “Orange”;<br>
+                                Let catName = “Cat”;<br><br>
+                                // Booleans<br>
+                                Let x = true;<br>
+                                Let y = false;<br><br>
+                                // Object:<br>
+                                Const person = {firstName:”Cat”, lastName:”erpillar”};<br><br>
+                                // Array object:<br>
+                                Const catColors = [“Black”, “Orange”, “White”];<br>
+                            </blockquote>
+                        </code>
+                    </div>
+                    <br><br>
+                    <p>
+                        <p id="semi_title">The Concept of Data Types</p>
+In programming, data types is an important concept.
+To be able to operate on variables, it is important to know something about the type.
+Without data types, a computer cannot safely solve this:
+                    </p>
+
+                    <div id="script">
+                        <code>
+                            <blockquote>
+                                Let catAge = 10 + “Orange”;
+                            </blockquote>
+                        </code>
+                    </div>
+                    <p>
+                        Does it make any sense to add “Orange” to Ten?
+                        Will it produce an error or will it produce a result?
+                    </p>
+                    <p>JavaScript will treat the example above as:</p>
+                    <div id="script">
+                        <code>
+                            <blockquote>
+                                Let catAge = “10” + “Orange”;
+                            </blockquote>
+                        </code>
+                    </div>
+                    <p style="font-size: 18px"><i><b>Note:</b></i>When adding a number and a string, JavaScript will treat the number as a string.
+                    </p>
+                    <br>
+                    <p>
+                        <p id="semi_title">JavaScript Types are Dynamic</p>
+                    Imagine a shape-shifting cat. In JavaScript, the data types are dynamic, meaning a variable can transform into different
+                    types during its lifetime. Today, it could be a string cat, tomorrow a number cat, adapting to whatever role you need it to
+                    play in your code. This flexibility allows for versatility but requires caution to avoid unexpected surprises in your “cat
+                    circus” of code.
+                    <p><b>Example:</b></p>
+                    </p>
+                    <div id="script">
+                        <code>
+                            <blockquote>
+                            Let x; // Now x is undefined<br><br>
+                            x = 5; // Now x is a Number<br><br>
+                            x = “Orange”; // Now x is a String<br>
+                            </blockquote>
+                        </code>
+                    </div>
                 </div>
+
+
                 <hr>
+
                 <div id="main_title">
                     <b>JavaScript Variables 🐾</b>
                 </div>
@@ -1074,13 +1156,13 @@
                    </div>
             </div>
             </div>
+
         </div>
 
         <div id = "controls" >
 				<a href = "#" onclick="arrow(this)">&lt;</a>
 				<a href = "#" onclick="arrow(this)">&gt;</a>
 		</div>
-
 
         <script src = "JS.js"></script>
     </div>

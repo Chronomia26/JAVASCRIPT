@@ -83,7 +83,7 @@
 			padding: 2%;
 			padding-left: 20%;
 			padding-right: 20%;
-			font-size: 30px;
+			font-size: 25px;
 			border-radius: 50px;
 			text-decoration: none; 
 			background-color: rgb(89,13,13);
@@ -109,7 +109,7 @@
 			padding: 2%;
 			padding-left: 20%;
 			padding-right: 20%;
-			font-size: 30px;
+			font-size: 25px;
 			border-radius: 50px;
 			text-decoration: none; 
 			background-color: rgb(89,13,13);
@@ -128,14 +128,19 @@
 			font-family: century gothic;
 		}
 
+		@font-face {
+    font-family: myFirstFont;
+    src: url('fonts/joystix_monospace.otf');
+    font-size: 10px;
+}
 
 		.toggle-dark-button {
 			position: fixed;
-			top: 0;
-			right: 0;
+			top: 5px;
+			right: 5px;
 			cursor: pointer;
 			padding: 20px 25px;
-			font-family: arial;
+			font-family: myFirstFont;
 			font-size: 20px;
 		}
 
@@ -165,20 +170,26 @@
 			background-image: url(IMAGES/main_dark.gif);
 		}
 
+		.mainfont {
+			font-family: myFirstFont;
+			font-size: 0%;
+			text-decoration: none;
+		}
+
 	</style>
 </head>
 <body>
 	<div id = "content" class="lightmode">
-		<button class="toggle-dark-button" onclick="toggleDarkMode()">DARK</button>
+		<button class="toggle-dark-button" onclick="toggleDarkMode()">NIGHT</button>
 		<div class="logo">
 			<img src="IMAGES/logo.png">
-			<p>an introductory <i>JavaScript</i> learning site</p>
+			<p class="mainfont">an introductory <b><i>JavaScript</i></b> learning site</p>
 		</div>
 		<div class="learn">
-			<a href="SINGLE HTML SITE.html">LEARN HTML TODAY!</a>
+			<a href="SINGLE HTML SITE.html" class="mainfont">LEARN HTML TODAY!</a>
 		</div>
 		<div class="comp">
-			<a href="DESIGNED COMPILER.html">USE NEKOCOMPILER</a>
+			<a href="DESIGNED COMPILER.html" class="mainfont">USE NEKOCOMPILER</a>
 		</div>
 		<footer>
 			<p>&copy; 2023 Your Website. All rights reserved.</p>
