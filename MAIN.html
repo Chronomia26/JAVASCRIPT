@@ -134,7 +134,7 @@
     font-size: 10px;
 }
 
-		.toggle-dark-button {
+		#toggle-dark-button {
 			position: fixed;
 			top: 5px;
 			right: 5px;
@@ -144,10 +144,10 @@
 			font-size: 20px;
 		}
 
-		.toggle-dark-button {
+		#toggle-dark-button {
     color: #03001C !important;
     text-transform: uppercase;
-    background: #ffffff;
+    background: #ffdddd;
     padding: 10px;
     border: 4px solid #001f3f !important;
     border-radius: 6px;
@@ -155,7 +155,7 @@
     transition: all 0.3s ease 0s;
 }
 
-.toggle-dark-button:hover {
+#toggle-dark-button:hover {
     color: #2d2d2d !important;
     border-radius: 50px;
     border-color: #fe9e9e!important;
@@ -180,7 +180,7 @@
 </head>
 <body>
 	<div id = "content" class="lightmode">
-		<button class="toggle-dark-button" onclick="toggleDarkMode()">NIGHT</button>
+		<button id="toggle-dark-button" onclick="toggleDarkMode()">NIGHT</button>
 		<div class="logo">
 			<img src="IMAGES/logo.png">
 			<p class="mainfont">an introductory <b><i>JavaScript</i></b> learning site</p>
@@ -197,14 +197,17 @@
 	</div>
 	<script>
 		function toggleDarkMode() {
-			var content = document.getElementById('content')
+			var content = document.getElementById('content');
+			var darkmode = document.getElementById('toggle-dark-button')
 
 			if (content.classList.contains('lightmode')) {
 				content.classList.remove('lightmode');
 				content.classList.add('darkmode');
+				darkmode.textContent = "DAY"
 			} else {
 				content.classList.remove('darkmode');
 				content.classList.add('lightmode');
+				darkmode.textContent = "NIGHT"
 			}
 		}
 	</script>

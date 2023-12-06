@@ -59,13 +59,14 @@
                 <ul>
                     <li><a href="#" id = "link1" onclick="changeContent(this)" class = "linkcolor">What is JavaScript?</a></li>
                     <li><a href="#" id = "link2" onclick="changeContent(this)">Statements</a></li>
-                    <li><a href="#" id = "link3" onclick="changeContent(this)">Datatypes and Variables</a></li>
-                    <li><a href="#" id = "link4" onclick="changeContent(this)">Reserved Words</a></li>
-                    <li><a href="#" id = "link5" onclick="changeContent(this)">What is an Operator?</a></li>
-                    <li><a href="#" id = "link6" onclick="changeContent(this)">Assignment</a></li>
-                    <li><a href="#" id = "link7" onclick="changeContent(this)">Decision Making Statements</a></li>
-                    <li><a href="#" id = "link8" onclick="changeContent(this)">Loops</a></li>
-                    <li><a href="#" id = "link9" onclick="changeContent(this)">Functions</a></li>
+                    <li><a href="#" id = "link3" onclick="changeContent(this)">Comments</a></li>
+                    <li><a href="#" id = "link4" onclick="changeContent(this)">Datatypes and Variables</a></li>
+                    <li><a href="#" id = "link5" onclick="changeContent(this)">Reserved Words</a></li>
+                    <li><a href="#" id = "link6" onclick="changeContent(this)">What is an Operator?</a></li>
+                    <li><a href="#" id = "link7" onclick="changeContent(this)">Assignment</a></li>
+                    <li><a href="#" id = "link8" onclick="changeContent(this)">Decision Making Statements</a></li>
+                    <li><a href="#" id = "link9" onclick="changeContent(this)">Loops</a></li>
+                    <li><a href="#" id = "link10" onclick="changeContent(this)">Functions</a></li>
                 </ul>
             </div>
         </div>
@@ -181,6 +182,94 @@
                 </div>
             </div>
 
+            <div id="comment"  style="display: none;">
+                <div id="main_title">
+                    <b>JavaScript Comments 🐾</b>
+                </div>
+                <div id="main_content" style="padding-bottom: 150px">
+                    <p>
+                        Comments in JavaScript are like sticky notes for humans in your code. 
+                        They don’t affect how the code runs; instead, they provide explanations 
+                        or reminders. It’s as if you had a cat leaving notes around the house, 
+                        saying, “This part calculates thetreats” or “Ignore the mouse chasing 
+                        algorithm here.” Comments help you and others understand the code, making 
+                        it easier to maintain and collaborate on your “coding catnip.”
+                    </p>
+                    <br>
+                    <p id="semi_title">Single Line Comments</p>
+                    <p>
+                        Single line comments start with //.<br>
+                        Any text between // and the end of the line will be ignored by JavaScript (will not be executed).
+                    </p>
+                    <p>This example uses a single-line comment before each code line:
+                    </p>
+                    <div id="script">
+                        <code>
+                            <blockquote>
+                                // This is a single-line comment<br><br>
+                                let catName = “Whiskers”; // Variable storing the cat’s name<br><br>
+                                let catAge = 3; // Variable storing the cat’s age<br>
+                            </blockquote>
+                        </code>
+                    </div>
+                    <br><br>
+                    <p id="semi_title">Multi-line Comments</p>
+                    <p>
+                        Multi-line comments start with /* and end with */.<br>
+                        Any text between /* and */ will be ignored by JavaScript.<br>
+                        <p>This example uses a multi-line comment (a comment block) to explain the code:</p>
+                    </p>
+                    <div id="script">
+                        <code>
+                            <blockquote>
+                                /*This is a multi-line comment.
+                                <blockquote>
+                                    It can span multiple lines,<br><br>
+                                    Providing detailed explanations<br><br>
+                                    Or notes about the code.<br>
+                                </blockquote>
+                                */
+                                let catColor = “Calico”; // Variable storing the cat’s color
+                            </blockquote>
+                        </code>
+                    </div>
+                    <br><br>
+                    <p id="semi_title">Using Comments to Prevent Execution</p>
+                    <p>
+                        Using comments to prevent execution of code is suitable for code testing.<br>
+                        Adding // in front of a code line changes the code lines from an executable 
+                        line to a comment.<br>
+                        <p>This example uses // to prevent execution of one of the code lines:</p>
+                    </p>
+                    <div id="script">
+                        <code>
+                            <blockquote>
+                                // let catToy = “Feather wand”; // This line won’t be executed<br>
+                                /*
+                                <blockquote>
+                                    The following block won’t run either.<br>
+                                    It’s commented out to prevent execution.
+                                </blockquote>
+                                */<br>
+                                /*<br>
+                                for (let i = 0; i < 5; i++) {
+                                <blockquote>
+                                    console.log(“Loop iteration: “ + i);
+                                </blockquote>
+                                }<br>
+                                */
+                            </blockquote>
+                        </code>
+                    </div>
+                    <p>
+                        In this example, both the single-line comment and the multi-line comment 
+                        prevent the associated code from being executed. It’s a useful technique 
+                        for temporarily disabling code during debugging or testing without completely 
+                        removing it from your script.
+                    </p>
+                </div>
+            </div>
+
             <div id="datatypes" style="display: none;">
                 <div id="main_title">
                     <b>JavaScript Datatypes 🐾</b>
@@ -216,18 +305,18 @@
                         <code>
                             <blockquote>
                                 // Numbers:<br>
-                                Let age = 3;<br>
-                                Let weight = 10.5;<br><br>
+                                let age = 3;<br>
+                                let weight = 10.5;<br><br>
                                 // Strings:<br>
-                                Let color = “Orange”;<br>
-                                Let catName = “Cat”;<br><br>
+                                let color = “Orange”;<br>
+                                let catName = “Cat”;<br><br>
                                 // Booleans<br>
-                                Let x = true;<br>
-                                Let y = false;<br><br>
+                                let x = true;<br>
+                                let y = false;<br><br>
                                 // Object:<br>
-                                Const person = {firstName:”Cat”, lastName:”erpillar”};<br><br>
+                                const person = {firstName:”Cat”, lastName:”erpillar”};<br><br>
                                 // Array object:<br>
-                                Const catColors = [“Black”, “Orange”, “White”];<br>
+                                const catColors = [“Black”, “Orange”, “White”];<br>
                             </blockquote>
                         </code>
                     </div>
@@ -242,7 +331,7 @@ Without data types, a computer cannot safely solve this:
                     <div id="script">
                         <code>
                             <blockquote>
-                                Let catAge = 10 + “Orange”;
+                                let catAge = 10 + “Orange”;
                             </blockquote>
                         </code>
                     </div>
@@ -254,7 +343,7 @@ Without data types, a computer cannot safely solve this:
                     <div id="script">
                         <code>
                             <blockquote>
-                                Let catAge = “10” + “Orange”;
+                                let catAge = “10” + “Orange”;
                             </blockquote>
                         </code>
                     </div>
@@ -272,7 +361,7 @@ Without data types, a computer cannot safely solve this:
                     <div id="script">
                         <code>
                             <blockquote>
-                            Let x; // Now x is undefined<br><br>
+                            let x; // Now x is undefined<br><br>
                             x = 5; // Now x is a Number<br><br>
                             x = “Orange”; // Now x is a String<br>
                             </blockquote>
@@ -877,7 +966,6 @@ Without data types, a computer cannot safely solve this:
             </div>
 
             <div id="loops" style="display: none;">
-
                 <div id="main_title">
                     <b>The Cat's Creative Circuits 🐾: JavaScript Loops</b>
                 </div>
