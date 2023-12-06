@@ -47,7 +47,7 @@
                 </a>
             </div>
             <div class="button_cont">
-                <a class="toggle-dark-button" onclick="toggleDarkMode()">NIGHT</a>
+                <a id="toggle-dark-button" onclick="toggleDarkMode()">NIGHT</a>
             </div>
         </header>
 		
@@ -470,63 +470,67 @@ Without data types, a computer cannot safely solve this:
                             <br>
                     </ul>
                     <div id="script">
-                        &lt;html&gt;
-                        <blockquote>&lt;
-                            body&gt;<br>
+                        <code>
                             <blockquote>
-                                &lt;script type = "text/javascript"&gt;
-                                <blockquote>
-                                    &lt;!--
+                                &lt;html&gt;
+                                <blockquote>&lt;
+                                    body&gt;<br>
                                     <blockquote>
-                                        var treatsFromYou = 5;<br>
-                                        var treatsInBowl = 20;<br>
-                                        var linebreak = "&lt;br/ &gt;";<br>
-                                        <br>
-                                        >document.write("Treats in the bowl + Treats from you: ");<br>
-                                        totalTreats = treatsFromYou + treatsInBowl;<br> 
-                                        document.write(totalTreats);<br>
-                                        document.write(linebreak);<br>
-                                        <br>
-                                        document.write("Treats in the bowl - Treats from you: "); <br>
-                                        totalTreats = treatsFromYou - treatsInBowl; <br>
-                                        document.write(totalTreats); <br>
-                                        document.write(linebreak); <br>
-                                        <br>
-                                        document.write("Treats in the bowl * Treats from you: "); <br>
-                                        totalTreats = treatsFromYou * treatsInBowl; <br>
-                                        document.write(totalTreats); <br>
-                                        document.write(linebreak); <br>
-                                        <br>
-                                        document.write("Treats in the bowl / Treats from you: "); <br>
-                                        totalTreats = treatsFromYou / treatsInBowl; <br>
-                                        document.write(totalTreats); <br>
-                                        document.write(linebreak); <br>
-                                        <br>
-                                        document.write("Treats in the bowl % Treats from you: "); <br>
-                                        totalTreats = treatsFromYou % treatsInBowl; <br>
-                                        document.write(totalTreats); <br>
-                                        document.write(linebreak); <br>
-                                        <br>
-                                        treatsFromYou = ++treatsFromYou; <br>
-                                        document.write("Increment from the treats from you: "); <br>
-                                        totalTreats = ++treatsFromYou <br>
-                                        document.write(totalTreats); <br>
-                                        document.write(linebreak); <br>
-                                        <br>
-                                        treatsInBowl = --treatsInBowl; <br>
-                                        document.write("Decrement from the treats from the bowl: "); <br>
-                                        totalTreats = --treatsInBowl <br>
-                                        document.write(totalTreats); <br>
-                                        document.write(linebreak); <br>
+                                        &lt;script type = "text/javascript"&gt;
+                                        <blockquote>
+                                            &lt;!--
+                                            <blockquote>
+                                                var treatsFromYou = 5;<br>
+                                                var treatsInBowl = 20;<br>
+                                                var linebreak = "&lt;br/ &gt;";<br>
+                                                <br>
+                                                >document.write("Treats in the bowl + Treats from you: ");<br>
+                                                totalTreats = treatsFromYou + treatsInBowl;<br> 
+                                                document.write(totalTreats);<br>
+                                                document.write(linebreak);<br>
+                                                <br>
+                                                document.write("Treats in the bowl - Treats from you: "); <br>
+                                                totalTreats = treatsFromYou - treatsInBowl; <br>
+                                                document.write(totalTreats); <br>
+                                                document.write(linebreak); <br>
+                                                <br>
+                                                document.write("Treats in the bowl * Treats from you: "); <br>
+                                                totalTreats = treatsFromYou * treatsInBowl; <br>
+                                                document.write(totalTreats); <br>
+                                                document.write(linebreak); <br>
+                                                <br>
+                                                document.write("Treats in the bowl / Treats from you: "); <br>
+                                                totalTreats = treatsFromYou / treatsInBowl; <br>
+                                                document.write(totalTreats); <br>
+                                                document.write(linebreak); <br>
+                                                <br>
+                                                document.write("Treats in the bowl % Treats from you: "); <br>
+                                                totalTreats = treatsFromYou % treatsInBowl; <br>
+                                                document.write(totalTreats); <br>
+                                                document.write(linebreak); <br>
+                                                <br>
+                                                treatsFromYou = ++treatsFromYou; <br>
+                                                document.write("Increment from the treats from you: "); <br>
+                                                totalTreats = ++treatsFromYou <br>
+                                                document.write(totalTreats); <br>
+                                                document.write(linebreak); <br>
+                                                <br>
+                                                treatsInBowl = --treatsInBowl; <br>
+                                                document.write("Decrement from the treats from the bowl: "); <br>
+                                                totalTreats = --treatsInBowl <br>
+                                                document.write(totalTreats); <br>
+                                                document.write(linebreak); <br>
+                                            </blockquote>
+                                            >//--&gt;
+                                        </blockquote>
+                                        &lt;/script&gt;<br>
+                                        Set the variables to different values and then try...
                                     </blockquote>
-                                    >//--&gt;
+                                    &lt;/body&gt;
                                 </blockquote>
-                                &lt;/script&gt;<br>
-                                Set the variables to different values and then try...
+                                &lt;/html&gt;
                             </blockquote>
-                            &lt;/body&gt;
-                        </blockquote>
-                        &lt;/html&gt;
+                        </code>
                     </div>
                 </div>
                 <hr>
@@ -575,57 +579,61 @@ Without data types, a computer cannot safely solve this:
                         <br>
                     </ul>
                     <div id="script">
-                        &lt;html&gt;
-                        <blockquote>
-                            &lt;body&gt;
+                        <code>
                             <blockquote>
-                                &lt;script type = "text/javascript"&gt;
+                                &lt;html&gt;
                                 <blockquote>
-                                    &lt;!--
+                                    &lt;body&gt;
                                     <blockquote>
-                                        var a = 10;<br>
-                                        var b = 20;<br>
-                                        var linebreak = "&lt;br/ &gt;";<br>
-                                        <br>
-                                        document.write("(a == b) =&gt; ");<br>
-                                        result = (a == b);<br>
-                                        document.write(result);<br>
-                                        document.write(linebreak);<br>
-                                        <br>
-                                        document.write("(a &lt; b) =&gt; ");<br>
-                                        result = (a &lt; b);<br>
-                                        document.write(result);<br>
-                                        document.write(linebreak);<br>
-                                        <br>
-                                        document.write("(a &gt; b) =&gt; ");<br>
-                                        result = (a &gt; b);<br>
-                                        document.write(result);<br>
-                                        document.write(linebreak);<br>
-                                        <br>
-                                        document.write("(a != b) =&gt; ");<br>
-                                        result = (a != b);<br>
-                                        document.write(result);<br>
-                                        document.write(linebreak);<br>
-                                        <br>
-                                        document.write("(a &gt; b) =&gt; ");<br>
-                                        result = (a &gt; b);<br>
-                                        document.write(result);<br>
-                                        document.write(linebreak);<br>
-                                        <br>
-                                        document.write("(a &lt;= b) =&gt; ");<br>
-                                        result = (a &lt;= b);<br>
-                                        document.write(result);<br>
-                                        document.write(linebreak);<br>
-                                        <br>
+                                        &lt;script type = "text/javascript"&gt;
+                                        <blockquote>
+                                            &lt;!--
+                                            <blockquote>
+                                                var a = 10;<br>
+                                                var b = 20;<br>
+                                                var linebreak = "&lt;br/ &gt;";<br>
+                                                <br>
+                                                document.write("(a == b) =&gt; ");<br>
+                                                result = (a == b);<br>
+                                                document.write(result);<br>
+                                                document.write(linebreak);<br>
+                                                <br>
+                                                document.write("(a &lt; b) =&gt; ");<br>
+                                                result = (a &lt; b);<br>
+                                                document.write(result);<br>
+                                                document.write(linebreak);<br>
+                                                <br>
+                                                document.write("(a &gt; b) =&gt; ");<br>
+                                                result = (a &gt; b);<br>
+                                                document.write(result);<br>
+                                                document.write(linebreak);<br>
+                                                <br>
+                                                document.write("(a != b) =&gt; ");<br>
+                                                result = (a != b);<br>
+                                                document.write(result);<br>
+                                                document.write(linebreak);<br>
+                                                <br>
+                                                document.write("(a &gt; b) =&gt; ");<br>
+                                                result = (a &gt; b);<br>
+                                                document.write(result);<br>
+                                                document.write(linebreak);<br>
+                                                <br>
+                                                document.write("(a &lt;= b) =&gt; ");<br>
+                                                result = (a &lt;= b);<br>
+                                                document.write(result);<br>
+                                                document.write(linebreak);<br>
+                                                <br>
+                                            </blockquote>
+                                            //--&gt;
+                                        </blockquote>
+                                        &lt;/script&gt; <br>
+                                        Set the variables to different values and then try...
                                     </blockquote>
-                                    //--&gt;
+                                    &lt;/body&gt;
                                 </blockquote>
-                                &lt;/script&gt; <br>
-                                Set the variables to different values and then try...
+                                &lt;/html&gt;      
                             </blockquote>
-                            &lt;/body&gt;
-                        </blockquote>
-                        &lt;/html&gt;                        
+                        </code>                  
                     </div>
                 </div>
                 <hr>
@@ -652,42 +660,46 @@ Without data types, a computer cannot safely solve this:
                         <br>
                     </ul>
                     <div id="script">
-                        &lt;html&gt;
-                        <blockquote>
-                            &lt;body&gt;
+                        <code>
                             <blockquote>
-                                &lt;script type = "text/javascript"&gt;
+                                &lt;html&gt;
                                 <blockquote>
-                                    &lt;!--
+                                    &lt;body&gt;
                                     <blockquote>
-                                        var a = true;<br>
-                                        var b = false;<br>
-                                        var linebreak = "&lt;br/ &gt;";<br>
-                                        <br>
-                                        document.write("(a && b) =&gt; ");<br>
-                                        result = (a && b);<br>
-                                        document.write(result);<br>
-                                        document.write(linebreak);<br>
-                                        <br>
-                                        document.write("(a || b) =&gt; ");<br>
-                                        result = (a || b);<br>
-                                        document.write(result);<br>
-                                        document.write(linebreak); <br>
-                                        <br>
-                                        document.write("!(a && b) =&gt; ");<br>
-                                        result = !(a && b);<br>
-                                        document.write(result);<br>
-                                        document.write(linebreak); 
-                                        <br>
+                                        &lt;script type = "text/javascript"&gt;
+                                        <blockquote>
+                                            &lt;!--
+                                            <blockquote>
+                                                var a = true;<br>
+                                                var b = false;<br>
+                                                var linebreak = "&lt;br/ &gt;";<br>
+                                                <br>
+                                                document.write("(a && b) =&gt; ");<br>
+                                                result = (a && b);<br>
+                                                document.write(result);<br>
+                                                document.write(linebreak);<br>
+                                                <br>
+                                                document.write("(a || b) =&gt; ");<br>
+                                                result = (a || b);<br>
+                                                document.write(result);<br>
+                                                document.write(linebreak); <br>
+                                                <br>
+                                                document.write("!(a && b) =&gt; ");<br>
+                                                result = !(a && b);<br>
+                                                document.write(result);<br>
+                                                document.write(linebreak); 
+                                                <br>
+                                            </blockquote>
+                                            //--&gt;
+                                        </blockquote>
+                                        &lt;/script&gt;<br>
+                                        Set the variables to different values and then try...
                                     </blockquote>
-                                    //--&gt;
+                                    &lt;/body&gt;
                                 </blockquote>
-                                &lt;/script&gt;<br>
-                                Set the variables to different values and then try...
+                                &lt;/html&gt;
                             </blockquote>
-                            &lt;/body&gt;
-                        </blockquote>
-                        &lt;/html&gt;
+                        </code>
                     </div>
                 </div>
             </div>
@@ -760,97 +772,105 @@ Without data types, a computer cannot safely solve this:
                 <li>if...else if... statement</li>
               </ul>
               <div id="script">
-                    &lt;html&gt;
-                    <blockquote>
-                        &lt;body&gt;
+                    <code>
                         <blockquote>
-                            &lt;script type = "text/javascript"&gt;
+                            &lt;html&gt;
                             <blockquote>
-                                &lt;!--
+                                &lt;body&gt;
                                 <blockquote>
-                                    var age = 20;<br>
-                                    <br>
-                                    if(age > 18); { <br>
+                                    &lt;script type = "text/javascript"&gt;
                                     <blockquote>
-                                        document.write("&lt;b&gt;Qualifies for driving&lt;/b&gt;";)
+                                        &lt;!--
+                                        <blockquote>
+                                            var age = 20;<br>
+                                            <br>
+                                            if(age > 18); { <br>
+                                            <blockquote>
+                                                document.write("&lt;b&gt;Qualifies for driving&lt;/b&gt;";)
+                                            </blockquote>
+                                            }
+                                        </blockquote>
+                                        //--&gt;
                                     </blockquote>
-                                    }
+                                    &lt;/script&gt;<br>
+                                    Set the variables to different values and then try...
                                 </blockquote>
-                                //--&gt;
+                                &lt;/body&gt;
                             </blockquote>
-                            &lt;/script&gt;<br>
-                            Set the variables to different values and then try...
+                            &lt;/html&gt;
                         </blockquote>
-                        &lt;/body&gt;
-                    </blockquote>
-                    &lt;/html&gt;
+                    </code>
                 </div>
                 <br><br>
                 <div id="script">
-                    &lt;html&gt;
-                    <blockquote>
-                        &lt;body&gt;
+                    <code>
                         <blockquote>
-                            &lt;script type = "text/javascript"&gt;
+                            &lt;html&gt;
                             <blockquote>
-                                &lt;!--
+                                &lt;body&gt;
                                 <blockquote>
-                                    var age = 15;<br>
-                                    <br>
-                                    if(age > 18); { <br>
+                                    &lt;script type = "text/javascript"&gt;
                                     <blockquote>
-                                        document.write("&lt;b&gt;Qualifies for driving&lt;/b&gt;";)
+                                        &lt;!--
+                                        <blockquote>
+                                            var age = 15;<br>
+                                            <br>
+                                            if(age > 18); { <br>
+                                            <blockquote>
+                                                document.write("&lt;b&gt;Qualifies for driving&lt;/b&gt;";)
+                                            </blockquote>
+                                            } else {<br>
+                                            <blockquote>
+                                                document.write("&lt;b&gt;Does not qualify for driving&lt;/b&gt;";)
+                                            </blockquote>
+                                            }
+                                        </blockquote>
+                                        //--&gt;
                                     </blockquote>
-                                    } else {<br>
-                                    <blockquote>
-                                        document.write("&lt;b&gt;Does not qualify for driving&lt;/b&gt;";)
-                                    </blockquote>
-                                    }
+                                    &lt;/script&gt;<br>
+                                    Set the variables to different values and then try...
                                 </blockquote>
-                                //--&gt;
+                                &lt;/body&gt;
                             </blockquote>
-                            &lt;/script&gt;<br>
-                            Set the variables to different values and then try...
-                        </blockquote>
-                        &lt;/body&gt;
-                    </blockquote>
-                    &lt;/html&gt;<br>
-                    &lt;html&gt;
-                    <blockquote>
-                        &lt;body&gt;
-                        <blockquote>
-                            &lt;script type = "text/javascript"&gt;
+                            &lt;/html&gt;<br>
+                            &lt;html&gt;
                             <blockquote>
-                                &lt;!--
+                                &lt;body&gt;
                                 <blockquote>
-                                    var book = "maths";<br>
-                                    <br>
-                                    if(book == "history"); { <br>
+                                    &lt;script type = "text/javascript"&gt;
                                     <blockquote>
-                                        document.write("&lt;b&gt;History Book&lt;/b&gt;";)
-                                    </blockquote>
-                                    } else if (book == "maths"); {<br>
-                                    <blockquote>
-                                        document.write("&lt;b&gt;Maths Book&lt;/b&gt;";)
-                                    </blockquote>
-                                    } else if (book == "economics"); {<br>
+                                        &lt;!--
                                         <blockquote>
-                                            document.write("&lt;b&gt;Economics Book&lt;/b&gt;";)
+                                            var book = "maths";<br>
+                                            <br>
+                                            if(book == "history"); { <br>
+                                            <blockquote>
+                                                document.write("&lt;b&gt;History Book&lt;/b&gt;";)
+                                            </blockquote>
+                                            } else if (book == "maths"); {<br>
+                                            <blockquote>
+                                                document.write("&lt;b&gt;Maths Book&lt;/b&gt;";)
+                                            </blockquote>
+                                            } else if (book == "economics"); {<br>
+                                                <blockquote>
+                                                    document.write("&lt;b&gt;Economics Book&lt;/b&gt;";)
+                                                </blockquote>
+                                            } else {<br>
+                                                <blockquote>
+                                                    document.write("&lt;b&gt;>Unknown Book&lt;/b&gt;";)
+                                                </blockquote>
+                                            }
                                         </blockquote>
-                                    } else {<br>
-                                        <blockquote>
-                                            document.write("&lt;b&gt;>Unknown Book&lt;/b&gt;";)
-                                        </blockquote>
-                                    }
+                                        //--&gt;
+                                    </blockquote>
+                                    &lt;/script&gt;<br>
+                                    Set the variables to different values and then try...
                                 </blockquote>
-                                //--&gt;
+                                &lt;/body&gt;
                             </blockquote>
-                            &lt;/script&gt;<br>
-                            Set the variables to different values and then try...
+                            &lt;/html&gt;
                         </blockquote>
-                        &lt;/body&gt;
-                    </blockquote>
-                    &lt;/html&gt;
+                    </code>
                 </div>
             
             </div>              
@@ -892,35 +912,39 @@ Without data types, a computer cannot safely solve this:
                     <br><br><br>
                     </code>
                     <div id="script">
-                        &lt;html&gt;
-                        <blockquote>
-                            &lt;body&gt;
+                        <code>
                             <blockquote>
-                                &lt;script type = "text/javascript"&gt;
+                                &lt;html&gt;
                                 <blockquote>
-                                    &lt;!--
+                                    &lt;body&gt;
                                     <blockquote>
-                                        var count = 0;<br>
-                                        document.write("Starting Loop "); <br>
-                                        <br>
+                                        &lt;script type = "text/javascript"&gt;
                                         <blockquote>
-                                            while (count &lt; 10) {
+                                            &lt;!--
+                                            <blockquote>
+                                                var count = 0;<br>
+                                                document.write("Starting Loop "); <br>
+                                                <br>
                                                 <blockquote>
-                                                document.write("Current Count : " + count + "&lt;br /&gt;");<br> 
-                                                count++;
+                                                    while (count &lt; 10) {
+                                                        <blockquote>
+                                                        document.write("Current Count : " + count + "&lt;br /&gt;");<br> 
+                                                        count++;
+                                                        </blockquote>
+                                                    }
                                                 </blockquote>
-                                            }
+                                                document.write("Loop stopped!"); <br>
+                                            </blockquote>
+                                            //--&gt;
                                         </blockquote>
-                                        document.write("Loop stopped!"); <br>
+                                        &lt;/script&gt;<br>
+                                        Set the variables to different values and then try...
                                     </blockquote>
-                                    //--&gt;
+                                    &lt;/body&gt;
                                 </blockquote>
-                                &lt;/script&gt;<br>
-                                Set the variables to different values and then try...
+                                &lt;/html&gt;
                             </blockquote>
-                            &lt;/body&gt;
-                        </blockquote>
-                        &lt;/html&gt;
+                        </code>
                     </div>
                 </div>
 
@@ -1160,7 +1184,7 @@ Without data types, a computer cannot safely solve this:
         </div>
 
         <div id = "controls" >
-				<a href = "#" onclick="arrow(this)">&lt;</a>
+				<a href = "#" onclick="arrow(this)" style="padding-right: 90%;">&lt;</a>
 				<a href = "#" onclick="arrow(this)">&gt;</a>
 		</div>
 

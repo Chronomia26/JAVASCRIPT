@@ -52,14 +52,15 @@ transition: transform 0.3s ease-in-out;
 transform: scale(1.1)
 }
 
-.toggle-dark-button {
+#toggle-dark-button {
 position: fixed;
 top: 6px;
 right: 6px;
 cursor: pointer;
 font-family: myFirstFont;
 font-size: 20px;
-font-weight: bold;
+/* <<<<<<< HEAD */
+/* font-weight: bold;
 color: #03001C !important;
 text-transform: uppercase;
 background: #ffe3e3;
@@ -68,10 +69,23 @@ border: 4px solid #001f3f !important;
 border-radius: 6px;
 display: inline-block;
 transition: all 0.3s ease 0s;
+======= */
 }
 
-.toggle-dark-button:hover {
-    color: #2d2d2d !important;
+#toggle-dark-button {
+    color: #03001C !important;
+    text-transform: uppercase;
+    background: #ffe4e4;
+    padding: 10px;
+    border: 4px solid #001f3f !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+/* >>>>>>> b148ad4650d9ddd7787091d3d147ff0abeba40a2 */
+}
+
+#toggle-dark-button:hover {
+    color: #001f3f !important;
     border-radius: 50px;
     border-color: #fe9e9e!important;
     transition: all 0.3s ease 0s;
@@ -252,6 +266,11 @@ font-weight: bold;
 
 #operators {
     height: 880vh;
+    animation: right-fade-in 0.5s ease-in-out;
+}
+
+#assignment {
+    height: 200vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
