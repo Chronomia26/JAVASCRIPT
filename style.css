@@ -184,7 +184,7 @@ overflow-y: scroll;
 top: 70px;
 bottom: 65px;
 border-right: 2px dashed black;
-border-spacing: 5px;
+border-spacing: 50px;
 overflow-y: scroll;
 }
 
@@ -294,7 +294,7 @@ font-weight: bold;
 }
 
 #main {
-    bottom: 0;
+    /* bottom: 0; */
     margin-top: 60px;
     margin-left: 25%;
     padding: 10px; 
@@ -331,6 +331,7 @@ margin-top: 5%;
 margin-left: 8%;
 margin-right: 6%;
 font-size: 25px;
+/* overflow: hidden; */
 }
 
 #main_content ul {
@@ -359,22 +360,23 @@ background-color: #808080;
 }
 
 #controls {
-font-size: 70px;
+font-size: 10px;
 font-family: arial;
 position: fixed;
 width: 75%;
-height: 11%;
-bottom: 8%;
+/* height: 11%; */
+bottom: 9%;
 margin-left: 25%;
 text-align: center;
-content: left;
-border-top: 1px solid black;
+/* content: left; */
+border-top: 2px dashed black;
 }
 
 #controls a{
     font-size: 40px;
     top: 0;
-    text-align: bottom;
+    /* text-align: bottom; */
+    content: center;
 }
 
 #back:hover {
