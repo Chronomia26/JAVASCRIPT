@@ -14,7 +14,7 @@
         background-position: 0 0;
     }
     to {
-        background-position: 250px 250px;
+        background-position: 500px 500px;
     }
 }
 
@@ -27,8 +27,8 @@ padding: 0;
 background-color: rgba(255,204,204,1);
 background-image: url('IMAGES/background.png');
 background-attachment: fixed;
-background-size: 250px;
-animation: animatedBackground 10s linear infinite, fade-in 0.5s ease-in-out;
+background-size: 500px;
+animation: animatedBackground 15s linear infinite, fade-in 0.5s ease-in-out;
 overflow-x: hidden;
 }
 
