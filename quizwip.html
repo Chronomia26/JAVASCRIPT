@@ -3,82 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App</title>
+    <title>QUIZZES</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
+      /* Your existing styles */
 
-        .quiz-container {
-            max-width: 600px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .question {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .options {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .option {
-            margin: 5px 0;
-        }
+      /* Added some additional styling for clarity */
+      .correctanswer {
+        background-color: lightgreen;
+      }
     </style>
 </head>
-<body>
-    <div class="quiz-container" id="quiz-container">
-        <!-- Quiz questions will be dynamically inserted here -->
+
+<body class="light-mode">
+    <div id="question" class="question">
+        <div id="side_title">Question #1</div>
+        <div id="main_content">What is the capital of France?</div>
     </div>
 
+    <div id='c1' class='choice correctanswer' style="top: 45%; left: 10.5%;" onclick="checkAnswer(choice1), changeQuestion()">Paris</div>
+    <div id='c2' class='choice' style="top: 45%; right: 10.5%;" onclick="checkAnswer(choice2), changeQuestion()">Berlin</div>
+    <div id='c3' class='choice' style="top: 63%; left: 10.5%;" onclick="checkAnswer(choice3), changeQuestion()">Madrid</div>
+    <div id='c4' class='choice' style="top: 63%; right: 10.5%;" onclick="checkAnswer(choice4), changeQuestion()">Rome</div>
+    <div id='score'>SCORE: 0</div>
+
+    <script type="text/javascript" src="C:\Users\juan carlos\Downloads\JAVASCRIPT\DARKMODE.js"></script>
     <script>
-        const quizContainer = document.getElementById('quiz-container');
-        const quizData = [
-            {
-                question: 'What is the capital of France?',
-                options: ['Berlin', 'Paris', 'Madrid', 'Rome'],
-                correctAnswer: 'Paris',
-            },
-            {
-                question: 'Which planet is known as the Red Planet?',
-                options: ['Mars', 'Jupiter', 'Venus', 'Saturn'],
-                correctAnswer: 'Mars',
-            },
-        ];
-        function renderQuiz() {
-            quizData.forEach((questionData, index) => {
-                const questionElement = document.createElement('div');
-                questionElement.classList.add('question');
-                questionElement.textContent = `${index + 1}. ${questionData.question}`;
+        var choice1 = document.getElementById('c1');
+        var choice2 = document.getElementById('c2');
+        var choice3 = document.getElementById('c3');
+        var choice4 = document.getElementById('c4');
+        var score = 0;
 
-                const optionsList = document.createElement('ul');
-                optionsList.classList.add('options');
-
-                questionData.options.forEach((option) => {
-                    const optionItem = document.createElement('li');
-                    optionItem.classList.add('option');
-                    optionItem.textContent = option;
-                    optionsList.appendChild(optionItem);
-                });
-
-                questionElement.appendChild(optionsList);
-                quizContainer.appendChild(questionElement);
-            });
+        function checkAnswer(clickedChoice) {
+            if (clickedChoice.classList.contains('correctanswer')) {
+                score++;
+                document.getElementById('score').innerText = 'SCORE: ' + score;
+            }
         }
-        renderQuiz();
+
+        function changeQuestion() {
+            var title = document.getElementById('side_title');
+            var question = document.getElementById('main_content');
+            if (title.textContent === 'Question #1') {
+                title.textContent = 'Question #2';
+                question.textContent = 'What is the largest mammal in the world?';
+                choice1.textContent = 'Elephant';
+                choice2.textContent = 'Blue Whale';
+                choice3.textContent = 'Giraffe';
+                choice4.textContent = 'Lion';
+                // Update the correct answer class for the new question
+                choice2.classList.add('correctanswer');
+                // Remove the correct answer class from other choices
+                choice1.classList.remove('correctanswer');
+                choice3.classList.remove('correctanswer');
+                choice4.classList.remove('correctanswer');
+            } else if (title.textContent === 'Question #2') {
+                title.textContent = 'Question #3';
+                question.textContent = 'What is the currency of Japan?';
+                choice1.textContent = 'Yuan';
+                choice2.textContent = 'Yen';
+                choice3.textContent = 'Euro';
+                choice4.textContent = 'Dollar';
+                // Update the correct answer class for the new question
+                choice2.classList.add('correctanswer');
+                // Remove the correct answer class from other choices
+                choice1.classList.remove('correctanswer');
+                choice3.classList.remove('correctanswer');
+                choice4.classList.remove('correctanswer');
+            }
+        }
     </script>
+
+    <footer class="lightmode">
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
