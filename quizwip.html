@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .quiz-container {
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .option {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container" id="quiz-container">
+        <!-- Quiz questions will be dynamically inserted here -->
+    </div>
+
+    <script>
+        const quizContainer = document.getElementById('quiz-container');
+        const quizData = [
+            {
+                question: 'What is the capital of France?',
+                options: ['Berlin', 'Paris', 'Madrid', 'Rome'],
+                correctAnswer: 'Paris',
+            },
+            {
+                question: 'Which planet is known as the Red Planet?',
+                options: ['Mars', 'Jupiter', 'Venus', 'Saturn'],
+                correctAnswer: 'Mars',
+            },
+        ];
+        function renderQuiz() {
+            quizData.forEach((questionData, index) => {
+                const questionElement = document.createElement('div');
+                questionElement.classList.add('question');
+                questionElement.textContent = `${index + 1}. ${questionData.question}`;
+
+                const optionsList = document.createElement('ul');
+                optionsList.classList.add('options');
+
+                questionData.options.forEach((option) => {
+                    const optionItem = document.createElement('li');
+                    optionItem.classList.add('option');
+                    optionItem.textContent = option;
+                    optionsList.appendChild(optionItem);
+                });
+
+                questionElement.appendChild(optionsList);
+                quizContainer.appendChild(questionElement);
+            });
+        }
+        renderQuiz();
+    </script>
+</body>
+</html>
