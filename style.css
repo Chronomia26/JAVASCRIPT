@@ -172,9 +172,9 @@ position: fixed;
 width: 25%;
 height: calc(100vh - 70px - 65px);
 overflow-y: scroll;  
-top: 70px;
+top: 66px;
 bottom: 65px;
-border-right: 2px dashed black;
+border-right: 5px dotted black;
 border-spacing: 50px;
 overflow-y: scroll;
 }
@@ -273,7 +273,7 @@ a {
 }
 
 #operators {
-    height: 820vh;
+    height: 950vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
@@ -316,11 +316,12 @@ a {
     } 
 
 #main_title {
+font-weight: bolder;
 text-align: center;
 font-family: courier;
 margin-top: 5%;
 /* margin-left: 2%; */
-font-size: 35px;
+font-size: 50px;
 }
 
 #semi_title {
@@ -334,7 +335,7 @@ text-align: justify;
 margin-top: 5%;
 margin-left: 8%;
 margin-right: 6%;
-font-size: 25px;
+font-size: 30px;
 /* overflow: hidden; */
 }
 
@@ -373,7 +374,7 @@ bottom: 9%;
 margin-left: 25%;
 text-align: center;
 /* content: left; */
-border-top: 2px dashed black;
+/* border-top: 2px dashed black; */
 }
 
 #controls a{

@@ -66,27 +66,29 @@
  </style>
 </head>
 
-<body>
- <header class="lightmode">
-    <div id="header_img">
-        <a href="MAIN.html">
-            <img src="IMAGES/logo.png" alt="NEKODE">
-        </a>
+  <body  class="light-mode">
+    <header class="lightmode">
+      <div id="header_img">
+          <a href="MAIN.html">
+              <img src="IMAGES/logo.png" alt="NEKODE">
+          </a>
+      </div>
+      <div class="button_cont">
+        <a id="toggle-dark-button" onclick="toggleDarkMode()">NIGHT</a>
     </div>
-    <div class="button_cont">
-      <a id="toggle-dark-button" onclick="toggleDarkMode()">NIGHT</a>
- </div>
- </header>
- <img id = "logob" src="IMAGES/logob.png" alt="NEKODE">
- <div id = "codearea">
-    <textarea id="html" placeholder="Type (HTML) here..."></textarea>
-    <textarea id="css" placeholder="Type (CSS) here..."></textarea>
-    <textarea id="js" placeholder="Type (JavaScript) here..."></textarea>
-    <iframe id="code"></iframe>
- </div>
+    </header>
+    <img id = "logob" src="IMAGES/logob.png" alt="NEKODE">
+    <div id = "codearea">
+      <textarea id="html" placeholder="Type (HTML) here..."></textarea>
+      <textarea id="css" placeholder="Type (CSS) here..."></textarea>
+      <textarea id="js" placeholder="Type (JavaScript) here..."></textarea>
+      <iframe id="code"></iframe>
+    </div>
 
- <script type="text/javascript" src="app.js"></script>
- <script type="text/javascript" src="JS.js"></script>
+
+    
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="DARKMODE.js"></script>
 
  <footer class="lightmode">
     <p>&copy; 2023 Your Website. All rights reserved.</p>

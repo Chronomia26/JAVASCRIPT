@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <title>QUIZZES</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\juan carlos\Downloads\JAVASCRIPT\style.css">
+    <link rel="icon" type="image/x-icon" href="C:\Users\juan carlos\Downloads\JAVASCRIPT\IMAGES\icon.png">
+    <style>
+      body {
+        display: flex; 
+        justify-content: center;
+      
+      }
+      header {
+        padding-bottom: 14px;
+      }
+
+
+      #question{
+        position: absolute;
+        top: 10%;
+        padding-bottom: 5%;
+        padding-right: 2%;
+        padding-left: 2%;
+        border: 2px solid black;
+        border-radius: 20px;
+        width: 75%;
+        background-color: rgba(255,255, 255, 0.3);   
+      }
+
+      #side_title{
+        font-size: 40px;
+      }
+
+      #main_content{
+        font-size: 30px;
+      }
+
+      .choice {
+        position: absolute;
+        border-radius: 20px;
+        width: 37.5%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 60px;
+        padding-bottom: 60px; 
+        border: 2px solid black;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Courier New';
+        background-color: rgba(255,255, 255, 0.3);
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .choice:hover {
+        transform: scale(1.07);
+        border-radius: 50px;
+      }
+      #score {
+        position: absolute;
+        bottom: 9%;
+        border-radius: 20px;
+        width: 37.5%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 40px;
+        padding-bottom: 40px; 
+        border: 2px solid black;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Courier New'; 
+      }
+    </style>
+  </head>
+
+  <body  class="light-mode">
+    <header class="lightmode">
+      <div id="header_img">
+          <a href="C:\Users\juan carlos\Downloads\JAVASCRIPT\MAIN.html">
+              <img src="C:\Users\juan carlos\Downloads\JAVASCRIPT\IMAGES\logo.png" alt="NEKODE">
+          </a>
+      </div>
+      <div class="button_cont">
+        <a id="toggle-dark-button" onclick="toggleDarkMode()">NIGHT</a>
+      </div>
+    </header>
+    <div id = "question">
+      <div id = "side_title">Question #1</div>
+      <div id = "main_content">QUEJDSHFKDJHFASHFIAHFSUHUSHFDFjsgdsgsdyfdhfghgfjgs</div>
+    </div>
+    <div id = 'c1' class = 'choice correctanswer' style = "top: 45%; left: 10.5%;" onclick="correctanswer(choice1), changeQuestion()">fgfgffgfghdjkghgjfhgfhg</div>
+    <div id = 'c2' class = 'choice' style = "top: 45%; right: 10.5%;" onclick="correctanswer(choice2), changeQuestion()">fgfgffgfghdjkghgjfhgfhg</div>
+    <div id = 'c3' class = 'choice' style = "top: 63%; left: 10.5%;" onclick="correctanswer(choice3), changeQuestion()">fgfgffgfghdjkghgjfhgfhg</div>
+    <div id = 'c4' class = 'choice' style = "top: 63%; right: 10.5%;" onclick="correctanswer(choice4), changeQuestion()">fgfgffgfghdjkghgjfhgfhg</div>
+    <div id = 'score'>SCORE: 0/5</div>
+  
+    <script type="text/javascript" src="C:\Users\juan carlos\Downloads\JAVASCRIPT\DARKMODE.js"></script>
+    <script>
+        var choice1 = document.getElementById('c1')
+        var choice2 = document.getElementById('c2')
+        var choice3 = document.getElementById('c3')
+        var choice4 = document.getElementById('c4')
+        let score = 0;
+
+
+
+        function correctanswer(correct) {
+          if (correct.classList.contains('correctanswer')) {
+              score++
+              document.getElementById('score').innerText = 'SCORE: ' + score + '/5';
+          }
+        }
+
+        function changeQuestion(){
+          var title = document.getElementById('side_title')
+          var question = document.getElementById('main_content')
+          if (title.textContent === 'Question #1') {
+            title.textContent = "Question #2";
+            question.textContent = "sdusfhdhduhd";
+            choice1.textContent = "dsjfhdjfhdhf";
+            choice2.textContent = "aoshdfjd";
+            choice3.textContent = "ask";
+            choice4.textContent = "lel";
+            choice1.classList.remove('correctanswer');
+            choice2.classList.add('correctanswer');
+            choice3.classList.remove('correctanswer');
+            choice4.classList.remove('correctanswer');
+          } else if(title.textContent === "Question #2") {
+            title.textContent = "Question #3";
+            question.textContent = "dbdbdbdb";
+            choice1.textContent = "fghh";
+            choice2.textContent = "fg";
+            choice3.textContent = "ahg";
+            choice4.textContent = "h";
+            choice1.classList.add('correctanswer');
+            choice2.classList.remove('correctanswer');
+            choice3.classList.remove('correctanswer');
+            choice4.classList.remove('correctanswer');
+          }
+            
+      }
+    </script>
+
+    <footer class="lightmode">
+      <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
