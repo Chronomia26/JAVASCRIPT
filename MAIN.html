@@ -8,67 +8,34 @@
 		body {
 			margin: 0;
 			background-color: black;
+			overflow: hidden;
 		}
 		#content {
-			padding-bottom: 100%;
-			padding-right: 100%;
+			display: flex;
+			justify-content: center;
+			height: 100vh;
 			background-size: 1920px;
 			background-repeat: no-repeat;
-			position: fixed;
 			image-rendering: pixelated;
 			animation: fade-in 1s ease-in-out forwards;
 			opacity: 0;
 		}
-		
-		@media (max-width: 1080px) {
-			#content {
-				display: flex;
-				background-size: 1080px;
-				image-rendering: pixelated;
-				animation: fade-in 1s ease-in-out forwards;
-				opacity: 0;
-				flex-wrap: wrap;
-			}
-			.logo {
-				top: 0;
-				border-bottom: 3px dashed black;
-			}
-			.logo img {
-				opacity: 0;
-				transform: translate(-30px);
-				animation: right-fade-in 1s ease-in-out forwards;
-				animation-delay: 0.5s;
-			}
-			.logo p{
-				opacity: 0;
-				animation: fade-in 1s ease-in-out forwards;
-				animation-delay: 1s;
-				font-family: monospace;
-				text-align: center;
-				margin-top: 0;
-				font-size: 25px;
-			}
-			.learn a{
-				padding-left: 5%;
-				padding-right: 5%;
-				font-size: 20px;
-				border-radius: 0px;
-			}
-		}
 
 		header {
+			position: fixed;
 			padding-bottom: 65px;
-			padding-right: 100%;
+			width: 100%;
 			box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
 		}	
-
 		.logo {
-			margin-top: 30%;
-			margin-left: 20.5%;
-			width: 100%;
-			border-bottom: 3px dashed black;
+			display: flex;
+			justify-content: center;
+			left: 8%;
+			top: 20%;
+			position: absolute;
 		}
-		.logo img {
+		.logo img{
+			image-rendering: pixelated;
 			opacity: 0;
 			transform: translate(-30px);
 			animation: right-fade-in 1s ease-in-out forwards;
@@ -76,64 +43,52 @@
 			width: 650px;
 		}
 		.logo p{
-			width: 100%;
 			opacity: 0;
 			animation: fade-in 1s ease-in-out forwards;
 			animation-delay: 1s;
 			font-family: monospace;
-			text-align: center;
-			margin-top: 0;
+			top: 90%;
 			font-size: 25px;
+			position: absolute;
+			padding-bottom: 20px;
+			border-bottom: 2px solid black;
 		}
 		.learn {
-			width: 100%;
-			margin-top: 4%;
-			margin-left: 20%;
-			transition: transform 0.3s ease-in-out;
-			font-family: 'Courier New';
-			text-align: center;
-			opacity: 0;
-			animation: fade-in 1s ease-in-out forwards;
-			animation-delay: 1.5s;
-		}
-		.learn a {
-			color: white;
-			padding: 2%;
-			padding-left: 26.4%;
-			padding-right: 26.4%;
+			position: absolute;
+			top: 140%;
 			font-size: 25px;
-			border-radius: 50px;
-			text-decoration: none; 
+			color: white;
+			text-decoration: none;
+			font-family: myFirstFont;
 			background-color: rgb(89,13,13);
+			border-radius: 50px;
+			padding: 15px;
+			padding-left: 25%;
+			padding-right: 25%;
+			transition: transform 0.3s ease-in-out;
 		}
+
 		.learn:hover {
-			transform: scale(1.1);
+			transform: scale(1.07);
 		}
 
 		.comp {
-			width: 100%;
-			margin-top: 6%;
-			margin-left: 20%;
+			position: absolute;
+			top: 180%;
+			font-size: 25px;
+			color: white;
+			text-decoration: none;
+			font-family: myFirstFont;
+			background-color: rgb(89,13,13);
+			border-radius: 50px;
+			padding: 15px;
+			padding-left: 17.5%;
+			padding-right: 17.5%;
 			transition: transform 0.3s ease-in-out;
-			font-family: 'Courier New';
-			text-align: center;
-			opacity: 0;
-			animation: fade-in 1s ease-in-out forwards;
-			animation-delay: 1.5s;
 		}
 
-		.comp a {
-			color: white;
-			padding: 2%;
-			padding-left: 20%;
-			padding-right: 20%;
-			font-size: 25px;
-			border-radius: 50px;
-			text-decoration: none; 
-			background-color: rgb(89,13,13);
-		}
 		.comp:hover {
-			transform: scale(1.1);
+			transform: scale(1.07);
 		}
 
 		footer {
@@ -220,14 +175,12 @@
 		<button id="toggle-dark-button" onclick="toggleDarkMode()">NIGHT</button>
 		<div class="logo">
 			<img src="IMAGES/logo.png">
-			<p class="mainfont">an introductory <b><i>JavaScript</i></b> learning site</p>
+			<p>an introductory <b><i>JavaScript</i></b> learning site</p>
+			<a class="learn" href="SINGLE HTML SITE.html" class="mainfont">LEARN TODAY!</a>
+			<a class="comp" href="DESIGNED COMPILER.html" class="mainfont">USE NEKOCOMPILER</a>
 		</div>
-		<div class="learn">
-			<a href="SINGLE HTML SITE.html" class="mainfont">LEARN TODAY!</a>
-		</div>
-		<div class="comp">
-			<a href="DESIGNED COMPILER.html" class="mainfont">USE NEKOCOMPILER</a>
-		</div>
+
+		
 		<footer>
 			<p>&copy; 2023 Your Website. All rights reserved.</p>
 		  </footer>
