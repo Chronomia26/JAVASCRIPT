@@ -46,12 +46,14 @@
 			opacity: 0;
 			animation: fade-in 1s ease-in-out forwards;
 			animation-delay: 1s;
-			font-family: monospace;
+			font-family: 'Comic Sans ms';
 			top: 90%;
 			font-size: 25px;
 			position: absolute;
 			padding-bottom: 20px;
-			border-bottom: 2px solid black;
+			padding-left: 50px;
+			padding-right: 50px;
+			border-bottom: 5px dashed black;
 		}
 		.learn {
 			position: absolute;
@@ -98,16 +100,28 @@
 			width: 100%;
 			color: white;
 			padding: 5px;
-			font-family: century gothic;
+			font-family: myFirstFont;
 		}
 
-
-		@media (max-width: 1080px) {
+		@media screen and (max-width: 1080px) {
+			#content{
+				left: 0;
+				background-position:  40%;
+			}
+			
 			.logo {
 				left: auto;
 			}
 			.logo img {
-				width: 900px;
+				width: 800px;
+			}
+			.learn {
+				font-size: 30px;
+			}
+			.comp {
+				font-size: 30px;
+				padding-left: 18.3%;
+				padding-right: 18.3%;
 			}
 		}
 
