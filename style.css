@@ -101,15 +101,6 @@ padding: 5px;
 font-family: "comic sans ms", cursive;
 }
 
-a {
-color: black;
-font-family: myFirstFont;
-font-size: 17px;
-/* padding-left: px; */
-text-decoration: none;
-justify-self: center;
-}
-
 @font-face {
     font-family: myFirstFont;
     src: url('fonts/joystix_monospace.otf');
@@ -244,6 +235,19 @@ transform: scale(1.07);
 font-weight: bold;
 }
 
+#side_list a {
+    align-self: center;
+    font-family: myFirstFont;
+}
+
+a {
+    color: black;
+    font-size: 17px;
+    /* padding-left: px; */
+    text-decoration: none;
+    justify-self: center;
+    }
+
 #statement {
     animation: right-fade-in 0.5s ease-in-out;
 }
@@ -361,7 +365,7 @@ background-color: #808080;
 
 #controls {
 font-size: 10px;
-font-family: arial;
+font-family: myFirstFont, arial;
 position: fixed;
 width: 75%;
 /* height: 11%; */

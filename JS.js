@@ -260,33 +260,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   function arrow(link) {
       if (link.textContent == '<') {
           if (whatisjavascript.style.display == "block"){
@@ -740,22 +713,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
   function toggleDarkMode() {
       var body = document.body;
       var header = document.querySelector('header');

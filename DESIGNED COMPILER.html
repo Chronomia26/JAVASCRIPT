@@ -1,101 +1,95 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>NEKOCOMPILER</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/x-icon" href="IMAGES/icon.png">
-    <style>
-      body{
-        display: flex;
-        justify-content: center;
-      }
+<head>
+ <title>NEKOCOMPILER</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="icon" type="image/x-icon" href="IMAGES/icon.png">
+ <style>
+    body{
+      display: flex;
+      justify-content: center;
+    }
 
-      #logob{
-        image-rendering: pixelated;
-        position: absolute;
-        top: 9%;
-        height: 134.4px;
-        width: 487.2px;
-      }
+    #logob{
+      image-rendering: pixelated;
+      position: absolute;
+      top: 9%;
+      height: 134.4px;
+      width: 487.2px;
+    }
 
+    header {
+      padding-bottom: 14px;
+    }
+    #codearea {
+      border: 15px solid rgb(41, 133, 47);
+      width: 75%;
+      top: 24%;
+      height: 60%;
+      position: fixed;
+      background-color: white;
+      box-shadow: 25px 25px 0px rgba(0, 0, 0, 0.4);
+    }
 
+    textarea {
+      position: absolute;
+      left: 0;
+      width: 50%;
+      font-family: Courier, sans-serif;
+      background-color: rgba(0, 0, 0, 0.9);
+      font-size: 15px;
+      color: white;
+    }
 
-      header {
-        padding-bottom: 14px;
-      }
-      #codearea {
-        border: 15px solid rgb(41, 133, 47);
-        width: 75%;
-        top: 24%;
-        height: 60%;
-        position: fixed;
-        background-color: white;
-        box-shadow: 25px 25px 0px rgba(0, 0, 0, 0.4);
-      }
+    #html{
+      top: 0;
+      height: 33%;
+      border-bottom: 3px dashed white;
+    }
+    #css{
+      top: 33%;
+      height: 33%;
+    }
+    #js{
+      top: 66%;
+      bottom: 0;
+      border-top: 3px dashed white;
+    }
+    iframe {
+      background-color: rgba(255, 255, 255, 0.8);
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50%;
+      height: 99%;
+    }
+ </style>
+</head>
 
-      textarea {
-        position: absolute;
-        left: 0;
-        width: 50%;
-        font-family: Courier, sans-serif;
-        background-color: rgba(0, 0, 0, 0.9);
-        font-size: 15px;
-        color: white;
-      }
-
-      #html{
-        top: 0;
-        height: 33%;
-        border-bottom: 3px dashed white;
-      }
-      #css{
-        top: 33%;
-        height: 33%;
-      }
-      #js{
-        top: 66%;
-        bottom: 0;
-        border-top: 3px dashed white;
-      }
-      iframe {
-        background-color: rgba(255, 255, 255, 0.8);
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 50%;
-        height: 99%;
-      }
-      
-      
-      
-    </style>
-  </head>
-
-  <body>
-    <header class="lightmode">
-      <div id="header_img">
-          <a href="MAIN.html">
-              <img src="IMAGES/logo.png" alt="NEKODE">
-          </a>
-      </div>
-      <div class="button_cont">
-        <a id="toggle-dark-button" onclick="toggleDarkMode()">NIGHT</a>
+<body>
+ <header class="lightmode">
+    <div id="header_img">
+        <a href="MAIN.html">
+            <img src="IMAGES/logo.png" alt="NEKODE">
+        </a>
     </div>
-    </header>
-    <img id = "logob" src="IMAGES/logob.png" alt="NEKODE">
-    <div id = "codearea">
-      <textarea id="html" placeholder="Type (HTML) here..."></textarea>
-      <textarea id="css" placeholder="Type (CSS) here..."></textarea>
-      <textarea id="js" placeholder="Type (JavaScript) here..."></textarea>
-      <iframe id="code"></iframe>
-    </div>
+    <div class="button_cont">
+      <a id="toggle-dark-button" onclick="toggleDarkMode()">NIGHT</a>
+ </div>
+ </header>
+ <img id = "logob" src="IMAGES/logob.png" alt="NEKODE">
+ <div id = "codearea">
+    <textarea id="html" placeholder="Type (HTML) here..."></textarea>
+    <textarea id="css" placeholder="Type (CSS) here..."></textarea>
+    <textarea id="js" placeholder="Type (JavaScript) here..."></textarea>
+    <iframe id="code"></iframe>
+ </div>
 
+ <script type="text/javascript" src="app.js"></script>
+ <script type="text/javascript" src="JS.js"></script>
 
-    
-    <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="JS.js"></script>
-
-    <footer class="lightmode">
-      <p>&copy; 2023 Your Website. All rights reserved.</p>
-    </footer>
-  </body>
+ <footer class="lightmode">
+    <p>&copy; 2023 Your Website. All rights reserved.</p>
+ </footer>
+</body>
 </html>
