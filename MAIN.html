@@ -12,37 +12,55 @@
 		#content {
 			padding-bottom: 100%;
 			padding-right: 100%;
-			background-size: 1870px;
+			background-size: 1920px;
 			background-repeat: no-repeat;
 			position: fixed;
 			image-rendering: pixelated;
 			animation: fade-in 1s ease-in-out forwards;
 			opacity: 0;
 		}
-		@keyframes fade-in {
-			from {
+		
+		@media (max-width: 1080px) {
+			#content {
+				display: flex;
+				background-size: 1080px;
+				image-rendering: pixelated;
+				animation: fade-in 1s ease-in-out forwards;
 				opacity: 0;
+				flex-wrap: wrap;
 			}
-			to{
-				opacity: 1;
+			.logo {
+				top: 0;
+				border-bottom: 3px dashed black;
+			}
+			.logo img {
+				opacity: 0;
+				transform: translate(-30px);
+				animation: right-fade-in 1s ease-in-out forwards;
+				animation-delay: 0.5s;
+			}
+			.logo p{
+				opacity: 0;
+				animation: fade-in 1s ease-in-out forwards;
+				animation-delay: 1s;
+				font-family: monospace;
+				text-align: center;
+				margin-top: 0;
+				font-size: 25px;
+			}
+			.learn a{
+				padding-left: 5%;
+				padding-right: 5%;
+				font-size: 20px;
+				border-radius: 0px;
 			}
 		}
-		@keyframes right-fade-in {
-			from {
-				opacity: 0;
-				transform: translateX(-30px);
-			}
-			to {
-				opacity: 1;
-				transform: translateX(0);
-			}
-		}
+
 		header {
-			position: fixed;
 			padding-bottom: 65px;
 			padding-right: 100%;
 			box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
-		}
+		}	
 
 		.logo {
 			margin-top: 30%;
@@ -129,10 +147,10 @@
 		}
 
 		@font-face {
-    font-family: myFirstFont;
-    src: url('fonts/joystix_monospace.otf');
-    font-size: 10px;
-}
+			font-family: myFirstFont;
+			src: url('fonts/joystix_monospace.otf');
+			font-size: 10px;
+		}
 
 		#toggle-dark-button {
 			position: fixed;
@@ -145,22 +163,22 @@
 		}
 
 		#toggle-dark-button {
-    color: #03001C !important;
-    text-transform: uppercase;
-    background: #ffdddd;
-    padding: 10px;
-    border: 4px solid #001f3f !important;
-    border-radius: 6px;
-    display: inline-block;
-    transition: all 0.3s ease 0s;
-}
+			color: #03001C !important;
+			text-transform: uppercase;
+			background: #ffdddd;
+			padding: 10px;
+			border: 4px solid #001f3f !important;
+			border-radius: 6px;
+			display: inline-block;
+			transition: all 0.3s ease 0s;
+		}
 
-#toggle-dark-button:hover {
-    color: #2d2d2d !important;
-    border-radius: 50px;
-    border-color: #fe9e9e!important;
-    transition: all 0.3s ease 0s;
-}
+		#toggle-dark-button:hover {
+			color: #2d2d2d !important;
+			border-radius: 50px;
+			border-color: #fe9e9e!important;
+			transition: all 0.3s ease 0s;
+		}
 
 		.lightmode {
 			background-image: url(IMAGES/main.gif);
@@ -174,6 +192,25 @@
 			font-family: myFirstFont;
 			font-size: 0%;
 			text-decoration: none;
+		}
+
+		@keyframes fade-in {
+			from {
+				opacity: 0;
+			}
+			to{
+				opacity: 1;
+			}
+		}
+		@keyframes right-fade-in {
+			from {
+				opacity: 0;
+				transform: translateX(-30px);
+			}
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
 		}
 
 	</style>

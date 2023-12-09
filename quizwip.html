@@ -1,81 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUIZZES</title>
-    <style>
-      /* Your existing styles */
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
 
-      /* Added some additional styling for clarity */
-      .correctanswer {
-        background-color: lightgreen;
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+
+    main {
+      padding: 2em;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Media Query for screens smaller than 600px */
+    @media (max-width: 600px) {
+      main {
+        padding: 1em;
       }
-    </style>
+    }
+  </style>
+  <title>Responsive Website</title>
 </head>
+<body>
 
-<body class="light-mode">
-    <div id="question" class="question">
-        <div id="side_title">Question #1</div>
-        <div id="main_content">What is the capital of France?</div>
-    </div>
+  <header>
+    <h1>Responsive Website</h1>
+  </header>
 
-    <div id='c1' class='choice correctanswer' style="top: 45%; left: 10.5%;" onclick="checkAnswer(choice1), changeQuestion()">Paris</div>
-    <div id='c2' class='choice' style="top: 45%; right: 10.5%;" onclick="checkAnswer(choice2), changeQuestion()">Berlin</div>
-    <div id='c3' class='choice' style="top: 63%; left: 10.5%;" onclick="checkAnswer(choice3), changeQuestion()">Madrid</div>
-    <div id='c4' class='choice' style="top: 63%; right: 10.5%;" onclick="checkAnswer(choice4), changeQuestion()">Rome</div>
-    <div id='score'>SCORE: 0</div>
+  <main>
+    <p>This is a sample website with content that adjusts based on the browser size.</p>
+  </main>
 
-    <script type="text/javascript" src="C:\Users\juan carlos\Downloads\JAVASCRIPT\DARKMODE.js"></script>
-    <script>
-        var choice1 = document.getElementById('c1');
-        var choice2 = document.getElementById('c2');
-        var choice3 = document.getElementById('c3');
-        var choice4 = document.getElementById('c4');
-        var score = 0;
+  <footer>
+    <p>&copy; 2023 Responsive Website</p>
+  </footer>
 
-        function checkAnswer(clickedChoice) {
-            if (clickedChoice.classList.contains('correctanswer')) {
-                score++;
-                document.getElementById('score').innerText = 'SCORE: ' + score;
-            }
-        }
-
-        function changeQuestion() {
-            var title = document.getElementById('side_title');
-            var question = document.getElementById('main_content');
-            if (title.textContent === 'Question #1') {
-                title.textContent = 'Question #2';
-                question.textContent = 'What is the largest mammal in the world?';
-                choice1.textContent = 'Elephant';
-                choice2.textContent = 'Blue Whale';
-                choice3.textContent = 'Giraffe';
-                choice4.textContent = 'Lion';
-                // Update the correct answer class for the new question
-                choice2.classList.add('correctanswer');
-                // Remove the correct answer class from other choices
-                choice1.classList.remove('correctanswer');
-                choice3.classList.remove('correctanswer');
-                choice4.classList.remove('correctanswer');
-            } else if (title.textContent === 'Question #2') {
-                title.textContent = 'Question #3';
-                question.textContent = 'What is the currency of Japan?';
-                choice1.textContent = 'Yuan';
-                choice2.textContent = 'Yen';
-                choice3.textContent = 'Euro';
-                choice4.textContent = 'Dollar';
-                // Update the correct answer class for the new question
-                choice2.classList.add('correctanswer');
-                // Remove the correct answer class from other choices
-                choice1.classList.remove('correctanswer');
-                choice3.classList.remove('correctanswer');
-                choice4.classList.remove('correctanswer');
-            }
-        }
-    </script>
-
-    <footer class="lightmode">
-        <p>&copy; 2023 Your Website. All rights reserved.</p>
-    </footer>
 </body>
 </html>
