@@ -249,10 +249,11 @@ list-style-type: none;
 }
 
 #side_list li {
-padding-left: 25px;
+padding-left: 45px;
 margin-bottom: 15px;
+image-rendering: pixelated;
 background: url('IMAGES/bullet1.png') left center no-repeat;
-background-size: 20px;
+background-size: 30px;
 transition: transform 0.3s ease-in-out;
 
 }
@@ -386,7 +387,7 @@ background-color: rgba(0, 0, 0, 0.5);
 font-size: 10px;
 font-family: arial;
 position: fixed;
-width: 75%;
+width: 75.5%;
 /* height: 11%; */
 bottom: 9%;
 left: 25%;
@@ -399,11 +400,12 @@ text-align: center;
     font-size: 40px;
     top: 0;
     /* text-align: bottom; */
-    content: center;
+    padding: 10px;
+    
 }
 
 #left {
-    padding-right: 90%;
+    margin-right: 90%;
 }
 
 #back:hover {
@@ -435,6 +437,6 @@ transform: scale(1.1);
 
 @media screen and (max-width: 1000px) {
     #left {
-        padding-right: 80%;
+        margin-right: 80%;
     }
 }

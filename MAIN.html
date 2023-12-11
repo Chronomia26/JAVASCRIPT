@@ -103,6 +103,13 @@
 			font-family: myFirstFont;
 		}
 
+		@media screen and (min-width: 1920px) {
+			#content{
+				left: 0;
+				background-position:  40% 20%;
+				background-size: 7680px;
+			}
+		}
 		@media screen and (max-width: 1080px) {
 			#content{
 				left: 0;
@@ -130,6 +137,30 @@
 			}
 		}
 
+		@media screen and (max-width: 640px) {
+			.logo {
+				left: auto;
+			}
+			.logo img {
+				width: 450px;
+			}
+			.logo p {
+				padding-left: 26px;
+				padding-right: 26px;
+				font-size: 20px;
+			}
+
+			.learn {
+				top: 155%;
+				font-size: 18px;
+			}
+			.comp {
+				top: 200%;
+				font-size: 18px;
+				padding-left: 18.3%;
+				padding-right: 18.3%;
+			}
+		}
 
 		@font-face {
 			font-family: myFirstFont;
