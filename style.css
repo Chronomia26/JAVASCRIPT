@@ -41,7 +41,7 @@ left: 0;
 width: 100%;
 background-color: rgba(255, 153, 153, 1);
 padding: 10px;
-border-bottom: 2px solid black;
+border-bottom: 2px solid;
 }
 
 #header_img {
@@ -94,12 +94,13 @@ transition: all 0.3s ease 0s;
 }
 
 footer {
-border-top: 2px solid black;
+border-top: 2px solid;
 text-align: center;
 bottom: 0;
 position: fixed;
 width: 100%;
 background-color: rgba(255, 153, 153, 1);
+border-top: 2px solid;
 padding: 5px;
 font-family: myFirstFont;
 }
@@ -137,7 +138,7 @@ justify-self: center;
     }
 }
 
-.lightmode {
+.light-header-footer {
 animation-name: lightt;
 animation-duration: 7s;
 animation-iteration-count: infinite;
@@ -150,6 +151,10 @@ background-size: 200% 100%;
 background-color: #001f3f;
 color: #ffffff;
 background-image: url(IMAGES/background1.png);
+}
+
+.dark-text {
+color: white;
 }
 
 @keyframes darkk {
@@ -170,13 +175,21 @@ background-image: url(IMAGES/background1.png);
     }
 }
 
-.darkmode {
+.dark-header-footer {
 animation-name: darkk;
 animation-duration: 13s;
 animation-iteration-count: infinite;
 animation-timing-function: linear;
 background: linear-gradient(90deg, #003060, #22588f, #003060);
 background-size: 200% 100%; 
+}
+
+.light-border {
+border-color: black;
+}
+
+.dark-border {
+border-color: white;
 }
 
 #side {
@@ -187,7 +200,7 @@ height: 86.8vh;
 overflow-y: scroll;  
 top: 66px;
 bottom: 65px;
-border-right: 2px solid black;
+border-right: 5px dashed;
 border-spacing: 50px;
 overflow-y: scroll;
 }
@@ -225,7 +238,7 @@ width: 75%;
 list-style-type: none;
 border-radius: 20px;
 border: 5px dashed black;
-box-shadow:-4px 4px 3px #fe9e9e;
+box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.4);
 background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -389,6 +402,10 @@ text-align: center;
     content: center;
 }
 
+#left {
+    padding-right: 90%;
+}
+
 #back:hover {
 transform: scale(1.1);
 }
@@ -402,11 +419,16 @@ transform: scale(1.1);
         width: 10%;
     }
     #controls {
-        width: 100%;
-        left: auto;
+        width: 80%;
+        left: 15%;
     }
-
     #footer{
         font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #left {
+        padding-right: 80%;
     }
 }

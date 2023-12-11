@@ -40,18 +40,18 @@
 </head>
 
 <body class="light-mode">
-        <header class="lightmode">
+        <header class="light-header-footer light-border">
             <div id="header_img">
                 <a href="MAIN.html">
                     <img src="IMAGES/logo.png" alt="NEKODE">
                 </a>
             </div>
             <div class="button_cont">
-                <a id="toggle-dark-button" onclick="toggleDarkMode()">NIGHT</a>
+                <a id="toggle-dark-button" onclick="toggleDarkMode()">DARK</a>
             </div>
         </header>
 		
-        <div id="side">
+        <div id="side"  class="light-border">
             <div id="side_title">
                 <p>INTRODUCTION TO JAVASCRIPT</p>
             </div>
@@ -500,7 +500,7 @@ Without data types, a computer cannot safely solve this:
                 <div id="main_content" style="padding-bottom: 150px">
                     <p>A list of all the reserved words in JavaScript are given in the following table. They <b>CANNOT</b> be
                         used as JavaScript variables, functions, methods, loop labels, or any object names.</p>
-                    <table id="main_content" style="margin-left: 5px;">
+                    <table style="margin-left: 5px;">
                         <tr>
                             <td>abstract</td>
                             <td>arguments</td>
@@ -1443,15 +1443,15 @@ Without data types, a computer cannot safely solve this:
         </div>
 
         <div id = "controls" >
-				<a href = "#" onclick="arrow(this)" style="padding-right: 90%;">&lt;</a>
-				<a href = "#" onclick="arrow(this)">&gt;</a>
+				<a id = 'left' class="light-text" href = "#" onclick="arrow(this)">&lt;</a>
+				<a id = 'right' class="light-text" href = "#" onclick="arrow(this)">&gt;</a>
 		</div>
 
         <script src = "JS.js"></script>
         <script src = "DARKMODE.js"></script>
     </div>
 
-    <footer class="lightmode">
+    <footer class="light-header-footer light-border">
         <p>&copy; 2023 Your Website. All rights reserved.</p>
     </footer>
 </body>
