@@ -98,6 +98,8 @@
   
     <script type="text/javascript" src="C:\Users\juan carlos\Downloads\JAVASCRIPT\DARKMODE.js"></script>
     <script>
+        var title = document.getElementById('side_title')
+        var question = document.getElementById('main_content')
         var choice1 = document.getElementById('c1')
         var choice2 = document.getElementById('c2')
         var choice3 = document.getElementById('c3')
@@ -114,8 +116,7 @@
         }
 
         function changeQuestion(){
-          var title = document.getElementById('side_title')
-          var question = document.getElementById('main_content')
+
           if (title.textContent === 'Question #1') {
             title.textContent = "Question #2";
             question.textContent = "sdusfhdhduhd";
