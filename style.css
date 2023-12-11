@@ -427,7 +427,13 @@ transform: scale(1.1);
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1680px) {
+    #side_title {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     #left {
         padding-right: 80%;
     }
