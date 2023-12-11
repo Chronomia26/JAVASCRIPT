@@ -192,6 +192,8 @@ border-color: black;
 border-color: white;
 }
 
+
+
 #side {
 position: fixed;
 left: 0;
@@ -219,8 +221,7 @@ overflow-y: scroll;
 }
 
 #side_title {
-    text-shadow: 2px 2px 0px black, -2px -2px -0px white;
-    color: crimson; 
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), -2px -2px -0px white;
 font-family: myFirstFont;
 text-align: center;
 font-size: 40px;
@@ -332,8 +333,7 @@ font-weight: bold;
 
 #main_title {
 border: 10px ridge crimson;
-text-shadow: 2px 2px 0px black, -2px -2px -0px white;
-color: crimson;
+text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), -2px -2px -0px rgba(255, 255, 255, 0.5);
 border-radius: 10px;
 text-align: center;
 font-family: myFirstFont;
@@ -376,9 +376,9 @@ padding-right: 50px;
 }
 
 #script {
-border: 2px dashed rgb(0, 0, 0);
+border: 5px ridge black;
 border-radius: 10px;
-background-color: #808080;
+background-color: rgba(0, 0, 0, 0.5);
 
 }
 

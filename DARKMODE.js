@@ -6,6 +6,7 @@
       var left = document.getElementById('left');
       var right = document.getElementById('right');
       var side = document.getElementById('side');
+      var title = document.getElementById('main_title');
 
       if (body.classList.contains('light-mode')) {
           body.classList.remove('light-mode');
@@ -24,6 +25,8 @@
           right.classList.add('dark-text');
           side.classList.add('dark-border');
           side.classList.remove('light-border');
+          title.classList.remove('light-title');
+          title.classList.add('dark-title');
           darkmode.textContent = "LIGHT"
       } else {
           body.classList.remove('dark-mode');
@@ -42,6 +45,8 @@
           right.classList.remove('dark-text');
           side.classList.add('light-border');
           side.classList.remove('dark-border');
+          title.classList.add('light-title');
+          title.classList.remove('dark-title');
           darkmode.textContent = "DARK"
         }
   }
