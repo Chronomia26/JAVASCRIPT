@@ -446,6 +446,24 @@ hr {
     
 }
 
+#textcode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+#textcode a{
+    background: linear-gradient(to right, #FBACCC, #F1D1D0); 
+    transition: background 3s ease, transform 0.1s ease-in-out;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#textcode a:hover{
+    background: linear-gradient(to right, #F1D1D0, #FBACCC);
+}
+
 #left {
     margin-right: 90%;
 }
@@ -476,7 +494,10 @@ transform: scale(1.1);
 
 @media screen and (max-width: 1680px) {
     #side_title {
-        font-size: 35px;
+        font-size: 30px;
+    }
+    #left {
+        margin-right: 85%;
     }
 }
 
