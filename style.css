@@ -221,10 +221,12 @@ overflow-y: scroll;
 }
 
 #side_title {
+text-shadow: 2px 2px 0px black, -2px -2px -0px white;
+color: crimson; 
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), -2px -2px -0px white;
 font-family: myFirstFont;
 text-align: center;
-font-size: 40px;
+font-size: 35px;
 margin-top: 50px;
 width: 100%;
 }
@@ -263,7 +265,21 @@ transform: scale(1.07);
 font-weight: bold;
 }
 
+#side_list a {
+    align-self: center;
+    font-family: myFirstFont;
+}
+
+a {
+    color: black;
+    font-size: 17px;
+    /* padding-left: px; */
+    text-decoration: none;
+    justify-self: center;
+    }
+
 #statement {
+    height: 550lvh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
@@ -273,7 +289,7 @@ font-weight: bold;
 }
 
 #whatisjavascript {
-    height: 150vh;
+    height: 190vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
@@ -289,22 +305,22 @@ font-weight: bold;
 }
 
 #operators {
-    height: 950vh;
+    height: 1230lvh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #assignment {
-    height: 200vh;
+    height: 710lvh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #decisionmaking {
-    height: 500vh;
+    height: 750lvh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #loops {
-    height: 850vh;
+    height: 1280lvh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
@@ -389,7 +405,7 @@ background-color: rgba(0, 0, 0, 0.5);
 
 #controls {
 font-size: 10px;
-font-family: arial;
+font-family: myFirstFont, arial;
 position: fixed;
 width: 75.5%;
 /* height: 11%; */
