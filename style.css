@@ -264,6 +264,7 @@ font-weight: bold;
 }
 
 #side_list a {
+    font-size: 20px;
     align-self: center;
     font-family: myFirstFont;
 }
@@ -298,7 +299,7 @@ a {
 }
 
 #reserved {
-    height: 120vh;
+    height: 1200vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
@@ -308,7 +309,7 @@ a {
 }
 
 #assignment {
-    height: 710lvh;
+    height: 780vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
@@ -492,7 +493,7 @@ transform: scale(1.1);
     }
 }
 
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1780px) {
     #side_title {
         font-size: 30px;
     }

@@ -12,6 +12,7 @@ function compile() {
     iframeDocument.writeln(transferredText);
     iframeDocument.close();
   }
+ 
   document.body.onkeyup = function() {
     code.open();
     code.writeln(html.value);
