@@ -198,7 +198,7 @@ border-color: white;
 position: fixed;
 left: 0;
 width: 25%;
-height: 86.8vh;
+height: 100vh;
 overflow-y: scroll;  
 top: 66px;
 bottom: 65px;
@@ -230,7 +230,7 @@ width: 100%;
 }
 
 #side_list {
-height: 100%;
+height: 65%;
 /* overflow-y: scroll; */
 font-family: century gothic;
 margin-top: 4%;
@@ -377,7 +377,8 @@ padding-right: 50px;
 }
 
 #script {
-border: 5px ridge black;
+border: 5px ridge rgb(220, 20, 60);
+color: white;
 border-radius: 10px;
 background-color: rgba(0, 0, 0, 0.5);
 
@@ -394,6 +395,10 @@ left: 25%;
 text-align: center;
 /* content: left; */
 /* border-top: 2px dashed black; */
+}
+
+hr {
+    border-style: solid;
 }
 
 #controls a{
@@ -421,11 +426,14 @@ transform: scale(1.1);
         width: 10%;
     }
     #controls {
-        width: 80%;
-        left: 15%;
+        width: 90%;
+        left: 10%;
     }
     #footer{
         font-size: 80px;
+    }
+    #left {
+        margin-right: 80%;
     }
 }
 
