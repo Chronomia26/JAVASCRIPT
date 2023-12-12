@@ -230,9 +230,9 @@ font-size: 35px;
 margin-top: 50px;
 width: 100%;
 }
-
+o 
 #side_list {
-height: 65%;
+height: 100%;
 /* overflow-y: scroll; */
 font-family: century gothic;
 margin-top: 4%;
