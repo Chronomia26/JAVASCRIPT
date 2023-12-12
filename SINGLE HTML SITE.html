@@ -73,6 +73,32 @@
 
         <div id="main">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div id="whatisjavascript"  style="display: block;">
                 <div id="main_title" class="dark-title">
                     <b><img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 30px; image-rendering: pixelated;"> What is JavaScript? <img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 30px; image-rendering: pixelated;"></b>
@@ -97,7 +123,37 @@
                         give plain clothes customizable functionality.</p>
                    
                 </div>
+                <div id="quiz">
+                    <p>TAKE A SMALL QUIZ FOR THIS LESSON! </p>
+                    <a href="QUIZZES/QUIZ1.html">START QUIZ</a>
+                </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div id="statement"  style="display: none;">
                 <div id="main_title" class="light-title">
@@ -180,7 +236,37 @@
                     </p>
                         
                 </div>
+                <div id="quiz">
+                    <p>TAKE A SMALL QUIZ FOR THIS LESSON! </p>
+                    <a href="QUIZZES/QUIZ1.html">START QUIZ</a>
+                </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div id="comment"  style="display: none;">
                 <div id="main_title">
@@ -205,11 +291,16 @@
                     </p>
                     <div id="script">
                         <code>
-                            <blockquote>
+                            <blockquote id = "codeA">
+                                &lt;script&gt;<br>
                                 // This is a single-line comment<br><br>
                                 let catName = “Whiskers”; // Variable storing the cat’s name<br><br>
                                 let catAge = 3; // Variable storing the cat’s age<br>
+                                &lt;/script&gt;
                             </blockquote>
+                            <div id="textcode">
+                                <a href="#" onclick="transferText('codeA')">TEST CODE</a>
+                            </div>
                         </code>
                     </div>
                     <br><br>
@@ -221,7 +312,8 @@
                     </p>
                     <div id="script">
                         <code>
-                            <blockquote>
+                            <blockquote id = "codeB">
+                                &lt;script&gt;<br>
                                 /*This is a multi-line comment.
                                 <blockquote>
                                     It can span multiple lines,<br><br>
@@ -230,7 +322,11 @@
                                 </blockquote>
                                 */
                                 let catColor = “Calico”; // Variable storing the cat’s color
+                                &lt;/script&gt;
                             </blockquote>
+                            <div id="textcode">
+                                <a href="#" onclick="transferText('codeB')">TEST CODE</a>
+                            </div>
                         </code>
                     </div>
                     <br><br>
@@ -243,7 +339,8 @@
                     </p>
                     <div id="script">
                         <code>
-                            <blockquote>
+                            <blockquote id = "codeC">
+                                &lt;script&gt;<br>
                                 // let catToy = “Feather wand”; // This line won’t be executed<br>
                                 /*
                                 <blockquote>
@@ -258,7 +355,11 @@
                                 </blockquote>
                                 }<br>
                                 */
+                                &lt;/script&gt;
                             </blockquote>
+                            <div id="textcode">
+                                <a href="#" onclick="transferText('codeC')">TEST CODE</a>
+                            </div>
                         </code>
                     </div>
                     <p>
@@ -273,6 +374,32 @@
                     <a href="QUIZZES/QUIZ1.html">START QUIZ</a>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div id="datatypes" style="display: none;">
                 <div id="main_title">
@@ -307,7 +434,8 @@
                     <p><b>Here are some examples:</b></p>
                     <div id="script">
                         <code>
-                            <blockquote>
+                            <blockquote id = "codeD">
+                                &lt;script&gt;<br>
                                 // Numbers:<br>
                                 let age = 3;<br>
                                 let weight = 10.5;<br><br>
@@ -321,7 +449,11 @@
                                 const person = {firstName:”Cat”, lastName:”erpillar”};<br><br>
                                 // Array object:<br>
                                 const catColors = [“Black”, “Orange”, “White”];<br>
+                                &lt;/script&gt;
                             </blockquote>
+                            <div id="textcode">
+                                <a href="#" onclick="transferText('codeD')">TEST CODE</a>
+                            </div>
                         </code>
                     </div>
                     <br><br>
@@ -388,25 +520,30 @@ Without data types, a computer cannot safely solve this:
                         </p>
                         <div id="script">
                           <code>
-                              <blockquote>
+                              <blockquote id="code0">
+                                &lt;script&gt;<br>
                                 // Variable x is automatically declared<br>
                                 x = 5;<br>
                                 <br>
                                 // Now x holds the value 5<br>
-                                console.log(x);<br>
+                                document.write(x);<br>
                                 <br><br>
                                 // Variable message is automatically declared<br>
                                 message = "Hello, World!";<br>
                                 <br>
                                 // Now message holds the string "Hello, World!"<br>
-                                console.log(message);<br>
+                                document.write(message);<br>
                                 <br><br>
                                 // Variable count is automatically declared<br>
                                 count = 10;<br>
                                 <br>
                                 // Now count holds the value 10<br>
-                                console.log(count);<br>
+                                document.write(count);<br>
+                                &lt;/script&gt;
                               </blockquote>
+                              <div id="textcode">
+                                <a href="#" onclick="transferText('code0')">TEST CODE</a>
+                              </div>
                           </code>
                         </div>
                         <br><br>
@@ -417,23 +554,28 @@ Without data types, a computer cannot safely solve this:
                         </p>
                         <div id="script">
                             <code>
-                            <blockquote>
+                            <blockquote id = "code1">
+                                &lt;script&gt;<br>
                                 // Using var to declare a variable<br>
                                 var a = 2;<br>
                                 <br>
                                 // Now a holds the value 2<br>
-                                console.log(a);<br>
+                                document.write(a);<br>
                                 <br>
                                 // Variables declared using var are hoisted<br>
-                                console.log(b); // Outputs: undefined<br>
+                                document.write(b); // Outputs: undefined<br>
                                 var b = 7;<br>
                                 <br>
                                 // var allows redeclaration of variables<br>
                                 var name = "John";<br>
                                 var name = "Doe"; // No error, but the variable is overwritten<br>
-                                console.log(name); // Outputs: Doe<br>
+                                document.write(name); // Outputs: Doe<br>
                                 <br>
+                                &lt;/script&gt;
                             </blockquote>
+                            <div id="textcode">
+                                <a href="#" onclick="transferText('code1')">TEST CODE</a>
+                            </div>
                             </code>
                         </div>
                         <br><br>
@@ -445,25 +587,30 @@ Without data types, a computer cannot safely solve this:
 
                         <div id="script">
                             <code>
-                            <blockquote>
+                            <blockquote id = "code2">
+                                &lt;script&gt;<br>
                                 // Using let to declare a variable<br>
                                 let age = 25;<br>
                                 <br>
                                 // Now age holds the value 25<br>
-                                console.log(age);<br>
+                                document.write(age);<br>
                                 <br>
                                 // Variables declared using let have block scope<br>
                                 if (true) {<br>
                                 let localVar = "I am inside a block";<br>
                                 }<br>
                                 <br>
-                                console.log(localVar); // Error: localVar is not defined<br>
+                                document.write(localVar); // Error: localVar is not defined<br>
                                 <br>
                                 // let does not allow redeclaration of the same variable in the same scope<br>
                                 let color = "red";<br>
                                 // let color = "blue"; // Error: Identifier 'color' has already been declared<br>
                                 <br>
+                                &lt;/script&gt;
                             </blockquote>
+                            <div id="textcode">
+                                <a href="#" onclick="transferText('code2')">TEST CODE</a>
+                            </div>
                             </code>
                         </div>
                         <br><br>
@@ -475,7 +622,8 @@ Without data types, a computer cannot safely solve this:
 
                         <div id="script">
                             <code>
-                            <blockquote>
+                            <blockquote id = "code3">
+                                &lt;script&gt;<br>
                                 // Using const to declare a constant variable<br>
                                 const PI = 3.14;<br>
                                 <br>
@@ -489,13 +637,46 @@ Without data types, a computer cannot safely solve this:
                                 // const variables cannot be reassigned<br>
                                 const daysInWeek = 7;<br>
                                 // daysInWeek = 8; // Error: Assignment to constant variable.<br>
-                                
+                                &lt;/script&gt;
                             </blockquote>
+                            <div id="textcode">
+                                <a href="#" onclick="transferText('code3')">TEST CODE</a>
+                            </div>
                             </code>
                         </div>
                         <br>
                 </div>
+                <div id="quiz">
+                    <p>TAKE A SMALL QUIZ FOR THIS LESSON! </p>
+                    <a href="QUIZZES/QUIZ1.html">START QUIZ</a>
+                </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div id="reserved" style="display: none;">
                 <div id="main_title">
@@ -604,8 +785,38 @@ Without data types, a computer cannot safely solve this:
                     </table>
 
                 </div>
+                <div id="quiz">
+                    <p>TAKE A SMALL QUIZ FOR THIS LESSON! </p>
+                    <a href="QUIZZES/QUIZ1.html">START QUIZ</a>
+                </div>
             </div>
-            
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
             <div id="operators" style="display: none;">
                 <div id="main_title">
                     <b>The Cat's Clever Calculations 🐾: What is an Operator?</b>
@@ -640,20 +851,19 @@ Without data types, a computer cannot safely solve this:
                     </ul>
                     <div id="script">
                         <code>
-                            <blockquote>
+                            <blockquote id="code4">
                                 &lt;html&gt;
-                                <blockquote>&lt;
-                                    body&gt;<br>
+                                <blockquote>
+                                    &lt;body&gt;<br>
                                     <blockquote>
                                         &lt;script type = "text/javascript"&gt;
                                         <blockquote>
-                                            &lt;!--
                                             <blockquote>
                                                 var treatsFromYou = 5;<br>
                                                 var treatsInBowl = 20;<br>
                                                 var linebreak = "&lt;br/ &gt;";<br>
                                                 <br>
-                                                >document.write("Treats in the bowl + Treats from you: ");<br>
+                                                document.write("Treats in the bowl + Treats from you: ");<br>
                                                 totalTreats = treatsFromYou + treatsInBowl;<br> 
                                                 document.write(totalTreats);<br>
                                                 document.write(linebreak);<br>
@@ -690,15 +900,17 @@ Without data types, a computer cannot safely solve this:
                                                 document.write(totalTreats); <br>
                                                 document.write(linebreak); <br>
                                             </blockquote>
-                                            >//--&gt;
                                         </blockquote>
                                         &lt;/script&gt;<br>
-                                        Set the variables to different values and then try...
+                                        &lt;!--Set the variables to different values and then try...--&gt;
                                     </blockquote>
                                     &lt;/body&gt;
                                 </blockquote>
                                 &lt;/html&gt;
                             </blockquote>
+                            <div id="textcode">
+                                <a href="#" onclick="transferText('code4')">TEST CODE</a>
+                            </div>
                         </code>
                     </div>
                     <br>
@@ -748,7 +960,7 @@ Without data types, a computer cannot safely solve this:
                     </ul>
                     <div id="script">
                         <code>
-                            <blockquote>
+                            <blockquote id = "code5">
                                 &lt;html&gt;
                                 <blockquote>
                                     &lt;body&gt;
@@ -795,12 +1007,15 @@ Without data types, a computer cannot safely solve this:
                                             //--&gt;
                                         </blockquote>
                                         &lt;/script&gt; <br>
-                                        Set the variables to different values and then try...
+                                        &lt;!--Set the variables to different values and then try...--&gt;
                                     </blockquote>
                                     &lt;/body&gt;
                                 </blockquote>
                                 &lt;/html&gt;      
                             </blockquote>
+                            <div id="textcode">
+                                <a href="#" onclick="transferText('code5')">TEST CODE</a>
+                            </div>
                         </code>                  
                     </div>
                     <br>
@@ -828,7 +1043,7 @@ Without data types, a computer cannot safely solve this:
                     </ul>
                     <div id="script">
                         <code>
-                            <blockquote>
+                            <blockquote id = "code6">
                                 &lt;html&gt;
                                 <blockquote>
                                     &lt;body&gt;
@@ -860,16 +1075,45 @@ Without data types, a computer cannot safely solve this:
                                             //--&gt;
                                         </blockquote>
                                         &lt;/script&gt;<br>
-                                        Set the variables to different values and then try...
+                                        &lt;!--Set the variables to different values and then try...--&gt;
                                     </blockquote>
                                     &lt;/body&gt;
                                 </blockquote>
                                 &lt;/html&gt;
                             </blockquote>
+                            <div id="textcode">
+                                <a href="#" onclick="transferText('code6')">TEST CODE</a>
+                            </div>
                         </code>
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div id="assignment" style="display: none;">
                 <div id="main_title">
@@ -883,13 +1127,19 @@ Without data types, a computer cannot safely solve this:
                         <p>Example:</p>
                         <div id="script">
                             <code>
-                                <blockquote>
+                                <blockquote id = "code7">
+                                    &lt;script&gt;<br>
                                     // Assigning a value to a variable<br>
                                     let catSpot = "Cozy Corner";<br>
                                     <br>
                                     // Assigning a new value to the variable<br>
                                     catSpot = "Soft Pillow";<br>
+                                    document.write(catSpot);<br>
+                                    &lt;/script&gt;
                                 </blockquote>
+                                <div id="textcode">
+                                    <a href="#" onclick="transferText('code7')">TEST CODE</a>
+                                </div>
                             </code>
                         </div>
                         <br><br>
@@ -901,15 +1151,22 @@ Without data types, a computer cannot safely solve this:
                         <p>Example:</p>
                         <div id="script">
                             <code>
-                                <blockquote>
+                                <blockquote id = "code8">
+                                    &lt;script&gt;<br>
                                     // Adding treats to the existing count<br>
                                     let catTreats = 10;<br>
                                     catTreats += 5; // Now catTreats is 15<br>
-                                    <br>
+                                    document.write(catTreats);<br>
+                                    document.write("&lt;br&gt;");<br><br>
                                     // Incrementing a variable value<br>
                                     let playfulJumps = 3;<br>
                                     playfulJumps += 2; // Now playfulJumps is 5<br>
+                                    document.write(playfulJumps);<br>
+                                    &lt;/script&gt;
                                 </blockquote>
+                                <div id="textcode">
+                                    <a href="#" onclick="transferText('code8')">TEST CODE</a>
+                                </div>
                             </code>
                         </div>
                         <br><br>
@@ -921,15 +1178,22 @@ Without data types, a computer cannot safely solve this:
                          <p>Example:</p>
                         <div id="script">
                             <code>
-                                <blockquote>
+                                <blockquote id = "code9">
+                                    &lt;script&gt;<br>
                                     // Subtracting toys from the existing count<br>
                                     let catToys = 8;<br>
                                     catToys -= 3; // Now catToys is 5<br>
-                                    <br>
+                                    document.write(catToys);<br>
+                                    document.write("&lt;br&gt;");<br><br>
                                     // Decrementing a variable value<br>
                                     let sleepyNaps = 6;<br>
                                     sleepyNaps -= 2; // Now sleepyNaps is 4<br>
+                                    document.write(sleepyNaps);<br>
+                                    &lt;/script&gt;
                                 </blockquote>
+                                <div id="textcode">
+                                    <a href="#" onclick="transferText('code9')">TEST CODE</a>
+                                </div>
                             </code>
                         </div>
                         <br><br>
@@ -941,15 +1205,22 @@ Without data types, a computer cannot safely solve this:
                          <p>Example:</p>
                         <div id="script">
                             <code>
-                                <blockquote>
+                                <blockquote id = "code10">
+                                    &lt;script&gt;<br>
                                     // Multiplying the number of catnip toys<br>
                                     let catnipToys = 5;<br>
                                     catnipToys *= 2; // Now catnipToys is 10<br>
-                                    <br>
+                                    document.write(catnipToys)<br>
+                                    document.write("&lt;br&gt;");<br><br>
                                     // Increasing a variable value using multiplication<br>
                                     let curiousPeeks = 2;<br>
                                     curiousPeeks *= 3; // Now curiousPeeks is 6<br>
+                                    document.write(curiousPeeks);<br>
+                                    &lt;/script&gt;
                                 </blockquote>
+                                <div id="textcode">
+                                    <a href="#" onclick="transferText('code10')">TEST CODE</a>
+                                </div>
                             </code>
                         </div>
                         <br><br>
@@ -961,15 +1232,22 @@ Without data types, a computer cannot safely solve this:
                         <p>Example:</p>
                         <div id="script">
                             <code>
-                                <blockquote>
+                                <blockquote id = "code11">
+                                    &lt;script&gt;
                                     // Dividing the portion of a treat<br>
                                     let tastyFish = 12;<br>
                                     tastyFish /= 2; // Now tastyFish is 6<br>
-                                    <br>
+                                    document.write(tastyFish)<br>
+                                    document.write("&lt;br&gt;");<br><br>
                                     // Reducing a variable value using division<br>
                                     let playfulRolls = 10;<br>
                                     playfulRolls /= 2; // Now playfulRolls is 5<br>
+                                    document.write(playfulRolls)<br>
+                                    &lt;/script&gt;
                                 </blockquote>
+                                <div id="textcode">
+                                    <a href="#" onclick="transferText('code11')">TEST CODE</a>
+                                </div>
                             </code>
                         </div>
                         <br><br>
@@ -981,16 +1259,23 @@ Without data types, a computer cannot safely solve this:
                         <p>Example:</p>
                         <div id="script">
                             <code>
-                                <blockquote>
+                                <blockquote id = "code12">
+                                    &lt;script&gt;<br>
                                     // Finding the remainder after playing with yarn<br>
                                     let yarnLength = 25;<br>
                                     yarnLength %= 7; // Now yarnLength is 4 (remainder after dividing by 7)<br>
-                                    <br>
+                                    document.write(yarnLength)<br>
+                                    document.write("&lt;br&gt;");<br><br>
                                     // Calculating the remainder of a variable value<br>
                                     let stretchingSessions = 15;<br>
                                     stretchingSessions %= 4; // Now stretchingSessions is 3 
                                     (remainder after dividing by 4)<br>
+                                    document.write(stretchingSessions)<br>
+                                    &lt;/script&gt;
                                 </blockquote>
+                                <div id="textcode">
+                                    <a href="#" onclick="transferText('code12')">TEST CODE</a>
+                                </div>
                             </code>
                         </div>
                         <br><br>
@@ -1002,19 +1287,53 @@ Without data types, a computer cannot safely solve this:
                         <p>Example:</p>
                         <div id="script">
                             <code>
-                                <blockquote>
+                                <blockquote id = 'code13'>
+                                    &lt;script&gt;
                                     // Calculating the exponentiation of a variable value<br>
                                     let catTreeHeight = 2;<br>
                                     catTreeHeight **= 3; // Now catTreeHeight is 8 (2 raised to the power of 3)<br>
+                                    document.write(catTreeHeight)<br>
+                                    document.write("&lt;br&gt;");<br><br>
                                     <br>
                                     // Raising a variable value to a power<br>
                                     let adventurousLevel = 4;<br>
                                     adventurousLevel **= 2; // Now adventurousLevel is 16 (4 squared)<br>
+                                    document.write(adventurousLevel)<br>
+                                    &lt;/script&gt;
                                 </blockquote>
+                                <div id="textcode">
+                                    <a href="#" onclick="transferText('code13')">TEST CODE</a>
+                                </div>
                             </code>
                         </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div id="decisionmaking" style="display: none;">
             <div id="main_title">
@@ -1042,107 +1361,142 @@ Without data types, a computer cannot safely solve this:
               </ul>
               <div id="script">
                     <code>
-                        <blockquote>
+                        <blockquote id = 'code14'>
                             &lt;html&gt;
                             <blockquote>
                                 &lt;body&gt;
                                 <blockquote>
                                     &lt;script type = "text/javascript"&gt;
                                     <blockquote>
-                                        &lt;!--
                                         <blockquote>
                                             var age = 20;<br>
-                                            <br>
-                                            if(age > 18); { <br>
+                                            if(age &gt; 18) { <br>
                                             <blockquote>
-                                                document.write("&lt;b&gt;Qualifies for driving&lt;/b&gt;";)
+                                                document.write("&lt;b&gt;Qualifies for driving&lt;/b&gt;");
                                             </blockquote>
                                             }
                                         </blockquote>
-                                        //--&gt;
                                     </blockquote>
                                     &lt;/script&gt;<br>
-                                    Set the variables to different values and then try...
+                                    &lt;!--Set the variables to different values and then try...--&gt;
                                 </blockquote>
                                 &lt;/body&gt;
                             </blockquote>
                             &lt;/html&gt;
                         </blockquote>
+                        <div id="textcode">
+                            <a href="#" onclick="transferText('code14')">TEST CODE</a>
+                        </div>
                     </code>
                 </div>
                 <br><br>
                 <div id="script">
                     <code>
-                        <blockquote>
+                        <blockquote id = 'code15'>
                             &lt;html&gt;
                             <blockquote>
                                 &lt;body&gt;
                                 <blockquote>
                                     &lt;script type = "text/javascript"&gt;
                                     <blockquote>
-                                        &lt;!--
                                         <blockquote>
                                             var age = 15;<br>
                                             <br>
-                                            if(age > 18); { <br>
+                                            if(age > 18) { <br>
                                             <blockquote>
-                                                document.write("&lt;b&gt;Qualifies for driving&lt;/b&gt;";)
+                                                document.write("&lt;b&gt;Qualifies for driving&lt;/b&gt;");
                                             </blockquote>
                                             } else {<br>
                                             <blockquote>
-                                                document.write("&lt;b&gt;Does not qualify for driving&lt;/b&gt;";)
+                                                document.write("&lt;b&gt;Does not qualify for driving&lt;/b&gt;");
                                             </blockquote>
                                             }
                                         </blockquote>
-                                        //--&gt;
                                     </blockquote>
                                     &lt;/script&gt;<br>
-                                    Set the variables to different values and then try...
+                                    &lt;!--Set the variables to different values and then try...--&gt;
                                 </blockquote>
                                 &lt;/body&gt;
                             </blockquote>
                             &lt;/html&gt;<br>
-                            &lt;html&gt;
-                            <blockquote>
-                                &lt;body&gt;
-                                <blockquote>
-                                    &lt;script type = "text/javascript"&gt;
-                                    <blockquote>
-                                        &lt;!--
-                                        <blockquote>
-                                            var book = "maths";<br>
-                                            <br>
-                                            if(book == "history"); { <br>
-                                            <blockquote>
-                                                document.write("&lt;b&gt;History Book&lt;/b&gt;";)
-                                            </blockquote>
-                                            } else if (book == "maths"); {<br>
-                                            <blockquote>
-                                                document.write("&lt;b&gt;Maths Book&lt;/b&gt;";)
-                                            </blockquote>
-                                            } else if (book == "economics"); {<br>
-                                                <blockquote>
-                                                    document.write("&lt;b&gt;Economics Book&lt;/b&gt;";)
-                                                </blockquote>
-                                            } else {<br>
-                                                <blockquote>
-                                                    document.write("&lt;b&gt;>Unknown Book&lt;/b&gt;";)
-                                                </blockquote>
-                                            }
-                                        </blockquote>
-                                        //--&gt;
-                                    </blockquote>
-                                    &lt;/script&gt;<br>
-                                    Set the variables to different values and then try...
-                                </blockquote>
-                                &lt;/body&gt;
-                            </blockquote>
-                            &lt;/html&gt;
                         </blockquote>
+                        <div id="textcode">
+                            <a href="#" onclick="transferText('code15')">TEST CODE</a>
+                        </div>
                     </code>
+                </div>
+                <br><br>
+                <div id= 'script'>
+                        <code>
+                            <blockquote id="code16">
+                                &lt;html&gt;
+                                <blockquote>
+                                    &lt;body&gt;
+                                        <blockquote>
+                                            &lt;script type = "text/javascript"&gt;
+                                            <blockquote>
+                                                <blockquote>
+                                                    var book = "maths";<br>
+                                                    <br>
+                                                    if(book == "history") { <br>
+                                                    <blockquote>
+                                                        document.write("&lt;b&gt;History Book&lt;/b&gt;");
+                                                    </blockquote>
+                                                    } else if (book == "maths") {<br>
+                                                    <blockquote>
+                                                        document.write("&lt;b&gt;Maths Book&lt;/b&gt;");
+                                                    </blockquote>
+                                                    } else if (book == "economics") {<br>
+                                                        <blockquote>
+                                                            document.write("&lt;b&gt;Economics Book&lt;/b&gt;");
+                                                        </blockquote>
+                                                    } else {<br>
+                                                        <blockquote>
+                                                            document.write("&lt;b&gt;>Unknown Book&lt;/b&gt;");
+                                                        </blockquote>
+                                                }
+                                                </blockquote>
+                                                &lt;/script&gt;<br>
+                                                &lt;!--Set the variables to different values and then try...--&gt;
+                                            </blockquote>
+                                        </blockquote>
+                                    &lt;/body&gt;
+                                </blockquote>
+                                &lt;/html&gt;
+                            </blockquote>
+                            <div id="textcode">
+                                <a href="#" onclick="transferText('code16')">TEST CODE</a>
+                            </div>
+                        </code>
                 </div>
             </div>              
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div id="loops" style="display: none;">
                 <div id="main_title">
@@ -1180,7 +1534,7 @@ Without data types, a computer cannot safely solve this:
                     </code>
                     <div id="script">
                         <code>
-                            <blockquote>
+                            <blockquote id = 'code17'>
                                 &lt;html&gt;
                                 <blockquote>
                                     &lt;body&gt;
@@ -1205,12 +1559,15 @@ Without data types, a computer cannot safely solve this:
                                             //--&gt;
                                         </blockquote>
                                         &lt;/script&gt;<br>
-                                        Set the variables to different values and then try...
+                                        &lt;!--Set the variables to different values and then try...--&gt;
                                     </blockquote>
                                     &lt;/body&gt;
                                 </blockquote>
                                 &lt;/html&gt;
                             </blockquote>
+                            <div id="textcode">
+                                <a href="#" onclick="transferText('code17')">TEST CODE</a>
+                            </div>
                         </code>
                     </div>
                 
@@ -1240,35 +1597,38 @@ Without data types, a computer cannot safely solve this:
                     </code>
                     <div id="script">
                         <code>
-                            <blockquote>
+                            <blockquote id = 'code18'> 
                                 &lt;html&gt;
-                                <blockquote>
-                                    &lt;body&gt;
                                     <blockquote>
-                                        &lt;script type = "text/javascript"&gt;
+                                        &lt;body&gt;
                                         <blockquote>
-                                            &lt;!--
+                                            &lt;script type = "text/javascript"&gt;
                                             <blockquote>
-                                                var count = 0;<br>
-                                                document.write("Starting Loop "); <br>
-                                                do {
-                                                    <blockquote>
-                                                    document.write("Current Count : " + count + "&lt;br /&gt;");<br> 
-                                                    count++;
-                                                    </blockquote>
-                                                } while (count &lt; 5)<br>
-                                                document.write("Loop stopped!"); <br>
+                                                &lt;!--
+                                                <blockquote>
+                                                    var count = 0;<br>
+                                                    document.write("Starting Loop "); <br>
+                                                    do {
+                                                        <blockquote>
+                                                        document.write("Current Count : " + count + "&lt;br /&gt;");<br> 
+                                                        count++;
+                                                        </blockquote>
+                                                    } while (count &lt; 5)<br>
+                                                    document.write("Loop stopped!"); <br>
+                                                </blockquote>
+                                                //--&gt;
                                             </blockquote>
-                                            //--&gt;
+                                            &lt;/script&gt;<br>
+                                            &lt;!--Set the variables to different values and then try...--&gt;
                                         </blockquote>
-                                        &lt;/script&gt;<br>
-                                        Set the variables to different values and then try...
+                                        &lt;/body&gt;
                                     </blockquote>
-                                    &lt;/body&gt;
-                                </blockquote>
                                 &lt;/html&gt;
-                        </blockquote>
-                    </code>
+                            </blockquote>
+                            <div id="textcode">
+                                <a href="#" onclick="transferText('code18')">TEST CODE</a>
+                            </div>
+                        </code>
                     </div>
                     <br>
                 <hr> 
@@ -1306,39 +1666,66 @@ Without data types, a computer cannot safely solve this:
                     </code>
                     <div id="script" style="margin-bottom: 8%;">
                         <code>
-                            <blockquote>
+                            <blockquote id = 'code19'>
                                 &lt;html&gt;
                                 <blockquote>
                                     &lt;body&gt;
                                     <blockquote>
                                         &lt;script type = "text/javascript"&gt;
                                         <blockquote>
-                                            &lt;!--
                                             <blockquote>
                                                 var count = 0;<br>
                                                 document.write("Starting Loop "); <br>
                                                 <br>
                                                 for (count = 0; count &lt; 10; count++) {
                                                     <blockquote>
-                                                    document.write("Current Count : " + count +);<br> 
+                                                    document.write("Current Count : " + count);<br> 
                                                     document.write("&lt;br /&gt;");
                                                     </blockquote>
                                                     }   
                                                 document.write("Loop stopped!"); <br>
                                             </blockquote>
-                                            //--&gt;
                                         </blockquote>
                                         &lt;/script&gt;<br>
-                                        Set the variables to different values and then try...
+                                        &lt;!--Set the variables to different values and then try...--&gt;
                                     </blockquote>
                                     &lt;/body&gt;
                                 </blockquote>
                                 &lt;/html&gt;
                             </blockquote>
+                            <div id="textcode">
+                                <a href="#" onclick="transferText('code19')">TEST CODE</a>
+                            </div>
                         </code>
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div id="functions" style="display: none;">
             <div id="main_title">
@@ -1443,13 +1830,72 @@ Without data types, a computer cannot safely solve this:
 
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div id = "controls" >
 				<a id = 'left' class="light-text" href = "#" onclick="arrow(this)">&lt;</a>
 				<a id = 'right' class="light-text" href = "#" onclick="arrow(this)">&gt;</a>
 		</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <script src = "JS.js"></script>
         <script src = "DARKMODE.js"></script>
+        <script>
+            function transferText(codeId) {
+                var textToTransfer = document.getElementById(codeId).innerText;
+                sessionStorage.setItem('textToTransfer', textToTransfer);
+                window.location.href = 'DESIGNED COMPILER.html';s
+            }
+        </script>
     </div>
 
     <footer class="light-header-footer light-border">
