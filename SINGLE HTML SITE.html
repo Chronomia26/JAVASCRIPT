@@ -418,23 +418,24 @@ Without data types, a computer cannot safely solve this:
                         </p>
                         <div id="script">
                             <code>
-                            <blockquote>
+                            <blockquote id = "code1">
                                 // Using var to declare a variable<br>
                                 var a = 2;<br>
                                 <br>
                                 // Now a holds the value 2<br>
-                                console.log(a);<br>
+                                document.write(a);<br>
                                 <br>
                                 // Variables declared using var are hoisted<br>
-                                console.log(b); // Outputs: undefined<br>
+                                document.write(b); // Outputs: undefined<br>
                                 var b = 7;<br>
                                 <br>
                                 // var allows redeclaration of variables<br>
                                 var name = "John";<br>
                                 var name = "Doe"; // No error, but the variable is overwritten<br>
-                                console.log(name); // Outputs: Doe<br>
+                                document.write(name); // Outputs: Doe<br>
                                 <br>
                             </blockquote>
+                            <a href="#" onclick="transferText('code1')">TEST</a>
                             </code>
                         </div>
                         <br><br>
@@ -446,25 +447,26 @@ Without data types, a computer cannot safely solve this:
 
                         <div id="script">
                             <code>
-                            <blockquote>
+                            <blockquote id = "code2">
                                 // Using let to declare a variable<br>
                                 let age = 25;<br>
                                 <br>
                                 // Now age holds the value 25<br>
-                                console.log(age);<br>
+                                document.write(age);<br>
                                 <br>
                                 // Variables declared using let have block scope<br>
                                 if (true) {<br>
                                 let localVar = "I am inside a block";<br>
                                 }<br>
                                 <br>
-                                console.log(localVar); // Error: localVar is not defined<br>
+                                document.write(localVar); // Error: localVar is not defined<br>
                                 <br>
                                 // let does not allow redeclaration of the same variable in the same scope<br>
                                 let color = "red";<br>
                                 // let color = "blue"; // Error: Identifier 'color' has already been declared<br>
                                 <br>
                             </blockquote>
+                            <a href="#" onclick="transferText('code2')">TEST</a>
                             </code>
                         </div>
                         <br><br>
@@ -1454,6 +1456,13 @@ Without data types, a computer cannot safely solve this:
 
         <script src = "JS.js"></script>
         <script src = "DARKMODE.js"></script>
+        <script>
+            function transferText(codeId) {
+                var textToTransfer = document.getElementById(codeId).innerText;
+                sessionStorage.setItem('textToTransfer', textToTransfer);
+                window.location.href = 'DESIGNED COMPILER.html';
+            }
+        </script>
     </div>
 
     <footer class="light-header-footer light-border">

@@ -93,7 +93,13 @@
     
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="DARKMODE.js"></script>
-
+    <script>
+        var transferredText = sessionStorage.getItem('textToTransfer');
+        if (transferredText) {
+            // Display the transferred text in the textarea
+            document.getElementById('js').value = transferredText;
+        }
+    </script>
     <footer class="light-header">
       <p>&copy; 2023 Your Website. All rights reserved.</p>
     </footer>

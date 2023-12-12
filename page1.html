@@ -2,13 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 1</title>
+    <title>Code Selection</title>
+    <style>
+        /* Add some basic styling for the code blocks */
+        .code-block {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <form id="myForm" action="page2.html" method="GET">
-        <input type="text" id="textToTransfer" name="textToTransfer" />
-        <input type="submit" value="Submit">
-    </form>
+    <!-- Code blocks with unique IDs -->
+    <div class="code-block" id="codeBlock1" onclick="transferCode('codeBlock1')">
+        // Your code block 1 here
+        function helloWorld() {
+            console.log("Hello, World!");
+        }
+    </div>
+
+    <div class="code-block" id="codeBlock2" onclick="transferCode('codeBlock2')">
+        // Your code block 2 here
+        function add(a, b) {
+            return a + b;
+        }
+    </div>
+
+    <!-- Add more code blocks as needed -->
+
+    <!-- Redirect button to go to the next page -->
+    <button onclick="redirectToCompiler()">Go to Compiler</button>
+
+    <script>
+        function transferCode(codeBlockId) {
+            // Get the code from the selected code block
+            var codeToTransfer = document.getElementById(codeBlockId).innerText;
+
+            // Store the code in sessionStorage (you can use localStorage for a more permanent storage)
+            sessionStorage.setItem('codeToTransfer', codeToTransfer);
+        }
+
+        function redirectToCompiler() {
+            // Redirect to the next page with the compiler
+            window.location.href = 'page2.html';
+        }
+    </script>
 </body>
 </html>
