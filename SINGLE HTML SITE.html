@@ -40,19 +40,19 @@
 </head>
 
 <body class="light-mode">
-        <header class="lightmode">
+        <header class="light-header-footer light-border">
             <div id="header_img">
                 <a href="MAIN.html">
                     <img src="IMAGES/logo.png" alt="NEKODE">
                 </a>
             </div>
             <div class="button_cont">
-                <a id="toggle-dark-button" onclick="toggleDarkMode()">NIGHT</a>
+                <a id="toggle-dark-button" onclick="toggleDarkMode()">DARK</a>
             </div>
         </header>
 		
-        <div id="side">
-            <div id="side_title">
+        <div id="side"  class="light-border">
+            <div id="side_title" class="light-title">
                 <p>INTRODUCTION TO JAVASCRIPT</p>
             </div>
             <div id="side_list">    
@@ -74,8 +74,8 @@
         <div id="main">
 
             <div id="whatisjavascript"  style="display: block;">
-                <div id="main_title">
-                    <b>What is JavaScript? 🐾</b>
+                <div id="main_title" class="dark-title">
+                    <b><img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 30px; image-rendering: pixelated;"> What is JavaScript? <img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 30px; image-rendering: pixelated;"></b>
                 </div>
                 <div id="main_content">
                     <p>Imagine web pages are like clothing that you wear. You can only do so much with the clothes - they
@@ -95,11 +95,12 @@
                         lightweight and easy to learn, but unlocks tremendous interactivity. Adding a bit of JavaScript
                         code, even to static HTML/CSS sites, brings pages to life just like adding zippers and buttons
                         give plain clothes customizable functionality.</p>
+                   
                 </div>
             </div>
 
             <div id="statement"  style="display: none;">
-                <div id="main_title">
+                <div id="main_title" class="light-title">
                     <b>Javascript Statements</b>
                 </div>
                 <div id="main_content">
@@ -266,6 +267,10 @@
                         for temporarily disabling code during debugging or testing without completely 
                         removing it from your script.
                     </p>
+                </div>
+                <div id="quiz">
+                    <p>TAKE A SMALL QUIZ FOR THIS LESSON! </p>
+                    <a href="QUIZZES/QUIZ1.html">START QUIZ</a>
                 </div>
             </div>
 
@@ -499,7 +504,7 @@ Without data types, a computer cannot safely solve this:
                 <div id="main_content" style="padding-bottom: 150px">
                     <p>A list of all the reserved words in JavaScript are given in the following table. They <b>CANNOT</b> be
                         used as JavaScript variables, functions, methods, loop labels, or any object names.</p>
-                    <table id="main_content" style="margin-left: 5px;">
+                    <table style="margin-left: 5px;">
                         <tr>
                             <td>abstract</td>
                             <td>arguments</td>
@@ -1439,15 +1444,15 @@ Without data types, a computer cannot safely solve this:
         </div>
 
         <div id = "controls" >
-				<a href = "#" onclick="arrow(this)" style="padding-right: 90%;">&lt;</a>
-				<a href = "#" onclick="arrow(this)">&gt;</a>
+				<a id = 'left' class="light-text" href = "#" onclick="arrow(this)">&lt;</a>
+				<a id = 'right' class="light-text" href = "#" onclick="arrow(this)">&gt;</a>
 		</div>
 
         <script src = "JS.js"></script>
         <script src = "DARKMODE.js"></script>
     </div>
 
-    <footer class="lightmode">
+    <footer class="light-header-footer light-border">
         <p>&copy; 2023 Your Website. All rights reserved.</p>
     </footer>
 </body>

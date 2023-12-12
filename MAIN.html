@@ -14,7 +14,7 @@
 			display: flex;
 			justify-content: center;
 			height: 100vh;
-			background-size: 1920px;
+			background-size: cover;
 			background-repeat: no-repeat;
 			image-rendering: pixelated;
 			animation: fade-in 1s ease-in-out forwards;
@@ -51,13 +51,13 @@
 			font-size: 25px;
 			position: absolute;
 			padding-bottom: 20px;
-			padding-left: 50px;
-			padding-right: 50px;
+			padding-left: 80px;
+			padding-right: 80px;
 			border-bottom: 5px dashed black;
 		}
 		.learn {
 			position: absolute;
-			top: 140%;
+			top: 150%;
 			font-size: 25px;
 			color: white;
 			text-decoration: none;
@@ -76,7 +76,7 @@
 
 		.comp {
 			position: absolute;
-			top: 180%;
+			top: 190%;
 			font-size: 25px;
 			color: white;
 			text-decoration: none;
@@ -84,8 +84,8 @@
 			background-color: rgb(89,13,13);
 			border-radius: 50px;
 			padding: 15px;
-			padding-left: 17.5%;
-			padding-right: 17.5%;
+			padding-left: 18.5%;
+			padding-right: 18.5%;
 			transition: transform 0.3s ease-in-out;
 		}
 
@@ -106,15 +106,20 @@
 		@media screen and (max-width: 1080px) {
 			#content{
 				left: 0;
-				background-position:  40%;
+				background-position:  40% 20%;
+				background-size: 2376px;
 			}
 			
 			.logo {
 				left: auto;
 			}
 			.logo img {
-				width: 800px;
+				width: 700px;
 			}
+			.logo p {
+				font-size: 28px;
+			}
+
 			.learn {
 				font-size: 30px;
 			}
@@ -125,6 +130,30 @@
 			}
 		}
 
+		@media screen and (max-width: 640px) {
+			.logo {
+				left: auto;
+			}
+			.logo img {
+				width: 450px;
+			}
+			.logo p {
+				padding-left: 26px;
+				padding-right: 26px;
+				font-size: 20px;
+			}
+
+			.learn {
+				top: 155%;
+				font-size: 18px;
+			}
+			.comp {
+				top: 200%;
+				font-size: 18px;
+				padding-left: 18.3%;
+				padding-right: 18.3%;
+			}
+		}
 
 		@font-face {
 			font-family: myFirstFont;

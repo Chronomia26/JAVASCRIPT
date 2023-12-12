@@ -41,7 +41,7 @@ left: 0;
 width: 100%;
 background-color: rgba(255, 153, 153, 1);
 padding: 10px;
-border-bottom: 2px solid black;
+border-bottom: 2px solid;
 }
 
 #header_img {
@@ -94,12 +94,13 @@ transition: all 0.3s ease 0s;
 }
 
 footer {
-border-top: 2px solid black;
+border-top: 2px solid;
 text-align: center;
 bottom: 0;
 position: fixed;
 width: 100%;
 background-color: rgba(255, 153, 153, 1);
+border-top: 2px solid;
 padding: 5px;
 font-family: myFirstFont;
 }
@@ -137,7 +138,7 @@ justify-self: center;
     }
 }
 
-.lightmode {
+.light-header-footer {
 animation-name: lightt;
 animation-duration: 7s;
 animation-iteration-count: infinite;
@@ -150,6 +151,10 @@ background-size: 200% 100%;
 background-color: #001f3f;
 color: #ffffff;
 background-image: url(IMAGES/background1.png);
+}
+
+.dark-text {
+color: white;
 }
 
 @keyframes darkk {
@@ -170,7 +175,7 @@ background-image: url(IMAGES/background1.png);
     }
 }
 
-.darkmode {
+.dark-header-footer {
 animation-name: darkk;
 animation-duration: 13s;
 animation-iteration-count: infinite;
@@ -179,15 +184,25 @@ background: linear-gradient(90deg, #003060, #22588f, #003060);
 background-size: 200% 100%; 
 }
 
+.light-border {
+border-color: black;
+}
+
+.dark-border {
+border-color: white;
+}
+
+
+
 #side {
 position: fixed;
 left: 0;
 width: 25%;
-height: 86.8vh;
+height: 100vh;
 overflow-y: scroll;  
 top: 66px;
 bottom: 65px;
-border-right: 2px solid black;
+border-right: 5px dashed;
 border-spacing: 50px;
 overflow-y: scroll;
 }
@@ -208,6 +223,7 @@ overflow-y: scroll;
 #side_title {
 text-shadow: 2px 2px 0px black, -2px -2px -0px white;
 color: crimson; 
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), -2px -2px -0px white;
 font-family: myFirstFont;
 text-align: center;
 font-size: 35px;
@@ -216,7 +232,7 @@ width: 100%;
 }
 
 #side_list {
-height: 100%;
+height: 65%;
 /* overflow-y: scroll; */
 font-family: century gothic;
 margin-top: 4%;
@@ -225,7 +241,7 @@ width: 75%;
 list-style-type: none;
 border-radius: 20px;
 border: 5px dashed black;
-box-shadow:-4px 4px 3px #fe9e9e;
+box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.4);
 background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -235,10 +251,11 @@ list-style-type: none;
 }
 
 #side_list li {
-padding-left: 25px;
+padding-left: 45px;
 margin-bottom: 15px;
+image-rendering: pixelated;
 background: url('IMAGES/bullet1.png') left center no-repeat;
-background-size: 20px;
+background-size: 30px;
 transition: transform 0.3s ease-in-out;
 
 }
@@ -267,6 +284,7 @@ a {
 }
 
 #comment {
+    height: 380vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
@@ -315,7 +333,9 @@ a {
     /* bottom: 0; */
     margin-top: 60px;
     margin-left: 25%;
-    padding: 10px; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 
     }
     
@@ -333,8 +353,7 @@ a {
 
 #main_title {
 border: 10px ridge crimson;
-text-shadow: 2px 2px 0px black, -2px -2px -0px white;
-color: crimson;
+text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), -2px -2px -0px rgba(255, 255, 255, 0.5);
 border-radius: 10px;
 text-align: center;
 font-family: myFirstFont;
@@ -377,9 +396,10 @@ padding-right: 50px;
 }
 
 #script {
-border: 2px dashed rgb(0, 0, 0);
+border: 5px ridge rgb(220, 20, 60);
+color: white;
 border-radius: 10px;
-background-color: #808080;
+background-color: rgba(0, 0, 0, 0.5);
 
 }
 
@@ -387,7 +407,7 @@ background-color: #808080;
 font-size: 10px;
 font-family: myFirstFont, arial;
 position: fixed;
-width: 75%;
+width: 75.5%;
 /* height: 11%; */
 bottom: 9%;
 left: 25%;
@@ -396,11 +416,39 @@ text-align: center;
 /* border-top: 2px dashed black; */
 }
 
+hr {
+    border-style: solid;
+}
+
+#quiz {
+    padding: 5%;
+    padding-bottom: 7%;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#quiz p{
+    font-size: 30px;
+    font-family: myFirstFont;
+    margin-bottom: 5%;
+}
+
+#quiz a{
+    background-color: crimson;
+    padding: 20px;
+    border-radius: 20px;
+}
+
 #controls a{
     font-size: 40px;
     top: 0;
     /* text-align: bottom; */
-    content: center;
+    padding: 10px;
+    
+}
+
+#left {
+    margin-right: 90%;
 }
 
 #back:hover {
@@ -416,11 +464,25 @@ transform: scale(1.1);
         width: 10%;
     }
     #controls {
-        width: 100%;
-        left: auto;
+        width: 90%;
+        left: 10%;
     }
-
     #footer{
         font-size: 80px;
+    }
+    #left {
+        margin-right: 80%;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    #side_title {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #left {
+        margin-right: 80%;
     }
 }
