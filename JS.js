@@ -137,7 +137,7 @@
           link10.classList.remove('linkcolor')
           document.title = "What is an Operator?"
 
-        } else if (link.textContent == "Assignment") {
+        } else if (link.textContent == "Assignment Operators") {
             whatisjavascript.style.display = "none";
             statement.style.display = "none";
             comment.style.display = "none";
@@ -158,7 +158,7 @@
             link8.classList.remove('linkcolor')
             link9.classList.remove('linkcolor')
             link10.classList.remove('linkcolor')
-            document.title = "Assignment"
+            document.title = "Assignment Operators"
 
       } else if (link.textContent == "Decision Making Statements") {
           whatisjavascript.style.display = "none";
@@ -349,7 +349,7 @@
             link8.classList.remove('linkcolor')
             link9.classList.remove('linkcolor')
             link10.classList.remove('linkcolor')
-            document.title = "Assignment"
+            document.title = "Assignment Operators"
           }else if (assignment.style.display == "block"){
               whatisjavascript.style.display = "none";
               statement.style.display = "none";
@@ -614,7 +614,7 @@
             link8.classList.remove('linkcolor')
             link9.classList.remove('linkcolor')
             link10.classList.remove('linkcolor')
-            document.title = "Assignment"
+            document.title = "Assignment Operators"
           } else if (assignment.style.display == "block"){
             whatisjavascript.style.display = "none";
             statement.style.display = "none";
