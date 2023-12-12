@@ -19,5 +19,7 @@ function compile() {
     code.close();
   };
 }
-
+document.getElementById('header_img').addEventListener('click',function() {
+  sessionStorage.clear();
+});
 compile();

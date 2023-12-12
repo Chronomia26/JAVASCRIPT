@@ -108,7 +108,6 @@ font-family: myFirstFont;
 a {
 color: black;
 font-family: myFirstFont;
-font-size: 20px;
 /* padding-left: px; */
 text-decoration: none;
 justify-self: center;
@@ -117,7 +116,6 @@ justify-self: center;
 @font-face {
     font-family: myFirstFont;
     src: url('fonts/joystix_monospace.otf');
-    font-size: 20px;
 }
 
 @keyframes lightt {
@@ -150,7 +148,7 @@ background-size: 200% 100%;
 .dark-mode {
 background-color: #001f3f;
 color: #ffffff;
-background-image: url(IMAGES/background1.png);
+background-image: url('IMAGES/background1.png');
 }
 
 .dark-text {
@@ -198,11 +196,11 @@ border-color: white;
 position: fixed;
 left: 0;
 width: 25%;
-height: 100vh;
+height: 80vh;
 overflow-y: scroll;  
 top: 66px;
 bottom: 65px;
-border-right: 5px dashed;
+padding-bottom: 20%;
 border-spacing: 50px;
 overflow-y: scroll;
 }
@@ -232,7 +230,7 @@ width: 100%;
 }
 
 #side_list {
-height: 95%;
+height: 100vh;
 /* overflow-y: scroll; */
 font-family: century gothic;
 margin-top: 4%;
@@ -266,41 +264,42 @@ font-weight: bold;
 }
 
 #side_list a {
+    font-size: 20px;
     align-self: center;
     font-family: myFirstFont;
 }
 
 a {
-    color: black;
-    font-size: 17px;
+    color: black;  
+    font-size: 20px;
     /* padding-left: px; */
     text-decoration: none;
     justify-self: center;
     }
 
 #statement {
-    height: 550lvh;
+    height: 415vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #comment {
-    height: 380vh;
+    height: 436vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #whatisjavascript {
-    height: 190vh;
+    height: 160vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 
 #datatypes {
-    height: 230vh;
+    height: 950vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #reserved {
-    height: 120vh;
+    height: 1200vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
@@ -310,7 +309,7 @@ a {
 }
 
 #assignment {
-    height: 710lvh;
+    height: 780vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
@@ -333,6 +332,7 @@ a {
     /* bottom: 0; */
     margin-top: 60px;
     margin-left: 25%;
+    border-left: 5px dashed;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -421,7 +421,7 @@ hr {
 }
 
 #quiz {
-    padding: 5%;
+    padding: 3%;
     padding-bottom: 7%;
     border: 2px solid black;
     text-align: center;
@@ -445,6 +445,24 @@ hr {
     /* text-align: bottom; */
     padding: 10px;
     
+}
+
+#textcode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+#textcode a{
+    background: linear-gradient(to right, #FBACCC, #F1D1D0); 
+    transition: background 3s ease, transform 0.1s ease-in-out;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#textcode a:hover{
+    background: linear-gradient(to right, #F1D1D0, #FBACCC);
 }
 
 #left {
@@ -475,9 +493,12 @@ transform: scale(1.1);
     }
 }
 
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1780px) {
     #side_title {
-        font-size: 35px;
+        font-size: 30px;
+    }
+    #left {
+        margin-right: 85%;
     }
 }
 
