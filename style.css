@@ -196,11 +196,11 @@ border-color: white;
 position: fixed;
 left: 0;
 width: 25%;
-height: 100vh;
+height: 80vh;
 overflow-y: scroll;  
 top: 66px;
 bottom: 65px;
-border-right: 5px dashed;
+padding-bottom: 20%;
 border-spacing: 50px;
 overflow-y: scroll;
 }
@@ -230,7 +230,7 @@ width: 100%;
 }
 
 #side_list {
-height: 65%;
+height: 100vh;
 /* overflow-y: scroll; */
 font-family: century gothic;
 margin-top: 4%;
@@ -266,35 +266,34 @@ font-weight: bold;
 #side_list a {
     align-self: center;
     font-family: myFirstFont;
-    font-size: 20px;
 }
 
 a {
-    color: black;
-    font-size: 17px;
+    color: black;  
+    font-size: 20px;
     /* padding-left: px; */
     text-decoration: none;
     justify-self: center;
     }
 
 #statement {
-    height: 550lvh;
+    height: 415vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #comment {
-    height: 380vh;
+    height: 436vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #whatisjavascript {
-    height: 190vh;
+    height: 160vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 
 #datatypes {
-    height: 230vh;
+    height: 950vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
@@ -332,6 +331,7 @@ a {
     /* bottom: 0; */
     margin-top: 60px;
     margin-left: 25%;
+    border-left: 5px dashed;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -420,7 +420,7 @@ hr {
 }
 
 #quiz {
-    padding: 5%;
+    padding: 3%;
     padding-bottom: 7%;
     border: 2px solid black;
     text-align: center;

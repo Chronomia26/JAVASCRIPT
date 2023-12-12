@@ -5,11 +5,13 @@ function compile() {
   var code = document.getElementById("code").contentWindow.document;
   var transferredText = sessionStorage.getItem('textToTransfer');
   var iframe = document.getElementById('code')
-  document.getElementById('html').value = transferredText;
-  var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-  iframeDocument.open();
-  iframeDocument.writeln(transferredText);
-  iframeDocument.close();
+  if (transferredText){
+    document.getElementById('html').value = transferredText;
+    var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+    iframeDocument.open();
+    iframeDocument.writeln(transferredText);
+    iframeDocument.close();
+  }
   document.body.onkeyup = function() {
     code.open();
     code.writeln(html.value);
