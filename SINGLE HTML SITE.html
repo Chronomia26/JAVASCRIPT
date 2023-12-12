@@ -436,7 +436,7 @@ Without data types, a computer cannot safely solve this:
                                 <br>
                                 &lt;/script&gt;
                             </blockquote>
-                            <a href="#" onclick="transferText('code1')">TEST</a>
+                            <a href="#" id="textcode" onclick="transferText('code1')">TEST</a>
                             </code>
                         </div>
                         <br><br>
@@ -469,7 +469,7 @@ Without data types, a computer cannot safely solve this:
                                 <br>
                                 &lt;/script&gt;
                             </blockquote>
-                            <a href="#" onclick="transferText('code2')">TEST</a>
+                            <a href="#" id="textcode" onclick="transferText('code2')">TEST</a>
                             </code>
                         </div>
                         <br><br>
@@ -481,7 +481,8 @@ Without data types, a computer cannot safely solve this:
 
                         <div id="script">
                             <code>
-                            <blockquote>
+                            <blockquote id = "code3">
+                                &lt;script&gt;<br>
                                 // Using const to declare a constant variable<br>
                                 const PI = 3.14;<br>
                                 <br>
@@ -495,8 +496,9 @@ Without data types, a computer cannot safely solve this:
                                 // const variables cannot be reassigned<br>
                                 const daysInWeek = 7;<br>
                                 // daysInWeek = 8; // Error: Assignment to constant variable.<br>
-                                
+                                &lt;/script&gt;
                             </blockquote>
+                            <a href="#" id="textcode" onclick="transferText('code3')">TEST</a>
                             </code>
                         </div>
                         <br>
@@ -646,20 +648,19 @@ Without data types, a computer cannot safely solve this:
                     </ul>
                     <div id="script">
                         <code>
-                            <blockquote>
+                            <blockquote id="code4">
                                 &lt;html&gt;
-                                <blockquote>&lt;
-                                    body&gt;<br>
+                                <blockquote>
+                                    &lt;body&gt;<br>
                                     <blockquote>
                                         &lt;script type = "text/javascript"&gt;
                                         <blockquote>
-                                            &lt;!--
                                             <blockquote>
                                                 var treatsFromYou = 5;<br>
                                                 var treatsInBowl = 20;<br>
                                                 var linebreak = "&lt;br/ &gt;";<br>
                                                 <br>
-                                                >document.write("Treats in the bowl + Treats from you: ");<br>
+                                                document.write("Treats in the bowl + Treats from you: ");<br>
                                                 totalTreats = treatsFromYou + treatsInBowl;<br> 
                                                 document.write(totalTreats);<br>
                                                 document.write(linebreak);<br>
@@ -696,7 +697,6 @@ Without data types, a computer cannot safely solve this:
                                                 document.write(totalTreats); <br>
                                                 document.write(linebreak); <br>
                                             </blockquote>
-                                            >//--&gt;
                                         </blockquote>
                                         &lt;/script&gt;<br>
                                         Set the variables to different values and then try...
@@ -705,6 +705,7 @@ Without data types, a computer cannot safely solve this:
                                 </blockquote>
                                 &lt;/html&gt;
                             </blockquote>
+                            <a href="#" id="textcode" onclick="transferText('code4')">TEST</a>
                         </code>
                     </div>
                     <br>
