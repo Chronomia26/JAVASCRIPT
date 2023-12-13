@@ -659,3 +659,72 @@ d) Take a cozy nap
 
 **Answer:**
 b) Customize the drink
+
+
+
+
+
+
+quiz11
+
+
+
+
+
+**Question 1:**
+In JavaScript, at what index does the first element of an array start?
+
+A. 1  
+B. 2  
+C. 0  
+D. -1  
+
+**Answer: C. 0**
+
+---
+
+**Question 2:**
+How are elements in a JavaScript array ordered?
+
+A. Randomly  
+B. Alphabetically  
+C. By size  
+D. By index  
+
+**Answer: D. By index**
+
+---
+
+**Question 3:**
+What types of data can be stored in a JavaScript array?
+
+A. Only numbers  
+B. Only strings  
+C. Only arrays  
+D. Various types, such as numbers, strings, or even other arrays  
+
+**Answer: D. Various types, such as numbers, strings, or even other arrays**
+
+---
+
+**Question 4:**
+If you have an array in JavaScript with five elements, what is the index of the last element?
+
+A. 5  
+B. 4  
+C. 0  
+D. 6  
+
+**Answer: B. 4**
+
+---
+
+**Question 5:**
+In cat terms, how are toys arranged in the "array" of cat toys?
+
+A. Chaotically  
+B. Alphabetically  
+C. Neatly with specific spots  
+D. Randomly  
+
+**Answer: C. Neatly with specific spots**
