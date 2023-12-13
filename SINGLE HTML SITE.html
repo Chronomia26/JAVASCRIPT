@@ -68,6 +68,7 @@
                     <li><a href="#" id = "link9" onclick="changeContent(this)"><p>Loops</p></a></li>
                     <li><a href="#" id = "link10" onclick="changeContent(this)"><p>Functions<p></a></li>
                     <li><a href="#" id = "link11" onclick="changeContent(this)"><p>Objects<p></a></li>
+                    <li><a href="#" id = "link12" onclick="changeContent(this)"><p>Arrays<p></a></li>
                 </ul>
             </div>
         </div>
@@ -1868,7 +1869,7 @@
 
 
         <div id="objek" style="display: none;">
-            <div id="main_title" style="margin-top: 10%;">
+            <div id="main_title" style="margin-top: 8%;">
                 <b><img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 35px; image-rendering: pixelated;">Javascript objects<img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 35px; image-rendering: pixelated;"></b>
             </div>
             <div id="main_content" style="padding-bottom: 150px">
@@ -2024,6 +2025,106 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="aray" style="display: none;">
+            <div id="main_title" style="margin-top: 8%;">
+                <b><img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 35px; image-rendering: pixelated;">Javascript arrays<img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 35px; image-rendering: pixelated;"></b>
+            </div>
+            <div id="main_content" style="padding-bottom: 150px">
+                <p>
+                    In JavaScript, an array is a data structure that allows 
+                    you to store multiple values within a single variable. 
+                    Arrays are ordered, meaning the position of each element 
+                    is defined by an index. The index starts at 0 for the 
+                    first element, 1 for the second, and so on. You can store 
+                    various types of data, such as numbers, strings, or even 
+                    other arrays, in an array.
+                </p>
+                <p>
+                    In cat terms... Imagine an array as a collection of 
+                    different toys for your furry friends. Each toy has 
+                    its own unique appeal, just like elements in an array. 
+                    The toys are arranged neatly, and each has a specific 
+                    spot. For example:
+                </p>
+                <div id="script">
+                    <p>
+                        <code>
+                            <blockquote id='code21'>
+                                &lt;html&gt;
+                                    <blockquote>
+                                        &lt;body&gt;
+                                        <blockquote>
+                                            &lt;script type = "text/javascript"&gt;
+                                            <blockquote>
+                                                // Imagine an array as a collection of your cat's favorite treats.<br>
+                                                const catTreats = ["Tuna Bits", "Chicken Bites", "Salmon Delights", 
+                                                "Catnip Cookies"];<br>
+
+                                                // Your cat's treat preferences are indexed, starting from 0.<br>
+                                                // Let's check out the first and second treats.<br>
+                                                document.write(`${catTreats[0]}` + "&lt;br&gt;"); // Output: Tuna Bits<br>
+                                                document.write(`${catTreats[1]}` + "&lt;br&gt;"); // Output: Chicken Bites<br>
+                                                <br>
+                                                // Uh-oh, your cat got a new favorite! Let's update the array.<br>
+                                                catTreats[2] = "Shrimp Snacks";<br>
+                                                <br>
+                                                // Great! Now, the array reflects the updated treat collection.<br>
+                                                document.write(catTreats + "&lt;br&gt;"); // Output: ["Tuna Bits", "Chicken Bites", 
+                                                "Shrimp Snacks", "Catnip Cookies"]<br>
+                                                <br>
+                                                // Time to share the treats! You can loop through the array 
+                                                and treat your cat to each one.<br>
+                                                for (let i = 0; i &lt; catTreats.length; i++) {<br>
+                                                <blockquote>
+                                                    document.write(`Time for ${catTreats[i]}!` + "&lt;br&gt;");
+                                                </blockquote>
+                                                }<br>
+                                                <br>
+                                                // Oops, your cat had enough of shrimp. Let's remove it from the array.<br>
+                                                catTreats.pop();<br>
+                                                <br>
+                                                // Now, the array is back to three tasty treats.<br>
+                                                document.write(catTreats + "&lt;br&gt;"); // Output: ["Tuna Bits", "Chicken Bites", 
+                                                "Catnip Cookies"]<br>
+                                            </blockquote>
+                                            &lt;/script&gt;
+                                        </blockquote>
+                                        &lt;/body&gt;
+                                    </blockquote>
+                                    &lt;/html&gt;
+                            </blockquote>
+                            <div id="textcode">
+                                <a href="#" onclick="transferText('code21')">TEST CODE</a>
+                            </div>
+                        </code>
+                    </p>
+                </div>
+            </div>
+        </div>
 
 
 

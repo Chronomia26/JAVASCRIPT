@@ -236,7 +236,7 @@ width: 100%;
 }
 
 #side_list {
-height: 100%;
+height: 130%;
 /* overflow-y: scroll; */
 font-family: century gothic;
 margin-top: 4%;
@@ -334,6 +334,11 @@ a {
 }
 
 #objek {
+    height: 250vh;
+    animation: right-fade-in 0.5s ease-in-out;
+}
+
+#aray {
     height: 250vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
