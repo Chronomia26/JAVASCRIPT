@@ -443,6 +443,7 @@ hr {
 }
 
 #quiz a{
+    z-index: 1;
     background-color: crimson;
     padding: 20px;
     border-radius: 20px;
@@ -484,15 +485,15 @@ transform: scale(1.1);
 
 @media screen and (max-width: 1280px) {
     #main {
-        margin-left: 10%;
+        margin-left: 0;
     }
 
     #side {
-        width: 10%;
+        display: none;
     }
     #controls {
-        width: 90%;
-        left: 10%;
+        width: 100%;
+        left: 0;
     }
     #footer{
         font-size: 80px;
@@ -500,16 +501,61 @@ transform: scale(1.1);
     #left {
         margin-right: 80%;
     }
+    #statement {
+        height: 550lvh;
+    }
+    #comment {
+        height: 380vh;
+    }
+    #whatisjavascript {
+        height: 190vh;
+    }
+    #datatypes {
+        height: 230vh;
+    }
+    #reserved {
+        height: 120vh;
+    }
+    #operators {
+        height: 1230lvh;
+    }
+    #assignment {
+        height: 710lvh;
+    }
+    #decisionmaking {
+        height: 750lvh;
+    }
+    #loops {
+        height: 1280lvh;
+    }
+    #functions {
+        height: 250vh;
+    }
+    #objek {
+        height: 250vh;
+    }
 }
 
 @media screen and (max-width: 1680px) {
-    #side_title {
-        font-size: 35px;
+    #left {
+        margin-right: 85%;
     }
 }
 
 @media screen and (max-width: 1000px) {
     #left {
         margin-right: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #left {
+        margin-right: 40%;
+    }
+}
+
+@media screen and (max-height: 720px) {
+    footer {
+        font-size: 10px;
     }
 }
