@@ -19,17 +19,17 @@
     </header>
     <div id = "question">
       <p id = "side_title">Question #1</p>
-      <p id = "main_content">What are the most common decision-making statements in JavaScript?</p>
+      <p id = "main_content"> What is the primary purpose of a "while" loop in JavaScript?</p>
     </div>
-    <div id = 'c1' class = 'choice' style = "top: 45%; left: 10.5%;" onclick="correctanswer(choice1), changeQuestion()">A. Switch, case, default</div>
-    <div id = 'c2' class = 'choice correctanswer' style = "top: 45%; right: 10.5%;" onclick="correctanswer(choice2), changeQuestion()">B. If, else if, else</div>
-    <div id = 'c3' class = 'choice' style = "top: 63%; left: 10.5%;" onclick="correctanswer(choice3), changeQuestion()">C. For, while, do-while</div>
-    <div id = 'c4' class = 'choice' style = "top: 63%; right: 10.5%;" onclick="correctanswer(choice4), changeQuestion()">D. Try, catch, finally</div>
+    <div id = 'c1' class = 'choice correctanswer' style = "top: 45%; left: 10.5%;" onclick="correctanswer(choice1), changeQuestion()">A. Execute a statement repeatedly as long as an expression is true.</div>
+    <div id = 'c2' class = 'choice' style = "top: 45%; right: 10.5%;" onclick="correctanswer(choice2), changeQuestion()">B. Execute a statement only once.</div>
+    <div id = 'c3' class = 'choice' style = "top: 63%; left: 10.5%;" onclick="correctanswer(choice3), changeQuestion()">C. Execute a statement only if an expression is false.</div>
+    <div id = 'c4' class = 'choice' style = "top: 63%; right: 10.5%;" onclick="correctanswer(choice4), changeQuestion()">D. Execute a statement without any condition.</div>
     <div id = 'progress'>QUESTIONS ANSWERED: 0/5</div>
     <div id = 'result' style=>
       I'm sorry...<br><br> You answered all the questions incorrectly...
     </div>
-    <a id = 'try' href="QUIZ7.html">Try Again?</a>
+    <a id = 'try' href="QUIZ8.html">Try Again?</a>
     <a  id = 'return' style="top: 63%;" href="C:\Users\juan carlos\Downloads\JAVASCRIPT/SINGLE HTML SITE.html">Return to Lessons</a>
   
     <script type="text/javascript" src="C:\Users\juan carlos\Downloads\JAVASCRIPT\DARKMODE.js"></script>
@@ -69,47 +69,47 @@
         function changeQuestion(){
           if (ans == 1) {
             title.textContent = "Question #2";
-            question.innerText = "In JavaScript, which conditional statement is used when you want to execute different blocks of code based on whether a condition is true or false?";
-            choice1.innerText = "A. switch";
-            choice2.innerText = "B. while";
-            choice3.innerText = "C. for";
-            choice4.innerText = "D. if... else";
+            question.innerText = 'In a "while" loop, when does the loop terminate?';
+            choice1.innerText = "A. When the expression is false. ";
+            choice2.innerText = "B. When the expression is true.";
+            choice3.innerText = "C. After a fixed number of iterations.";
+            choice4.innerText = "D. It doesn't terminate; it runs indefinitely.";
+            choice1.classList.add('correctanswer');
+            choice2.classList.remove('correctanswer');
+            choice3.classList.remove('correctanswer');
+            choice4.classList.remove('correctanswer');
+          } else if(ans == 2) {
+            title.textContent = "Question #3";
+            question.innerText = 'What distinguishes a "do... while" loop from a "while" loop?';
+            choice1.innerText = "A. The syntax.";
+            choice2.innerText = "B. The type of statements it can execute.";
+            choice3.innerText = "C. The condition check happens at the beginning of the loop.";
+            choice4.innerText = "D. The condition check happens at the end of the loop.";
             choice1.classList.remove('correctanswer');
             choice2.classList.remove('correctanswer');
             choice3.classList.remove('correctanswer');
             choice4.classList.add('correctanswer');
-          } else if(ans == 2) {
-            title.textContent = "Question #3";
-            question.innerText = "In the first code snippet provided, what is the output if the age variable is set to 20?";
-            choice1.innerText = "A. Does not qualify for driving";
-            choice2.innerText = "B. Qualifies for driving";
-            choice3.innerText = "C. Unknown Book";
-            choice4.innerText = "D. Economics Book";
-            choice1.classList.remove('correctanswer');
-            choice2.classList.add('correctanswer');
-            choice3.classList.remove('correctanswer');
-            choice4.classList.remove('correctanswer');
           } else if(ans == 3) {
             title.textContent = "Question #4";
-            question.innerText = "In the second code snippet, what is the output when the variable `age` is set to 15?";
-            choice1.innerText = "A. Does not qualify for driving";
-            choice2.innerText = "B. Qualifies for driving";
-            choice3.innerText = "C. Unknown Book";
-            choice4.innerText = "D. No output";
+            question.innerText = 'In a "for" loop, what is the purpose of the initialization statement?';
+            choice1.innerText = "A. It initializes the loop counter.";
+            choice2.innerText = "B. It tests a given condition.";
+            choice3.innerText = "C. It executes the loop statements.";
+            choice4.innerText = "D. It increments or decrements the loop counter.";
             choice1.classList.add('correctanswer');
             choice2.classList.remove('correctanswer');
             choice3.classList.remove('correctanswer');
             choice4.classList.remove('correctanswer');
           } else if(ans == 4) {
             title.textContent = "Question #5";
-            question.innerText = 'In the third code snippet, what will be the output if the variable `book` is set to "economics"?';
-            choice1.innerText = "A. 'History Book'";
-            choice2.innerText = "B. 'Maths Book'";
-            choice3.innerText = "C. 'Economics Book'";
-            choice4.innerText = "D. 'Unknown Book'";
+            question.innerText = 'What are the three important parts of a "for" loop in JavaScript?';
+            choice1.innerText = "A. Start, Stop, Continue";
+            choice2.innerText = "B. Initialization, Test condition, Iteration statement";
+            choice3.innerText = "C. While, Do, For";
+            choice4.innerText = "D. Execute, Break, Loop";
             choice1.classList.remove('correctanswer');
-            choice2.classList.remove('correctanswer');
-            choice3.classList.add('correctanswer');
+            choice2.classList.add('correctanswer');
+            choice3.classList.remove('correctanswer');
             choice4.classList.remove('correctanswer');
           } else if(ans == 5) {
             quiz.style.display = 'none';

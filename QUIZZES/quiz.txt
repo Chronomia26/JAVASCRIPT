@@ -420,21 +420,12 @@ d) if...else
 ---
 
 **Question 3:**
-Consider the following code snippet:
+In the first code snippet provided, what is the output if the age variable is set to 20?
 
-```javascript
-var age = 20;
-if (age > 18) {
-   document.write("<b>Qualifies for driving</b>");
-}
-```
-
-What will be the output of this code?
-
-a) "Does not qualify for driving"
-b) "Qualifies for driving"
-c) No output
-d) Error
+a) Does not qualify for driving
+b) Qualifies for driving
+c) Unknown Book
+d) Economics Book
 
 **Answer:**
 b) "Qualifies for driving"
@@ -464,3 +455,132 @@ d) "Unknown Book"
 
 **Answer:**
 c) "Economics Book"
+
+
+
+
+
+
+quiz8
+
+
+
+
+
+
+
+**Question 1: What is the primary purpose of a "while" loop in JavaScript?**
+a) Execute a statement repeatedly as long as an expression is true.  
+b) Execute a statement only once.  
+c) Execute a statement only if an expression is false.  
+d) Execute a statement without any condition.
+
+**Answer: a) Execute a statement repeatedly as long as an expression is true.**
+
+---
+
+**Question 2: In a "while" loop, when does the loop terminate?**
+a) When the expression is false.  
+b) When the expression is true.  
+c) After a fixed number of iterations.  
+d) It doesn't terminate; it runs indefinitely.
+
+**Answer: a) When the expression is false.**
+
+---
+
+**Question 3: What distinguishes a "do... while" loop from a "while" loop?**
+a) The syntax.  
+b) The type of statements it can execute.  
+c) The condition check happens at the beginning of the loop.  
+d) The condition check happens at the end of the loop.
+
+**Answer: d) The condition check happens at the end of the loop.**
+
+---
+
+**Question 4: In a "for" loop, what is the purpose of the initialization statement?**
+a) It initializes the loop counter.  
+b) It tests a given condition.  
+c) It executes the loop statements.  
+d) It increments or decrements the loop counter.
+
+**Answer: a) It initializes the loop counter.**
+
+---
+
+**Question 5: What are the three important parts of a "for" loop in JavaScript?**
+a) Start, Stop, Continue  
+b) Initialization, Test condition, Iteration statement  
+c) While, Do, For  
+d) Execute, Break, Loop
+
+**Answer: b) Initialization, Test condition, Iteration statement**
+
+
+
+
+
+
+
+quiz9
+
+
+
+
+
+
+
+
+**Question 1: What is a function in JavaScript?**
+
+A. A set of instructions or code block that can be named and reused  
+B. A type of variable used to store values  
+C. A loop for iterating through arrays  
+D. A conditional statement for decision-making  
+
+**Answer: A. A set of instructions or code block that can be named and reused**
+
+---
+
+Question 2: How is a JavaScript function similar to a cat in the provided context?
+
+a) Cats can define variables
+b) Cats can only perform tricks once
+c) Functions can be named and reused like teaching tricks to a cat
+d) Cats can only execute code once
+
+Answer: c) Functions can be named and reused like teaching tricks to a cat
+
+---
+
+**Question 3: What is the purpose of the `askForFood` function in JavaScript?**
+
+A. To define a cat-related trick  
+B. To alert "Meow meow, may I plz haz food?"  
+C. To create a loop for asking for food  
+D. To teach Mittens a new trick  
+
+**Answer: B. To alert "Meow meow, may I plz haz food?"**
+
+---
+
+Question 4: What is the purpose of JavaScript parameters in a function?
+
+a) They are placeholders for cat names
+b) They store values that can be used in the function
+c) They define variables for the entire script
+d) They limit the execution of the function
+
+Answer: b) They store values that can be used in the function
+
+---
+
+**Question 5: What is the purpose of the `greetCat` function parameter `name`?**
+
+A. It defines a variable for the function  
+B. It is a loop counter  
+C. It allows passing values into the function  
+D. It controls the execution of the function  
+
+**Answer: C. It allows passing values into the function**
