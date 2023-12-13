@@ -584,3 +584,78 @@ C. It allows passing values into the function
 D. It controls the execution of the function  
 
 **Answer: C. It allows passing values into the function**
+
+
+
+
+
+
+quz10
+
+
+
+
+
+
+**Question 1:**
+What does the `play` method of the `catnipToy` object do in the JavaScript code?
+
+a) Displays the cat's introduction  
+b) Rolls the catnip ball around  
+c) Orders a menu item at the cat café  
+d) Climbs the castle towers
+
+**Answer:**
+b) Rolls the catnip ball around
+
+---
+
+**Question 2:**
+In the `kittyStats` object, what is the value of the `furColor` property?
+
+a) Green  
+b) Tabby  
+c) Pink  
+d) Small
+
+**Answer:**
+b) Tabby
+
+---
+
+**Question 3:**
+Which method is called for the `felineFriend` object in the example usage?
+
+a) explore  
+b) order  
+c) watchKingdom  
+d) introduce
+
+**Answer:**
+a) explore
+
+---
+
+**Question 4:**
+What is the name of the kitty castle in the `kittyCastle` object?
+
+a) Mittens  
+b) Whiskers  
+c) Paw Palace  
+d) Meowcha Latte
+
+**Answer:**
+c) Paw Palace
+
+---
+
+**Question 5:**
+Which action is performed by the `catCafeMenu` object's `customize` method?
+
+a) Climb the castle towers  
+b) Customize the drink  
+c) Watch over the kingdom  
+d) Take a cozy nap
+
+**Answer:**
+b) Customize the drink
