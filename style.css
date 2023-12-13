@@ -293,7 +293,7 @@ a {
 }
 
 #whatisjavascript {
-    height: 160vh;
+    height: 170vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
@@ -502,6 +502,8 @@ transform: scale(1.1);
         margin-right: 80%;
     }
 
+
+
     #statement {
         height: 750lvh;
     }
@@ -510,6 +512,89 @@ transform: scale(1.1);
     }
     #whatisjavascript {
         height: 200vh;
+    }
+    #datatypes {
+        height: 230vh;
+    }
+    #reserved {
+        height: 195vh;
+    }
+    #operators {
+        height: 1230lvh;
+    }
+    #assignment {
+        height: 710lvh;
+    }
+    #decisionmaking {
+        height: 750lvh;
+    }
+    #loops {
+        height: 1280lvh;
+    }
+    #functions {
+        height: 250vh;
+    }
+    #objek {
+        height: 250vh;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    #left {
+        margin-right: 85%;
+    }
+
+    
+    #statement {
+        height: 750lvh;
+    }
+    #comment {
+        height: 360vh;
+    }
+    #whatisjavascript {
+        height: 190vh;
+    }
+    #datatypes {
+        height: 230vh;
+    }
+    #reserved {
+        height: 120vh;
+    }
+    #operators {
+        height: 1230lvh;
+    }
+    #assignment {
+        height: 710lvh;
+    }
+    #decisionmaking {
+        height: 750lvh;
+    }
+    #loops {
+        height: 1280lvh;
+    }
+    #functions {
+        height: 250vh;
+    }
+    #objek {
+        height: 250vh;
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    #left {
+        margin-right: 80%;
+    }
+
+    #statement {
+        height: 750lvh;
+    }
+    #comment {
+        height: 360vh;
+    }
+    #whatisjavascript {
+        height:200vh;
     }
     #datatypes {
         height: 230vh;
@@ -537,26 +622,59 @@ transform: scale(1.1);
     }
 }
 
-@media screen and (max-width: 1680px) {
-    #left {
-        margin-right: 85%;
-    }
+@media screen and (max) {
+    
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 720px) {
     #left {
-        margin-right: 80%;
+        margin-right: 70%;
     }
-}
 
-@media screen and (max-width: 768px) {
-    #left {
-        margin-right: 40%;
+
+    #statement {
+        height: 750lvh;
+    }
+    #comment {
+        height: 360vh;
+    }
+    #whatisjavascript {
+        height:320vh;
+    }
+    #datatypes {
+        height: 230vh;
+    }
+    #reserved {
+        height: 120vh;
+    }
+    #operators {
+        height: 1230lvh;
+    }
+    #assignment {
+        height: 710lvh;
+    }
+    #decisionmaking {
+        height: 750lvh;
+    }
+    #loops {
+        height: 1280lvh;
+    }
+    #functions {
+        height: 250vh;
+    }
+    #objek {
+        height: 250vh;
     }
 }
 
 @media screen and (max-height: 720px) {
     footer {
         font-size: 10px;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    #controls {
+        bottom: 20%;
     }
 }

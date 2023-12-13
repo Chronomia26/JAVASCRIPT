@@ -15,8 +15,8 @@ body {
 
 
   #question{
-    position: fixed;
     display: flex;
+    position: fixed;
     justify-content: center;
     top: 10%;
     padding-bottom: 4%;
@@ -100,8 +100,8 @@ body {
   }
 
   #try, #return{
-    cursor: pointer;
     display: none;
+    cursor: pointer;
     top: 50%;
     position: absolute;
     border-radius: 50px;
@@ -118,3 +118,122 @@ body {
     transform: scale(1.07);
     border-radius: 50px;
   }
+
+  @media screen and (max-width: 1280px) {
+    #question{
+      height: 20%;
+    }
+    .choice {
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 45px;
+      padding-bottom: 45px;
+    }
+    #side_title{
+      font-size: 30px;
+    }
+    #main_content{
+      font-size: 20px;
+      top: 34%;
+    }
+    #result {
+      height: 70%;
+      font-size: 45px;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    #question{
+      height: 25%;
+    }
+    .choice {
+      font-size: 15px;
+      padding-left: 2px;
+      padding-right: 2px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    #side_title{
+      font-size: 25px;
+    }
+    #main_content{
+      top: 34%;
+    }
+    #result {
+      font-size: 40px;
+    }
+  }
+
+
+  @media screen and (max-width: 500px) {
+    #result {
+      font-size: 32px;
+    }
+    #try, #return{
+      padding-top: 30px;
+      padding-bottom: 30px;
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-height: 900px) {
+    #question{
+      height: 20%;
+    }
+    .choice {
+      font-size: 15px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    #main_content{
+      font-size: 20px;
+      top: 34%;
+    }
+    #progress {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    #result {
+      height: 65%;
+    }
+    #try, #return{
+      padding: 10px;
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-height: 720px) {
+    #question{
+      top: 15%;
+      height: 15%;
+    }
+    .choice {
+      font-size: 15px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    #side_title{
+      top: -35%;
+      font-size: 30px;
+    }
+    #main_content{
+      font-size: 20px;
+      top: 10%;
+    }
+    #progress {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    #result {
+      height: 60%;
+      top: 15%;
+      font-size: 30px;
+    }
+    #try, #return{
+      padding: 10px;
+      font-size: 18px;
+    }
+  }
+
+
+
