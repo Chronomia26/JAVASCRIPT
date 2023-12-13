@@ -19,6 +19,8 @@
     }
 
       header {
+        position: relative;
+        z-index: 3;
         padding-bottom: 14px;
       }
       #codearea {
@@ -72,7 +74,14 @@
         width: 50%;
         height: 89.3%;
       }
-      
+      #cat{
+        z-index: 2;
+        position: absolute;
+        top: 8%;
+        left: 15%;
+        width: 360px;
+        image-rendering: pixelated;
+      }
       
       
     </style>
@@ -90,6 +99,7 @@
     </div>
     </header>
     <img id = "logob" src="IMAGES/logob.png" alt="NEKODE">
+    <img id = 'cat' src="IMAGES/catrar.png" alt="neko">
     <div id = "codearea">
       <div id = "header"><p>Use this compiler to test your HTML, CSS, and JavaScript code!</p></div>
       <textarea id="html" placeholder="Type here..."></textarea>
