@@ -108,6 +108,7 @@ font-family: myFirstFont;
 a {
 color: black;
 font-family: myFirstFont;
+font-size: 20px;
 /* padding-left: px; */
 text-decoration: none;
 justify-self: center;
@@ -116,6 +117,7 @@ justify-self: center;
 @font-face {
     font-family: myFirstFont;
     src: url('fonts/joystix_monospace.otf');
+    font-size: 20px;
 }
 
 @keyframes lightt {
@@ -148,7 +150,7 @@ background-size: 200% 100%;
 .dark-mode {
 background-color: #001f3f;
 color: #ffffff;
-background-image: url('IMAGES/background1.png');
+background-image: url(IMAGES/background1.png);
 }
 
 .dark-text {
@@ -196,11 +198,11 @@ border-color: white;
 position: fixed;
 left: 0;
 width: 25%;
-height: 80vh;
+height: 100vh;
 overflow-y: scroll;  
 top: 66px;
 bottom: 65px;
-padding-bottom: 20%;
+border-right: 5px dashed;
 border-spacing: 50px;
 overflow-y: scroll;
 }
@@ -221,7 +223,6 @@ overflow-y: scroll;
 #side_title {
 text-shadow: 2px 2px 0px black, -2px -2px -0px white;
 color: crimson; 
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), -2px -2px -0px white;
 font-family: myFirstFont;
 text-align: center;
 font-size: 35px;
@@ -230,7 +231,7 @@ width: 100%;
 }
 
 #side_list {
-height: 100vh;
+height: 100%;
 /* overflow-y: scroll; */
 font-family: century gothic;
 margin-top: 4%;
@@ -264,42 +265,41 @@ font-weight: bold;
 }
 
 #side_list a {
-    font-size: 20px;
     align-self: center;
     font-family: myFirstFont;
 }
 
 a {
-    color: black;  
-    font-size: 20px;
+    color: black;
+    font-size: 17px;
     /* padding-left: px; */
     text-decoration: none;
     justify-self: center;
     }
 
 #statement {
-    height: 415vh;
+    height: 550lvh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #comment {
-    height: 436vh;
+    height: 380vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #whatisjavascript {
-    height: 160vh;
+    height: 190vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 
 #datatypes {
-    height: 950vh;
+    height: 230vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #reserved {
-    height: 1200vh;
+    height: 120vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
@@ -309,7 +309,7 @@ a {
 }
 
 #assignment {
-    height: 780vh;
+    height: 710lvh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
@@ -328,11 +328,15 @@ a {
     animation: right-fade-in 0.5s ease-in-out;
 }
 
+#objek {
+    height: 250vh;
+    animation: right-fade-in 0.5s ease-in-out;
+}
+
 #main {
     /* bottom: 0; */
     margin-top: 60px;
     margin-left: 25%;
-    border-left: 5px dashed;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -421,7 +425,7 @@ hr {
 }
 
 #quiz {
-    padding: 3%;
+    padding: 5%;
     padding-bottom: 7%;
     border: 2px solid black;
     text-align: center;
@@ -445,24 +449,6 @@ hr {
     /* text-align: bottom; */
     padding: 10px;
     
-}
-
-#textcode{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5%;
-}
-
-#textcode a{
-    background: linear-gradient(to right, #FBACCC, #F1D1D0); 
-    transition: background 3s ease, transform 0.1s ease-in-out;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-#textcode a:hover{
-    background: linear-gradient(to right, #F1D1D0, #FBACCC);
 }
 
 #left {
@@ -493,12 +479,9 @@ transform: scale(1.1);
     }
 }
 
-@media screen and (max-width: 1780px) {
+@media screen and (max-width: 1680px) {
     #side_title {
-        font-size: 30px;
-    }
-    #left {
-        margin-right: 85%;
+        font-size: 35px;
     }
 }
 
