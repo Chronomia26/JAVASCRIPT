@@ -2,128 +2,8 @@
   <head>
     <title>NEKOQUIZ</title>
     <link rel="stylesheet" type="text/css" href="C:\Users\juan carlos\Downloads\JAVASCRIPT\style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="C:\Users\juan carlos\Downloads\JAVASCRIPT\IMAGES\icon.png">
-    <style>
-      body {
-        display: flex; 
-        justify-content: center;
-      }
-
-      @font-face {
-      font-family: myFirstFont;
-      src: url('fonts/joystix_monospace.otf');
-      }
-
-      header {
-        padding-bottom: 14px;
-      }
-
-
-      #question{
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        top: 10%;
-        padding-bottom: 4%;
-        padding-right: 2%;
-        padding-left: 2%;
-        border: 5px dashed black;
-        border-radius: 20px;
-        width: 75%;
-        background-color: rgba(255,255, 255, 0.3);   
-        height: 20%;
-      }
-
-      #side_title{
-        top: 2%;   
-        position: absolute;
-        width: 75%;
-        border-radius: 20px;
-        border: 6px ridge crimson;
-        font-size: 40px;
-      }
-
-      #main_content{
-        top: 30%;
-        position: absolute;
-        font-size: 25px;
-        font-family: myFirstFont;
-      }
-
-      .choice {
-        position: absolute;
-        border-radius: 20px;
-        width: 37.5%;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 60px;
-        padding-bottom: 60px; 
-        border: 2px dashed black;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        font-family: 'Courier New';
-        background-color: rgba(255,255, 255, 0.3);
-        transition: transform 0.5s ease-in-out;
-      }
-      @keyframes animation {
-        
-      }
-      .choice:hover {
-        transform: scale(1.07);
-        border-radius: 50px;
-      }
-      #progress {
-        position: absolute;
-        bottom: 9%;
-        border-radius: 20px;
-        width: 50.5%;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 40px;
-        padding-bottom: 40px; 
-        border: 2px solid black;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        font-family: 'Courier New'; 
-      }
-      #result {
-        display: none;
-        text-align: center;
-        position: fixed;
-        justify-content: center;
-        top: 10%;
-        padding: 4%;
-        border: 5px dashed black;
-        border-radius: 20px;
-        width: 75%;
-        font-size: 50px;
-        font-family: myFirstFont;
-        background-color: rgba(255,255, 255, 0.3);   
-        height: 60%;
-      }
-
-      #try, #return{
-        cursor: pointer;
-        display: none;
-        top: 50%;
-        position: absolute;
-        border-radius: 50px;
-        width: 30%;
-        text-align: center;
-        background-color: crimson;
-        font-family: myFirstFont;
-        transition: transform 0.5s ease-in-out;
-        padding: 2%;
-        font-size: 30px;
-      }
-
-      #try:hover, #return:hover {
-        transform: scale(1.07);
-        border-radius: 50px;
-      }
-    </style>
   </head>
 
   <body  class="light-mode">
@@ -147,7 +27,7 @@
     <div id = 'c4' class = 'choice' style = "top: 63%; right: 10.5%;" onclick="correctanswer(choice4), changeQuestion()">D. JavaScript as a static element</div>
     <div id = 'progress'>QUESTIONS ANSWERED: 0/5</div>
     <div id = 'result' style=>
-      huh
+      I'm sorry...<br><br> You answered all the questions incorrectly...
     </div>
     <a id = 'try' href="QUIZ1.html">Try Again?</a>
     <a  id = 'return' style="top: 63%;" href="C:\Users\juan carlos\Downloads\JAVASCRIPT/SINGLE HTML SITE.html">Return to Lessons</a>
@@ -178,8 +58,6 @@
               } 
               else if (score < 5 && score > 0) {
                 document.getElementById('result').innerText = 'Good Job.\n\nYou scored ' + score + " out of 5." 
-              } else {
-                document.getElementById('result').innerText = 'Im sorry...\n\nYou scored ' + score + " out of 5." 
               }
           }
           if (correct.classList.contains('choice') && ans != 5) {
