@@ -20,7 +20,9 @@
 
 
       #question{
-        position: absolute;
+        position: fixed;
+        display: flex;
+        justify-content: center;
         top: 10%;
         padding-bottom: 4%;
         padding-right: 2%;
@@ -29,15 +31,21 @@
         border-radius: 20px;
         width: 75%;
         background-color: rgba(255,255, 255, 0.3);   
+        height: 20%;
       }
 
       #side_title{
+        top: 2%;   
+        position: absolute;
+        width: 75%;
         border-radius: 20px;
         border: 6px ridge crimson;
         font-size: 40px;
       }
 
       #main_content{
+        top: 30%;
+        position: absolute;
         font-size: 25px;
         font-family: myFirstFont;
       }
@@ -96,12 +104,12 @@
     </header>
     <div id = "question">
       <p id = "side_title">Question #1</p>
-      <p id = "main_content">QUEJDSHFKDJHFASHFIAHFSUHUSHFDFjsgdsgsdyfdhfghgfjgs</p>
+      <p id = "main_content">1. What is the analogy used to describe the role of JavaScript in web pages?</p>
     </div>
-    <div id = 'c1' class = 'choice correctanswer' style = "top: 45%; left: 10.5%;" onclick="correctanswer(choice1), changeQuestion()">fgfgffgfghdjkghgjfhgfhg</div>
-    <div id = 'c2' class = 'choice' style = "top: 45%; right: 10.5%;" onclick="correctanswer(choice2), changeQuestion()">fgfgffgfghdjkghgjfhgfhg</div>
-    <div id = 'c3' class = 'choice' style = "top: 63%; left: 10.5%;" onclick="correctanswer(choice3), changeQuestion()">fgfgffgfghdjkghgjfhgfhg</div>
-    <div id = 'c4' class = 'choice' style = "top: 63%; right: 10.5%;" onclick="correctanswer(choice4), changeQuestion()">fgfgffgfghdjkghgjfhgfhg</div>
+    <div id = 'c1' class = 'choice correctanswer' style = "top: 45%; left: 10.5%;" onclick="correctanswer(choice1), changeQuestion()">A. JavaScript as a wardrobe</div>
+    <div id = 'c2' class = 'choice' style = "top: 45%; right: 10.5%;" onclick="correctanswer(choice2), changeQuestion()">B. JavaScript as buttons and zippers for clothing</div>
+    <div id = 'c3' class = 'choice' style = "top: 63%; left: 10.5%;" onclick="correctanswer(choice3), changeQuestion()">C. JavaScript as a fashion statement</div>
+    <div id = 'c4' class = 'choice' style = "top: 63%; right: 10.5%;" onclick="correctanswer(choice4), changeQuestion()">D. JavaScript as a static element</div>
     <div id = 'progress'>QUESTIONS ANSWERED: 0/5</div>
   
     <script type="text/javascript" src="C:\Users\juan carlos\Downloads\JAVASCRIPT\DARKMODE.js"></script>

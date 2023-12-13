@@ -194,6 +194,7 @@ border-color: white;
 
 
 #side {
+    border-right: 5px dashed;
 position: fixed;
 left: 0;
 width: 25%;
@@ -336,7 +337,6 @@ a {
     /* bottom: 0; */
     margin-top: 60px;
     margin-left: 25%;
-    border-left: 5px dashed;
     padding: 20px;
     display: flex;
     justify-content: center;
