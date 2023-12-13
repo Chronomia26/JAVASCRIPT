@@ -19,12 +19,12 @@
     </header>
     <div id = "question">
       <p id = "side_title">Question #1</p>
-      <p id = "main_content"> What does the `play` method of the `catnipToy` object do in the JavaScript code?</p>
+      <p id = "main_content">In JavaScript, at what index does the first element of an array start?</p>
     </div>
-    <div id = 'c1' class = 'choice ' style = "top: 45%; left: 10.5%;" onclick="correctanswer(choice1), changeQuestion()">A. Displays the cat's introduction  </div>
-    <div id = 'c2' class = 'choice correctanswer' style = "top: 45%; right: 10.5%;" onclick="correctanswer(choice2), changeQuestion()">B. Rolls the catnip ball around</div>
-    <div id = 'c3' class = 'choice' style = "top: 63%; left: 10.5%;" onclick="correctanswer(choice3), changeQuestion()">C. Orders a menu item at the cat café</div>
-    <div id = 'c4' class = 'choice' style = "top: 63%; right: 10.5%;" onclick="correctanswer(choice4), changeQuestion()">D. Climbs the castle towers</div>
+    <div id = 'c1' class = 'choice ' style = "top: 45%; left: 10.5%;" onclick="correctanswer(choice1), changeQuestion()">A. 1 </div>
+    <div id = 'c2' class = 'choice ' style = "top: 45%; right: 10.5%;" onclick="correctanswer(choice2), changeQuestion()">B. 2</div>
+    <div id = 'c3' class = 'choice correctanswer' style = "top: 63%; left: 10.5%;" onclick="correctanswer(choice3), changeQuestion()">C. 0</div>
+    <div id = 'c4' class = 'choice' style = "top: 63%; right: 10.5%;" onclick="correctanswer(choice4), changeQuestion()">D. -1</div>
     <div id = 'progress'>QUESTIONS ANSWERED: 0/5</div>
     <div id = 'result' style=>
       I'm sorry...<br><br> You answered all the questions incorrectly...
@@ -69,47 +69,47 @@
         function changeQuestion(){
           if (ans == 1) {
             title.textContent = "Question #2";
-            question.innerText = 'In the `kittyStats` object, what is the value of the `furColor` property?';
-            choice1.innerText = "A. Green ";
-            choice2.innerText = "B. Tabby";
-            choice3.innerText = "C. Pink";
-            choice4.innerText = "D. Small";
+            question.innerText = 'How are elements in a JavaScript array ordered?';
+            choice1.innerText = "A. Randomly";
+            choice2.innerText = "B. Alphabetically";
+            choice3.innerText = "C. By size";
+            choice4.innerText = "D. By index";
+            choice1.classList.remove('correctanswer');
+            choice2.classList.remove('correctanswer');
+            choice3.classList.remove('correctanswer');
+            choice4.classList.add('correctanswer');
+          } else if(ans == 2) {
+            title.textContent = "Question #3";
+            question.innerText =  'What types of data can be stored in a JavaScript array?';
+            choice1.innerText = "A. Only numbers";
+            choice2.innerText = "B. Only strings";
+            choice3.innerText = "C. Only arrays";
+            choice4.innerText = "D. Various types, such as numbers, strings, or even other arrays  ";
+            choice1.classList.remove('correctanswer');
+            choice2.classList.remove('correctanswer');
+            choice3.classList.remove('correctanswer');
+            choice4.classList.add('correctanswer');
+          } else if(ans == 3) {
+            title.textContent = "Question #4";
+            question.innerText = 'If you have an array in JavaScript with five elements, what is the index of the last element?';
+            choice1.innerText = "A. 5"; 
+            choice2.innerText = 'B. 4';
+            choice3.innerText = "C. 0";
+            choice4.innerText = "D. 6";
             choice1.classList.remove('correctanswer');
             choice2.classList.add('correctanswer');
             choice3.classList.remove('correctanswer');
-            choice4.classList.remove('correctanswer');
-          } else if(ans == 2) {
-            title.textContent = "Question #3";
-            question.innerText =  'Which method is called for the `felineFriend` object in the example usage?';
-            choice1.innerText = "A. explore";
-            choice2.innerText = "B. order";
-            choice3.innerText = "C. watchKingdom";
-            choice4.innerText = "D. introduce";
-            choice1.classList.add('correctanswer');
-            choice2.classList.remove('correctanswer');
-            choice3.classList.remove('correctanswer');
-            choice4.classList.remove('correctanswer');
-          } else if(ans == 3) {
-            title.textContent = "Question #4";
-            question.innerText = 'What is the name of the kitty castle in the `kittyCastle` object?';
-            choice1.innerText = "A. Mittens"; 
-            choice2.innerText = 'B. Whiskers';
-            choice3.innerText = "C. Paw Palace";
-            choice4.innerText = "D. Meowcha Latte";
-            choice1.classList.remove('correctanswer');
-            choice2.classList.remove('correctanswer');
-            choice3.classList.add('correctanswer');
             choice4.classList.remove('correctanswer');
           } else if(ans == 4) {
             title.textContent = "Question #5";
-            question.innerText = "Which action is performed by the `catCafeMenu` object's `customize` method?";
-            choice1.innerText = "A. Climb the castle towers";
-            choice2.innerText = "B. Customize the drink";
-            choice3.innerText = "C. Watch over the kingdom";
-            choice4.innerText = "D. Take a cozy nap";
+            question.innerText = 'In cat terms, how are toys arranged in the "array" of cat toys?';
+            choice1.innerText = "A. Chaotically";
+            choice2.innerText = "B. Alphabetically";
+            choice3.innerText = "C. Neatly with specific spots";
+            choice4.innerText = "D. Randomly ";
             choice1.classList.remove('correctanswer');
-            choice2.classList.add('correctanswer');
-            choice3.classList.remove('correctanswer');
+            choice2.classList.remove('correctanswer');
+            choice3.classList.add('correctanswer');
             choice4.classList.remove('correctanswer');
           } else if(ans == 5) {
             quiz.style.display = 'none';
