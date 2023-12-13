@@ -172,3 +172,68 @@ c) To temporarily disable code during debugging or testing
 d) To remove unnecessary code permanently
 
 **Answer: c) To temporarily disable code during debugging or testing**
+
+
+
+QUIZ4
+
+
+
+
+**Question 1:**
+What is the JavaScript data type that represents a collection of characters, likened to fluffy Persian cats in the analogy?
+
+a) Number  
+b) String  
+c) Object  
+d) Array
+
+**Answer: b) String**
+
+---
+
+**Question 2:**
+Which JavaScript data type is compared to sleek Siamese cats, being precise and numerical?
+
+a) Number  
+b) Object  
+c) Symbol  
+d) Undefined
+
+**Answer: a) Number**
+
+---
+
+**Question 3:**
+"Which JavaScript variable provides block-scoping, which can be more predictable than var?
+
+a) var
+b) let
+c) const 
+d) None of the above.
+
+**Answer: b) let**
+
+---
+
+**Question 4:**
+Which JavaScript variable was traditionally used to declare variables and has function-scoping?
+
+a) var
+b) let
+c) const 
+d) None of the above.
+
+**Answer: a) var**
+
+---
+
+**Question 5:**
+Which JavaScript keyword was traditionally used to declare variables and has function-scoping?
+
+a) let  
+b) const  
+c) var  
+d) Bigint
+
+**Answer: c) var**

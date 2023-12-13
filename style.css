@@ -293,7 +293,7 @@ a {
 }
 
 #whatisjavascript {
-    height: 190vh;
+    height: 160vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
@@ -501,14 +501,15 @@ transform: scale(1.1);
     #left {
         margin-right: 80%;
     }
+
     #statement {
-        height: 550lvh;
+        height: 750lvh;
     }
     #comment {
-        height: 380vh;
+        height: 360vh;
     }
     #whatisjavascript {
-        height: 190vh;
+        height: 200vh;
     }
     #datatypes {
         height: 230vh;
