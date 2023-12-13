@@ -54,6 +54,13 @@ transition: transform 0.3s ease-in-out;
 transform: scale(1.1)
 }
 
+/* #img_ex {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 90px;
+} */
+
 #toggle-dark-button {
 position: fixed;
 top: 6px;
