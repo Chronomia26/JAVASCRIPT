@@ -200,9 +200,8 @@ border-color: black;
 border-color: white;
 }
 
-
-
 #side {
+    display: block;
     border-right: 5px dashed;
 position: fixed;
 left: 0;
@@ -447,8 +446,20 @@ hr {
 transform: scale(1.1);
 }
 
+#side_button {
+    display: none;
+position: fixed;
+left: 0;
+top: 66px;
+width: 40px;
+padding: 10px;
+}
 
-
+@media screen and (max-width: 1920px) {
+    #side {
+        width: 460px;
+    }
+}
 
 @media screen and (max-width: 1280px) {
     #main {
@@ -466,9 +477,13 @@ transform: scale(1.1);
         margin-right: auto;
     }
     #side {
-        z-index: 1;
+        width: 0;
         background-color: rgba(255, 153, 153, 0.8);
     }
+    #side_button{
+        z-index: 5;
+        display: block;
+    }   
     
 
 
