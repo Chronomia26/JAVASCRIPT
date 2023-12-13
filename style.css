@@ -283,63 +283,51 @@ a {
     }
 
 #statement {
-    height: 550lvh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #comment {
-    height: 380vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #whatisjavascript {
-    height: 170vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 
 #datatypes {
-    height: 230vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #reserved {
-    height: 120vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #operators {
-    height: 1230lvh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #assignment {
-    height: 710lvh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #decisionmaking {
-    height: 750lvh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #loops {
-    height: 1280lvh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #functions {
-    height: 250vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #objek {
-    height: 250vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
 #aray {
-    height: 250vh;
     animation: right-fade-in 0.5s ease-in-out;
 }
 
@@ -350,6 +338,8 @@ a {
     padding: 20px;
     display: flex;
     justify-content: center;
+    animation: right-fade-in 0.5s ease-in-out;
+    height: auto;
 
     }
     
@@ -439,6 +429,7 @@ hr {
     padding-bottom: 7%;
     border: 2px solid black;
     text-align: center;
+    margin-bottom: 10%;
 }
 
 #quiz p{
@@ -449,7 +440,7 @@ hr {
 
 #quiz a{
     z-index: 1;
-    background-color: crimson;
+    background-color: rgb(172, 165, 167);
     padding: 20px;
     border-radius: 20px;
 }
@@ -488,13 +479,12 @@ hr {
 transform: scale(1.1);
 }
 
+
+
+
 @media screen and (max-width: 1280px) {
     #main {
         margin-left: 0;
-    }
-
-    #side {
-        display: none;
     }
     #controls {
         width: 100%;
@@ -506,82 +496,16 @@ transform: scale(1.1);
     #left {
         margin-right: 80%;
     }
+    #side {
+        display: none;
+    }
 
 
-
-    #statement {
-        height: 750lvh;
-    }
-    #comment {
-        height: 360vh;
-    }
-    #whatisjavascript {
-        height: 200vh;
-    }
-    #datatypes {
-        height: 230vh;
-    }
-    #reserved {
-        height: 195vh;
-    }
-    #operators {
-        height: 1230lvh;
-    }
-    #assignment {
-        height: 710lvh;
-    }
-    #decisionmaking {
-        height: 750lvh;
-    }
-    #loops {
-        height: 1280lvh;
-    }
-    #functions {
-        height: 250vh;
-    }
-    #objek {
-        height: 250vh;
-    }
 }
 
 @media screen and (max-width: 1680px) {
     #left {
         margin-right: 85%;
-    }
-
-    
-    #statement {
-        height: 750lvh;
-    }
-    #comment {
-        height: 360vh;
-    }
-    #whatisjavascript {
-        height: 190vh;
-    }
-    #datatypes {
-        height: 230vh;
-    }
-    #reserved {
-        height: 120vh;
-    }
-    #operators {
-        height: 1230lvh;
-    }
-    #assignment {
-        height: 710lvh;
-    }
-    #decisionmaking {
-        height: 750lvh;
-    }
-    #loops {
-        height: 1280lvh;
-    }
-    #functions {
-        height: 250vh;
-    }
-    #objek {
-        height: 250vh;
     }
 
 
@@ -590,40 +514,6 @@ transform: scale(1.1);
 @media screen and (max-width: 1000px) {
     #left {
         margin-right: 80%;
-    }
-
-    #statement {
-        height: 750lvh;
-    }
-    #comment {
-        height: 360vh;
-    }
-    #whatisjavascript {
-        height:200vh;
-    }
-    #datatypes {
-        height: 230vh;
-    }
-    #reserved {
-        height: 120vh;
-    }
-    #operators {
-        height: 1230lvh;
-    }
-    #assignment {
-        height: 710lvh;
-    }
-    #decisionmaking {
-        height: 750lvh;
-    }
-    #loops {
-        height: 1280lvh;
-    }
-    #functions {
-        height: 250vh;
-    }
-    #objek {
-        height: 250vh;
     }
 }
 
@@ -636,40 +526,6 @@ transform: scale(1.1);
         margin-right: 70%;
     }
 
-
-    #statement {
-        height: 750lvh;
-    }
-    #comment {
-        height: 360vh;
-    }
-    #whatisjavascript {
-        height:320vh;
-    }
-    #datatypes {
-        height: 230vh;
-    }
-    #reserved {
-        height: 120vh;
-    }
-    #operators {
-        height: 1230lvh;
-    }
-    #assignment {
-        height: 710lvh;
-    }
-    #decisionmaking {
-        height: 750lvh;
-    }
-    #loops {
-        height: 1280lvh;
-    }
-    #functions {
-        height: 250vh;
-    }
-    #objek {
-        height: 250vh;
-    }
 }
 
 @media screen and (max-height: 720px) {
