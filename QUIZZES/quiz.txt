@@ -1,6 +1,14 @@
 QUIZZES ANSWER KEY
 
+
+
+
+
 QUIZ1:
+
+
+
+
 
 B   1. What is the analogy used to describe the role of JavaScript in web pages?
 
@@ -61,7 +69,13 @@ B   5. What does the analogy suggest about the impact of adding JavaScript code 
    d) It has no impact on web page functionality
 
 
+
+
+
 QUIZ2:
+
+
+
 
 1. **What is the role of semicolons in JavaScript?**
    - A. They indicate the start of a statement.
@@ -102,3 +116,59 @@ QUIZ2:
    - D. They are used for adding comments.
 
    **Answer: C. They are magic words that prompt specific actions.**
+
+
+
+
+QUIZ3:
+
+
+
+
+**Question 1: What is the purpose of comments in JavaScript?**
+a) To change how the code runs
+b) To prevent code execution
+c) To provide explanations or reminders without affecting code execution
+d) To create cat-related algorithms
+
+**Answer: c) To provide explanations or reminders without affecting code execution**
+
+---
+
+**Question 2: How do single-line comments start in JavaScript?**
+a) <!--
+b) /*
+c) //
+d) --
+
+**Answer: c) //**
+
+---
+
+**Question 3: How can you create a multi-line comment in JavaScript?**
+a) Using <!-- and -->
+b) Using /** and **/
+c) Using -- and --
+d) Using /* and */
+
+**Answer: b) Using /* and */**
+
+---
+
+**Question 4: What does adding // in front of a code line do in JavaScript?**
+a) It changes the code line to a comment
+b) It executes the code line repeatedly
+c) It prevents the script from running
+d) It has no effect
+
+**Answer: a) It changes the code line to a comment**
+
+---
+
+**Question 5: In the example provided, why are single-line and multi-line comments used to prevent code execution?**
+a) To confuse other developers
+b) To improve script performance
+c) To temporarily disable code during debugging or testing
+d) To remove unnecessary code permanently
+
+**Answer: c) To temporarily disable code during debugging or testing**
