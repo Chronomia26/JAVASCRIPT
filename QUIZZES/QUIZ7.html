@@ -19,17 +19,17 @@
     </header>
     <div id = "question">
       <p id = "side_title">Question #1</p>
-      <p id = "main_content">What does the following JavaScript code calculate?<br><br> let treatsLeft = treatsInBowl - treatsFromYou;</p>
+      <p id = "main_content">What are the most common decision-making statements in JavaScript?</p>
     </div>
-    <div id = 'c1' class = 'choice' style = "top: 45%; left: 10.5%;" onclick="correctanswer(choice1), changeQuestion()">A. The sum of treats in the bowl and treats from you.  </div>
-    <div id = 'c2' class = 'choice correctanswer' style = "top: 45%; right: 10.5%;" onclick="correctanswer(choice2), changeQuestion()">B. The difference between treats in the bowl and treats from you. </div>
-    <div id = 'c3' class = 'choice ' style = "top: 63%; left: 10.5%;" onclick="correctanswer(choice3), changeQuestion()">C. The product of treats in the bowl and treats from you. </div>
-    <div id = 'c4' class = 'choice' style = "top: 63%; right: 10.5%;" onclick="correctanswer(choice4), changeQuestion()">D. The division of treats in the bowl by treats from you.</div>
+    <div id = 'c1' class = 'choice' style = "top: 45%; left: 10.5%;" onclick="correctanswer(choice1), changeQuestion()">A. Switch, case, default</div>
+    <div id = 'c2' class = 'choice correctanswer' style = "top: 45%; right: 10.5%;" onclick="correctanswer(choice2), changeQuestion()">B. If, else if, else</div>
+    <div id = 'c3' class = 'choice' style = "top: 63%; left: 10.5%;" onclick="correctanswer(choice3), changeQuestion()">C. For, while, do-while</div>
+    <div id = 'c4' class = 'choice' style = "top: 63%; right: 10.5%;" onclick="correctanswer(choice4), changeQuestion()">D. Try, catch, finally</div>
     <div id = 'progress'>QUESTIONS ANSWERED: 0/5</div>
     <div id = 'result' style=>
       I'm sorry...<br><br> You answered all the questions incorrectly...
     </div>
-    <a id = 'try' href="QUIZ5.html">Try Again?</a>
+    <a id = 'try' href="QUIZ7.html">Try Again?</a>
     <a  id = 'return' style="top: 63%;" href="C:\Users\juan carlos\Downloads\JAVASCRIPT/SINGLE HTML SITE.html">Return to Lessons</a>
   
     <script type="text/javascript" src="C:\Users\juan carlos\Downloads\JAVASCRIPT\DARKMODE.js"></script>
@@ -69,47 +69,47 @@
         function changeQuestion(){
           if (ans == 1) {
             title.textContent = "Question #2";
-            question.innerText = "What is the purpose of the modulus operator in the following JavaScript code? \n let leftoverTreats = totalTreats % numberOfCats;";
-            choice1.innerText = "A. It calculates the average treats per cat.";
-            choice2.innerText = "B. It finds the remainder after sharing treats with multiple cats.";
-            choice3.innerText = "C. It calculates the total happiness of cats.";
-            choice4.innerText = "D. It checks if the number of treats is even or odd.";
+            question.innerText = "In JavaScript, which conditional statement is used when you want to execute different blocks of code based on whether a condition is true or false?";
+            choice1.innerText = "A. switch";
+            choice2.innerText = "B. while";
+            choice3.innerText = "C. for";
+            choice4.innerText = "D. if... else";
             choice1.classList.remove('correctanswer');
-            choice2.classList.add('correctanswer');
+            choice2.classList.remove('correctanswer');
             choice3.classList.remove('correctanswer');
-            choice4.classList.remove('correctanswer');
+            choice4.classList.add('correctanswer');
           } else if(ans == 2) {
             title.textContent = "Question #3";
-            question.innerText = "In JavaScript, what does the following code determine?\n\nresult = (a >= b);";
-            choice1.innerText = "A. If the number of toys Kitty has is less than Whiskers. ";
-            choice2.innerText = "B. If the number of toys Kitty has is greater than or equal to Whiskers. ";
-            choice3.innerText = "C. If the number of toys Kitty has is equal to Whiskers.";
-            choice4.innerText = "D. If the number of toys Kitty has is not equal to Whiskers.";
+            question.innerText = "If you use the subtraction assignment operator (`-=`) with a variable representing the number of cat toys, what does it do?";
+            choice1.innerText = "A. Adds more toys to the existing count";
+            choice2.innerText = "B. Divides the count of toys by a specified value";
+            choice3.innerText = "C. Multiplies the count of toys by a specified value";
+            choice4.innerText = "D. Decreases the count of toys by a specified value";
             choice1.classList.remove('correctanswer');
-            choice2.classList.add('correctanswer');
+            choice2.classList.remove('correctanswer');
             choice3.classList.remove('correctanswer');
-            choice4.classList.remove('correctanswer');
+            choice4.classList.add('correctanswer');
           } else if(ans == 3) {
             title.textContent = "Question #4";
-            question.innerText = "Which comparison operator is used to check if the number of toys Kitty has is not equal to the number of toys Whiskers has in JavaScript?";
-            choice1.innerText = "A. Equal Operator (==)";
-            choice2.innerText = "B. Not Equal Operator (!=)";
-            choice3.innerText = "C. Greater Than Operator (>)";
-            choice4.innerText = "D. Less Than Operator (<)";
-            choice1.classList.remove('correctanswer');
-            choice2.classList.add('correctanswer');
-            choice3.classList.remove('correctanswer');
-            choice4.classList.remove('correctanswer');
-          } else if(ans == 4) {
-            title.textContent = "Question #5";
-            question.innerText = "What does the following JavaScript code evaluate? \n\n result = !(a && b);";
-            choice1.innerText = "A. If both rows have cats.  ";
-            choice2.innerText = "B. If either of the rows have cats.";
-            choice3.innerText = "C. If there are no cats in both rows.";
-            choice4.innerText = "D. If the number of cats in row A is not equal to the number of cats in row B.";
+            question.innerText = "What does the multiplication assignment operator (`*=`) do in JavaScript, as illustrated in the provided examples?";
+            choice1.innerText = "A. Adds more toys to the existing count";
+            choice2.innerText = "B. Divides the count of toys by a specified value";
+            choice3.innerText = "C. Multiplies the count of toys by a specified value";
+            choice4.innerText = "D. Decreases the count of toys by a specified value";
             choice1.classList.remove('correctanswer');
             choice2.classList.remove('correctanswer');
             choice3.classList.add('correctanswer');
+            choice4.classList.remove('correctanswer');
+          } else if(ans == 4) {
+            title.textContent = "Question #5";
+            question.innerText = "If you use the division assignment operator (`/=`) with a variable representing the portion of a treat, what does it do?";
+            choice1.innerText = "A. Adds more treats to the existing portion";
+            choice2.innerText = "B. Divides the portion of treats by a specified value";
+            choice3.innerText = "C. Multiplies the portion of treats by a specified value";
+            choice4.innerText = "D. Decreases the portion of treats by a specified value";
+            choice1.classList.remove('correctanswer');
+            choice2.classList.add('correctanswer');
+            choice3.classList.remove('correctanswer');
             choice4.classList.remove('correctanswer');
           } else if(ans == 5) {
             quiz.style.display = 'none';

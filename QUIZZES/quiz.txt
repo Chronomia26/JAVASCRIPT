@@ -237,3 +237,230 @@ c) var
 d) Bigint
 
 **Answer: c) var**
+
+
+
+
+
+quiz5:
+
+
+
+
+
+**Arithmetic Operators:**
+
+1. What does the following JavaScript code calculate? 
+   ```javascript
+   let treatsLeft = treatsInBowl - treatsFromYou;
+   ```
+   a) The sum of treats in the bowl and treats from you.  
+   b) The difference between treats in the bowl and treats from you.  
+   c) The product of treats in the bowl and treats from you.  
+   d) The division of treats in the bowl by treats from you.  
+   
+   **Answer: b) The difference between treats in the bowl and treats from you.**
+
+
+2. What is the purpose of the modulus operator in the following JavaScript code?
+   ```javascript
+   let leftoverTreats = totalTreats % numberOfCats;
+   ```
+   a) It calculates the average treats per cat.  
+   b) It finds the remainder after sharing treats with multiple cats.  
+   c) It calculates the total happiness of cats.  
+   d) It checks if the number of treats is even or odd.  
+
+   **Answer: b) It finds the remainder after sharing treats with multiple cats.**
+
+**Comparison Operators:**
+
+3. In JavaScript, what does the following code determine?
+   ```javascript
+   result = (a >= b);
+   ```
+   a) If the number of toys Kitty has is less than Whiskers.  
+   b) If the number of toys Kitty has is greater than or equal to Whiskers.  
+   c) If the number of toys Kitty has is equal to Whiskers.  
+   d) If the number of toys Kitty has is not equal to Whiskers.  
+
+   **Answer: b) If the number of toys Kitty has is greater than or equal to Whiskers.**
+
+4. Which comparison operator is used to check if the number of toys Kitty has is not equal to the number of toys Whiskers has in JavaScript?
+   a) Equal Operator (==)  
+   b) Not Equal Operator (!=)  
+   c) Greater Than Operator (>)  
+   d) Less than Operator (<)  
+
+   **Answer: b) Not Equal Operator (!=)**
+
+**Logical Operators:**
+
+5. What does the following JavaScript code evaluate?
+   ```javascript
+   result = !(a && b);
+   ```
+   a) If both rows have cats.  
+   b) If either of the rows have cats.  
+   c) If there are no cats in both rows.  
+   d) If the number of cats in row A is not equal to the number of cats in row B.
+
+   **Answer: c) If there are no cats in both rows.**
+
+
+
+
+
+
+   quiz6
+
+
+
+
+
+
+
+   **Question 1:**
+What is the purpose of the assignment operator (`=`) in JavaScript?
+
+a) Adding a value to an existing variable<br>
+b) Incrementing a variable value<br>
+c) Multiplying the value of a variable<br>
+d) Dividing the value of a variable<br>
+
+**Answer: a) Adding a value to an existing variable**
+
+---
+
+**Question 2:**
+What does the addition assignment operator (`+=`) do in JavaScript?
+
+a) Decreases the value of a variable<br>
+b) Adds a value to an existing variable<br>
+c) Multiplies the value of a variable<br>
+d) Divides the value of a variable<br>
+
+**Answer: b) Adds a value to an existing variable**
+
+---
+
+**Question 3:**
+If you use the subtraction assignment operator (`-=`) with a variable representing the number of cat toys, what does it do?
+
+a) Adds more toys to the existing count<br>
+b) Divides the count of toys by a specified value<br>
+c) Multiplies the count of toys by a specified value<br>
+d) Decreases the count of toys by a specified value<br>
+
+**Answer: d) Decreases the count of toys by a specified value**
+
+---
+
+**Question 4:**
+What does the multiplication assignment operator (`*=`) do in JavaScript, as illustrated in the provided examples?
+
+a) Adds more toys to the existing count<br>
+b) Divides the value of a variable by a specified value<br>
+c) Multiplies the value of a variable by a specified value<br>
+d) Decreases the count of toys by a specified value<br>
+
+**Answer: c) Multiplies the value of a variable by a specified value**
+
+---
+
+**Question 5:**
+If you use the division assignment operator (`/=`) with a variable representing the portion of a treat, what does it do?
+
+a) Adds more treats to the existing portion<br>
+b) Divides the portion of treats by a specified value<br>
+c) Multiplies the portion of treats by a specified value<br>
+d) Decreases the portion of treats by a specified value<br>
+
+**Answer: b) Divides the portion of treats by a specified value**
+
+
+
+
+
+
+quiz7
+
+
+
+
+
+
+
+
+
+**Question 1:**
+What are the most common decision-making statements in JavaScript?
+
+a) Switch, case, default
+b) If, else if, else
+c) For, while, do-while
+d) Try, catch, finally
+
+**Answer:**
+b) If, else if, else
+
+---
+
+**Question 2:**
+In JavaScript, which conditional statement is used when you want to execute different blocks of code based on whether a condition is true or false?
+
+a) switch
+b) while
+c) for
+d) if...else
+
+**Answer:**
+d) if...else
+
+---
+
+**Question 3:**
+Consider the following code snippet:
+
+```javascript
+var age = 20;
+if (age > 18) {
+   document.write("<b>Qualifies for driving</b>");
+}
+```
+
+What will be the output of this code?
+
+a) "Does not qualify for driving"
+b) "Qualifies for driving"
+c) No output
+d) Error
+
+**Answer:**
+b) "Qualifies for driving"
+
+---
+
+**Question 4:**
+In the second code snippet, what is the output when the variable `age` is set to 15?
+
+a) "Does not qualify for driving"
+b) "Qualifies for driving"
+c) "Unknown Book"
+d) No output
+
+**Answer:**
+a) "Does not qualify for driving"
+
+---
+
+**Question 5:**
+In the third code snippet, what will be the output if the variable `book` is set to "economics"?
+
+a) "History Book"
+b) "Maths Book"
+c) "Economics Book"
+d) "Unknown Book"
+
+**Answer:**
+c) "Economics Book"

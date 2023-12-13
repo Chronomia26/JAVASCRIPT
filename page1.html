@@ -6,13 +6,14 @@
     <title>HTML Compiler</title>
 </head>
 <body>
-    <textarea id="inputTextarea"></textarea>
-    <button onclick="compileHTML()">Compile</button>
-    <iframe id="outputIframe"></iframe>
+    <p id ="yourElementId"></p>
 
     <script>
-        document.write(b); 
-        var b = 7;
+        var element = document.getElementById('yourElementId'); // Replace 'yourElementId' with the actual ID of your HTML element
+
+        // Using textContent with line breaks
+        element.textContent = "First line<br>Second line<br>Third line";
+
     </script>
 </body>
 </html>
