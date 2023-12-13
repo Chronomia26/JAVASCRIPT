@@ -74,33 +74,6 @@
         </div>
 
         <div id="main">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <div id="whatisjavascript"  style="display: block;">
                 <div id="main_title" class="dark-title">
                     <b><img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 35px; image-rendering: pixelated;">What is JavaScript?<img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 35px; image-rendering: pixelated;"></b>
@@ -1842,8 +1815,6 @@
             </div>
             </div>
 
-        </div>
-        
 
 
 
@@ -1869,248 +1840,151 @@
 
 
 
-        <div id="objek" style="display: none;">
-            <div id="main_title" style="margin-top: 8%;">
-                <b><img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 35px; image-rendering: pixelated;">Javascript objects<img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 35px; image-rendering: pixelated;"></b>
-            </div>
-            <div id="main_content" style="padding-bottom: 150px">
-                <div></div>
-                <p>
-                    In JavaScript, objects are like containers that hold various pieces 
-                    of related information, known as properties, and actions, known as methods. 
-                    Think of them as real-world entities or concepts that you want to represent 
-                    in your code. For instance, if you're dealing with a person, their name, age, 
-                    and address could be properties, while actions like walking or talking could be 
-                    methods. Objects allow you to organize and structure your code in a way that
-                    mirrors the real world.
-                </p>
-                <p>
-                    In Cat Terms... Imagine JavaScript objects as magical boxes full of cat wonders! 🐾 
-                    Each box (object) has special cat properties, like fur color, age, and 
-                    favorite toys. These properties define what makes each cat unique. But wait, 
-                    there's more! These cat boxes also have special cat powers, called methods. 
-                    Cats can purr, nap, and play with their favorite toys. So, when you want to 
-                    code something cat-related, just create a magical cat box (object), fill it 
-                    with cat properties and powers, and let the coding magic begin! 🧙‍♂️✨
-                </p>
-                <p>
-                    <b>Have fun calling the methods/functions in this example!:</b>
-                </p>
-                <div id="script">
-                <p>
-                    <code>
-                        <blockquote id='code20'>
-                            &lt;html&gt;
-                                <blockquote>
-                                    &lt;body&gt;
-                                    <blockquote>
-                                        &lt;script type = "text/javascript"&gt;
-                                        <blockquote>
-                                            // Cat Toy<br>
-                                            const catnipToy = {
-                                            <blockquote>
-                                                toyType: "Catnip Ball", // Type of the catnip toy<br>
-                                                color: "Green", // Color of the catnip toy<br>
-                                                size: "Small", // Size of the catnip toy<br>
-                                                play: function () { // Method: play with the catnip toy<br>
-                                                    <blockquote>document.write("Cat is playing with the catnip ball.&lt;br&gt;");</blockquote>
 
-                                                },<br><br>
-                                                roll: function () { // Method: roll the catnip toy<br>
-                                                    <blockquote>document.write("Cat is rolling the catnip ball around.&lt;br&gt;");</blockquote>
-                                                },<br><br>
-                                                entice: function () { // Method: be enticed by the catnip aroma<br>
-                                                    <blockquote>document.write("Cat is enticed by the catnip aroma.&lt;br&gt;");</blockquote>
-                                                },<br><br>
-                                                };<br>
-                                            </blockquote>
-                                            <br>
-                                            // Kitty Profile<br>
-                                            const kittyStats = {
-                                            <blockquote>
-                                                name: "Whiskers", // Name of the cat<br>
-                                                age: 2, // Age of the cat<br>                                                    <br>
-                                                furColor: "Tabby", // Fur color of the cat<br>
-                                                introduce: function () { // Method: introduce the cat<br>
-                                                <blockquote>document.write(`Hello,I'm ${this.name}.&lt;br&gt;`);</blockquote>
-                                                },
-                                                purr: function () { // Method: purr contently<br>
-                                                <blockquote>document.write("Catispurring contently.&lt;br&gt;");</blockquote>
-                                                },
-                                                nap: function () { // Method: take a cozy nap<br>
-                                                <blockquote>document.write("Cat is taking a cozy nap.&lt;br&gt;");</blockquote>
-                                                },<br><br>
-                                                };<br>
-                                            </blockquote>
-                                            <br>
-                                            // Feline Friend<br>
-                                            const felineFriend = {
-                                            <blockquote>
-                                                friendName: "Mittens", // Name of the feline friend<br>
-                                                personality: "Adventurous", // Personality of the feline friend<br>
-                                                age: 1, // Age of the feline friend<br>
-                                                chaseToy: function () { // Method: chase after toys<br>
-                                                <blockquote>document.write("Cat is playfully chasing after toys.&lt;br&gt;");</blockquote>
-                                                },<br>
-                                                cuddle: function () { // Method: enjoy cuddle time<br>
-                                                <blockquote>document.write("Cat is enjoying cuddle time.&lt;br&gt;");</blockquote>
-                                                },<br>
-                                                explore: function () { // Method: explore the surroundings<br>
-                                                <blockquote>document.write("Cat is exploring the surroundings.&lt;br&gt;");</blockquote>
-                                                },<br><br>
-                                                };<br>
-                                            </blockquote>
-                                            <br>
-                                            // Cat Café Menu<br>
-                                            const catCafeMenu = {
-                                            <blockquote>
-                                                menuItem: "Meowcha Latte", // Name of the menu item<br>
-                                                price: "$4.99", // Price of the menu item<br>
-                                                ingredients: ["Espresso", "Steamed Milk", "Vanilla"], // Ingredients<br>
-                                                order: function () { // Method: place an order<br>
-                                                <blockquote>document.write(`Placing an order for ${this.menuItem}.&lt;br&gt;`);</blockquote>
-                                                },<br>
-                                                customize: function () { // Method: customize the drink<br>
-                                                <blockquote>document.write("Customizing the drink.&lt;br&gt;");</blockquote>
-                                                },<br>
-                                                savor: function () { // Method: savor the delightful blend<br>
-                                                <blockquote>document.write("Savoring the delightful blend.&lt;br&gt;");</blockquote>
-                                                },<br><br>
-                                                };<br>
-                                            </blockquote>
-                                            <br>
-                                            // Kitty Castle<br>
-                                            const kittyCastle = {
-                                            <blockquote>
-                                                castleName: "Paw Palace", // Name of the kitty castle<br>
-                                                color: "Pink", // Color of the kitty castle<br>
-                                                levels: 3, // Number of levels in the kitty castle<br>
-                                                climbTower: function () { // Method: climb the castle towers<br>
-                                                <blockquote>document.write("Cat is climbing the castle towers.&lt;br&gt;");</blockquote>
-                                                },<br>
-                                                napOnBalcony: function () { // Method: take a nap on the balcony<br>
-                                                <blockquote>document.write("Cat is taking a nap on the balcony.&lt;br&gt;");</blockquote>
-                                                },<br>
-                                                watchKingdom: function () { // Method: watch over the kingdom<br>
-                                                <blockquote>document.write("Cat is keeping watch over the kingdom.&lt;br&gt;");</blockquote>
-                                                },<br><br>
-                                                };<br>
-                                            </blockquote>
-                                            <br>
-                                            // Example Usage:<br><br>
-                                            catnipToy.play();            // Cat plays with the catnip toy<br>
-                                            kittyStats.introduce();      // Cat introduces itself<br>
-                                            felineFriend.explore();      // Feline friend explores<br>
-                                            catCafeMenu.order();         // Cat places an order at the cat café<br>
-                                            kittyCastle.watchKingdom();  // Cat watches over its kingdom <br>               
-                                        </blockquote>
-                                        &lt;/script&gt;
-                                    </blockquote>
-                                    &lt;/body&gt;
-                                </blockquote>
-                                &lt;/html&gt;
-                        </blockquote>
-                        <div id="textcode">
-                            <a href="#" onclick="transferText('code20')">TEST CODE</a>
-                        </div>
-                    </code>
-                </p>
+
+
+
+
+
+
+
+
+
+
+            <div id="objek" style="display: none;">
+                <div id="main_title">
+                    <b><img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 35px; image-rendering: pixelated;">Javascript objects<img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 35px; image-rendering: pixelated;"></b>
                 </div>
-            </div>
-            <div id="quiz">
-                <p>TAKE A SMALL QUIZ FOR THIS LESSON! </p>
-                <a href="QUIZZES/QUIZ10.html">START QUIZ</a>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div id="aray" style="display: none;">
-            <div id="main_title" style="margin-top: 8%;">
-                <b><img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 35px; image-rendering: pixelated;">Javascript arrays<img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 35px; image-rendering: pixelated;"></b>
-            </div>
-            <div id="main_content" style="padding-bottom: 150px">
-                <p>
-                    In JavaScript, an array is a data structure that allows 
-                    you to store multiple values within a single variable. 
-                    Arrays are ordered, meaning the position of each element 
-                    is defined by an index. The index starts at 0 for the 
-                    first element, 1 for the second, and so on. You can store 
-                    various types of data, such as numbers, strings, or even 
-                    other arrays, in an array.
-                </p>
-                <p>
-                    In cat terms... Imagine an array as a collection of 
-                    different toys for your furry friends. Each toy has 
-                    its own unique appeal, just like elements in an array. 
-                    The toys are arranged neatly, and each has a specific 
-                    spot. For example:
-                </p>
-                <div id="script">
+                <div id="main_content" style="padding-bottom: 150px">
+                    <div></div>
+                    <p>
+                        In JavaScript, objects are like containers that hold various pieces 
+                        of related information, known as properties, and actions, known as methods. 
+                        Think of them as real-world entities or concepts that you want to represent 
+                        in your code. For instance, if you're dealing with a person, their name, age, 
+                        and address could be properties, while actions like walking or talking could be 
+                        methods. Objects allow you to organize and structure your code in a way that
+                        mirrors the real world.
+                    </p>
+                    <p>
+                        In Cat Terms... Imagine JavaScript objects as magical boxes full of cat wonders! 🐾 
+                        Each box (object) has special cat properties, like fur color, age, and 
+                        favorite toys. These properties define what makes each cat unique. But wait, 
+                        there's more! These cat boxes also have special cat powers, called methods. 
+                        Cats can purr, nap, and play with their favorite toys. So, when you want to 
+                        code something cat-related, just create a magical cat box (object), fill it 
+                        with cat properties and powers, and let the coding magic begin! 🧙‍♂️✨
+                    </p>
+                    <p>
+                        <b>Have fun calling the methods/functions in this example!:</b>
+                    </p>
+                    <div id="script">
                     <p>
                         <code>
-                            <blockquote id='code21'>
+                            <blockquote id='code20'>
                                 &lt;html&gt;
                                     <blockquote>
                                         &lt;body&gt;
                                         <blockquote>
                                             &lt;script type = "text/javascript"&gt;
                                             <blockquote>
-                                                // Imagine an array as a collection of your cat's favorite treats.<br>
-                                                const catTreats = ["Tuna Bits", "Chicken Bites", "Salmon Delights", 
-                                                "Catnip Cookies"];<br>
-
-                                                // Your cat's treat preferences are indexed, starting from 0.<br>
-                                                // Let's check out the first and second treats.<br>
-                                                document.write(`${catTreats[0]}` + "&lt;br&gt;"); // Output: Tuna Bits<br>
-                                                document.write(`${catTreats[1]}` + "&lt;br&gt;"); // Output: Chicken Bites<br>
-                                                <br>
-                                                // Uh-oh, your cat got a new favorite! Let's update the array.<br>
-                                                catTreats[2] = "Shrimp Snacks";<br>
-                                                <br>
-                                                // Great! Now, the array reflects the updated treat collection.<br>
-                                                document.write(catTreats + "&lt;br&gt;"); // Output: ["Tuna Bits", "Chicken Bites", 
-                                                "Shrimp Snacks", "Catnip Cookies"]<br>
-                                                <br>
-                                                // Time to share the treats! You can loop through the array 
-                                                and treat your cat to each one.<br>
-                                                for (let i = 0; i &lt; catTreats.length; i++) {<br>
+                                                // Cat Toy<br>
+                                                const catnipToy = {
                                                 <blockquote>
-                                                    document.write(`Time for ${catTreats[i]}!` + "&lt;br&gt;");
+                                                    toyType: "Catnip Ball", // Type of the catnip toy<br>
+                                                    color: "Green", // Color of the catnip toy<br>
+                                                    size: "Small", // Size of the catnip toy<br>
+                                                    play: function () { // Method: play with the catnip toy<br>
+                                                        <blockquote>document.write("Cat is playing with the catnip ball.&lt;br&gt;");</blockquote>
+    
+                                                    },<br><br>
+                                                    roll: function () { // Method: roll the catnip toy<br>
+                                                        <blockquote>document.write("Cat is rolling the catnip ball around.&lt;br&gt;");</blockquote>
+                                                    },<br><br>
+                                                    entice: function () { // Method: be enticed by the catnip aroma<br>
+                                                        <blockquote>document.write("Cat is enticed by the catnip aroma.&lt;br&gt;");</blockquote>
+                                                    },<br><br>
+                                                    };<br>
                                                 </blockquote>
-                                                }<br>
                                                 <br>
-                                                // Oops, your cat had enough of shrimp. Let's remove it from the array.<br>
-                                                catTreats.pop();<br>
+                                                // Kitty Profile<br>
+                                                const kittyStats = {
+                                                <blockquote>
+                                                    name: "Whiskers", // Name of the cat<br>
+                                                    age: 2, // Age of the cat<br>                                                    <br>
+                                                    furColor: "Tabby", // Fur color of the cat<br>
+                                                    introduce: function () { // Method: introduce the cat<br>
+                                                    <blockquote>document.write(`Hello,I'm ${this.name}.&lt;br&gt;`);</blockquote>
+                                                    },
+                                                    purr: function () { // Method: purr contently<br>
+                                                    <blockquote>document.write("Catispurring contently.&lt;br&gt;");</blockquote>
+                                                    },
+                                                    nap: function () { // Method: take a cozy nap<br>
+                                                    <blockquote>document.write("Cat is taking a cozy nap.&lt;br&gt;");</blockquote>
+                                                    },<br><br>
+                                                    };<br>
+                                                </blockquote>
                                                 <br>
-                                                // Now, the array is back to three tasty treats.<br>
-                                                document.write(catTreats + "&lt;br&gt;"); // Output: ["Tuna Bits", "Chicken Bites", 
-                                                "Catnip Cookies"]<br>
+                                                // Feline Friend<br>
+                                                const felineFriend = {
+                                                <blockquote>
+                                                    friendName: "Mittens", // Name of the feline friend<br>
+                                                    personality: "Adventurous", // Personality of the feline friend<br>
+                                                    age: 1, // Age of the feline friend<br>
+                                                    chaseToy: function () { // Method: chase after toys<br>
+                                                    <blockquote>document.write("Cat is playfully chasing after toys.&lt;br&gt;");</blockquote>
+                                                    },<br>
+                                                    cuddle: function () { // Method: enjoy cuddle time<br>
+                                                    <blockquote>document.write("Cat is enjoying cuddle time.&lt;br&gt;");</blockquote>
+                                                    },<br>
+                                                    explore: function () { // Method: explore the surroundings<br>
+                                                    <blockquote>document.write("Cat is exploring the surroundings.&lt;br&gt;");</blockquote>
+                                                    },<br><br>
+                                                    };<br>
+                                                </blockquote>
+                                                <br>
+                                                // Cat Café Menu<br>
+                                                const catCafeMenu = {
+                                                <blockquote>
+                                                    menuItem: "Meowcha Latte", // Name of the menu item<br>
+                                                    price: "$4.99", // Price of the menu item<br>
+                                                    ingredients: ["Espresso", "Steamed Milk", "Vanilla"], // Ingredients<br>
+                                                    order: function () { // Method: place an order<br>
+                                                    <blockquote>document.write(`Placing an order for ${this.menuItem}.&lt;br&gt;`);</blockquote>
+                                                    },<br>
+                                                    customize: function () { // Method: customize the drink<br>
+                                                    <blockquote>document.write("Customizing the drink.&lt;br&gt;");</blockquote>
+                                                    },<br>
+                                                    savor: function () { // Method: savor the delightful blend<br>
+                                                    <blockquote>document.write("Savoring the delightful blend.&lt;br&gt;");</blockquote>
+                                                    },<br><br>
+                                                    };<br>
+                                                </blockquote>
+                                                <br>
+                                                // Kitty Castle<br>
+                                                const kittyCastle = {
+                                                <blockquote>
+                                                    castleName: "Paw Palace", // Name of the kitty castle<br>
+                                                    color: "Pink", // Color of the kitty castle<br>
+                                                    levels: 3, // Number of levels in the kitty castle<br>
+                                                    climbTower: function () { // Method: climb the castle towers<br>
+                                                    <blockquote>document.write("Cat is climbing the castle towers.&lt;br&gt;");</blockquote>
+                                                    },<br>
+                                                    napOnBalcony: function () { // Method: take a nap on the balcony<br>
+                                                    <blockquote>document.write("Cat is taking a nap on the balcony.&lt;br&gt;");</blockquote>
+                                                    },<br>
+                                                    watchKingdom: function () { // Method: watch over the kingdom<br>
+                                                    <blockquote>document.write("Cat is keeping watch over the kingdom.&lt;br&gt;");</blockquote>
+                                                    },<br><br>
+                                                    };<br>
+                                                </blockquote>
+                                                <br>
+                                                // Example Usage:<br><br>
+                                                catnipToy.play();            // Cat plays with the catnip toy<br>
+                                                kittyStats.introduce();      // Cat introduces itself<br>
+                                                felineFriend.explore();      // Feline friend explores<br>
+                                                catCafeMenu.order();         // Cat places an order at the cat café<br>
+                                                kittyCastle.watchKingdom();  // Cat watches over its kingdom <br>               
                                             </blockquote>
                                             &lt;/script&gt;
                                         </blockquote>
@@ -2119,17 +1993,127 @@
                                     &lt;/html&gt;
                             </blockquote>
                             <div id="textcode">
-                                <a href="#" onclick="transferText('code21')">TEST CODE</a>
+                                <a href="#" onclick="transferText('code20')">TEST CODE</a>
                             </div>
                         </code>
                     </p>
+                    </div>
+                </div>
+                <div id="quiz">
+                    <p>TAKE A SMALL QUIZ FOR THIS LESSON! </p>
+                    <a href="QUIZZES/QUIZ10.html">START QUIZ</a>
                 </div>
             </div>
-            <div id="quiz">
-                <p>TAKE A SMALL QUIZ FOR THIS LESSON! </p>
-                <a href="QUIZZES/QUIZ11.html">START QUIZ</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            <div id="aray" style="display: none;">
+                <div id="main_title">
+                    <b><img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 35px; image-rendering: pixelated;">Javascript arrays<img src="IMAGES/bullet1.png" alt="NEKODE" style="width: 35px; image-rendering: pixelated;"></b>
+                </div>
+                <div id="main_content" style="padding-bottom: 150px">
+                    <p>
+                        In JavaScript, an array is a data structure that allows 
+                        you to store multiple values within a single variable. 
+                        Arrays are ordered, meaning the position of each element 
+                        is defined by an index. The index starts at 0 for the 
+                        first element, 1 for the second, and so on. You can store 
+                        various types of data, such as numbers, strings, or even 
+                        other arrays, in an array.
+                    </p>
+                    <p>
+                        In cat terms... Imagine an array as a collection of 
+                        different toys for your furry friends. Each toy has 
+                        its own unique appeal, just like elements in an array. 
+                        The toys are arranged neatly, and each has a specific 
+                        spot. For example:
+                    </p>
+                    <div id="script">
+                        <p>
+                            <code>
+                                <blockquote id='code21'>
+                                    &lt;html&gt;
+                                        <blockquote>
+                                            &lt;body&gt;
+                                            <blockquote>
+                                                &lt;script type = "text/javascript"&gt;
+                                                <blockquote>
+                                                    // Imagine an array as a collection of your cat's favorite treats.<br>
+                                                    const catTreats = ["Tuna Bits", "Chicken Bites", "Salmon Delights", 
+                                                    "Catnip Cookies"];<br>
+    
+                                                    // Your cat's treat preferences are indexed, starting from 0.<br>
+                                                    // Let's check out the first and second treats.<br>
+                                                    document.write(`${catTreats[0]}` + "&lt;br&gt;"); // Output: Tuna Bits<br>
+                                                    document.write(`${catTreats[1]}` + "&lt;br&gt;"); // Output: Chicken Bites<br>
+                                                    <br>
+                                                    // Uh-oh, your cat got a new favorite! Let's update the array.<br>
+                                                    catTreats[2] = "Shrimp Snacks";<br>
+                                                    <br>
+                                                    // Great! Now, the array reflects the updated treat collection.<br>
+                                                    document.write(catTreats + "&lt;br&gt;"); // Output: ["Tuna Bits", "Chicken Bites", 
+                                                    "Shrimp Snacks", "Catnip Cookies"]<br>
+                                                    <br>
+                                                    // Time to share the treats! You can loop through the array 
+                                                    and treat your cat to each one.<br>
+                                                    for (let i = 0; i &lt; catTreats.length; i++) {<br>
+                                                    <blockquote>
+                                                        document.write(`Time for ${catTreats[i]}!` + "&lt;br&gt;");
+                                                    </blockquote>
+                                                    }<br>
+                                                    <br>
+                                                    // Oops, your cat had enough of shrimp. Let's remove it from the array.<br>
+                                                    catTreats.pop();<br>
+                                                    <br>
+                                                    // Now, the array is back to three tasty treats.<br>
+                                                    document.write(catTreats + "&lt;br&gt;"); // Output: ["Tuna Bits", "Chicken Bites", 
+                                                    "Catnip Cookies"]<br>
+                                                </blockquote>
+                                                &lt;/script&gt;
+                                            </blockquote>
+                                            &lt;/body&gt;
+                                        </blockquote>
+                                        &lt;/html&gt;
+                                </blockquote>
+                                <div id="textcode">
+                                    <a href="#" onclick="transferText('code21')">TEST CODE</a>
+                                </div>
+                            </code>
+                        </p>
+                    </div>
+                </div>
+                <div id="quiz">
+                    <p>TAKE A SMALL QUIZ FOR THIS LESSON! </p>
+                    <a href="QUIZZES/QUIZ11.html">START QUIZ</a>
+                </div>
             </div>
         </div>
+
 
 
 
@@ -2157,6 +2141,34 @@
 				<a id = 'left' class="light-text" href = "#" onclick="arrow(this)">&lt;</a>
 				<a id = 'right' class="light-text" href = "#" onclick="arrow(this)">&gt;</a>
 		</div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <img id = "side_button" src="IMAGES/button1.png"  alt="sidebar">
 
 
 

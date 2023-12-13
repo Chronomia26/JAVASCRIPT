@@ -1024,3 +1024,26 @@
   //         darkmode.textContent = "NIGHT"
   //       }
   // }
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const sidebar = document.getElementById('side');
+    const button = document.getElementById('side_button');
+  
+    button.addEventListener('click', function () {
+      // Toggle sidebar visibility
+      sidebar.style.width = sidebar.style.width === "460px" ? "0" : "460px"
+      
+    });
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 1280) {
+        // Set the sidebar width back to its original state (e.g., "250px")
+        sidebar.style.width = "460px";
+      } else {
+        // If the window is smaller, keep the sidebar width as it is
+        sidebar.style.width = sidebar.style.width === "px" ? "0" : sidebar.style.width;
+      }
+    });
+  });
+  
+  

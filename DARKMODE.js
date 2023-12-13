@@ -7,6 +7,7 @@
       var right = document.getElementById('right');
       var side = document.getElementById('side');
       var title = document.getElementById('main_title');
+      var button = document.getElementById('side_button')
 
       if (body.classList.contains('light-mode')) {
           body.classList.remove('light-mode');
