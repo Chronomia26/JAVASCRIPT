@@ -68,6 +68,7 @@ body {
   .choice:hover {
     /* transform: scale(1.07); */
     border-radius: 50px;
+    cursor: pointer;
   }
   #progress {
     position: absolute;
