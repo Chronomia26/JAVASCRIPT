@@ -1041,7 +1041,7 @@
         sidebar.style.width = "460px";
       } else {
         // If the window is smaller, keep the sidebar width as it is
-        sidebar.style.width = sidebar.style.width === "px" ? "0" : sidebar.style.width;
+        sidebar.style.width = sidebar.style.width === "px" ? "0" : 0;
       }
     });
   });
