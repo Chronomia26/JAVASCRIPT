@@ -57,15 +57,16 @@ body {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    font-family: 'Courier New';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(255,255, 255, 0.3);
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.3s ease 0s;
+    /* transition: transform 0.5s ease-in-out; */
   }
   @keyframes animation {
     
   }
   .choice:hover {
-    transform: scale(1.07);
+    /* transform: scale(1.07); */
     border-radius: 50px;
   }
   #progress {
@@ -78,7 +79,7 @@ body {
     padding-top: 40px;
     padding-bottom: 40px; 
     border: 2px solid black;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
     font-family: 'Courier New'; 
@@ -147,7 +148,7 @@ body {
       height: 25%;
     }
     .choice {
-      font-size: 15px;
+      font-size: 25px;
       padding-left: 2px;
       padding-right: 2px;
       padding-top: 40px;
@@ -181,7 +182,7 @@ body {
       height: 20%;
     }
     .choice {
-      font-size: 15px;
+      font-size: 25px;
       padding-top: 40px;
       padding-bottom: 40px;
     }
@@ -208,7 +209,7 @@ body {
       height: 15%;
     }
     .choice {
-      font-size: 15px;
+      font-size: 25px;
       padding-top: 40px;
       padding-bottom: 40px;
     }
