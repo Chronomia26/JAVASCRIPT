@@ -119,7 +119,20 @@ body {
     border-radius: 50px;
   }
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-device-width: 1290px) {
+    #question{
+      height: 50%;
+    }
+
+    #main_content{
+      font-size: 100px;
+    }
+    .choice {
+      font-size: 40px;
+    }
+  }
+
+  @media screen and (max-width: 1280px){
     #question{
       height: 20%;
     }
@@ -130,7 +143,7 @@ body {
       padding-bottom: 45px;
     }
     #side_title{
-      font-size: 30px;
+      font-size: 20px;
     }
     #main_content{
       font-size: 20px;

@@ -469,6 +469,7 @@ padding: 10px;
     #controls {
         width: 100%;
         left: 0;
+        bottom: 65px;
     }
     #footer{
         font-size: 80px;
