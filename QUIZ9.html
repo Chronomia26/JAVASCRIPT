@@ -1,16 +1,16 @@
 <html>
   <head>
     <title>NEKOQUIZ</title>
-    <link rel="stylesheet" type="text/css" href="C:\Users\juan carlos\Downloads\JAVASCRIPT\style.css">
+    <link rel="stylesheet" type="text/css" href="Stylequiz.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/x-icon" href="C:\Users\juan carlos\Downloads\JAVASCRIPT\IMAGES\icon.png">
+    <link rel="icon" type="image/x-icon" href="IMAGES\icon.png">
   </head>
 
   <body  class="light-mode">
     <header class="lightmode">
       <div id="header_img">
-          <a href="C:\Users\juan carlos\Downloads\JAVASCRIPT\MAIN.html">
-              <img src="C:\Users\juan carlos\Downloads\JAVASCRIPT\IMAGES\logo.png" alt="NEKODE">
+          <a href="MAIN.html">
+              <img src="IMAGES\logo.png" alt="NEKODE">
           </a>
       </div>
       <div class="button_cont">
@@ -19,20 +19,20 @@
     </header>
     <div id = "question">
       <p id = "side_title">Question #1</p>
-      <p id = "main_content">What is the purpose of comments in JavaScript?</p>
+      <p id = "main_content"> What is a function in JavaScript?</p>
     </div>
-    <div id = 'c1' class = 'choice' style = "top: 45%; left: 10.5%;" onclick="correctanswer(choice1), changeQuestion()">A. To change how the code runs</div>
-    <div id = 'c2' class = 'choice' style = "top: 45%; right: 10.5%;" onclick="correctanswer(choice2), changeQuestion()">B. To prevent code execution</div>
-    <div id = 'c3' class = 'choice correctanswer' style = "top: 63%; left: 10.5%;" onclick="correctanswer(choice3), changeQuestion()">C. To provide explanations or reminders without affecting code execution</div>
-    <div id = 'c4' class = 'choice' style = "top: 63%; right: 10.5%;" onclick="correctanswer(choice4), changeQuestion()">D. To create cat-related algorithms</div>
+    <div id = 'c1' class = 'choice correctanswer' style = "top: 45%; left: 10.5%;" onclick="correctanswer(choice1), changeQuestion()">A. A set of instructions or code block that can be named and reused</div>
+    <div id = 'c2' class = 'choice' style = "top: 45%; right: 10.5%;" onclick="correctanswer(choice2), changeQuestion()">B. A type of variable used to store values</div>
+    <div id = 'c3' class = 'choice' style = "top: 63%; left: 10.5%;" onclick="correctanswer(choice3), changeQuestion()">C. A loop for iterating through arrays </div>
+    <div id = 'c4' class = 'choice' style = "top: 63%; right: 10.5%;" onclick="correctanswer(choice4), changeQuestion()">D. A conditional statement for decision-making </div>
     <div id = 'progress'>QUESTIONS ANSWERED: 0/5</div>
     <div id = 'result' style=>
       I'm sorry...<br><br> You answered all the questions incorrectly...
     </div>
-    <a id = 'try' href="QUIZ3.html">Try Again?</a>
-    <a  id = 'return' style="top: 63%;" href="C:\Users\juan carlos\Downloads\JAVASCRIPT/SINGLE HTML SITE.html">Return to Lessons</a>
+    <a id = 'try' href="QUIZ9.html">Try Again?</a>
+    <a  id = 'return' style="top: 63%;" href="SINGLE HTML SITE.html">Return to Lessons</a>
   
-    <script type="text/javascript" src="C:\Users\juan carlos\Downloads\JAVASCRIPT\DARKMODE.js"></script>
+    <script type="text/javascript" src="DARKMODE.js"></script>
     <script>
         var result = document.getElementById('result')
         var tryagain = document.getElementById('try')
@@ -69,44 +69,44 @@
         function changeQuestion(){
           if (ans == 1) {
             title.textContent = "Question #2";
-            question.textContent = "How do single-line comments start in JavaScript?";
-            choice1.textContent = "A. <!--";
-            choice2.textContent = "B. /*";
-            choice3.textContent = "C. //";
-            choice4.textContent = "D. --";
+            question.innerText = 'How is a JavaScript function similar to a cat in the provided context?';
+            choice1.innerText = "A. Cats can define variables";
+            choice2.innerText = "B. Cats can only perform tricks once";
+            choice3.innerText = "C. Functions can be named and reused like teaching tricks to a cat";
+            choice4.innerText = "D. Cats can only execute code once";
             choice1.classList.remove('correctanswer');
             choice2.classList.remove('correctanswer');
             choice3.classList.add('correctanswer');
             choice4.classList.remove('correctanswer');
           } else if(ans == 2) {
             title.textContent = "Question #3";
-            question.textContent = "How can you create a multi-line comment in JavaScript?";
-            choice1.textContent = "A. Using <!-- and -->";
-            choice2.textContent = "B. Using /** and **/";
-            choice3.textContent = "C. Using -- and --";
-            choice4.textContent = "D. Using /* and */";
+            question.innerText =  'What is the purpose of the `askForFood` function in JavaScript?';
+            choice1.innerText = "A. The syntax.";
+            choice2.innerText = "B. The type of statements it can execute.";
+            choice3.innerText = "C. The condition check happens at the beginning of the loop.";
+            choice4.innerText = "D. The condition check happens at the end of the loop.";
             choice1.classList.remove('correctanswer');
             choice2.classList.add('correctanswer');
             choice3.classList.remove('correctanswer');
             choice4.classList.remove('correctanswer');
           } else if(ans == 3) {
             title.textContent = "Question #4";
-            question.textContent = "What does adding // in front of a code line do in JavaScript?";
-            choice1.textContent = "A. It changes the code line to a comment";
-            choice2.textContent = "B. It executes the code line repeatedly";
-            choice3.textContent = "C. It prevents the script from running";
-            choice4.textContent = "D. It has no effect";
-            choice1.classList.add('correctanswer');
-            choice2.classList.remove('correctanswer');
+            question.innerText = 'What is the purpose of JavaScript parameters in a function?';
+            choice1.innerText = "A. They are placeholders for cat names"; 
+            choice2.innerText = 'B. They store values that can be used in the function';
+            choice3.innerText = "C. They define variables for the entire script";
+            choice4.innerText = "D. They limit the execution of the function";
+            choice1.classList.remove('correctanswer');
+            choice2.classList.add('correctanswer');
             choice3.classList.remove('correctanswer');
             choice4.classList.remove('correctanswer');
           } else if(ans == 4) {
             title.textContent = "Question #5";
-            question.textContent = "In the example provided, why are single-line and multi-line comments used to prevent code execution?";
-            choice1.textContent = "A. To confuse other developers";
-            choice2.textContent = "B. To improve script performance";
-            choice3.textContent = "C. To temporarily disable code during debugging or testing";
-            choice4.textContent = "D. To remove unnecessary code permanently";
+            question.innerText = 'What is the purpose of the `greetCat` function parameter `name`?';
+            choice1.innerText = "A. It defines a variable for the function  ";
+            choice2.innerText = "B. It is a loop counter  ";
+            choice3.innerText = "C. It allows passing values into the function";
+            choice4.innerText = "D. It controls the execution of the function ";
             choice1.classList.remove('correctanswer');
             choice2.classList.remove('correctanswer');
             choice3.classList.add('correctanswer');

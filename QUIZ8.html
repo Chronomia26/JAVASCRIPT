@@ -1,16 +1,16 @@
 <html>
   <head>
     <title>NEKOQUIZ</title>
-    <link rel="stylesheet" type="text/css" href="C:\Users\juan carlos\Downloads\JAVASCRIPT\style.css">
+    <link rel="stylesheet" type="text/css" href="Stylequiz.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/x-icon" href="C:\Users\juan carlos\Downloads\JAVASCRIPT\IMAGES\icon.png">
+    <link rel="icon" type="image/x-icon" href="IMAGES\icon.png">
   </head>
 
   <body  class="light-mode">
     <header class="lightmode">
       <div id="header_img">
-          <a href="C:\Users\juan carlos\Downloads\JAVASCRIPT\MAIN.html">
-              <img src="C:\Users\juan carlos\Downloads\JAVASCRIPT\IMAGES\logo.png" alt="NEKODE">
+          <a href="MAIN.html">
+              <img src="IMAGES\logo.png" alt="NEKODE">
           </a>
       </div>
       <div class="button_cont">
@@ -19,20 +19,20 @@
     </header>
     <div id = "question">
       <p id = "side_title">Question #1</p>
-      <p id = "main_content"> What is a function in JavaScript?</p>
+      <p id = "main_content"> What is the primary purpose of a "while" loop in JavaScript?</p>
     </div>
-    <div id = 'c1' class = 'choice correctanswer' style = "top: 45%; left: 10.5%;" onclick="correctanswer(choice1), changeQuestion()">A. A set of instructions or code block that can be named and reused</div>
-    <div id = 'c2' class = 'choice' style = "top: 45%; right: 10.5%;" onclick="correctanswer(choice2), changeQuestion()">B. A type of variable used to store values</div>
-    <div id = 'c3' class = 'choice' style = "top: 63%; left: 10.5%;" onclick="correctanswer(choice3), changeQuestion()">C. A loop for iterating through arrays </div>
-    <div id = 'c4' class = 'choice' style = "top: 63%; right: 10.5%;" onclick="correctanswer(choice4), changeQuestion()">D. A conditional statement for decision-making </div>
+    <div id = 'c1' class = 'choice correctanswer' style = "top: 45%; left: 10.5%;" onclick="correctanswer(choice1), changeQuestion()">A. Execute a statement repeatedly as long as an expression is true.</div>
+    <div id = 'c2' class = 'choice' style = "top: 45%; right: 10.5%;" onclick="correctanswer(choice2), changeQuestion()">B. Execute a statement only once.</div>
+    <div id = 'c3' class = 'choice' style = "top: 63%; left: 10.5%;" onclick="correctanswer(choice3), changeQuestion()">C. Execute a statement only if an expression is false.</div>
+    <div id = 'c4' class = 'choice' style = "top: 63%; right: 10.5%;" onclick="correctanswer(choice4), changeQuestion()">D. Execute a statement without any condition.</div>
     <div id = 'progress'>QUESTIONS ANSWERED: 0/5</div>
     <div id = 'result' style=>
       I'm sorry...<br><br> You answered all the questions incorrectly...
     </div>
-    <a id = 'try' href="QUIZ9.html">Try Again?</a>
-    <a  id = 'return' style="top: 63%;" href="C:\Users\juan carlos\Downloads\JAVASCRIPT/SINGLE HTML SITE.html">Return to Lessons</a>
+    <a id = 'try' href="QUIZ8.html">Try Again?</a>
+    <a  id = 'return' style="top: 63%;" href="SINGLE HTML SITE.html">Return to Lessons</a>
   
-    <script type="text/javascript" src="C:\Users\juan carlos\Downloads\JAVASCRIPT\DARKMODE.js"></script>
+    <script type="text/javascript" src="DARKMODE.js"></script>
     <script>
         var result = document.getElementById('result')
         var tryagain = document.getElementById('try')
@@ -69,47 +69,47 @@
         function changeQuestion(){
           if (ans == 1) {
             title.textContent = "Question #2";
-            question.innerText = 'How is a JavaScript function similar to a cat in the provided context?';
-            choice1.innerText = "A. Cats can define variables";
-            choice2.innerText = "B. Cats can only perform tricks once";
-            choice3.innerText = "C. Functions can be named and reused like teaching tricks to a cat";
-            choice4.innerText = "D. Cats can only execute code once";
-            choice1.classList.remove('correctanswer');
+            question.innerText = 'In a "while" loop, when does the loop terminate?';
+            choice1.innerText = "A. When the expression is false. ";
+            choice2.innerText = "B. When the expression is true.";
+            choice3.innerText = "C. After a fixed number of iterations.";
+            choice4.innerText = "D. It doesn't terminate; it runs indefinitely.";
+            choice1.classList.add('correctanswer');
             choice2.classList.remove('correctanswer');
-            choice3.classList.add('correctanswer');
+            choice3.classList.remove('correctanswer');
             choice4.classList.remove('correctanswer');
           } else if(ans == 2) {
             title.textContent = "Question #3";
-            question.innerText =  'What is the purpose of the `askForFood` function in JavaScript?';
+            question.innerText = 'What distinguishes a "do... while" loop from a "while" loop?';
             choice1.innerText = "A. The syntax.";
             choice2.innerText = "B. The type of statements it can execute.";
             choice3.innerText = "C. The condition check happens at the beginning of the loop.";
             choice4.innerText = "D. The condition check happens at the end of the loop.";
             choice1.classList.remove('correctanswer');
-            choice2.classList.add('correctanswer');
+            choice2.classList.remove('correctanswer');
             choice3.classList.remove('correctanswer');
-            choice4.classList.remove('correctanswer');
+            choice4.classList.add('correctanswer');
           } else if(ans == 3) {
             title.textContent = "Question #4";
-            question.innerText = 'What is the purpose of JavaScript parameters in a function?';
-            choice1.innerText = "A. They are placeholders for cat names"; 
-            choice2.innerText = 'B. They store values that can be used in the function';
-            choice3.innerText = "C. They define variables for the entire script";
-            choice4.innerText = "D. They limit the execution of the function";
-            choice1.classList.remove('correctanswer');
-            choice2.classList.add('correctanswer');
+            question.innerText = 'In a "for" loop, what is the purpose of the initialization statement?';
+            choice1.innerText = "A. It initializes the loop counter.";
+            choice2.innerText = "B. It tests a given condition.";
+            choice3.innerText = "C. It executes the loop statements.";
+            choice4.innerText = "D. It increments or decrements the loop counter.";
+            choice1.classList.add('correctanswer');
+            choice2.classList.remove('correctanswer');
             choice3.classList.remove('correctanswer');
             choice4.classList.remove('correctanswer');
           } else if(ans == 4) {
             title.textContent = "Question #5";
-            question.innerText = 'What is the purpose of the `greetCat` function parameter `name`?';
-            choice1.innerText = "A. It defines a variable for the function  ";
-            choice2.innerText = "B. It is a loop counter  ";
-            choice3.innerText = "C. It allows passing values into the function";
-            choice4.innerText = "D. It controls the execution of the function ";
+            question.innerText = 'What are the three important parts of a "for" loop in JavaScript?';
+            choice1.innerText = "A. Start, Stop, Continue";
+            choice2.innerText = "B. Initialization, Test condition, Iteration statement";
+            choice3.innerText = "C. While, Do, For";
+            choice4.innerText = "D. Execute, Break, Loop";
             choice1.classList.remove('correctanswer');
-            choice2.classList.remove('correctanswer');
-            choice3.classList.add('correctanswer');
+            choice2.classList.add('correctanswer');
+            choice3.classList.remove('correctanswer');
             choice4.classList.remove('correctanswer');
           } else if(ans == 5) {
             quiz.style.display = 'none';
